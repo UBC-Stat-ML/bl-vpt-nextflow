@@ -4,6 +4,7 @@ deliverableDir = 'deliverables/' + workflow.scriptName.replace('.nf','')
 data = file("data")
 
 process buildCode {
+  executor 'local'
   cache true 
   input:
     val gitRepoName from 'ptanalysis'
@@ -60,6 +61,7 @@ process run {
 }
 
 process analysisCode {
+  executor 'local'
   input:
     val gitRepoName from 'nedry'
     val gitUser from 'UBC-Stat-ML'
