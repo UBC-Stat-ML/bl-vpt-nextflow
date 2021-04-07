@@ -34,9 +34,9 @@ process run {
     each obj from 'Rejection', 'SKL', 'ApproxRejection'
     each antit from 'OFF', 'IS', 'MCMC'
     each essn from '0.5', '1.0'
-    each model from 'ConjugateNormal' + normalModelArgs /*, 
+    each model from 'ConjugateNormal' + normalModelArgs, 
                     'ToyNormal' + normalModelArgs, 
-                    'CHRVariational' */
+                    'CHRVariational'
     each nChain from Ns
     file code
     file data
