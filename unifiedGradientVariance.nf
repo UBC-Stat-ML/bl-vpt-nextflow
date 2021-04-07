@@ -98,7 +98,6 @@ process plot {
   output:
     file '*.pdf'
     file '*.csv'
-  module 'singularity'
   container 'cgrlab/tidyverse'
   publishDir deliverableDir, mode: 'copy', overwrite: true
   """
