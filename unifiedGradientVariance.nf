@@ -29,6 +29,7 @@ process run {
   cpus 1
   time '1h'
   memory '2 GB'
+  clusterOptions '-A st-alexbou-1'
   
   input:
     each seed from seeds
