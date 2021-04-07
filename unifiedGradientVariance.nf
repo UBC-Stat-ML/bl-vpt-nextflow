@@ -95,6 +95,7 @@ process plot {
   output:
     file '*.pdf'
     file '*.csv'
+  container 'cgrlab/tidyverse'
   publishDir deliverableDir, mode: 'copy', overwrite: true
   """
   #!/usr/bin/env Rscript
