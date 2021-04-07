@@ -17,8 +17,8 @@ process buildCode {
     template 'buildRepo.sh'
 }
 
-seeds = (1..2)
-Ns = (2..2).collect{Math.pow(2, it)}
+seeds = (1..10)
+Ns = (2..5).collect{Math.pow(2, it)}
 
 normalModelArgs  = ' --engine.initialParameters 0.5'
 normalModelArgs += ' --engine.pt.adaptFraction 0.0'
@@ -27,13 +27,13 @@ normalModelArgs += ' --engine.pt.initialization FORWARD'
 
 process run {
 
-  time '20m'
+  time '30m'
   
   input:
     each seed from seeds
-    each obj from 'Rejection' //, 'SKL', 'ApproxRejection'
-    each antit from 'OFF' //, 'IS', 'MCMC'
-    each essn from '0.5' //, '1.0'
+    each obj from 'Rejection', 'SKL', 'ApproxRejection'
+    each antit from 'OFF', 'IS', 'MCMC'
+    each essn from '0.5', '1.0'
     each model from 'ConjugateNormal' + normalModelArgs /*, 
                     'ToyNormal' + normalModelArgs, 
                     'CHRVariational' */
