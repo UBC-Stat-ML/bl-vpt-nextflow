@@ -145,11 +145,11 @@ process plot {
   write.csv(overall, "overall-summary.csv")
   
   for (stat in c("snr", "sd", "mean")) {  
-    ggplot(overall, aes(x = nChains, y = get(stat), linetype = objectiveType, color = interaction(antithetics,essn))) +
-      facet_grid(model + dim ~ ., scales = "free_y") +
+    ggplot(overall, aes(x = nChains, y = get(stat), color = interaction(antithetics,essn))) +
+      facet_grid(model + dim ~ objectiveType, scales = "free_y") +
       geom_line() + 
       theme_bw()
-    ggsave(paste0("overall-", stat, ".pdf"), width = 5, height = 15)
+    ggsave(paste0("overall-", stat, ".pdf"), width = 15, height = 15)
   }  
   """
   
