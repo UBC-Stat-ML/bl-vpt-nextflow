@@ -25,6 +25,10 @@ normalModelArgs += ' --engine.pt.nScans 1'
 normalModelArgs += ' --engine.pt.initialization FORWARD'
 
 process run {
+
+  cpus 1
+  time '1h'
+  memory '2 GB'
   
   input:
     each seed from seeds
