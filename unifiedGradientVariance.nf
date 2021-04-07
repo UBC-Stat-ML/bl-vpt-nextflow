@@ -48,6 +48,7 @@ process run {
     --engine.antithetics $antit \
     --engine ptgrad.VariationalPT \
     --engine.pt.nChains $nChain \
+    --engine.pt.nThreads single \
     --engine.relativeESSNeighbourhoodThreshold $essn \
     --engine.pt.random $seed \
     --engine.objective $obj \
