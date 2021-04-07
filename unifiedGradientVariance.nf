@@ -18,7 +18,7 @@ process buildCode {
 }
 
 seeds = (1..50)
-Ns = (2..5).collect{Math.pow(2, it)}
+Ns = (2..7).collect{Math.pow(2, it)}
 
 normalModelArgs  = ' --engine.initialParameters 0.5'
 normalModelArgs += ' --engine.pt.adaptFraction 0.0'
@@ -27,7 +27,7 @@ normalModelArgs += ' --engine.pt.initialization FORWARD'
 
 process run {
 
-  time '30m'
+  time '4h'
   errorStrategy 'ignore'
   
   input:
