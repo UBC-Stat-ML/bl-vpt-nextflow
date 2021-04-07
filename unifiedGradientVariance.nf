@@ -60,7 +60,7 @@ process analysisCode {
   input:
     val gitRepoName from 'nedry'
     val gitUser from 'UBC-Stat-ML'
-    val codeRevision from '23f6728aa0665e8e59c780ac74527a1f6f7d2b1b'
+    val codeRevision from 'b53e3a302ceba4427c55b838afb3b8f3fdc23ec5'
     val snapshotPath from "${System.getProperty('user.home')}/w/nedry"
   output:
     file 'code' into analysisCode
