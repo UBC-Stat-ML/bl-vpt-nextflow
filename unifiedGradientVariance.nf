@@ -26,10 +26,7 @@ normalModelArgs += ' --engine.pt.initialization FORWARD'
 
 process run {
 
-  cpus 1
-  time '1h'
-  memory '2 GB'
-  clusterOptions '-A st-alexbou-1'
+  time '20m'
   
   input:
     each seed from seeds
@@ -101,6 +98,7 @@ process plot {
   output:
     file '*.pdf'
     file '*.csv'
+  module 'singularity'
   container 'cgrlab/tidyverse'
   publishDir deliverableDir, mode: 'copy', overwrite: true
   """
