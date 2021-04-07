@@ -17,7 +17,7 @@ process buildCode {
     template 'buildRepo.sh'
 }
 
-seeds = (1..10)
+seeds = (1..50)
 Ns = (2..5).collect{Math.pow(2, it)}
 
 normalModelArgs  = ' --engine.initialParameters 0.5'
@@ -28,6 +28,7 @@ normalModelArgs += ' --engine.pt.initialization FORWARD'
 process run {
 
   time '30m'
+  errorStrategy 'ignore'
   
   input:
     each seed from seeds
