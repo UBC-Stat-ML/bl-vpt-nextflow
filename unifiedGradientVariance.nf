@@ -31,7 +31,7 @@ collapsedModelArgs  = disableAdaptArgs
 collapsedModelArgs += ' --engine.pt.ladder FromAnotherExec'
 collapsedModelArgs += ' --engine.pt.ladder.annealingParameters data/collapsedAnnealingParams.csv'
 collapsedModelArgs += ' --engine.pt.ladder.allowSplineGeneralization true'
-normalModelArgs += ' --engine.pt.nScans 100'
+collapsedModelArgs += ' --engine.pt.nScans 100'
 
 process run {
 
