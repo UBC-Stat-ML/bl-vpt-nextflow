@@ -18,7 +18,7 @@ process buildCode {
 }
 
 seeds = (1..2)
-Ns = (2..2).collect{Math.pow(2, it)}
+Ns = (2..7).collect{Math.pow(2, it)}
 
 disableAdaptArgs = ' --engine.pt.adaptFraction 0.0'
 
@@ -35,7 +35,7 @@ normalModelArgs += ' --engine.pt.nScans 100'
 
 process run {
 
-  time '4h'
+  time '30m'
   errorStrategy 'ignore'
   
   input:
@@ -86,6 +86,7 @@ process analysisCode {
 }
 
 process aggregate {
+  scratch false
   echo true
   input:
     file analysisCode
@@ -108,6 +109,7 @@ process aggregate {
 }
 
 process plot {
+  scratch false
   input:
     file aggregated
   output:
