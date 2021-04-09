@@ -17,13 +17,21 @@ process buildCode {
     template 'buildRepo.sh'
 }
 
-seeds = (1..50)
-Ns = (2..7).collect{Math.pow(2, it)}
+seeds = (1..2)
+Ns = (2..2).collect{Math.pow(2, it)}
 
-normalModelArgs  = ' --engine.initialParameters 0.5'
-normalModelArgs += ' --engine.pt.adaptFraction 0.0'
+disableAdaptArgs = ' --engine.pt.adaptFraction 0.0'
+
+normalModelArgs  = disableAdaptArgs
+normalModelArgs += ' --engine.initialParameters 0.5'
 normalModelArgs += ' --engine.pt.nScans 1'
 normalModelArgs += ' --engine.pt.initialization FORWARD'
+
+collapsedModelArgs  = disableAdaptArgs
+collapsedModelArgs += ' --engine.pt.ladder FromAnotherExec'
+collapsedModelArgs += ' --engine.pt.ladder.annealingParameters data/collapsedAnnealingParams.csv'
+collapsedModelArgs += ' --engine.pt.ladder.allowSplineGeneralization true'
+normalModelArgs += ' --engine.pt.nScans 100'
 
 process run {
 
@@ -37,13 +45,13 @@ process run {
     each essn from '0.5', '1.0'
     each model from 'ConjugateNormal' + normalModelArgs, 
                     'ToyNormal' + normalModelArgs, 
-                    'CHRVariational'
+                    'CHRVariational' + collapsedModelArgs
     each nChain from Ns
     file code
     file data
     
   output:
-    file 'results/latest' into results
+    file 'output' into results
     
   """
   java -Xmx5g -cp code/lib/\\*  ptgrad.Variational \
@@ -58,6 +66,9 @@ process run {
     --engine.objective $obj \
     --engine.nScansPerGradient 20 \
     --engine.optimizer.maxIters 0
+  mkdir output
+  mv results/latest/*.csv output
+  mv results/latest/*.tsv output
   """
 }
 
@@ -83,6 +94,7 @@ process aggregate {
     file 'results/latest/' into aggregated
   """
   code/bin/aggregate \
+    --experimentConfigs.resultsHTMLPage false \
     --dataPathInEachExecFolder stochastic-gradient-evaluations.csv monitoring/roundTimings.csv \
     --keys \
       model.interpolation as model \
