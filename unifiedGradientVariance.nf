@@ -68,6 +68,7 @@ process run {
     --engine.optimizer.maxIters 0
   mkdir output
   mv results/latest/*.csv output
+  mv results/latest/monitoring/*.csv output
   mv results/latest/*.tsv output
   """
 }
