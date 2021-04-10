@@ -17,7 +17,7 @@ process buildCode {
     template 'buildRepo.sh'
 }
 
-seeds = (1..2)
+seeds = (1..100)
 Ns = (2..7).collect{Math.pow(2, it)}
 
 disableAdaptArgs = ' --engine.pt.adaptFraction 0.0'
