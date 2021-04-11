@@ -17,8 +17,8 @@ process buildCode {
     template 'buildRepo.sh'
 }
 
-seeds = (1..2)
-Ns = (2..2).collect{Math.pow(2, it)}
+seeds = (1..100)
+Ns = (2..7).collect{Math.pow(2, it)}
 
 disableAdaptArgs = ' --engine.pt.adaptFraction 0.0'
 
@@ -40,13 +40,12 @@ process run {
   
   input:
     each seed from seeds
-    each obj from 'Rejection' //, 'SKL', 'ApproxRejection'
-    each antit from 'OFF' //, 'IS', 'MCMC'
-    each essn from '0.5' //, '1.0'
-    each model from 'ConjugateNormal' + normalModelArgs
-    /*, 
+    each obj from 'Rejection', 'SKL', 'ApproxRejection'
+    each antit from 'OFF', 'IS', 'MCMC'
+    each essn from '0.5', '1.0'
+    each model from 'ConjugateNormal' + normalModelArgs, 
                     'ToyNormal' + normalModelArgs, 
-                    'CHRVariational' + collapsedModelArgs */
+                    'CHRVariational' + collapsedModelArgs 
     each nChain from Ns
     file code
     file data
