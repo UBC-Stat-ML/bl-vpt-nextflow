@@ -98,7 +98,7 @@ process aggregate {
   """
   code/bin/aggregate \
     --experimentConfigs.resultsHTMLPage false \
-    --dataPathInEachExecFolder stochastic-gradient-evaluations.csv monitoring/roundTimings.csv \
+    --dataPathInEachExecFolder stochastic-gradient-evaluations.csv roundTimings.csv \
     --keys \
       model.interpolation as model \
       engine.antithetics as antithetics \
