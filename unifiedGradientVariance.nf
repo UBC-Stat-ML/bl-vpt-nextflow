@@ -89,6 +89,7 @@ process analysisCode {
 
 process aggregate {
   echo true
+  scratch false
   input:
     file analysisCode
     file 'exec_*' from results.toList()
@@ -110,6 +111,7 @@ process aggregate {
 }
 
 process plot {
+  scratch false
   input:
     file aggregated
   output:
