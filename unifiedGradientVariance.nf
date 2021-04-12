@@ -87,6 +87,7 @@ process analysisCode {
 }
 
 process aggregate {
+  time '1h'
   echo true
   scratch false
   input:
