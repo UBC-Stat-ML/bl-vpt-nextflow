@@ -9,7 +9,7 @@ process buildCode {
   input:
     val gitRepoName from 'ptanalysis'
     val gitUser from 'UBC-Stat-ML'
-    val codeRevision from 'd6893c28000de52527809fac57cf5815d41215f7'
+    val codeRevision from 'df19760de814222da2235e8774f606cbb3587154'
     val snapshotPath from "${System.getProperty('user.home')}/w/ptanalysis"
   output:
     file 'code' into code
@@ -40,7 +40,7 @@ process run {
   
   input:
     each seed from seeds
-    each obj from 'Rejection', 'SKL', 'ApproxRejection'
+    each obj from 'SKL', 'ApproxRejection'
     each antit from 'OFF', 'IS', 'MCMC'
     each essn from '0.5', '1.0'
     each model from 'ConjugateNormal' + normalModelArgs, 
@@ -102,7 +102,7 @@ process aggregate {
     --keys \
       model.interpolation as model \
       engine.antithetics as antithetics \
-      engine.objective as objectiveType \
+      engine.objective \
       engine.pt.nChains as nChains \
       engine.relativeESSNeighbourhoodThreshold as essn \
       engine.pt.random as random \
