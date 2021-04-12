@@ -95,7 +95,7 @@ process aggregate {
   output:
     file 'results/latest/' into aggregated
   """
-  code/bin/aggregate \
+  java -Xmx5g -cp code/lib/\\*  flows.Aggregate \
     --experimentConfigs.resultsHTMLPage false \
     --dataPathInEachExecFolder stochastic-gradient-evaluations.csv roundTimings.csv \
     --keys \
