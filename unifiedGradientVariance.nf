@@ -9,7 +9,7 @@ process buildCode {
   input:
     val gitRepoName from 'ptanalysis'
     val gitUser from 'UBC-Stat-ML'
-    val codeRevision from 'df19760de814222da2235e8774f606cbb3587154'
+    val codeRevision from '5837d39a2130335a42566fce64a2c26718e80ed7'
     val snapshotPath from "${System.getProperty('user.home')}/w/ptanalysis"
   output:
     file 'code' into code
@@ -59,6 +59,7 @@ process run {
     --model.interpolation $model \
     --engine.antithetics $antit \
     --engine ptgrad.VariationalPT \
+    --engine.detailedGradientInfo true \
     --engine.pt.nChains $nChain \
     --engine.pt.nThreads single \
     --engine.relativeESSNeighbourhoodThreshold $essn \
