@@ -17,28 +17,27 @@ process buildCode {
     template 'buildRepo.sh'
 }
 
-seeds = (1..1)
-Ns = (4..4).collect{Math.pow(2, it)}
-nOptIters = 2
+seeds = (1..10)
+Ns = (4..4)  //.collect{Math.pow(2, it)}
+nOptIters = 1000
 
 model_match =  ' --model ptbm.models.CollapsedHierarchicalRockets\\\$Builder '
 model_match += ' --model.data data/failure_counts.csv '
-model_match += ' --model.filter Ariane '
+//model_match += ' --model.filter Ariane '
 
 model_opt = model_match.replace('--model', '--model.interpolation.target')
 
 
-
-
 process run {
 
-  time '30m'
-  //errorStrategy 'ignore'
+  time '1h'
+  errorStrategy 'ignore'
   
   input:
     each seed from seeds
-    each obj from 'SKL' //, 'Rejection'
-    each opt from 'Adam' //, 'SGD --engine.optimizer.schedule.exponent -0.5 '
+    each obj from 'SKL', 'Rejection'
+    each opt from 'Adam', 'SGD --engine.optimizer.schedule.exponent -0.5 '
+    each stepScale from 0.01, 0.1, 1.0, 10.0
     each nChain from Ns
     file code
     file data
@@ -49,11 +48,12 @@ process run {
   """
   java -Xmx5g -cp code/lib/\\*  ptgrad.Variational \
     --experimentConfigs.resultsHTMLPage false \
+    --engine.maxOptimizationRestarts 1 \
     --model.interpolation Automatic \
     --engine ptgrad.VariationalPT \
     --engine.detailedGradientInfo false \
     --engine.pt.nScans 100 \
-    --engine.nScansPerGradient 100 \
+    --engine.nScansPerGradient 20 \
     --engine.optimizer.progressCheckLag 0.0 \
     --engine.pt.scmInit.nParticles 10 \
     --engine.pt.scmInit.temperatureSchedule.threshold 0.9 \
@@ -66,7 +66,7 @@ process run {
     --engine.objective $obj \
     --engine.optimizer $opt \
     --engine.optimizer.maxIters $nOptIters \
-    --engine.optimizer.stepScale 1.0 
+    --engine.optimizer.stepScale $stepScale 
   mkdir output
   mv results/latest/*.csv output
   mv results/latest/monitoring/*.csv output
@@ -103,9 +103,11 @@ process aggregate {
     --experimentConfigs.resultsHTMLPage false \
     --dataPathInEachExecFolder optimizationMonitoring.csv \
     --keys \
-      model.interpolation as model \
+      model.interpolation.target as model \
+      engine.optimizer as optimizer \
       engine.antithetics as antithetics \
-      engine.objective \
+      engine.objective as objective \
+      engine.optimizer.stepScale as stepScale \
       engine.pt.nChains as nChains \
       engine.pt.random as random \
            from arguments.tsv
@@ -118,7 +120,8 @@ process plot {
     file aggregated
   output:
     file '*.pdf'
-    file '*.csv'
+  //  file '*.csv'
+  afterScript 'rm Rplots.pdf'
   container 'cgrlab/tidyverse'
   publishDir deliverableDir, mode: 'copy', overwrite: true
   """
@@ -126,49 +129,45 @@ process plot {
   require("ggplot2")
   require("dplyr")
   
-  timings <- read.csv("${aggregated}/roundTimings.csv")
-  ggplot(timings, aes(x = nChains, y = value/1000)) +
-    ylab("seconds") + 
-    facet_grid(model ~ .) +
-    geom_point() + 
+  optmonitor <- read.csv("${aggregated}/optimizationMonitoring.csv")
+  optmonitor <- filter(optmonitor, name == "Rejection")
+  optmonitor <- filter(optmonitor, budget <= 75000) # when hitting NaN, budget can be 2x larger
+  ggplot(optmonitor, aes(x = budget, y = value, color = factor(random))) +
+    facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
+    scale_x_log10() +
+    xlab("Budget (number of exploration steps)") + 
+    ylab("Global Communication Barrier (GCB)") + 
+    geom_line(alpha = 0.5)  + 
     theme_bw()
-  ggsave(paste0("timings.pdf"), width = 5, height = 5)
+  ggsave(paste0("optimizationMonitoring.pdf"), width = 10, height = 7)
   
-  data <- read.csv("${aggregated}/stochastic-gradient-evaluations.csv") %>% filter(evaluation == 0)
-   
-  byChain <- data %>% 
-    group_by(model,chain,nChains,objectiveType,antithetics,dim,essn) %>%
-    summarize(
-      mean = mean(value),
-      sd = sd(value),
-      snr = abs(mean)/sd)
-  write.csv(byChain, "chain-specific-summary.csv")
-  
-  for (stat in c("snr", "sd", "mean")) {  
-    ggplot(byChain, aes(x = chain, y = get(stat), linetype = objectiveType, color = interaction(antithetics,essn))) +
-      facet_grid(model + dim ~ nChains, scales = "free_y") +
-      geom_line() + 
+  optmonitor %>% 
+    filter(is.finite(value)) %>% 
+    group_by(budget, objective, optimizer, stepScale) %>%
+    summarise(mean_GCB = mean(value)) %>%
+    ggplot(aes(x = budget, y = mean_GCB, colour = optimizer)) +
+      facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
+      scale_x_log10() +
+      xlab("Budget (number of exploration steps)") + 
+      ylab("GCB (averaged over 10 restarts, ignoring failures)") + 
+      geom_line(alpha = 1) + 
       theme_bw()
-    ggsave(paste0("chain-specific-", stat, ".pdf"), width = 15, height = 15)
-  }
+  ggsave(paste0("optimizationMonitoring-mean.pdf"), width = 10, height = 7)
   
-  overall <- data %>% 
-    group_by(model,nChains,objectiveType,antithetics,dim,essn,random) %>%
-    mutate(sum = sum(value)) %>%
-    group_by(model,nChains,objectiveType,antithetics,dim,essn) %>%
-    summarize(
-      mean = mean(sum),
-      sd = sd(sum),
-      snr = abs(mean)/sd)
-  write.csv(overall, "overall-summary.csv")
-  
-  for (stat in c("snr", "sd", "mean")) {  
-    ggplot(overall, aes(x = nChains, y = get(stat), color = interaction(antithetics,essn))) +
-      facet_grid(model + dim ~ objectiveType, scales = "free_y") +
-      geom_line() + 
+  optmonitor\$isFinite <- is.finite(optmonitor\$value)
+  optmonitor %>% 
+    group_by(budget, objective, optimizer, stepScale) %>%
+    summarise(mean_is_finite = sum(isFinite)/${seeds.size()}) %>%
+    ggplot(aes(x = budget, y = mean_is_finite, colour = optimizer)) +
+      facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
+      scale_x_log10() +
+      xlab("Budget (number of exploration steps)") + 
+      ylab("Fraction of runs with finite objective") + 
+      geom_line(alpha = 1) + 
       theme_bw()
-    ggsave(paste0("overall-", stat, ".pdf"), width = 15, height = 15)
-  }  
+  ggsave(paste0("optimizationMonitoring-isFinite.pdf"), width = 10, height = 7)
+  
+
   """
   
 }
