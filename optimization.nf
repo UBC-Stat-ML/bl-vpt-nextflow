@@ -75,6 +75,43 @@ process run {
 }
 
 
+process runMatching {
+
+  time '1h'
+  //errorStrategy 'ignore'
+  
+  input:
+    each seed from seeds
+    each nChain from Ns
+    file code
+    file data
+    
+  output:
+    file 'output' into results_matching
+    
+  """
+  java -Xmx5g -cp code/lib/\\*  blang.runtime.Runner \
+    --experimentConfigs.resultsHTMLPage false \
+    --engine ptbm.OptPT \
+    --engine.nScans 10000 \
+    --engine.scmInit.nParticles 10 \
+    --engine.scmInit.temperatureSchedule.threshold 0.9 \
+    --engine.nPassesPerScan 1 \
+    $model_match \
+    --engine.nChains $nChain \
+    --engine.nThreads single \
+    --engine.random $seed \
+    --engine.minSamplesForVariational 10
+  mkdir output
+  mv results/latest/*.csv output
+  mv results/latest/monitoring/*.csv output
+  mv results/latest/*.tsv output
+  echo "\nengine.pt.random\t$seed" >> output/arguments.tsv
+  echo "engine.objective\tForwardKL" >> output/arguments.tsv
+  echo "engine.optimizer\tMomentMatch" >> output/arguments.tsv
+  """
+}
+
 
 process analysisCode {
   executor 'local'
@@ -89,13 +126,15 @@ process analysisCode {
     template 'buildRepo.sh'
 }
 
+results_all = results.concat(results_matching)
+
 process aggregate {
   time '1h'
-  echo true
+  echo false
   scratch false
   input:
     file analysisCode
-    file 'exec_*' from results.toList()
+    file 'exec_*' from results_all.toList()
   output:
     file 'results/latest/' into aggregated
   """
@@ -139,7 +178,7 @@ process plot {
     ylab("Global Communication Barrier (GCB)") + 
     geom_line(alpha = 0.5)  + 
     theme_bw()
-  ggsave(paste0("optimizationMonitoring.pdf"), width = 10, height = 7)
+  ggsave(paste0("optimizationMonitoring.pdf"), width = 17, height = 7)
   
   optmonitor %>% 
     filter(is.finite(value)) %>% 
@@ -152,7 +191,7 @@ process plot {
       ylab("GCB (averaged over 10 restarts, ignoring failures)") + 
       geom_line(alpha = 1) + 
       theme_bw()
-  ggsave(paste0("optimizationMonitoring-mean.pdf"), width = 10, height = 7)
+  ggsave(paste0("optimizationMonitoring-mean.pdf"), width = 17, height = 7)
   
   optmonitor\$isFinite <- is.finite(optmonitor\$value)
   optmonitor %>% 
@@ -161,11 +200,12 @@ process plot {
     ggplot(aes(x = budget, y = mean_is_finite, colour = optimizer)) +
       facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
       scale_x_log10() +
+      ylim(0.0, 1.0) + 
       xlab("Budget (number of exploration steps)") + 
       ylab("Fraction of runs with finite objective") + 
       geom_line(alpha = 1) + 
       theme_bw()
-  ggsave(paste0("optimizationMonitoring-isFinite.pdf"), width = 10, height = 7)
+  ggsave(paste0("optimizationMonitoring-isFinite.pdf"), width = 17, height = 7)
   
 
   """
