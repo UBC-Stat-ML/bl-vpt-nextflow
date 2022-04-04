@@ -52,7 +52,7 @@ process run {
     --model.interpolation Automatic \
     --engine ptgrad.VariationalPT \
     --engine.detailedGradientInfo false \
-    --engine.pt.nScans 100 \
+    --engine.pt.nScans 10 \
     --engine.nScansPerGradient 20 \
     --engine.optimizer.progressCheckLag 0.0 \
     --engine.pt.scmInit.nParticles 10 \
