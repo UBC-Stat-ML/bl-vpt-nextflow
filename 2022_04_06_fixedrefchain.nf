@@ -18,7 +18,7 @@ process buildCode {
 }
 
 seeds = (1..10)
-Ns = (4..4)  //.collect{Math.pow(2, it)}
+Ns = (2..3).collect{Math.pow(2, it)}
 nOptIters = 1000
 
 model_match =  ' --model ptbm.models.CollapsedHierarchicalRockets\\\$Builder '
@@ -27,13 +27,12 @@ model_match += ' --model.data data/failure_counts.csv '
 model_opt = model_match.replace('--model', '--model.interpolation.target')
 
 
-
-
-
 process runMatching {
 
-  time '1h'
+  time '2h'
   //errorStrategy 'ignore'
+  
+  cpu 4
   
   input:
     each seed from seeds
@@ -56,7 +55,8 @@ process runMatching {
     $model_match \
     --engine.nChains $nChain \
     --engine.useFixedRefPT $useRef \
-    --engine.nThreads single \
+    --engine.nThreads fixed \
+    --engine.nThreads.number 4 \
     --engine.random $seed \
     --engine.minSamplesForVariational 10
   mkdir output
@@ -128,49 +128,39 @@ process plot {
   
   paths <- read.csv("${aggregated}/optimizationPath.csv")
   ggplot(paths, aes(x = budget, y = value, color = factor(random), linetype = useFixedRef)) +
-    facet_grid(name ~ .) +
+    facet_grid(name ~ nChains) +
     scale_x_log10() +
     xlab("Budget (number of exploration steps)") + 
     ylab("Parameter") + 
     geom_line(alpha = 0.5)  + 
     theme_bw()
-  ggsave(paste0("optimizationPaths.pdf"), width = 9, height = 5)
+  ggsave(paste0("optimizationPaths.pdf"), width = 9, height = 10)
   
   optmonitor <- read.csv("${aggregated}/optimizationMonitoring.csv")
   optmonitor <- filter(optmonitor, name == "Rejection")
   ggplot(optmonitor, aes(x = budget, y = value, color = factor(random), linetype = useFixedRef)) +
     scale_x_log10() +
+    facet_grid(. ~ nChains) +
     xlab("Budget (number of exploration steps)") + 
     ylab("Global Communication Barrier (GCB)") + 
     geom_line(alpha = 0.5)  + 
     theme_bw()
-  ggsave(paste0("optimizationMonitoring.pdf"), width = 9, height = 3)
+  ggsave(paste0("optimizationMonitoring.pdf"), width = 9, height = 7)
   
   optmonitor %>% 
     filter(is.finite(value)) %>% 
-    group_by(budget, objective, optimizer, stepScale, useFixedRef) %>%
+    group_by(budget, objective, optimizer, stepScale, useFixedRef, nChains) %>%
     summarise(mean_GCB = mean(value)) %>%
     ggplot(aes(x = budget, y = mean_GCB, colour = optimizer, linetype = useFixedRef)) +
       scale_x_log10() +
+      facet_grid(. ~ nChains) +
       xlab("Budget (number of exploration steps)") + 
       ylab("GCB (averaged over 10 restarts, ignoring failures)") + 
       geom_line(alpha = 1) + 
       theme_bw()
-  ggsave(paste0("optimizationMonitoring-mean.pdf"), width = 9, height = 3)
+  ggsave(paste0("optimizationMonitoring-mean.pdf"), width = 9, height = 7)
   
-  optmonitor\$isFinite <- is.finite(optmonitor\$value)
-  optmonitor %>% 
-    group_by(budget, objective, optimizer, stepScale, useFixedRef) %>%
-    summarise(mean_is_finite = sum(isFinite)/${seeds.size()}) %>%
-    ggplot(aes(x = budget, y = mean_is_finite, colour = optimizer, linetype = useFixedRef)) +
-      scale_x_log10() +
-      ylim(0.0, 1.0) + 
-      xlab("Budget (number of exploration steps)") + 
-      ylab("Fraction of runs with finite objective") + 
-      geom_line(alpha = 1) + 
-      theme_bw()
-  ggsave(paste0("optimizationMonitoring-isFinite.pdf"), width = 9, height = 3)
-  
+
 
   """
   
