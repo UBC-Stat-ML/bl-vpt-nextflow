@@ -32,7 +32,7 @@ process runMatching {
   time '2h'
   //errorStrategy 'ignore'
   
-  cpu 4
+  cpus 4
   
   input:
     each seed from seeds
