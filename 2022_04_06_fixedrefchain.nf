@@ -51,7 +51,7 @@ process runMatching {
     --engine.nScans 25000 \
     --engine.scmInit.nParticles 10 \
     --engine.scmInit.temperatureSchedule.threshold 0.9 \
-    --engine.nPassesPerScan 1 \
+    --engine.nPassesPerScan 5 \
     $model_match \
     --engine.nChains $nChain \
     --engine.useFixedRefPT $useRef \
