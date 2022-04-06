@@ -140,7 +140,7 @@ process aggregate {
   """
   java -Xmx5g -cp code/lib/\\*  flows.Aggregate \
     --experimentConfigs.resultsHTMLPage false \
-    --dataPathInEachExecFolder optimizationMonitoring.csv \
+    --dataPathInEachExecFolder optimizationMonitoring.csv optimizationPath.csv \
     --keys \
       model.interpolation.target as model \
       engine.optimizer as optimizer \
@@ -167,6 +167,17 @@ process plot {
   #!/usr/bin/env Rscript
   require("ggplot2")
   require("dplyr")
+  
+  
+  paths <- read.csv("${aggregated}/optimizationPath.csv")
+  ggplot(paths, aes(x = budget, y = value, color = factor(random))) +
+    facet_grid(objective + optimizer + name ~ factor(stepScale), labeller = label_both) +
+    scale_x_log10() +
+    xlab("Budget (number of exploration steps)") + 
+    ylab("Parameter") + 
+    geom_line(alpha = 0.5)  + 
+    theme_bw()
+  ggsave(paste0("optimizationPaths.pdf"), width = 17, height = 15)
   
   optmonitor <- read.csv("${aggregated}/optimizationMonitoring.csv")
   optmonitor <- filter(optmonitor, name == "Rejection")
