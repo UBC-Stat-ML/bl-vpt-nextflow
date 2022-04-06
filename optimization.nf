@@ -197,7 +197,7 @@ process plot {
   
   optmonitor %>% 
     filter(is.finite(value)) %>% 
-    group_by(budget, objective, optimizer, stepScale) %>%
+    group_by(budget, objective, optimizer, stepScale, useFixedRef) %>%
     summarise(mean_GCB = mean(value)) %>%
     ggplot(aes(x = budget, y = mean_GCB, colour = optimizer, linetype = useFixedRef)) +
       facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
@@ -210,7 +210,7 @@ process plot {
   
   optmonitor\$isFinite <- is.finite(optmonitor\$value)
   optmonitor %>% 
-    group_by(budget, objective, optimizer, stepScale) %>%
+    group_by(budget, objective, optimizer, stepScale, useFixedRef) %>%
     summarise(mean_is_finite = sum(isFinite)/${seeds.size()}) %>%
     ggplot(aes(x = budget, y = mean_is_finite, colour = optimizer, linetype = useFixedRef)) +
       facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
