@@ -104,7 +104,7 @@ process aggregate {
       engine.objective as objective \
       engine.useFixedRefPT as useFixedRef \
       engine.optimizer.stepScale as stepScale \
-      engine.pt.nChains as nChains \
+      engine.nChains as nChains \
       engine.pt.random as random \
            from arguments.tsv
   """
