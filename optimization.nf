@@ -21,9 +21,9 @@ seeds = (1..10)
 Ns = (4..4)  //.collect{Math.pow(2, it)}
 nOptIters = 1000
 
-model_match =  ' --model ptbm.models.Vaccines\\\$Builder '
-model_match += ' --model.data data/vaccines/data.csv '
-// model_match += ' --model.filter Ariane '
+model_match =  ' --model ptbm.models.CollapsedHierarchicalRockets\\\$Builder '
+model_match += ' --model.data data/failure_counts.csv '
+//model_match += ' --model.filter Ariane '
 
 model_opt = model_match.replace('--model', '--model.interpolation.target')
 
