@@ -1,0 +1,9 @@
+trials,arms,groupSizes,numbersOfCases
+AZ-Oxford (combined),vaccinated,5807,30
+AZ-Oxford (combined),control,5829,101
+Pfizer-BioNTech,vaccinated,18198,8
+Pfizer-BioNTech,control,18325,162
+Moderna-NIH,vaccinated,14134,11
+Moderna-NIH,control,14073,185
+AZ-Oxford (South Africa B.1.351),vaccinated,748,19
+AZ-Oxford (South Africa B.1.351),control,714,20
