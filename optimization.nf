@@ -9,7 +9,7 @@ process buildCode {
   input:
     val gitRepoName from 'ptanalysis'
     val gitUser from 'UBC-Stat-ML'
-    val codeRevision from 'c47993a95342163c345147b5ffbd0ea91a933e07'
+    val codeRevision from 'bfb0467a8d53863e189ad8031b8a542d449d5763'
     val snapshotPath from "${System.getProperty('user.home')}/w/ptanalysis"
   output:
     file 'code' into code
@@ -35,7 +35,7 @@ process run {
   
   input:
     each seed from seeds
-    each obj from 'SKL', 'Rejection'
+    each obj from 'FKL', 'SKL', 'Rejection'
     each opt from 'Adam', 'SGD --engine.optimizer.schedule.exponent -0.5 '
     each stepScale from 0.01, 0.1, 1.0, 10.0
     each nChain from Ns
@@ -83,6 +83,7 @@ process runMatching {
   input:
     each seed from seeds
     each nChain from Ns
+    each useRef from 'true', 'false'
     file code
     file data
     
@@ -99,6 +100,7 @@ process runMatching {
     --engine.nPassesPerScan 1 \
     $model_match \
     --engine.nChains $nChain \
+    --engine.useFixedRefPT $useRef \
     --engine.nThreads single \
     --engine.random $seed \
     --engine.minSamplesForVariational 10
@@ -107,7 +109,7 @@ process runMatching {
   mv results/latest/monitoring/*.csv output
   mv results/latest/*.tsv output
   echo "\nengine.pt.random\t$seed" >> output/arguments.tsv
-  echo "engine.objective\tForwardKL" >> output/arguments.tsv
+  echo "engine.objective\tFKL" >> output/arguments.tsv
   echo "engine.optimizer\tMomentMatch" >> output/arguments.tsv
   """
 }
@@ -146,6 +148,7 @@ process aggregate {
       engine.optimizer as optimizer \
       engine.antithetics as antithetics \
       engine.objective as objective \
+      engine.useFixedRefPT as useFixedRef \
       engine.optimizer.stepScale as stepScale \
       engine.pt.nChains as nChains \
       engine.pt.random as random \
@@ -170,19 +173,20 @@ process plot {
   
   
   paths <- read.csv("${aggregated}/optimizationPath.csv")
-  ggplot(paths, aes(x = budget, y = value, color = factor(random))) +
+  paths <- filter(paths, budget <= 75000)
+  ggplot(paths, aes(x = budget, y = value, color = factor(random), linetype = useFixedRef)) +
     facet_grid(objective + optimizer + name ~ factor(stepScale), labeller = label_both) +
     scale_x_log10() +
     xlab("Budget (number of exploration steps)") + 
     ylab("Parameter") + 
     geom_line(alpha = 0.5)  + 
     theme_bw()
-  ggsave(paste0("optimizationPaths.pdf"), width = 17, height = 15)
+  ggsave(paste0("optimizationPaths.pdf"), width = 17, height = 30)
   
   optmonitor <- read.csv("${aggregated}/optimizationMonitoring.csv")
   optmonitor <- filter(optmonitor, name == "Rejection")
   optmonitor <- filter(optmonitor, budget <= 75000) # when hitting NaN, budget can be 2x larger
-  ggplot(optmonitor, aes(x = budget, y = value, color = factor(random))) +
+  ggplot(optmonitor, aes(x = budget, y = value, color = factor(random), linetype = useFixedRef)) +
     facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
     scale_x_log10() +
     xlab("Budget (number of exploration steps)") + 
@@ -195,7 +199,7 @@ process plot {
     filter(is.finite(value)) %>% 
     group_by(budget, objective, optimizer, stepScale) %>%
     summarise(mean_GCB = mean(value)) %>%
-    ggplot(aes(x = budget, y = mean_GCB, colour = optimizer)) +
+    ggplot(aes(x = budget, y = mean_GCB, colour = optimizer, linetype = useFixedRef)) +
       facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
       scale_x_log10() +
       xlab("Budget (number of exploration steps)") + 
@@ -208,7 +212,7 @@ process plot {
   optmonitor %>% 
     group_by(budget, objective, optimizer, stepScale) %>%
     summarise(mean_is_finite = sum(isFinite)/${seeds.size()}) %>%
-    ggplot(aes(x = budget, y = mean_is_finite, colour = optimizer)) +
+    ggplot(aes(x = budget, y = mean_is_finite, colour = optimizer, linetype = useFixedRef)) +
       facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
       scale_x_log10() +
       ylim(0.0, 1.0) + 
