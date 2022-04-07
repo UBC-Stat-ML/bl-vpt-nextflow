@@ -22,6 +22,8 @@ nChains = 4
 nOptIters = 1000
 nScansPerGradient = 20
 
+params.dryRun = false
+
 if (params.dryRun) {
   nOptIters = 5
   seeds = seeds.subList(0, 1)
@@ -104,6 +106,7 @@ process runMatching {
     --engine.scmInit.nParticles 10 \
     --engine.scmInit.temperatureSchedule.threshold 0.9 \
     --engine.nPassesPerScan 1 \
+    --engine.useFixedRefPT false \
     $model_match \
     --engine.nChains $nChains \
     --engine.nThreads single \
@@ -151,7 +154,7 @@ process plot {
     file aggregated
   output:
     file '*.*'
-    file 'aggregated'
+    // file 'aggregated' // too large..
   afterScript 'rm Rplots.pdf; cp .command.sh rerun.sh'
   container 'cgrlab/tidyverse'
   publishDir deliverableDir, mode: 'copy', overwrite: true
