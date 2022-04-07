@@ -171,6 +171,7 @@ process plot {
     scale_x_log10() +
     xlab("Budget (number of exploration steps)") + 
     ylab("Parameter") + 
+    ylim(-100, 350) +
     geom_line(alpha = 0.5)  + 
     theme_bw()
   ggsave(paste0("optimizationPaths.pdf"), width = 17, height = 30)
