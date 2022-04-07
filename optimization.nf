@@ -9,7 +9,7 @@ process buildCode {
   input:
     val gitRepoName from 'ptanalysis'
     val gitUser from 'UBC-Stat-ML'
-    val codeRevision from 'bfb0467a8d53863e189ad8031b8a542d449d5763'
+    val codeRevision from '338ad8100a89d013e37ba0b0c6752763bad1b7fd'
     val snapshotPath from "${System.getProperty('user.home')}/w/ptanalysis"
   output:
     file 'code' into code
@@ -18,8 +18,17 @@ process buildCode {
 }
 
 seeds = (1..10)
-Ns = (4..4)  //.collect{Math.pow(2, it)}
+nChains = 4
 nOptIters = 1000
+nScansPerGradient = 20
+
+if (params.dryRun) {
+  nOptIters = 5
+  seeds = seeds.subList(0, 1)
+}
+
+nScans = nOptIters * nScansPerGradient
+maxBudget = nScans * nChains
 
 model_match =  ' --model ptbm.models.CollapsedHierarchicalRockets\\\$Builder '
 model_match += ' --model.data data/failure_counts.csv '
@@ -38,7 +47,6 @@ process run {
     each obj from 'FKL', 'SKL', 'Rejection'
     each opt from 'Adam', 'SGD --engine.optimizer.schedule.exponent -0.5 '
     each stepScale from 0.01, 0.1, 1.0, 10.0
-    each nChain from Ns
     file code
     file data
     
@@ -53,14 +61,14 @@ process run {
     --engine ptgrad.VariationalPT \
     --engine.detailedGradientInfo false \
     --engine.pt.nScans 10 \
-    --engine.nScansPerGradient 20 \
+    --engine.nScansPerGradient $nScansPerGradient \
     --engine.optimizer.progressCheckLag 0.0 \
     --engine.pt.scmInit.nParticles 10 \
     --engine.pt.scmInit.temperatureSchedule.threshold 0.9 \
     --engine.pt.nPassesPerScan 1 \
     $model_opt \
     --engine.antithetics IS \
-    --engine.pt.nChains $nChain \
+    --engine.pt.nChains $nChains \
     --engine.pt.nThreads single \
     --engine.pt.random $seed \
     --engine.objective $obj \
@@ -82,8 +90,6 @@ process runMatching {
   
   input:
     each seed from seeds
-    each nChain from Ns
-    each useRef from 'true', 'false'
     file code
     file data
     
@@ -94,13 +100,12 @@ process runMatching {
   java -Xmx5g -cp code/lib/\\*  blang.runtime.Runner \
     --experimentConfigs.resultsHTMLPage false \
     --engine ptbm.OptPT \
-    --engine.nScans 10000 \
+    --engine.nScans $nScans \
     --engine.scmInit.nParticles 10 \
     --engine.scmInit.temperatureSchedule.threshold 0.9 \
     --engine.nPassesPerScan 1 \
     $model_match \
-    --engine.nChains $nChain \
-    --engine.useFixedRefPT $useRef \
+    --engine.nChains $nChains \
     --engine.nThreads single \
     --engine.random $seed \
     --engine.minSamplesForVariational 10
@@ -114,20 +119,6 @@ process runMatching {
   """
 }
 
-
-process analysisCode {
-  executor 'local'
-  input:
-    val gitRepoName from 'nedry'
-    val gitUser from 'UBC-Stat-ML'
-    val codeRevision from 'a9abcc40abcfb285588cc4c312d8ecc0bbdad06e'
-    val snapshotPath from "${System.getProperty('user.home')}/w/nedry"
-  output:
-    file 'code' into analysisCode
-  script:
-    template 'buildRepo.sh'
-}
-
 results_all = results.concat(results_matching)
 
 process aggregate {
@@ -135,12 +126,11 @@ process aggregate {
   echo false
   scratch false
   input:
-    file analysisCode
     file 'exec_*' from results_all.toList()
   output:
-    file 'results/latest/' into aggregated
+    file 'results/aggregated/' into aggregated
   """
-  java -Xmx5g -cp code/lib/\\*  flows.Aggregate \
+  aggregate \
     --experimentConfigs.resultsHTMLPage false \
     --dataPathInEachExecFolder optimizationMonitoring.csv optimizationPath.csv \
     --keys \
@@ -148,11 +138,10 @@ process aggregate {
       engine.optimizer as optimizer \
       engine.antithetics as antithetics \
       engine.objective as objective \
-      engine.useFixedRefPT as useFixedRef \
       engine.optimizer.stepScale as stepScale \
-      engine.pt.nChains as nChains \
       engine.pt.random as random \
            from arguments.tsv
+  mv results/latest results/aggregated
   """
 }
 
@@ -161,20 +150,19 @@ process plot {
   input:
     file aggregated
   output:
-    file '*.pdf'
-  //  file '*.csv'
-  afterScript 'rm Rplots.pdf'
+    file '*.*'
+    file 'aggregated'
+  afterScript 'rm Rplots.pdf; cp .command.sh rerun.sh'
   container 'cgrlab/tidyverse'
   publishDir deliverableDir, mode: 'copy', overwrite: true
   """
   #!/usr/bin/env Rscript
   require("ggplot2")
-  require("dplyr")
-  
+  require("dplyr") 
   
   paths <- read.csv("${aggregated}/optimizationPath.csv")
-  paths <- filter(paths, budget <= 75000)
-  ggplot(paths, aes(x = budget, y = value, color = factor(random), linetype = useFixedRef)) +
+  paths <- filter(paths, budget <= $maxBudget)
+  ggplot(paths, aes(x = budget, y = value, color = factor(random))) +
     facet_grid(objective + optimizer + name ~ factor(stepScale), labeller = label_both) +
     scale_x_log10() +
     xlab("Budget (number of exploration steps)") + 
@@ -185,8 +173,8 @@ process plot {
   
   optmonitor <- read.csv("${aggregated}/optimizationMonitoring.csv")
   optmonitor <- filter(optmonitor, name == "Rejection")
-  optmonitor <- filter(optmonitor, budget <= 75000) # when hitting NaN, budget can be 2x larger
-  ggplot(optmonitor, aes(x = budget, y = value, color = factor(random), linetype = useFixedRef)) +
+  optmonitor <- filter(optmonitor, budget <= $maxBudget) # when hitting NaN, budget can be 2x larger
+  ggplot(optmonitor, aes(x = budget, y = value, color = factor(random))) +
     facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
     scale_x_log10() +
     xlab("Budget (number of exploration steps)") + 
@@ -197,9 +185,9 @@ process plot {
   
   optmonitor %>% 
     filter(is.finite(value)) %>% 
-    group_by(budget, objective, optimizer, stepScale, useFixedRef) %>%
+    group_by(budget, objective, optimizer, stepScale) %>%
     summarise(mean_GCB = mean(value)) %>%
-    ggplot(aes(x = budget, y = mean_GCB, colour = optimizer, linetype = useFixedRef)) +
+    ggplot(aes(x = budget, y = mean_GCB, colour = optimizer)) +
       facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
       scale_x_log10() +
       xlab("Budget (number of exploration steps)") + 
@@ -210,9 +198,9 @@ process plot {
   
   optmonitor\$isFinite <- is.finite(optmonitor\$value)
   optmonitor %>% 
-    group_by(budget, objective, optimizer, stepScale, useFixedRef) %>%
+    group_by(budget, objective, optimizer, stepScale) %>%
     summarise(mean_is_finite = sum(isFinite)/${seeds.size()}) %>%
-    ggplot(aes(x = budget, y = mean_is_finite, colour = optimizer, linetype = useFixedRef)) +
+    ggplot(aes(x = budget, y = mean_is_finite, colour = optimizer)) +
       facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
       scale_x_log10() +
       ylim(0.0, 1.0) + 
