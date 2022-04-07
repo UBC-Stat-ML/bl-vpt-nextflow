@@ -155,7 +155,7 @@ process plot {
     file aggregated
   output:
     file '*.*'
-   file 'aggregated' // too large..
+    file 'aggregated' 
   afterScript 'rm Rplots.pdf; cp .command.sh rerun.sh'
   container 'cgrlab/tidyverse'
   publishDir deliverableDir, mode: 'copy', overwrite: true
@@ -163,7 +163,7 @@ process plot {
   #!/usr/bin/env Rscript
   require("ggplot2")
   require("dplyr") 
-  
+     
   paths <- read.csv("${aggregated}/optimizationPath.csv.gz")
   paths <- filter(paths, budget <= $maxBudget)
   ggplot(paths, aes(x = budget, y = value, color = factor(random))) +
