@@ -155,7 +155,7 @@ process plot {
     file aggregated
   output:
     file '*.*'
-    // file 'aggregated' // too large..
+   file 'aggregated' // too large..
   afterScript 'rm Rplots.pdf; cp .command.sh rerun.sh'
   container 'cgrlab/tidyverse'
   publishDir deliverableDir, mode: 'copy', overwrite: true
