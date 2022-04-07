@@ -136,6 +136,7 @@ process aggregate {
   aggregate \
     --experimentConfigs.resultsHTMLPage false \
     --dataPathInEachExecFolder optimizationMonitoring.csv optimizationPath.csv \
+    --experimentConfigs.tabularWriter.compressed true \
     --keys \
       model.interpolation.target as model \
       engine.optimizer as optimizer \
@@ -163,7 +164,7 @@ process plot {
   require("ggplot2")
   require("dplyr") 
   
-  paths <- read.csv("${aggregated}/optimizationPath.csv")
+  paths <- read.csv("${aggregated}/optimizationPath.csv.gz")
   paths <- filter(paths, budget <= $maxBudget)
   ggplot(paths, aes(x = budget, y = value, color = factor(random))) +
     facet_grid(objective + optimizer + name ~ factor(stepScale), labeller = label_both) +
@@ -174,7 +175,7 @@ process plot {
     theme_bw()
   ggsave(paste0("optimizationPaths.pdf"), width = 17, height = 30)
   
-  optmonitor <- read.csv("${aggregated}/optimizationMonitoring.csv")
+  optmonitor <- read.csv("${aggregated}/optimizationMonitoring.csv.gz")
   optmonitor <- filter(optmonitor, name == "Rejection")
   optmonitor <- filter(optmonitor, budget <= $maxBudget) # when hitting NaN, budget can be 2x larger
   ggplot(optmonitor, aes(x = budget, y = value, color = factor(random))) +
