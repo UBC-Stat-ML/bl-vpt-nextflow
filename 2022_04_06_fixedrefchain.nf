@@ -11,7 +11,7 @@ process buildCode {
   input:
     val gitRepoName from 'ptanalysis'
     val gitUser from 'UBC-Stat-ML'
-    val codeRevision from '2dff8cda5cb0bd73b5f8f2fd842f1ac994165225'
+    val codeRevision from '432e22ec1fe6883443881a99eea443bdb5ca1ca4'
     val snapshotPath from "${System.getProperty('user.home')}/w/ptanalysis"
   output:
     file 'code' into code
@@ -31,7 +31,7 @@ model_opt = model_match.replace('--model', '--model.interpolation.target')
 
 process runMatching {
 
-  time '2h'
+  time '20m'
   //errorStrategy 'ignore'
   cpus 4
   
@@ -49,10 +49,10 @@ process runMatching {
   java -Xmx5g -cp code/lib/\\*  blang.runtime.Runner \
     --experimentConfigs.resultsHTMLPage false \
     --engine ptbm.OptPT \
-    --engine.nScans 25000 \
+    --engine.nScans 10000 \
     --engine.scmInit.nParticles 10 \
     --engine.scmInit.temperatureSchedule.threshold 0.9 \
-    --engine.nPassesPerScan 3 \
+    --engine.nPassesPerScan 1 \
     $model_match \
     --engine.nChains $nChain \
     --engine.useFixedRefPT $useRef \
