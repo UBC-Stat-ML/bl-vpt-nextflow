@@ -2,7 +2,7 @@
 require("ggplot2")
 require("dplyr")
 
-paths <- read.csv("aggregated/optimizationPath.csv")
+paths <- read.csv("aggregated/optimizationPath.csv.gz")
 ggplot(paths, aes(x = budget, y = value, color = factor(random), linetype = useFixedRef)) +
   facet_grid(name ~ useFixedRef, scales="free_y") +
   scale_x_log10() +
@@ -12,7 +12,7 @@ ggplot(paths, aes(x = budget, y = value, color = factor(random), linetype = useF
   theme_bw()
 ggsave(paste0("optimizationPaths.pdf"), width = 9, height = 10)
 
-optmonitor <- read.csv("aggregated/optimizationMonitoring.csv")
+optmonitor <- read.csv("aggregated/optimizationMonitoring.csv.gz")
 optmonitor <- filter(optmonitor, name == "Rejection")
 ggplot(optmonitor, aes(x = budget, y = value, color = factor(random), linetype = useFixedRef)) +
   scale_x_log10() +
