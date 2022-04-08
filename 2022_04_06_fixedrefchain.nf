@@ -31,7 +31,7 @@ model_opt = model_match.replace('--model', '--model.interpolation.target')
 
 process runMatching {
 
-  time '20m'
+  time '2h'
   //errorStrategy 'ignore'
   cpus 4
   
@@ -49,10 +49,10 @@ process runMatching {
   java -Xmx5g -cp code/lib/\\*  blang.runtime.Runner \
     --experimentConfigs.resultsHTMLPage false \
     --engine ptbm.OptPT \
-    --engine.nScans 10000 \
+    --engine.nScans 25000 \
     --engine.scmInit.nParticles 10 \
     --engine.scmInit.temperatureSchedule.threshold 0.9 \
-    --engine.nPassesPerScan 1 \
+    --engine.nPassesPerScan 3 \
     $model_match \
     --engine.nChains $nChain \
     --engine.useFixedRefPT $useRef \
