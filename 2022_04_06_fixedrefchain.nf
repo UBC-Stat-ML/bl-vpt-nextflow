@@ -20,7 +20,7 @@ process buildCode {
 }
 
 seeds = (1..10)
-Ns = (3..3).collect{Math.pow(2, it)}
+Ns = (2..2).collect{Math.pow(2, it)}
 nOptIters = 1000
 
 model_match =  ' --model ptbm.models.CollapsedHierarchicalRockets\\\$Builder '
@@ -33,7 +33,7 @@ process runMatching {
 
   time '2h'
   //errorStrategy 'ignore'
-  cpus 8
+  cpus 4
   
   input:
     each seed from seeds
@@ -52,12 +52,12 @@ process runMatching {
     --engine.nScans 25000 \
     --engine.scmInit.nParticles 10 \
     --engine.scmInit.temperatureSchedule.threshold 0.9 \
-    --engine.nPassesPerScan 5 \
+    --engine.nPassesPerScan 3 \
     $model_match \
     --engine.nChains $nChain \
     --engine.useFixedRefPT $useRef \
     --engine.nThreads fixed \
-    --engine.nThreads.number 8 \
+    --engine.nThreads.number 4 \
     --engine.random $seed \
     --engine.minSamplesForVariational 10
   mkdir output
