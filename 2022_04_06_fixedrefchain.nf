@@ -1,5 +1,7 @@
 #!/usr/bin/env nextflow
 
+// modified from optimization.nf
+
 deliverableDir = 'deliverables/' + workflow.scriptName.replace('.nf','')
 data = file("data")
 
@@ -9,7 +11,7 @@ process buildCode {
   input:
     val gitRepoName from 'ptanalysis'
     val gitUser from 'UBC-Stat-ML'
-    val codeRevision from 'bfb0467a8d53863e189ad8031b8a542d449d5763'
+    val codeRevision from '2dff8cda5cb0bd73b5f8f2fd842f1ac994165225'
     val snapshotPath from "${System.getProperty('user.home')}/w/ptanalysis"
   output:
     file 'code' into code
@@ -18,7 +20,7 @@ process buildCode {
 }
 
 seeds = (1..10)
-Ns = (2..3).collect{Math.pow(2, it)}
+Ns = (2..2).collect{Math.pow(2, it)}
 nOptIters = 1000
 
 model_match =  ' --model ptbm.models.CollapsedHierarchicalRockets\\\$Builder '
@@ -29,9 +31,8 @@ model_opt = model_match.replace('--model', '--model.interpolation.target')
 
 process runMatching {
 
-  time '2h'
+  time '20m'
   //errorStrategy 'ignore'
-  
   cpus 4
   
   input:
@@ -48,10 +49,10 @@ process runMatching {
   java -Xmx5g -cp code/lib/\\*  blang.runtime.Runner \
     --experimentConfigs.resultsHTMLPage false \
     --engine ptbm.OptPT \
-    --engine.nScans 25000 \
+    --engine.nScans 10000 \
     --engine.scmInit.nParticles 10 \
     --engine.scmInit.temperatureSchedule.threshold 0.9 \
-    --engine.nPassesPerScan 5 \
+    --engine.nPassesPerScan 1 \
     $model_match \
     --engine.nChains $nChain \
     --engine.useFixedRefPT $useRef \
@@ -69,33 +70,19 @@ process runMatching {
   """
 }
 
-
-process analysisCode {
-  executor 'local'
-  input:
-    val gitRepoName from 'nedry'
-    val gitUser from 'UBC-Stat-ML'
-    val codeRevision from 'a9abcc40abcfb285588cc4c312d8ecc0bbdad06e'
-    val snapshotPath from "${System.getProperty('user.home')}/w/nedry"
-  output:
-    file 'code' into analysisCode
-  script:
-    template 'buildRepo.sh'
-}
-
-
 process aggregate {
-  time '1h'
+  time '5m'
   echo false
   scratch false
   input:
     file analysisCode
     file 'exec_*' from results.toList()
   output:
-    file 'results/latest/' into aggregated
+    file 'results/aggregated/' into aggregated
   """
-  java -Xmx5g -cp code/lib/\\*  flows.Aggregate \
+  aggregate \
     --experimentConfigs.resultsHTMLPage false \
+    --experimentConfigs.tabularWriter.compressed true \
     --dataPathInEachExecFolder optimizationMonitoring.csv optimizationPath.csv \
     --keys \
       model.interpolation.target as model \
@@ -107,6 +94,7 @@ process aggregate {
       engine.nChains as nChains \
       engine.pt.random as random \
            from arguments.tsv
+      mv results/latest results/aggregated
   """
 }
 
@@ -115,9 +103,9 @@ process plot {
   input:
     file aggregated
   output:
-    file '*.pdf'
-  //  file '*.csv'
-  afterScript 'rm Rplots.pdf'
+    file '*.*'
+    file 'aggregated'
+  afterScript 'rm Rplots.pdf; cp .command.sh rerun.sh'
   container 'cgrlab/tidyverse'
   publishDir deliverableDir, mode: 'copy', overwrite: true
   """
@@ -125,10 +113,9 @@ process plot {
   require("ggplot2")
   require("dplyr")
   
-  
-  paths <- read.csv("${aggregated}/optimizationPath.csv")
+  paths <- read.csv("${aggregated}/optimizationPath.csv.gz")
   ggplot(paths, aes(x = budget, y = value, color = factor(random), linetype = useFixedRef)) +
-    facet_grid(name ~ nChains) +
+    facet_grid(name ~ useFixedRef, scales="free_y") +
     scale_x_log10() +
     xlab("Budget (number of exploration steps)") + 
     ylab("Parameter") + 
@@ -136,11 +123,11 @@ process plot {
     theme_bw()
   ggsave(paste0("optimizationPaths.pdf"), width = 9, height = 10)
   
-  optmonitor <- read.csv("${aggregated}/optimizationMonitoring.csv")
+  optmonitor <- read.csv("${aggregated}/optimizationMonitoring.csv.gz")
   optmonitor <- filter(optmonitor, name == "Rejection")
   ggplot(optmonitor, aes(x = budget, y = value, color = factor(random), linetype = useFixedRef)) +
     scale_x_log10() +
-    facet_grid(. ~ nChains) +
+    facet_grid(. ~ useFixedRef) +
     xlab("Budget (number of exploration steps)") + 
     ylab("Global Communication Barrier (GCB)") + 
     geom_line(alpha = 0.5)  + 
@@ -153,15 +140,10 @@ process plot {
     summarise(mean_GCB = mean(value)) %>%
     ggplot(aes(x = budget, y = mean_GCB, colour = optimizer, linetype = useFixedRef)) +
       scale_x_log10() +
-      facet_grid(. ~ nChains) +
       xlab("Budget (number of exploration steps)") + 
       ylab("GCB (averaged over 10 restarts, ignoring failures)") + 
       geom_line(alpha = 1) + 
       theme_bw()
   ggsave(paste0("optimizationMonitoring-mean.pdf"), width = 9, height = 7)
-  
-
-
   """
-  
 }
