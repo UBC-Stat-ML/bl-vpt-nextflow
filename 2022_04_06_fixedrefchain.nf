@@ -75,7 +75,6 @@ process aggregate {
   echo false
   scratch false
   input:
-    file analysisCode
     file 'exec_*' from results.toList()
   output:
     file 'results/aggregated/' into aggregated
