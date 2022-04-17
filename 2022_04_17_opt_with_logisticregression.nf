@@ -45,6 +45,7 @@ model_opt = model_match.replace('--model', '--model.interpolation.target')
 process run {
 
   time '2h'
+  cpus 10
   errorStrategy 'ignore'
   
   input:
@@ -74,7 +75,8 @@ process run {
     $model_opt \
     --engine.antithetics IS \
     --engine.pt.nChains $nChains \
-    --engine.pt.nThreads single \
+    --engine.pt.nThreads fixed \
+    --engine.pt.nThreads.number $cpus \
     --engine.pt.random $seed \
     --engine.objective $obj \
     --engine.optimizer $opt \
@@ -91,6 +93,7 @@ process run {
 process runMatching {
 
   time '2h'
+  cpus 10
   //errorStrategy 'ignore'
   
   input:
@@ -112,7 +115,8 @@ process runMatching {
     --engine.useFixedRefPT false \
     $model_match \
     --engine.nChains $nChains \
-    --engine.nThreads single \
+    --engine.nThreads fixed \
+    --engine.nThreads.number $cpus \
     --engine.random $seed \
     --engine.minSamplesForVariational 10
   mkdir output
