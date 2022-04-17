@@ -38,6 +38,7 @@ model_match += ' --model.instances.name Name  '
 model_match += ' --model.labels.dataSource data/titanic/titanic.csv   '
 model_match += ' --model.labels.name Survived   '
 
+nCPUs = 10
 
 model_opt = model_match.replace('--model', '--model.interpolation.target')
 
@@ -45,7 +46,7 @@ model_opt = model_match.replace('--model', '--model.interpolation.target')
 process run {
 
   time '2h'
-  cpus 10
+  cpus '$nCPUs'
   errorStrategy 'ignore'
   
   input:
@@ -76,7 +77,7 @@ process run {
     --engine.antithetics IS \
     --engine.pt.nChains $nChains \
     --engine.pt.nThreads fixed \
-    --engine.pt.nThreads.number $cpus \
+    --engine.pt.nThreads.number $nCPUs \
     --engine.pt.random $seed \
     --engine.objective $obj \
     --engine.optimizer $opt \
@@ -93,7 +94,7 @@ process run {
 process runMatching {
 
   time '2h'
-  cpus 10
+  cpus '$nCPUs'
   //errorStrategy 'ignore'
   
   input:
@@ -116,7 +117,7 @@ process runMatching {
     $model_match \
     --engine.nChains $nChains \
     --engine.nThreads fixed \
-    --engine.nThreads.number $cpus \
+    --engine.nThreads.number $nCPUs \
     --engine.random $seed \
     --engine.minSamplesForVariational 10
   mkdir output
