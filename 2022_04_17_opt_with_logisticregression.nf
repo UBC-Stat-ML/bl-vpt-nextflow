@@ -46,7 +46,7 @@ model_opt = model_match.replace('--model', '--model.interpolation.target')
 process run {
 
   time '2h'
-  cpus '$nCPUs'
+  cpus nCPUs
   errorStrategy 'ignore'
   
   input:
@@ -94,7 +94,7 @@ process run {
 process runMatching {
 
   time '2h'
-  cpus '$nCPUs'
+  cpus nCPUs
   //errorStrategy 'ignore'
   
   input:
