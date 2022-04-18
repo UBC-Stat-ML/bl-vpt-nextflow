@@ -39,6 +39,18 @@ optmonitor %>%
     theme_bw()
 ggsave(paste0("optimizationMonitoring-mean.pdf"), width = 17, height = 7)
 
+optmonitor %>% 
+  filter(is.finite(value)) %>% 
+  group_by(budget, objective, optimizer, stepScale) %>%
+  summarise(mean_GCB = mean(value)) %>%
+  ggplot(aes(x = budget, y = mean_GCB, colour = optimizer)) +
+    scale_x_log10() +
+    xlab("Budget (number of exploration steps)") + 
+    ylab("GCB (averaged over 10 restarts, ignoring failures)") + 
+    geom_line(alpha = 1) + 
+    theme_bw()
+ggsave(paste0("optimizationMonitoring-mean-simplified.pdf"), width = 6, height = 4)
+
 optmonitor$isFinite <- is.finite(optmonitor$value)
 optmonitor %>% 
   group_by(budget, objective, optimizer, stepScale) %>%
