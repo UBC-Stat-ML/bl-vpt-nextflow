@@ -145,7 +145,7 @@ process plot {
   
   restarts <- read.csv("${aggregated}/actualTemperedRestarts.csv.gz")
   restarts %>%
-    ggplot(aes(x = round, y = rate, color = fixedRefChain)) +
+    ggplot(aes(x = round, y = count, color = fixedRefChain)) +
       facet_grid(model ~ algo, scales="free_y") +
       geom_line() +
       theme_bw()
