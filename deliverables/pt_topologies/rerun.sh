@@ -4,7 +4,7 @@ require("dplyr")
 require("ggridges")
 
 ks_distances <- read.csv("ks_distances.csv")
-ks_distances$quality <- ifelse(ks_distances$ks_stat > 0.1, "poor", "good")
+ks_distances$quality <- ifelse(ks_distances$ks_stat > 0.2, "poor", "good")
 
 restarts <- read.csv("aggregated/actualTemperedRestarts.csv.gz")
 restarts <- restarts %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
@@ -17,7 +17,7 @@ restarts %>%
     facet_grid(model ~ ., scales="free_y") +
     geom_boxplot() +
     ylab("total tempered restarts") + 
-    scale_y_continuous(expand = c(0, 0.5), limits = c(0, NA)) +
+    scale_y_continuous(expand = expansion(mult = 0.05), limits = c(0, NA)) +
     scale_fill_manual(values = c(  "good" = "blue", "poor" = "red")) + scale_colour_manual(values = c(  "good" = "blue", "poor" = "red")) +
     theme_bw() +
     theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
