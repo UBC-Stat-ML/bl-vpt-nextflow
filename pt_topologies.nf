@@ -37,10 +37,10 @@ nScans = 10000
 nScans_ref = 100000
 ks_threshold = 0.1
 
+addModel('coll-rockets',   'p0',    ' --model ptbm.models.CollapsedHierarchicalRockets --model.data data/failure_counts.csv --engine.nChains 10 ')
 addModel('toy-mix',        'x',     ' --model ptbm.models.ToyMix --engine.nChains 10 ')
 addModel('mrna-no-transf', 'beta',  ' --model ptbm.models.MRNATransfectionNoTransform --model.data data/m_rna_transfection/processed.csv --engine.nChains 30 ')
 addModel('sparse-car',     'alpha', ' --model ptbm.models.SparseCAR --model.data data/scotland_lip_cancer/data.csv --model.spatialData.adjacency data/scotland_lip_cancer/adj.csv --engine.nChains 20 ')
-addModel('coll-rockets',   'p0',    ' --model ptbm.models.CollapsedHierarchicalRockets --model.data data/failure_counts.csv       --engine.nChains 10 ')
 addModel('8-schools',      'tau',   ' --model ptbm.models.EightSchools --model.data data/eight-schools.csv --model.useTPrior true --engine.nChains 10 ')
 addModel('titanic',        'sigma', ' --model ptbm.models.LogisticRegression --model.data data/titanic/titanic-covariates-original.csv --model.instances.name Name --model.instances.maxSize 20 --model.labels.dataSource data/titanic/titanic.csv --model.labels.name Survived --model.useTPrior false --engine.nChains 10 ')
 addModel('mining',         's',     ' --model ptbm.models.Mining --model.counts file data/mining-disasters.csv --engine.nChains 10 ')
@@ -71,15 +71,15 @@ if (params.dryRun) {
 
 process runMatching {
 
-  time '5h'
-  errorStrategy 'ignore'
-  
   input:
     each model from models
     each seed from seeds
     each algo from algos.entrySet()
     file code
     file data
+    
+  time {if (algo.key == reference) '20h' else '2h'}
+  errorStrategy 'ignore'
     
   output:
     file 'output' into results
@@ -125,9 +125,6 @@ process runMatching {
 }
 
 results_all = results.concat(fixedRefResults)
-
-
-
 
 process aggregate {
   time '1h'
