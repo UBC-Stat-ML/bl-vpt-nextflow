@@ -17,7 +17,7 @@ process buildCode {
     template 'buildRepo.sh'
 }
 
-seeds = (1..5)
+seeds = (1..10)
 
 models = []
 
@@ -35,13 +35,14 @@ def addModel(String n, String s, String a) {
 
 nScans = 10000
 nScans_ref = 100000
+ks_threshold = 0.1
 
-addModel('mrna-no-transf', 'beta',  ' --model ptbm.models.MRNATransfectionNoTransform --model.data data/m_rna_transfection/processed.csv --engine.nChains 30 ')
 addModel('toy-mix',        'x',     ' --model ptbm.models.ToyMix --engine.nChains 10 ')
+addModel('mrna-no-transf', 'beta',  ' --model ptbm.models.MRNATransfectionNoTransform --model.data data/m_rna_transfection/processed.csv --engine.nChains 30 ')
 addModel('sparse-car',     'alpha', ' --model ptbm.models.SparseCAR --model.data data/scotland_lip_cancer/data.csv --model.spatialData.adjacency data/scotland_lip_cancer/adj.csv --engine.nChains 20 ')
 addModel('coll-rockets',   'p0',    ' --model ptbm.models.CollapsedHierarchicalRockets --model.data data/failure_counts.csv       --engine.nChains 10 ')
 addModel('8-schools',      'tau',   ' --model ptbm.models.EightSchools --model.data data/eight-schools.csv --model.useTPrior true --engine.nChains 10 ')
-addModel('titanic',        'sigma', ' --model ptbm.models.LogisticRegression --model.data data/titanic/titanic-covariates-original.csv --model.instances.name Name --model.instances.maxSize 20 --model.labels.dataSource data/titanic/titanic.csv --model.labels.name Survived--model.useTPrior false --engine.nChains 10 ')
+addModel('titanic',        'sigma', ' --model ptbm.models.LogisticRegression --model.data data/titanic/titanic-covariates-original.csv --model.instances.name Name --model.instances.maxSize 20 --model.labels.dataSource data/titanic/titanic.csv --model.labels.name Survived --model.useTPrior false --engine.nChains 10 ')
 addModel('mining',         's',     ' --model ptbm.models.Mining --model.counts file data/mining-disasters.csv --engine.nChains 10 ')
 addModel('phylo',          'rate',  ' --model ptbm.models.PhylogeneticTree --model.observations.file data/FES_8.g.fasta --model.observations.encoding DNA --engine.nChains 20 ')
 addModel('vaccines',       'eff_m', ' --model ptbm.models.Vaccines --model.data data/vaccines/data.csv --engine.nChains 20 ')
@@ -64,6 +65,8 @@ if (params.dryRun) {
   nScans = 200
   nScans_ref = 400
   seeds = (1..2)
+  models = models.subList(0, 1)
+  algos.retainAll{k, v -> ['V--T* F--T', reference].contains(k)}
 }
 
 process runMatching {
@@ -98,6 +101,10 @@ process runMatching {
   mkdir output
   mkdir fixedRefOutput
   
+  cp results/latest/executionInfo/stdout.txt output
+  cp results/latest/executionInfo/stdout.txt fixedRefOutput
+  cp results/latest/executionInfo/stderr.txt output
+  cp results/latest/executionInfo/stderr.txt fixedRefOutput
   mv results/latest/samples/${model.stat}.csv output/statistic.csv
   mv results/latest/*.csv output
   mv results/latest/monitoring/*.csv output
@@ -105,7 +112,7 @@ process runMatching {
   mv results/latest/fixedReferencePT/samples/${model.stat}.csv fixedRefOutput/statistic.csv
   
   echo "\nmodelDescription\t${model.name}" >> results/latest/arguments.tsv
-  echo "algo\t${algo.key}" >> results/latest/arguments.tsv
+  echo "algorithm\t${algo.key}" >> results/latest/arguments.tsv
   echo "path\t\$(pwd)" >> results/latest/arguments.tsv
   echo "statisticName\t${model.stat}" >> results/latest/arguments.tsv
   cp results/latest/*.tsv output
@@ -130,6 +137,7 @@ process aggregate {
     file 'exec_*' from results_all.toList()
   output:
     file 'results/aggregated/' into aggregated
+    file 'statistic.csv.gz' into statistic
   """
   aggregate \
     --experimentConfigs.resultsHTMLPage false \
@@ -138,21 +146,100 @@ process aggregate {
     --keys \
       modelDescription as model \
       engine.random as seed \
-      algo \
+      algorithm \
       fixedRefOutput as fixedRefChain \
            from arguments.tsv
   mv results/latest results/aggregated
+  mv results/aggregated/statistic.csv.gz .
   """
 }
 
+big_w = 17
+big_h = 8
+big_dims = "width = ${big_w}, height = ${big_h}"
+colours = 'values = c(  "good" = "blue", "poor" = "red")'
+custom_colours = "scale_fill_manual($colours) + scale_colour_manual($colours)"
+
+
+process computeKS {
+  time '1h'
+  input:
+    file statistic
+  output:
+    file 'ks_distances.csv' into ks_distances
+    file 'statistic.pdf'
+  container 'cgrlab/tidyverse'
+  publishDir deliverableDir, mode: 'copy', overwrite: true
+  """
+  #!/usr/bin/env Rscript
+  require("ggplot2")
+  require("dplyr")
+  require("ggridges")
+  
+  stat <- read.csv("${statistic}")
+  
+  ks_distances <- data.frame(
+    algorithm = factor(),
+    model = factor(),
+    seed = integer(),
+    ks_p = double(),
+    ks_stat = double()
+  )
+  
+  for (a in unique(stat\$algorithm)) {
+    for (m in unique(stat\$model)) {
+      for (s in unique(stat\$seed)) {
+        ref <- stat %>%
+          filter(sample > ${nScans_ref/2}) %>%
+          filter(algorithm == "Reference") %>%
+          filter(fixedRefChain == "false") %>%
+          filter(model == m) %>%
+          filter(seed == s) %>%
+          .\$value
+        cur <- stat %>%
+          filter(sample > ${nScans/2}) %>%
+          filter(algorithm == a) %>%
+          filter(fixedRefChain == "false") %>%
+          filter(model == m) %>%
+          filter(seed == s) %>%
+          .\$value
+        if (length(ref) < 10 | length(cur) < 10) {
+          ks_distances <- ks_distances %>% add_row(algorithm = a, model = m, seed = s, ks_p = 0, ks_stat = 1)
+        } else {
+          test <- ks.test(ref, cur)
+          ks_distances <- ks_distances %>% add_row(algorithm = a, model = m, seed = s, ks_p = test\$p.value, ks_stat = as.numeric(test\$statistic))
+        }
+      }
+    }
+  }
+  write.csv(ks_distances, 'ks_distances.csv')
+  
+  ks_distances\$quality <- ifelse(ks_distances\$ks_stat > ${ks_threshold}, "poor", "good")
+  stat <- stat %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
+  
+  stat %>%
+    filter(sample > ${nScans/2}) %>%
+    filter(fixedRefChain == "false") %>%
+    ggplot(aes(x = value, y = factor(seed), fill = quality)) +
+      facet_grid(algorithm ~ model, scales="free") +
+      geom_density_ridges(panel_scaling = TRUE) +
+      xlab("statistic") + 
+      ylab("density") + 
+      $custom_colours +
+      theme_bw()
+  ggsave("statistic.pdf", $big_dims)   
+  """
+
+}
 
 process plot {
   scratch false
   input:
     file aggregated
+    file ks_distances
   output:
     file '*.*'
-    file 'aggregated' 
+    file 'aggregated'
   afterScript 'rm Rplots.pdf; cp .command.sh rerun.sh'
   container 'cgrlab/tidyverse'
   publishDir deliverableDir, mode: 'copy', overwrite: true
@@ -162,106 +249,52 @@ process plot {
   require("dplyr")
   require("ggridges")
   
-  stat <- read.csv("${aggregated}/statistic.csv.gz")
+  ks_distances <- read.csv("${ks_distances}")
+  ks_distances\$quality <- ifelse(ks_distances\$ks_stat > ${ks_threshold}, "poor", "good")
   
-  ks_distances <- data.frame(
-    algo = factor(),
-    model = factor(),
-    seed = integer(),
-    ks_p = double(),
-    ks_stat = double()
-  )
-
-  for (a in unique(stat\$algo)) {
-      for (m in unique(stat\$model)) {
-        for (s in unique(stat\$seed)) {
-          ref <- stat %>%
-            filter(sample > ${nScans_ref/2}) %>%
-            filter(algo == "Reference") %>%
-            filter(fixedRefChain == "false") %>%
-            filter(model == m) %>%
-            filter(seed == s) %>%
-            .\$value
-          cur <- stat %>%
-            filter(sample > ${nScans/2}) %>%
-            filter(algo == a) %>%
-            filter(fixedRefChain == "false") %>%
-            filter(model == m) %>%
-            filter(seed == s) %>%
-            .\$value
-          test <- ks.test(ref, cur)
-          ks_distances <- ks_distances %>% add_row(algo = a, model = m, seed = s, ks_p = test\$p.value, ks_stat = as.numeric(test\$statistic))
-        }
-      }
-  }
-  
-  ks_distances %>%
-    ggplot(aes(x = seed, y = ks_stat)) +
-      facet_grid(algo ~ model) +
-      geom_point() +
-      theme_bw()
-  ggsave(paste0("ks.pdf"), width = 17, height = 8)
-  
-  stat <- stat %>% inner_join(ks_distances, by = c("algo", "model", "seed"))
-  stat\$large_disc <- ifelse(stat\$ks_stat > 0.2, 1, 0)
-  
-  
-  stat %>%
-    filter(sample > ${nScans/2}) %>%
-    filter(fixedRefChain == "false") %>%
-    ggplot(aes(x = value, y = factor(seed), fill = factor(large_disc))) +
-      facet_grid(algo ~ model, scales="free") +
-      geom_density_ridges(panel_scaling = TRUE) +
-      theme_bw()
-  ggsave(paste0("statistic.pdf"), width = 17, height = 8) 
- 
   restarts <- read.csv("${aggregated}/actualTemperedRestarts.csv.gz")
+  restarts <- restarts %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
+
   restarts %>%
-    filter(fixedRefChain == "false") %>%
-    ggplot(aes(x = round, y = count, color = factor(seed), group = factor(seed))) +
-      facet_grid(model ~ algo, scales="free_y") +
-      geom_line() +
-      theme_bw()
-  ggsave(paste0("actualTemperedRestarts.pdf"), width = 17, height = 8)
+    filter(algorithm != "Reference") %>%
+    group_by(quality, model, algorithm) %>%
+    summarize(total_count = sum(count) ) %>%
+    ggplot(aes(x = algorithm, y = total_count, color = quality)) +
+      facet_grid(model ~ ., scales="free_y") +
+      geom_boxplot() +
+      ylab("total tempered restarts") + 
+      scale_y_continuous(expand = c(0, 0.5), limits = c(0, NA)) +
+      $custom_colours +
+      theme_bw() +
+      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+  ggsave("actualTemperedRestarts-box.pdf", width = 5, height = ${big_h})
   
   global <- read.csv("${aggregated}/globalLambda.csv.gz")
+  global <- global %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
   global %>%
     filter(fixedRefChain == "false") %>%
-    ggplot(aes(x = round, y = value, color = factor(seed), group = factor(seed))) +
-      facet_grid(model ~ algo, scales="free_y") +
+    ggplot(aes(x = round, y = value, color = quality, group = factor(seed))) +
+      facet_grid(model ~ algorithm, scales="free_y") +
+      $custom_colours +
+      ylab("Lambda") + 
       geom_line() +
       theme_bw()
-  ggsave(paste0("globalLambda.pdf"), width = 17, height = 8)
+  ggsave("globalLambda.pdf", $big_dims)  
   
-
-  
-  """
-  
+  lambda <- read.csv("${aggregated}/lambdaInstantaneous.csv.gz")
+  lambda <- lambda %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
+  lambda %>% 
+    filter(isAdapt == "false") %>%
+    filter(fixedRefChain == "false") %>%
+    ggplot(aes(x = beta, y = value, color = quality, group = factor(seed))) +
+      facet_grid(model ~ algorithm, scales="free_y") +
+      $custom_colours +
+      geom_line(alpha = 0.5) +
+      xlab("beta") + 
+      ylab("intensity") + 
+      theme_bw()
+  ggsave("lambda.pdf", $big_dims)
+  """  
 }
 
-/*
-  lambda <- read.csv("${aggregated}/lambdaInstantaneous.csv.gz")
-  lambda %>% 
-    filter(fixedRefChain == "false") %>%
-    filter(isAdapt == "false") %>%
-    mutate(beta2 = ifelse(fixedRefChain == "true", -beta, beta)) %>%
-    ggplot(aes(x = beta2, y = value, color = factor(seed), group = factor(seed)) +
-      facet_grid(model ~ algo, scales="free_y") +
-      geom_line() +
-      xlab("Beta") + 
-      ylab("Intensity") + 
-      theme_bw()
-  ggsave(paste0("lambda.pdf"), width = 17, height = 8)
-  
-  cnst <- read.csv("${aggregated}/logNormalizationConstantProgress.csv.gz")
-  cnst %>% 
-    filter(fixedRefChain == "false") %>%
-    filter(round > 8) %>%
-    ggplot(aes(x = round, y = value, color = factor(seed), group = factor(seed))) +
-      facet_grid(model ~ algo, scales="free_y") +
-      geom_line() +
-      theme_bw()
-  ggsave(paste0("logNormalizationConstantProgress.pdf"), width = 17, height = 8)
-
-*/
 
