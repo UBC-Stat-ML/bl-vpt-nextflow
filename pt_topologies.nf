@@ -34,7 +34,7 @@ def addModel(String n, String s, String a) {
 }
 
 nScans = 10000
-nScans_ref = 100000
+nScans_ref = 20000
 ks_threshold = 0.1
 
 addModel('coll-rockets',   'p0',    ' --model ptbm.models.CollapsedHierarchicalRockets --model.data data/failure_counts.csv --engine.nChains 10 ')
@@ -78,7 +78,7 @@ process runMatching {
     file code
     file data
     
-  time {if (algo.key == reference) '20h' else '2h'}
+  time '5h'
   errorStrategy 'ignore'
     
   output:
@@ -190,7 +190,6 @@ process computeKS {
           filter(algorithm == "Reference") %>%
           filter(fixedRefChain == "false") %>%
           filter(model == m) %>%
-          filter(seed == s) %>%
           .\$value
         cur <- stat %>%
           filter(sample > ${nScans/2}) %>%
