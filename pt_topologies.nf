@@ -62,7 +62,7 @@ postprocessor = '' //' --postProcessor ptgrad.VariationalPostprocessor '
 params.dryRun = false
 
 if (params.dryRun) {
-  nScans = 200
+  nScans = 250
   nScans_ref = 400
   seeds = (1..2)
   models = models.subList(0, 1)
@@ -168,7 +168,6 @@ process computeKS {
   output:
     file 'ks_distances.csv' into ks_distances
     file 'statistic.pdf'
-  container 'cgrlab/tidyverse'
   publishDir deliverableDir, mode: 'copy', overwrite: true
   """
   #!/usr/bin/env Rscript
@@ -241,7 +240,6 @@ process plot {
     file '*.*'
     file 'aggregated'
   afterScript 'rm Rplots.pdf; cp .command.sh rerun.sh'
-  container 'cgrlab/tidyverse'
   publishDir deliverableDir, mode: 'copy', overwrite: true
   """
   #!/usr/bin/env Rscript
