@@ -35,7 +35,7 @@ def addModel(String n, String s, String a) {
 
 nScans = 10000
 nScans_ref = 20000
-ks_threshold = 0.1
+ks_threshold = 0.2
 
 addModel('coll-rockets',   'p0',    ' --model ptbm.models.CollapsedHierarchicalRockets --model.data data/failure_counts.csv --engine.nChains 10 ')
 addModel('toy-mix',        'x',     ' --model ptbm.models.ToyMix --engine.nChains 10 ')
@@ -65,7 +65,7 @@ if (params.dryRun) {
   nScans = 250
   nScans_ref = 400
   seeds = (1..2)
-  models = models.subList(0, 1)
+  models = models.subList(0, 2)
   algos.retainAll{k, v -> ['V--T* F--T', reference].contains(k)}
 }
 
@@ -212,9 +212,20 @@ process computeKS {
   ks_distances\$quality <- ifelse(ks_distances\$ks_stat > ${ks_threshold}, "poor", "good")
   stat <- stat %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
   
+  remove_outliers <- function(x) {
+    qnt <- quantile(x, probs=c(.01, .99))
+    H <- 1.5 * IQR(x)
+    y <- x
+    y[x < (qnt[1] - H)] <- NA
+    y[x > (qnt[2] + H)] <- NA
+    y
+  }
+  
   stat %>%
     filter(sample > ${nScans/2}) %>%
     filter(fixedRefChain == "false") %>%
+    group_by(seed, algorithm, model) %>%
+    mutate(value = remove_outliers(value)) %>%
     ggplot(aes(x = value, y = factor(seed), fill = quality)) +
       facet_grid(algorithm ~ model, scales="free") +
       geom_density_ridges(panel_scaling = TRUE) +
@@ -257,7 +268,7 @@ process plot {
       facet_grid(model ~ ., scales="free_y") +
       geom_boxplot() +
       ylab("total tempered restarts") + 
-      scale_y_continuous(expand = c(0, 0.5), limits = c(0, NA)) +
+      scale_y_continuous(expand = expansion(mult = 0.05), limits = c(0, NA)) +
       $custom_colours +
       theme_bw() +
       theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
