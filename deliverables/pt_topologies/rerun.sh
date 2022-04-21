@@ -10,7 +10,7 @@ restarts <- read.csv("aggregated/actualTemperedRestarts.csv.gz")
 restarts <- restarts %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
 restarts %>%
   filter(algorithm != "Reference") %>%
-  group_by(quality, model, algorithm) %>%
+  group_by(quality, model, algorithm, seed) %>%
   summarize(total_count = sum(count) ) %>%
   ggplot(aes(x = algorithm, y = total_count, color = quality)) +
     facet_grid(model ~ ., scales="free_y") +
@@ -26,10 +26,7 @@ ess <- read.csv("aggregated/allEss.csv.gz")
 ess <- ess %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
 ess %>%
   filter(algorithm != "Reference") %>%
-  filter(variable != "allLogDensities") %>%
-  filter(variable != "energy") %>%
-  filter(variable != "nOutOfSupport") %>%
-  filter(variable != "otherAnnealed") %>%
+  filter(variable %in% c("p0","x","beta","alpha","tau","sigma","s","rate","eff_m")) %>%
   group_by(quality, model, algorithm, variable) %>%
   summarize(total_ess = sum(value) ) %>%
   ggplot(aes(x = algorithm, y = total_ess, color = quality)) +
