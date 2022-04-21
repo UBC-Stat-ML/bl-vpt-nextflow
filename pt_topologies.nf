@@ -33,9 +33,9 @@ def addModel(String n, String s, String a) {
   models.add(m)
 }
 
-nScans = 10000
-nScans_ref = 20000
-ks_threshold = 0.2
+nScans = 40000
+nScans_ref = 80000
+ks_threshold = 0.1
 
 addModel('coll-rockets',   'p0',    ' --model ptbm.models.CollapsedHierarchicalRockets --model.data data/failure_counts.csv --engine.nChains 10 ')
 addModel('toy-mix',        'x',     ' --model ptbm.models.ToyMix --engine.nChains 10 ')
@@ -57,7 +57,7 @@ algos['V--T* F--T*'] = ' --engine.fullyIndepFixedRef false --engine.minSamplesFo
 algos['V--T*--F']    = ' --engine.fullyIndepFixedRef false --engine.minSamplesForVariational 100 --engine.doSwapFixedRefAndVariational true '
 algos['F--T--F']     = ' --engine.fullyIndepFixedRef false --engine.minSamplesForVariational INF --engine.doSwapFixedRefAndVariational true '
 
-postprocessor = '' //' --postProcessor ptgrad.VariationalPostprocessor '
+postprocessor = ' --postProcessor ptgrad.VariationalPostprocessor '
 
 params.dryRun = false
 
@@ -78,7 +78,7 @@ process runMatching {
     file code
     file data
     
-  time '5h'
+  time '8h'
   errorStrategy 'ignore'
     
   output:
@@ -110,6 +110,8 @@ process runMatching {
   mv results/latest/monitoring/*.csv output
   mv results/latest/fixedReferencePT/monitoring/*.csv fixedRefOutput
   mv results/latest/fixedReferencePT/samples/${model.stat}.csv fixedRefOutput/statistic.csv
+  mv results/latest/ess/allEss.csv output
+  mv results/latest/fixedReferencePT/ess/allEss.csv fixedRefOutput
   
   echo "\nmodelDescription\t${model.name}" >> results/latest/arguments.tsv
   echo "algorithm\t${algo.key}" >> results/latest/arguments.tsv
@@ -138,7 +140,13 @@ process aggregate {
   """
   aggregate \
     --experimentConfigs.resultsHTMLPage false \
-    --dataPathInEachExecFolder lambdaInstantaneous.csv actualTemperedRestarts.csv globalLambda.csv logNormalizationConstantProgress.csv statistic.csv \
+    --dataPathInEachExecFolder \
+        lambdaInstantaneous.csv \
+        actualTemperedRestarts.csv \
+        globalLambda.csv \
+        logNormalizationConstantProgress.csv \
+        statistic.csv \
+        allEss.csv \
     --experimentConfigs.tabularWriter.compressed true \
     --keys \
       modelDescription as model \
@@ -259,7 +267,6 @@ process plot {
   
   restarts <- read.csv("${aggregated}/actualTemperedRestarts.csv.gz")
   restarts <- restarts %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
-
   restarts %>%
     filter(algorithm != "Reference") %>%
     group_by(quality, model, algorithm) %>%
@@ -273,6 +280,26 @@ process plot {
       theme_bw() +
       theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
   ggsave("actualTemperedRestarts-box.pdf", width = 5, height = ${big_h})
+  
+  ess <- read.csv("${aggregated}/allEss.csv.gz")
+  ess <- ess %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
+  ess %>%
+    filter(algorithm != "Reference") %>%
+    filter(variable != "allLogDensities") %>%
+    filter(variable != "energy") %>%
+    filter(variable != "nOutOfSupport") %>%
+    filter(variable != "otherAnnealed") %>%
+    group_by(quality, model, algorithm, variable) %>%
+    summarize(total_ess = sum(value) ) %>%
+    ggplot(aes(x = algorithm, y = total_ess, color = quality)) +
+      facet_grid(model ~ ., scales="free_y") +
+      geom_boxplot() +
+      ylab("ESS") + 
+      scale_y_continuous(expand = expansion(mult = 0.05), limits = c(0, NA)) +
+      $custom_colours +
+      theme_bw() +
+      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+  ggsave("ess-box.pdf", width = 5, height = ${big_h})
   
   global <- read.csv("${aggregated}/globalLambda.csv.gz")
   global <- global %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
