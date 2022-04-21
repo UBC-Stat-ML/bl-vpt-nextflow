@@ -1,5 +1,5 @@
 name,value,type,provided,enforcement,description,errors
-dataPathInEachExecFolder,lambdaInstantaneous.csv actualTemperedRestarts.csv globalLambda.csv logNormalizationConstantProgress.csv statistic.csv,List,true,,Comma separated value (cvs or csv.gz) file(s) in each exec containing the data to be aggregated.,
+dataPathInEachExecFolder,lambdaInstantaneous.csv actualTemperedRestarts.csv globalLambda.csv logNormalizationConstantProgress.csv statistic.csv allEss.csv,List,true,,Comma separated value (cvs or csv.gz) file(s) in each exec containing the data to be aggregated.,
 execFoldersPrefix,,String,false,default value: exec_,"Prefix of the directories, each containing stored command line arguments stored in tab separated values as well data in csv format.",
 experimentConfigs.configFile,,File,false,optional,"If set, use those arguments in provided file that do not appear in the provided arguments.",
 experimentConfigs.description,,String,false,optional,Documentation for this run.,

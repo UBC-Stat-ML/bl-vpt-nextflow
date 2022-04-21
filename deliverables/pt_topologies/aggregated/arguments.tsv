@@ -1,5 +1,5 @@
 keys	modelDescription as model engine.random as seed algorithm fixedRefOutput as fixedRefChain from arguments.tsv
-dataPathInEachExecFolder	lambdaInstantaneous.csv actualTemperedRestarts.csv globalLambda.csv logNormalizationConstantProgress.csv statistic.csv
+dataPathInEachExecFolder	lambdaInstantaneous.csv actualTemperedRestarts.csv globalLambda.csv logNormalizationConstantProgress.csv statistic.csv allEss.csv
 execFoldersPrefix	exec_
 experimentConfigs.managedExecutionFolder	true
 experimentConfigs.saveStandardStreams	true
