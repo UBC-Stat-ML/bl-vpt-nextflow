@@ -167,7 +167,8 @@ custom_colours = "scale_fill_manual($colours) + scale_colour_manual($colours)"
 
 
 process computeKS {
-  time '1h'
+  time '5h'
+  memory '15 GB'
   input:
     file statistic
   output:
