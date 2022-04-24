@@ -89,6 +89,7 @@ process runMatching {
     --experimentConfigs.resultsHTMLPage false \
     $postprocessor \
     --engine ptbm.OptPT \
+    --treatNaNAsNegativeInfinity true \
     --engine.random $seed \
     --engine.nScans ${if (algo.key == reference) nScans_ref else nScans} \
     --engine.scmInit.nParticles 10 \
