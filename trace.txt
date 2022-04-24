@@ -1,545 +1,545 @@
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
 1	57/a8f686	77133	buildCode	CACHED	0	2022-04-20 12:18:15.737	55.5s	55.5s	-	-	-	-	-
-3	6f/3d5ade	3692992.pbsha.ib.sockeye	runMatching (2)	CACHED	0	2022-04-20 19:54:19.053	5m 53s	5m 33s	114.6%	658.7 MB	8.3 GB	2.2 GB	1.1 GB
-2	c7/5b8581	3692991.pbsha.ib.sockeye	runMatching (1)	CACHED	0	2022-04-20 19:54:18.975	2h 43m 29s	2h 43m 11s	106.1%	666 MB	8.3 GB	2.4 GB	1.1 GB
-9	e5/796eb9	3692983.pbsha.ib.sockeye	runMatching (8)	CACHED	0	2022-04-20 19:54:18.292	1h 6m 7s	1h 5m 49s	102.5%	961.4 MB	8.6 GB	3.6 GB	2.2 GB
-11	61/f5d43a	3692987.pbsha.ib.sockeye	runMatching (10)	CACHED	0	2022-04-20 19:54:18.651	2h 41m 4s	2h 40m 44s	105.7%	664.5 MB	8.3 GB	2.4 GB	1.1 GB
-4	4c/5bb47d	3692984.pbsha.ib.sockeye	runMatching (3)	CACHED	0	2022-04-20 19:54:18.400	31m 26s	31m 3s	108.2%	1.2 GB	9 GB	5.2 GB	3.3 GB
-14	dd/1575c2	3692995.pbsha.ib.sockeye	runMatching (13)	CACHED	0	2022-04-20 19:54:19.301	29m 35s	29m 18s	104.6%	2 GB	9.9 GB	6 GB	4.1 GB
-10	8b/13e187	3692989.pbsha.ib.sockeye	runMatching (9)	CACHED	0	2022-04-20 19:54:18.806	21m 54s	21m 33s	105.2%	941.5 MB	8.6 GB	4.4 GB	2.5 GB
-13	cb/9506f2	3692990.pbsha.ib.sockeye	runMatching (12)	CACHED	0	2022-04-20 19:54:18.898	27m 10s	26m 44s	105.2%	1.2 GB	8.9 GB	5.2 GB	3.3 GB
-17	b1/594a19	3692996.pbsha.ib.sockeye	runMatching (16)	CACHED	0	2022-04-20 19:54:19.402	1h 5m 55s	1h 5m 32s	104.3%	1.8 GB	9.2 GB	3.9 GB	1.7 GB
-5	4c/1df9a1	3692994.pbsha.ib.sockeye	runMatching (4)	CACHED	0	2022-04-20 19:54:19.223	29m 35s	29m 14s	105.5%	2 GB	9.9 GB	6 GB	4 GB
-12	17/76a59b	3692993.pbsha.ib.sockeye	runMatching (11)	CACHED	0	2022-04-20 19:54:19.146	5m 58s	5m 36s	101.8%	653.3 MB	8.3 GB	2.3 GB	1.1 GB
-8	58/76bb26	3692988.pbsha.ib.sockeye	runMatching (7)	CACHED	0	2022-04-20 19:54:18.729	58m 1s	57m 37s	107.4%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-7	00/667605	3692985.pbsha.ib.sockeye	runMatching (6)	CACHED	0	2022-04-20 19:54:18.488	12m 39s	12m 16s	111.6%	675.8 MB	8.3 GB	2.8 GB	1.3 GB
-16	7a/99f970	3692986.pbsha.ib.sockeye	runMatching (15)	CACHED	0	2022-04-20 19:54:18.565	13m 14s	12m 53s	109.1%	667.8 MB	8.3 GB	2.8 GB	1.3 GB
-15	b0/2bab9d	3692981.pbsha.ib.sockeye	runMatching (14)	CACHED	0	2022-04-20 19:54:18.090	10m 29s	10m 8s	103.8%	665.2 MB	8.3 GB	2.8 GB	1.4 GB
-6	52/a1c897	3692982.pbsha.ib.sockeye	runMatching (5)	CACHED	0	2022-04-20 19:54:18.202	10m 44s	10m 23s	109.6%	662 MB	8.3 GB	2.8 GB	1.4 GB
-21	6a/2e43f6	3693014.pbsha.ib.sockeye	runMatching (20)	CACHED	0	2022-04-20 19:54:20.930	28m 39s	28m 23s	102.9%	2 GB	9.9 GB	6 GB	4.1 GB
-29	d8/4846ef	3693016.pbsha.ib.sockeye	runMatching (28)	CACHED	0	2022-04-20 19:54:21.148	19m 36s	19m 17s	107.7%	947 MB	8.6 GB	4.4 GB	2.5 GB
-23	58/4c99c7	3693012.pbsha.ib.sockeye	runMatching (22)	CACHED	0	2022-04-20 19:54:20.742	54m 34s	54m 19s	103.4%	1.8 GB	9.2 GB	3.8 GB	1.7 GB
-20	f0/5b8d97	3693000.pbsha.ib.sockeye	runMatching (19)	CACHED	0	2022-04-20 19:54:19.734	2h 39m 48s	2h 39m 27s	104.7%	652.6 MB	8.3 GB	2.4 GB	1.1 GB
-28	4d/096164	3693006.pbsha.ib.sockeye	runMatching (27)	CACHED	0	2022-04-20 19:54:20.240	2h 36m 17s	2h 35m 58s	103.5%	661 MB	8.3 GB	2.4 GB	1.1 GB
-19	2d/3719d2	3692997.pbsha.ib.sockeye	runMatching (18)	CACHED	0	2022-04-20 19:54:19.479	56m 5s	55m 46s	104.5%	958.1 MB	8.6 GB	3.6 GB	2.2 GB
-30	3c/85d081	3693011.pbsha.ib.sockeye	runMatching (29)	CACHED	0	2022-04-20 19:54:20.662	23m 38s	23m 4s	106.5%	1.2 GB	9 GB	5.3 GB	3.3 GB
-24	9f/f95bfc	3693003.pbsha.ib.sockeye	runMatching (23)	CACHED	0	2022-04-20 19:54:19.976	5m 57s	5m 37s	105.6%	658.6 MB	8.3 GB	2.3 GB	1.1 GB
-25	25/11e88f	3693010.pbsha.ib.sockeye	runMatching (24)	CACHED	0	2022-04-20 19:54:20.579	24m 12s	23m 41s	101.5%	1.2 GB	9 GB	5.3 GB	3.3 GB
-26	e0/534498	3692999.pbsha.ib.sockeye	runMatching (25)	CACHED	0	2022-04-20 19:54:19.654	12m 38s	12m 17s	102.4%	664.8 MB	8.3 GB	2.8 GB	1.3 GB
-22	9a/887ea6	3693001.pbsha.ib.sockeye	runMatching (21)	CACHED	0	2022-04-20 19:54:19.821	10m 8s	9m 48s	107.6%	661.1 MB	8.3 GB	2.8 GB	1.4 GB
-18	3f/2762aa	3693002.pbsha.ib.sockeye	runMatching (17)	CACHED	0	2022-04-20 19:54:19.901	20m 23s	20m	104.0%	959.8 MB	8.6 GB	4.4 GB	2.5 GB
-27	cc/380dc7	3692998.pbsha.ib.sockeye	runMatching (26)	CACHED	0	2022-04-20 19:54:19.553	56m 26s	56m 3s	102.8%	967.3 MB	8.6 GB	3.6 GB	2.2 GB
-31	e1/b6ed9a	3693005.pbsha.ib.sockeye	runMatching (30)	CACHED	0	2022-04-20 19:54:20.152	5m 57s	5m 37s	110.4%	660.7 MB	8.3 GB	2.3 GB	1.1 GB
-34	95/8887f3	3693007.pbsha.ib.sockeye	runMatching (33)	CACHED	0	2022-04-20 19:54:20.329	31m 25s	31m 5s	102.3%	1.9 GB	9.9 GB	6 GB	4.1 GB
-35	f3/0fb08d	3693023.pbsha.ib.sockeye	runMatching (34)	CACHED	0	2022-04-20 19:54:21.713	54m 58s	54m 40s	100.0%	1.8 GB	9.2 GB	3.8 GB	1.7 GB
-36	f2/058370	3693022.pbsha.ib.sockeye	runMatching (35)	CACHED	0	2022-04-20 19:54:21.639	57m 58s	57m 38s	105.2%	953 MB	8.6 GB	3.6 GB	2.2 GB
-37	5a/9e2101	3693009.pbsha.ib.sockeye	runMatching (36)	CACHED	0	2022-04-20 19:54:20.500	19m 52s	19m 31s	104.6%	950.5 MB	8.6 GB	4.4 GB	2.5 GB
-39	eb/95707e	3693015.pbsha.ib.sockeye	runMatching (38)	CACHED	0	2022-04-20 19:54:21.020	23m 17s	22m 48s	107.3%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-32	fb/45d3ff	3693004.pbsha.ib.sockeye	runMatching (31)	CACHED	0	2022-04-20 19:54:20.065	10m 8s	9m 46s	104.0%	669.9 MB	8.3 GB	2.8 GB	1.4 GB
-44	37/8b3b45	3693021.pbsha.ib.sockeye	runMatching (43)	CACHED	0	2022-04-20 19:54:21.564	54m 8s	53m 48s	109.5%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-33	b7/d5080f	3693008.pbsha.ib.sockeye	runMatching (32)	CACHED	0	2022-04-20 19:54:20.412	12m 32s	12m 12s	110.9%	667.1 MB	8.3 GB	2.8 GB	1.3 GB
-42	74/89123c	3693024.pbsha.ib.sockeye	runMatching (41)	CACHED	0	2022-04-20 19:54:21.790	11m 6s	10m 52s	110.7%	668.4 MB	8.3 GB	2.7 GB	1.3 GB
-43	0b/2bdd4c	3693019.pbsha.ib.sockeye	runMatching (42)	CACHED	0	2022-04-20 19:54:21.402	2h 36m 1s	2h 35m 42s	101.6%	664.8 MB	8.3 GB	2.4 GB	1.1 GB
-41	a1/1a1260	3693025.pbsha.ib.sockeye	runMatching (40)	CACHED	0	2022-04-20 19:54:21.871	10m 6s	9m 47s	102.1%	669.3 MB	8.3 GB	2.8 GB	1.4 GB
-38	11/a52a06	3693013.pbsha.ib.sockeye	runMatching (37)	CACHED	0	2022-04-20 19:54:20.830	5m 47s	5m 25s	102.5%	655 MB	8.3 GB	2.3 GB	1.1 GB
-40	55/7b65c2	3693017.pbsha.ib.sockeye	runMatching (39)	CACHED	0	2022-04-20 19:54:21.232	26m 55s	26m 30s	102.7%	1.9 GB	9.8 GB	6.1 GB	4.1 GB
-47	cf/97c887	3693033.pbsha.ib.sockeye	runMatching (46)	CACHED	0	2022-04-20 19:54:22.631	2h 35m 15s	2h 34m 58s	107.1%	657.4 MB	8.3 GB	2.4 GB	1.1 GB
-46	33/717864	3693050.pbsha.ib.sockeye	runMatching (45)	CACHED	0	2022-04-20 19:54:24.099	19m 38s	19m 27s	102.6%	954.8 MB	8.6 GB	4.4 GB	2.5 GB
-45	b7/7d1812	3693018.pbsha.ib.sockeye	runMatching (44)	CACHED	0	2022-04-20 19:54:21.314	55m 8s	54m 52s	102.4%	969.2 MB	8.6 GB	3.6 GB	2.2 GB
-48	96/0902c0	3693030.pbsha.ib.sockeye	runMatching (47)	CACHED	0	2022-04-20 19:54:22.271	5m 45s	5m 26s	106.7%	656.6 MB	8.3 GB	2.3 GB	1.1 GB
-49	9d/960e78	3693057.pbsha.ib.sockeye	runMatching (48)	CACHED	0	2022-04-20 19:54:24.735	23m 24s	22m 29s	149.1%	1.2 GB	9 GB	5.3 GB	3.3 GB
-51	4f/569d1d	3693037.pbsha.ib.sockeye	runMatching (50)	CACHED	0	2022-04-20 19:54:22.965	29m 12s	28m 52s	105.0%	1.9 GB	9.8 GB	6 GB	4.1 GB
-53	49/f0d530	3693026.pbsha.ib.sockeye	runMatching (52)	CACHED	0	2022-04-20 19:54:21.946	54m 13s	53m 57s	104.7%	1.5 GB	9 GB	3.8 GB	1.7 GB
-52	61/71f3d1	3693027.pbsha.ib.sockeye	runMatching (51)	CACHED	0	2022-04-20 19:54:22.023	11m 50s	11m 33s	112.9%	676 MB	8.3 GB	2.7 GB	1.3 GB
-50	30/b5546e	3693020.pbsha.ib.sockeye	runMatching (49)	CACHED	0	2022-04-20 19:54:21.489	9m 21s	9m 2s	102.7%	664.8 MB	8.3 GB	2.8 GB	1.4 GB
-57	5c/0ee4ca	3693029.pbsha.ib.sockeye	runMatching (56)	CACHED	0	2022-04-20 19:54:22.193	5m 35s	5m 20s	102.7%	652.8 MB	8.3 GB	2.2 GB	1.1 GB
-59	bb/cea89d	3693028.pbsha.ib.sockeye	runMatching (58)	CACHED	0	2022-04-20 19:54:22.106	27m 53s	27m 33s	102.0%	1.9 GB	9.8 GB	6 GB	4.1 GB
-54	c4/6f41b5	3693031.pbsha.ib.sockeye	runMatching (53)	CACHED	0	2022-04-20 19:54:22.365	52m 47s	52m 32s	102.2%	960.1 MB	8.6 GB	3.6 GB	2.2 GB
-55	f1/f79b30	3693035.pbsha.ib.sockeye	runMatching (54)	CACHED	0	2022-04-20 19:54:22.784	19m	18m 45s	108.4%	953.1 MB	8.6 GB	4.4 GB	2.5 GB
-60	1b/2b0afa	3693034.pbsha.ib.sockeye	runMatching (59)	CACHED	0	2022-04-20 19:54:22.705	9m 5s	8m 47s	102.0%	666.6 MB	8.3 GB	2.8 GB	1.4 GB
-64	f2/2a9a20	3693047.pbsha.ib.sockeye	runMatching (63)	CACHED	0	2022-04-20 19:54:23.796	19m 44s	19m 30s	106.1%	960.9 MB	8.6 GB	4.4 GB	2.5 GB
-58	75/a93274	3693052.pbsha.ib.sockeye	runMatching (57)	CACHED	0	2022-04-20 19:54:24.347	24m 22s	23m 26s	113.9%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-61	72/bb9c82	3693051.pbsha.ib.sockeye	runMatching (60)	CACHED	0	2022-04-20 19:54:24.196	10m 48s	10m 36s	110.5%	672.6 MB	8.3 GB	2.8 GB	1.3 GB
-66	96/791f9c	3693043.pbsha.ib.sockeye	runMatching (65)	CACHED	0	2022-04-20 19:54:23.463	5m 59s	5m 45s	102.3%	659.7 MB	8.3 GB	2.3 GB	1.1 GB
-69	b6/8d7992	3693038.pbsha.ib.sockeye	runMatching (68)	CACHED	0	2022-04-20 19:54:23.039	10m 24s	10m 3s	106.3%	672.6 MB	8.3 GB	2.8 GB	1.4 GB
-56	ea/c2db1d	3693032.pbsha.ib.sockeye	runMatching (55)	CACHED	0	2022-04-20 19:54:22.447	2h 43m 5s	2h 42m 52s	106.6%	665.4 MB	8.3 GB	2.4 GB	1.1 GB
-62	65/29137d	3693062.pbsha.ib.sockeye	runMatching (61)	CACHED	0	2022-04-20 19:54:25.150	59m 10s	58m 30s	157.4%	1.7 GB	9.2 GB	3.8 GB	1.7 GB
-72	4b/31ccf0	3693042.pbsha.ib.sockeye	runMatching (71)	CACHED	0	2022-04-20 19:54:23.369	58m 36s	58m 20s	105.0%	962.5 MB	8.6 GB	3.6 GB	2.2 GB
-67	92/546eb9	3693036.pbsha.ib.sockeye	runMatching (66)	CACHED	0	2022-04-20 19:54:22.879	22m 5s	21m 52s	109.3%	1.2 GB	9 GB	5.2 GB	3.3 GB
-68	dc/e6392f	3693040.pbsha.ib.sockeye	runMatching (67)	CACHED	0	2022-04-20 19:54:23.199	30m 31s	30m 16s	105.5%	2 GB	9.9 GB	6 GB	4.1 GB
-63	55/33e0ea	3693075.pbsha.ib.sockeye	runMatching (62)	CACHED	0	2022-04-20 19:54:52.130	58m 58s	58m 44s	138.0%	953.8 MB	8.6 GB	3.6 GB	2.2 GB
-70	60/fa0ba9	3693044.pbsha.ib.sockeye	runMatching (69)	CACHED	0	2022-04-20 19:54:23.551	12m 4s	11m 49s	112.1%	671.7 MB	8.3 GB	2.8 GB	1.3 GB
-71	cc/fe0dd7	3693039.pbsha.ib.sockeye	runMatching (70)	CACHED	0	2022-04-20 19:54:23.124	59m 47s	59m 30s	102.2%	1.8 GB	9.2 GB	3.8 GB	1.7 GB
-65	b5/79d086	3693041.pbsha.ib.sockeye	runMatching (64)	CACHED	0	2022-04-20 19:54:23.285	2h 46m 4s	2h 45m 48s	107.1%	658.3 MB	8.3 GB	2.4 GB	1.1 GB
-78	46/ab09bd	3693049.pbsha.ib.sockeye	runMatching (77)	CACHED	0	2022-04-20 19:54:23.973	9m 4s	8m 46s	103.2%	675.5 MB	8.3 GB	2.8 GB	1.4 GB
-77	42/c3d345	3693045.pbsha.ib.sockeye	runMatching (76)	CACHED	0	2022-04-20 19:54:23.637	28m 6s	27m 52s	101.7%	2 GB	9.9 GB	6 GB	4.1 GB
-79	07/05321f	3693046.pbsha.ib.sockeye	runMatching (78)	CACHED	0	2022-04-20 19:54:23.715	11m 9s	10m 56s	110.5%	667.7 MB	8.3 GB	2.8 GB	1.3 GB
-74	b4/004100	3693053.pbsha.ib.sockeye	runMatching (73)	CACHED	0	2022-04-20 19:54:24.431	2h 32m 18s	2h 31m 34s	120.5%	653.7 MB	8.3 GB	2.4 GB	1.1 GB
-73	bf/686e72	3693048.pbsha.ib.sockeye	runMatching (72)	CACHED	0	2022-04-20 19:54:23.879	19m 4s	18m 46s	110.9%	953.7 MB	8.6 GB	4.4 GB	2.5 GB
-75	4f/361cf1	3693059.pbsha.ib.sockeye	runMatching (74)	CACHED	0	2022-04-20 19:54:24.886	5m 58s	5m 16s	145.0%	653.9 MB	8.3 GB	2.2 GB	1.1 GB
-80	40/c60dca	3693070.pbsha.ib.sockeye	runMatching (79)	CACHED	0	2022-04-20 19:54:25.850	50m 19s	49m 41s	102.5%	1.6 GB	9 GB	3.8 GB	1.7 GB
-81	d3/bc2ebd	3693126.pbsha.ib.sockeye	runMatching (80)	CACHED	0	2022-04-20 20:13:27.811	52m 44s	52m 30s	102.6%	971.8 MB	8.6 GB	3.6 GB	2.2 GB
-84	24/e6fedd	3693068.pbsha.ib.sockeye	runMatching (83)	CACHED	0	2022-04-20 19:54:25.680	5m 52s	5m 13s	102.4%	652.4 MB	8.3 GB	2.2 GB	1.1 GB
-76	4f/b5190c	3693054.pbsha.ib.sockeye	runMatching (75)	CACHED	0	2022-04-20 19:54:24.505	28m 5s	27m 24s	109.8%	1.2 GB	9 GB	5.3 GB	3.3 GB
-82	41/a761ce	3693064.pbsha.ib.sockeye	runMatching (81)	CACHED	0	2022-04-20 19:54:25.334	19m 42s	19m 3s	111.4%	961.7 MB	8.6 GB	4.4 GB	2.5 GB
-83	4f/3a2eaf	3693060.pbsha.ib.sockeye	runMatching (82)	CACHED	0	2022-04-20 19:54:24.974	2h 39m 47s	2h 39m 7s	150.8%	668.9 MB	8.3 GB	2.4 GB	1.1 GB
-90	65/cd89bd	3693056.pbsha.ib.sockeye	runMatching (89)	CACHED	0	2022-04-20 19:54:24.657	58m 55s	58m 12s	150.0%	957.6 MB	8.6 GB	3.6 GB	2.2 GB
-92	54/22ac67	3693058.pbsha.ib.sockeye	runMatching (91)	CACHED	0	2022-04-20 19:54:24.809	5h 7m 22s	5h 6m 38s	150.9%	988.6 MB	8.7 GB	3.7 GB	2.2 GB
-85	21/0cc697	3693061.pbsha.ib.sockeye	runMatching (84)	CACHED	0	2022-04-20 19:54:25.060	27m 45s	27m 4s	153.8%	1.2 GB	9 GB	5.3 GB	3.3 GB
-97	af/08ee4a	3693063.pbsha.ib.sockeye	runMatching (96)	CACHED	0	2022-04-20 19:54:25.243	21m 22s	20m 39s	150.9%	1001.6 MB	8.7 GB	4.3 GB	2.7 GB
-87	be/f19d38	3693066.pbsha.ib.sockeye	runMatching (86)	CACHED	0	2022-04-20 19:54:25.514	9m 42s	9m 2s	108.6%	668 MB	8.3 GB	2.8 GB	1.4 GB
-89	64/b60ead	3693055.pbsha.ib.sockeye	runMatching (88)	CACHED	0	2022-04-20 19:54:24.583	57m 15s	56m 35s	102.1%	1.8 GB	9.2 GB	3.9 GB	1.7 GB
-95	ae/8559d5	3693124.pbsha.ib.sockeye	runMatching (94)	CACHED	0	2022-04-20 20:12:37.560	51m 59s	51m 51s	105.3%	3.3 GB	11.5 GB	10.5 GB	8 GB
-88	6c/12b712	3693067.pbsha.ib.sockeye	runMatching (87)	CACHED	0	2022-04-20 19:54:25.598	12m 27s	11m 45s	121.7%	672.1 MB	8.3 GB	2.7 GB	1.3 GB
-93	5c/9af076	3693140.pbsha.ib.sockeye	runMatching (92)	CACHED	0	2022-04-20 20:17:17.962	14m 47s	9m 55s	108.5%	983.6 MB	8.7 GB	3.4 GB	2.2 GB
-103	b6/a2d8bd	3693069.pbsha.ib.sockeye	runMatching (102)	CACHED	0	2022-04-20 19:54:25.767	45m 4s	44m 23s	162.8%	2 GB	10 GB	8.9 GB	6.6 GB
-100	fa/2a4aaf	3693123.pbsha.ib.sockeye	runMatching (99)	CACHED	0	2022-04-20 20:10:07.559	38m 7s	37m 52s	101.7%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
-98	95/68862a	3693100.pbsha.ib.sockeye	runMatching (97)	CACHED	0	2022-04-20 20:04:27.734	1h 48m	1h 47m 46s	113.3%	3.8 GB	11.1 GB	6.1 GB	3.5 GB
-105	81/f70cc3	3693073.pbsha.ib.sockeye	runMatching (104)	CACHED	0	2022-04-20 19:54:26.132	18m 11s	17m 33s	107.4%	979.8 MB	8.7 GB	4.3 GB	2.7 GB
-86	c2/accd2c	3693065.pbsha.ib.sockeye	runMatching (85)	CACHED	0	2022-04-20 19:54:25.415	29m 4s	28m 24s	141.5%	2 GB	9.9 GB	6 GB	4.1 GB
-99	93/5f6d76	3693077.pbsha.ib.sockeye	runMatching (98)	CACHED	0	2022-04-20 19:54:52.443	2h 2m 5s	2h 1m 48s	104.0%	1.5 GB	9.4 GB	6 GB	4.4 GB
-104	2d/95f9d5	3693092.pbsha.ib.sockeye	runMatching (103)	CACHED	0	2022-04-20 20:00:22.493	52m 32s	52m 23s	113.7%	3.4 GB	11.6 GB	10.5 GB	8.1 GB
-111	b1/cf811f	3693076.pbsha.ib.sockeye	runMatching (110)	CACHED	0	2022-04-20 19:54:52.257	10m 5s	9m 52s	111.7%	983.1 MB	8.7 GB	3.5 GB	2.2 GB
-102	29/942c94	3693071.pbsha.ib.sockeye	runMatching (101)	CACHED	0	2022-04-20 19:54:25.944	9m 2s	8m 21s	124.9%	984.3 MB	8.7 GB	3.5 GB	2.2 GB
-113	31/06820d	3693080.pbsha.ib.sockeye	runMatching (112)	CACHED	0	2022-04-20 19:54:52.785	56m 57s	56m 45s	103.5%	3.3 GB	11.6 GB	10.5 GB	8 GB
-106	93/4f6493	3693088.pbsha.ib.sockeye	runMatching (105)	CACHED	0	2022-04-20 20:00:17.479	21m 12s	20m 44s	118.5%	973.6 MB	8.7 GB	4.2 GB	2.7 GB
-101	1c/0d2a01	3693102.pbsha.ib.sockeye	runMatching (100)	CACHED	0	2022-04-20 20:04:27.901	4h 40m 24s	4h 40m 16s	117.8%	982.9 MB	8.7 GB	3.6 GB	2.2 GB
-114	8b/ffc682	3693085.pbsha.ib.sockeye	runMatching (113)	CACHED	0	2022-04-20 20:00:07.543	16m 35s	16m 25s	126.2%	990.7 MB	8.7 GB	4.2 GB	2.7 GB
-110	a6/90ce81	3693079.pbsha.ib.sockeye	runMatching (109)	CACHED	0	2022-04-20 19:54:52.657	5h 25m 19s	5h 25m 5s	102.3%	985.5 MB	8.7 GB	3.6 GB	2.2 GB
-112	78/45e804	3693078.pbsha.ib.sockeye	runMatching (111)	CACHED	0	2022-04-20 19:54:52.554	52m 27s	52m 16s	102.6%	2 GB	10 GB	9 GB	6.6 GB
-96	86/42ed9d	3693103.pbsha.ib.sockeye	runMatching (95)	CACHED	0	2022-04-20 20:04:47.484	21m 57s	21m 47s	110.7%	994.4 MB	8.7 GB	4.3 GB	2.7 GB
-109	fd/9e171d	3693074.pbsha.ib.sockeye	runMatching (108)	CACHED	0	2022-04-20 19:54:26.227	39m 19s	38m 43s	147.4%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
-108	d2/85ad60	3693141.pbsha.ib.sockeye	runMatching (107)	CACHED	0	2022-04-20 20:17:38.017	1h 57m 29s	1h 57m 15s	110.8%	1.5 GB	9.4 GB	6 GB	4.4 GB
-91	f3/6248d6	3693072.pbsha.ib.sockeye	runMatching (90)	CACHED	0	2022-04-20 19:54:26.032	21m 6s	20m 27s	132.5%	954.9 MB	8.6 GB	4.4 GB	2.5 GB
-115	db/0c591c	3693086.pbsha.ib.sockeye	runMatching (114)	CACHED	0	2022-04-20 20:00:07.629	21m 15s	20m 47s	105.0%	990.2 MB	8.7 GB	4.3 GB	2.7 GB
-94	d8/b4f44e	3693083.pbsha.ib.sockeye	runMatching (93)	CACHED	0	2022-04-20 19:59:57.701	48m 12s	48m 3s	103.3%	2 GB	10 GB	8.9 GB	6.6 GB
-118	90/70c09c	3693089.pbsha.ib.sockeye	runMatching (117)	CACHED	0	2022-04-20 20:00:17.563	38m 17s	38m 5s	102.5%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
-121	03/b128fe	3693097.pbsha.ib.sockeye	runMatching (120)	CACHED	0	2022-04-20 20:03:27.929	45m 52s	45m 41s	104.8%	2 GB	10 GB	8.9 GB	6.6 GB
-117	a1/106f9b	3693090.pbsha.ib.sockeye	runMatching (116)	CACHED	0	2022-04-20 20:00:17.654	1h 47m 50s	1h 47m 35s	120.4%	1.5 GB	9.4 GB	6 GB	4.4 GB
-116	57/ac6467	3693087.pbsha.ib.sockeye	runMatching (115)	CACHED	0	2022-04-20 20:00:12.493	1h 48m 20s	1h 48m 10s	115.6%	3.8 GB	11 GB	6 GB	3.5 GB
-128	ba/e0623d	3693116.pbsha.ib.sockeye	runMatching (127)	CACHED	0	2022-04-20 20:06:57.565	5h 2m 4s	5h 1m 49s	121.6%	982.6 MB	8.7 GB	3.7 GB	2.2 GB
-107	43/801a06	3693101.pbsha.ib.sockeye	runMatching (106)	CACHED	0	2022-04-20 20:04:27.818	1h 53m 9s	1h 52m 58s	110.0%	3.8 GB	11 GB	6.1 GB	3.5 GB
-119	eb/84f79a	3693091.pbsha.ib.sockeye	runMatching (118)	CACHED	0	2022-04-20 20:00:17.737	5h 41m 44s	5h 41m 30s	114.0%	980.9 MB	8.7 GB	3.7 GB	2.2 GB
-130	6d/9031c7	3693106.pbsha.ib.sockeye	runMatching (129)	CACHED	0	2022-04-20 20:05:02.712	39m 42s	39m 31s	103.8%	2 GB	10 GB	8.9 GB	6.6 GB
-124	b4/fffd52	3693099.pbsha.ib.sockeye	runMatching (123)	CACHED	0	2022-04-20 20:04:07.494	20m 52s	20m 41s	103.8%	992.2 MB	8.7 GB	4.2 GB	2.7 GB
-123	2e/3a6719	3693095.pbsha.ib.sockeye	runMatching (122)	CACHED	0	2022-04-20 20:03:27.778	16m 27s	16m 2s	111.1%	983.9 MB	8.7 GB	4.3 GB	2.7 GB
-120	91/99409b	3693093.pbsha.ib.sockeye	runMatching (119)	CACHED	0	2022-04-20 20:00:22.589	9m 45s	9m 33s	108.5%	971.1 MB	8.7 GB	3.5 GB	2.2 GB
-126	ee/81698b	3693104.pbsha.ib.sockeye	runMatching (125)	CACHED	0	2022-04-20 20:04:47.562	1h 52m 15s	1h 52m	111.2%	1.5 GB	9.4 GB	6 GB	4.4 GB
-129	42/10ff06	3693105.pbsha.ib.sockeye	runMatching (128)	CACHED	0	2022-04-20 20:04:57.503	9m 55s	9m 45s	107.8%	979.1 MB	8.7 GB	3.4 GB	2.2 GB
-136	7b/1566d7	3693113.pbsha.ib.sockeye	runMatching (135)	CACHED	0	2022-04-20 20:06:52.511	38m 22s	38m 9s	102.1%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
-122	ec/dbcea5	3693096.pbsha.ib.sockeye	runMatching (121)	CACHED	0	2022-04-20 20:03:27.858	52m 47s	52m 37s	102.9%	3.4 GB	11.5 GB	10.6 GB	8.1 GB
-132	3c/097e3a	3693112.pbsha.ib.sockeye	runMatching (131)	CACHED	0	2022-04-20 20:06:27.785	16m 37s	16m 22s	110.3%	997.6 MB	8.7 GB	4.3 GB	2.7 GB
-135	ac/4d761c	3693117.pbsha.ib.sockeye	runMatching (134)	CACHED	0	2022-04-20 20:07:32.506	2h 1m 20s	2h 1m 7s	113.3%	3.8 GB	11 GB	6 GB	3.5 GB
-125	71/17df3d	3693098.pbsha.ib.sockeye	runMatching (124)	CACHED	0	2022-04-20 20:03:42.480	1h 46m 15s	1h 46m 4s	123.9%	3.8 GB	11 GB	6.1 GB	3.5 GB
-134	b5/8f18ea	3693111.pbsha.ib.sockeye	runMatching (133)	CACHED	0	2022-04-20 20:06:12.506	1h 45m	1h 44m 46s	113.2%	1.5 GB	9.4 GB	6 GB	4.4 GB
-149	83/9e250b	3693136.pbsha.ib.sockeye	runMatching (148)	CACHED	0	2022-04-20 20:15:47.553	20m 37s	20m 23s	107.8%	986.2 MB	8.7 GB	4.2 GB	2.7 GB
-139	c5/44c21b	3693125.pbsha.ib.sockeye	runMatching (138)	CACHED	0	2022-04-20 20:13:22.581	46m 2s	45m 47s	105.2%	2 GB	10 GB	8.9 GB	6.6 GB
-131	7a/3f330e	3693108.pbsha.ib.sockeye	runMatching (130)	CACHED	0	2022-04-20 20:05:12.521	1h 2m 5s	1h 1m 53s	107.3%	3.3 GB	11.6 GB	10.5 GB	8 GB
-133	b9/613983	3693109.pbsha.ib.sockeye	runMatching (132)	CACHED	0	2022-04-20 20:05:27.751	23m 17s	23m 8s	105.5%	985.6 MB	8.7 GB	4.2 GB	2.7 GB
-127	76/e5ea34	3693110.pbsha.ib.sockeye	runMatching (126)	CACHED	0	2022-04-20 20:05:32.507	34m 47s	34m 36s	119.8%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
-142	f1/b283b8	3693129.pbsha.ib.sockeye	runMatching (141)	CACHED	0	2022-04-20 20:14:07.539	1h 43m 35s	1h 43m 24s	112.7%	3.8 GB	11 GB	6 GB	3.5 GB
-140	c6/8a3142	3693128.pbsha.ib.sockeye	runMatching (139)	CACHED	0	2022-04-20 20:14:02.534	52m 55s	52m 42s	102.1%	3.3 GB	11.5 GB	10.5 GB	8.1 GB
-141	db/ff611b	3693131.pbsha.ib.sockeye	runMatching (140)	CACHED	0	2022-04-20 20:14:12.533	16m 32s	16m 19s	109.2%	988.4 MB	8.7 GB	4.3 GB	2.7 GB
-144	63/c54764	3693132.pbsha.ib.sockeye	runMatching (143)	CACHED	0	2022-04-20 20:14:42.545	5h 12m 49s	5h 12m 38s	104.4%	982.4 MB	8.7 GB	3.6 GB	2.2 GB
-138	c6/fcead5	3693115.pbsha.ib.sockeye	runMatching (137)	CACHED	0	2022-04-20 20:06:57.495	10m 15s	9m 57s	114.7%	988 MB	8.7 GB	3.5 GB	2.2 GB
-143	be/8f6c6e	3693127.pbsha.ib.sockeye	runMatching (142)	CACHED	0	2022-04-20 20:13:57.534	1h 42m 45s	1h 42m 34s	115.1%	1.5 GB	9.4 GB	6 GB	4.4 GB
-151	b3/6e0a86	3693138.pbsha.ib.sockeye	runMatching (150)	CACHED	0	2022-04-20 20:16:27.866	36m 47s	36m 33s	103.9%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
-154	3c/3b0894	3693162.pbsha.ib.sockeye	runMatching (153)	CACHED	0	2022-04-20 20:21:22.897	34m 2s	33m 44s	102.9%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
-146	c0/3c98ce	3693145.pbsha.ib.sockeye	runMatching (145)	CACHED	0	2022-04-20 20:18:46.471	12m 3s	11m 49s	112.4%	984.3 MB	14.7 GB	3.4 GB	2.2 GB
-153	a3/b34c66	3693143.pbsha.ib.sockeye	runMatching (152)	CACHED	0	2022-04-20 20:17:58.577	1h 50m 9s	1h 49m 51s	112.5%	1.5 GB	9.4 GB	6 GB	4.4 GB
-150	13/9b5692	3693164.pbsha.ib.sockeye	runMatching (149)	CACHED	0	2022-04-20 20:21:29.201	21m 6s	20m 47s	126.2%	992.7 MB	8.7 GB	4.2 GB	2.7 GB
-152	af/398c9e	3693130.pbsha.ib.sockeye	runMatching (151)	CACHED	0	2022-04-20 20:14:07.621	1h 43m 50s	1h 43m 38s	121.5%	3.8 GB	11.1 GB	6 GB	3.5 GB
-148	bb/a6fd8f	3693133.pbsha.ib.sockeye	runMatching (147)	CACHED	0	2022-04-20 20:14:52.551	43m 22s	43m 14s	114.9%	2 GB	10 GB	9 GB	6.6 GB
-155	e2/6aef15	3693161.pbsha.ib.sockeye	runMatching (154)	CACHED	0	2022-04-20 20:21:16.353	5h 4m 15s	5h 3m 16s	102.6%	988 MB	8.7 GB	3.6 GB	2.2 GB
-147	f6/44beb3	3693135.pbsha.ib.sockeye	runMatching (146)	CACHED	0	2022-04-20 20:15:32.547	17m 47s	17m 37s	108.1%	989.7 MB	8.7 GB	4.3 GB	2.7 GB
-137	16/37fa3c	3693114.pbsha.ib.sockeye	runMatching (136)	CACHED	0	2022-04-20 20:06:52.598	5h 38m 19s	5h 38m 3s	107.8%	981.3 MB	8.7 GB	3.6 GB	2.2 GB
-145	75/6acd2c	3693137.pbsha.ib.sockeye	runMatching (144)	CACHED	0	2022-04-20 20:16:12.574	58m 10s	57m 55s	102.5%	3.4 GB	11.5 GB	10.6 GB	8.1 GB
-158	ef/e7a544	3693167.pbsha.ib.sockeye	runMatching (157)	CACHED	0	2022-04-20 20:22:29.711	59m 7s	58m 59s	121.6%	3.4 GB	11.6 GB	10.6 GB	8.1 GB
-156	8f/6c0b15	3693156.pbsha.ib.sockeye	runMatching (155)	CACHED	0	2022-04-20 20:19:55.153	10m 50s	10m 38s	103.0%	984.2 MB	14.7 GB	3.4 GB	2.2 GB
-163	fb/40656a	3693170.pbsha.ib.sockeye	runMatching (162)	CACHED	0	2022-04-20 20:23:04.713	36m 20s	36m 8s	102.0%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
-161	9a/ce44b0	3693168.pbsha.ib.sockeye	runMatching (160)	CACHED	0	2022-04-20 20:22:29.811	2h 8m 28s	2h 8m 17s	124.7%	1.5 GB	9.4 GB	6 GB	4.4 GB
-164	a1/ef834f	3693144.pbsha.ib.sockeye	runMatching (163)	CACHED	0	2022-04-20 20:18:32.247	5h 5m 44s	5h 5m 23s	105.1%	981.8 MB	8.7 GB	3.7 GB	2.2 GB
-157	57/6c40a4	3693165.pbsha.ib.sockeye	runMatching (156)	CACHED	0	2022-04-20 20:22:09.705	48m 32s	48m 21s	108.0%	2 GB	10 GB	9 GB	6.6 GB
-166	b9/e49466	3693166.pbsha.ib.sockeye	runMatching (165)	CACHED	0	2022-04-20 20:22:14.708	48m 27s	48m 17s	115.5%	2 GB	9.9 GB	8.9 GB	6.6 GB
-165	bf/dabc9c	3693163.pbsha.ib.sockeye	runMatching (164)	CACHED	0	2022-04-20 20:21:29.124	10m 36s	10m	109.4%	972.2 MB	8.7 GB	3.4 GB	2.2 GB
-169	7c/b95905	3693175.pbsha.ib.sockeye	runMatching (168)	CACHED	0	2022-04-20 20:25:20.158	21m 50s	21m 38s	118.9%	997.7 MB	8.7 GB	4.2 GB	2.7 GB
-159	1c/542c5c	3693169.pbsha.ib.sockeye	runMatching (158)	CACHED	0	2022-04-20 20:22:59.694	21m 25s	21m 14s	115.4%	998.2 MB	8.7 GB	4.3 GB	2.7 GB
-167	06/f64b6b	3693176.pbsha.ib.sockeye	runMatching (166)	CACHED	0	2022-04-20 20:25:20.324	59m 37s	59m 25s	120.3%	3.5 GB	11.7 GB	10.5 GB	8.1 GB
-160	ca/c4a799	3693139.pbsha.ib.sockeye	runMatching (159)	CACHED	0	2022-04-20 20:16:42.562	1h 59m 50s	1h 59m 38s	109.2%	3.8 GB	11 GB	6.1 GB	3.5 GB
-177	23/56e9a8	3693239.pbsha.ib.sockeye	runMatching (176)	CACHED	0	2022-04-20 20:49:19.828	44m 32s	44m 14s	103.6%	2 GB	10 GB	9 GB	6.6 GB
-162	7f/dbba49	3693142.pbsha.ib.sockeye	runMatching (161)	CACHED	0	2022-04-20 20:17:48.422	17m 16s	16m 55s	102.9%	985 MB	8.7 GB	4.3 GB	2.7 GB
-168	0b/2d8aed	3693172.pbsha.ib.sockeye	runMatching (167)	CACHED	0	2022-04-20 20:23:34.712	16m 35s	16m 23s	114.0%	989.1 MB	8.7 GB	4.3 GB	2.7 GB
-181	c2/20292e	3693209.pbsha.ib.sockeye	runMatching (180)	CACHED	0	2022-04-20 20:33:19.783	1h 48m 38s	1h 48m 20s	111.6%	1.5 GB	9.4 GB	6 GB	4.4 GB
-172	c2/455bae	3693171.pbsha.ib.sockeye	runMatching (171)	CACHED	0	2022-04-20 20:23:29.703	9m 15s	9m 8s	104.8%	976.9 MB	8.7 GB	3.5 GB	2.2 GB
-180	f8/d41146	3693178.pbsha.ib.sockeye	runMatching (179)	CACHED	0	2022-04-20 20:25:44.970	2h 5m 12s	2h 5m 2s	117.5%	3.8 GB	11 GB	6.1 GB	3.5 GB
-173	e1/efba9a	3693174.pbsha.ib.sockeye	runMatching (172)	CACHED	0	2022-04-20 20:23:54.773	36m 5s	35m 50s	120.0%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
-170	cd/2aefb6	3693181.pbsha.ib.sockeye	runMatching (169)	CACHED	0	2022-04-20 20:28:45.098	1h 45m 57s	1h 45m 46s	113.2%	3.8 GB	11 GB	6.1 GB	3.5 GB
-175	3f/e7ec74	3693214.pbsha.ib.sockeye	runMatching (174)	CACHED	0	2022-04-20 20:36:25.009	19m	18m 47s	105.3%	989.2 MB	8.7 GB	4.3 GB	2.7 GB
-176	fb/5de4b2	3693180.pbsha.ib.sockeye	runMatching (175)	CACHED	0	2022-04-20 20:26:45.020	2h 1m 42s	2h 1m 29s	111.6%	1.5 GB	9.4 GB	6 GB	4.4 GB
-171	dc/d1f4d4	3693215.pbsha.ib.sockeye	runMatching (170)	CACHED	0	2022-04-20 20:38:34.810	5h 4m 17s	5h 4m 8s	104.1%	988.8 MB	8.7 GB	3.6 GB	2.2 GB
-182	75/99adc6	3693207.pbsha.ib.sockeye	runMatching (181)	CACHED	0	2022-04-20 20:32:04.997	38m 32s	38m 8s	106.8%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
-174	f2/0f12c0	3693173.pbsha.ib.sockeye	runMatching (173)	CACHED	0	2022-04-20 20:23:54.704	16m 45s	16m 32s	107.2%	988.9 MB	8.7 GB	4.3 GB	2.7 GB
-179	9f/03c816	3693216.pbsha.ib.sockeye	runMatching (178)	CACHED	0	2022-04-20 20:38:34.924	52m 52s	52m 41s	107.7%	3.5 GB	11.6 GB	10.6 GB	8.1 GB
-453	ac/0dbd1f	3693570.pbsha.ib.sockeye	runMatching (452)	CACHED	0	2022-04-20 22:41:12.791	25m 25s	25m 11s	117.9%	1.2 GB	9 GB	5.3 GB	3.3 GB
-452	0a/5724ba	3693569.pbsha.ib.sockeye	runMatching (451)	CACHED	0	2022-04-20 22:40:27.598	29m 15s	28m 59s	105.2%	1.9 GB	9.9 GB	6.1 GB	4.1 GB
-457	37/626dc9	3693579.pbsha.ib.sockeye	runMatching (456)	CACHED	0	2022-04-20 22:44:17.646	57m 23s	57m 12s	105.2%	1.7 GB	9.2 GB	3.8 GB	1.7 GB
-450	98/8127f4	3693560.pbsha.ib.sockeye	runMatching (449)	CACHED	0	2022-04-20 22:37:47.605	2h 32m 14s	2h 32m	105.1%	662.2 MB	8.3 GB	2.4 GB	1.1 GB
-460	d9/0056b7	3693573.pbsha.ib.sockeye	runMatching (459)	CACHED	0	2022-04-20 22:41:42.609	20m 25s	20m 13s	120.7%	965.3 MB	8.6 GB	4.4 GB	2.5 GB
-466	1e/166349	3693578.pbsha.ib.sockeye	runMatching (465)	CACHED	0	2022-04-20 22:43:42.655	11m 25s	11m 11s	111.6%	671.6 MB	8.3 GB	2.8 GB	1.3 GB
-456	72/a717a2	3693572.pbsha.ib.sockeye	runMatching (455)	CACHED	0	2022-04-20 22:41:32.623	11m 25s	11m 16s	110.6%	677.2 MB	8.3 GB	2.8 GB	1.3 GB
-451	da/69faee	3693561.pbsha.ib.sockeye	runMatching (450)	CACHED	0	2022-04-20 22:37:57.589	10m 35s	10m 23s	113.5%	670.4 MB	8.3 GB	2.7 GB	1.4 GB
-448	80/4fea4f	3693562.pbsha.ib.sockeye	runMatching (447)	CACHED	0	2022-04-20 22:38:17.610	5m 25s	5m 15s	111.3%	666.2 MB	8.3 GB	2.2 GB	1.1 GB
-465	2c/1af285	3693586.pbsha.ib.sockeye	runMatching (464)	CACHED	0	2022-04-20 22:48:32.660	9m 25s	9m 14s	133.7%	659.2 MB	8.3 GB	2.8 GB	1.4 GB
-464	d7/6951f0	3693585.pbsha.ib.sockeye	runMatching (463)	CACHED	0	2022-04-20 22:48:12.643	2h 35m 19s	2h 35m 8s	109.7%	668.1 MB	8.3 GB	2.4 GB	1.1 GB
-468	f9/24909e	3693577.pbsha.ib.sockeye	runMatching (467)	CACHED	0	2022-04-20 22:42:39.702	20m 33s	20m 21s	115.9%	958.3 MB	8.6 GB	4.4 GB	2.5 GB
-470	3c/eb3046	3693583.pbsha.ib.sockeye	runMatching (469)	CACHED	0	2022-04-20 22:46:57.643	58m 13s	58m 1s	102.0%	1.8 GB	9.2 GB	3.8 GB	1.7 GB
-461	2e/7beb49	3693575.pbsha.ib.sockeye	runMatching (460)	CACHED	0	2022-04-20 22:42:39.363	5m 23s	5m 13s	114.0%	672.5 MB	8.3 GB	2.2 GB	1.1 GB
-471	76/7c4682	3693590.pbsha.ib.sockeye	runMatching (470)	CACHED	0	2022-04-20 22:50:07.648	5m 50s	5m 37s	115.0%	658.1 MB	8.3 GB	2.3 GB	1.1 GB
-459	3b/268abf	3693576.pbsha.ib.sockeye	runMatching (458)	CACHED	0	2022-04-20 22:42:39.519	1h 16s	1h 6s	123.8%	968.8 MB	8.6 GB	3.6 GB	2.2 GB
-469	82/50829b	3693581.pbsha.ib.sockeye	runMatching (468)	CACHED	0	2022-04-20 22:46:32.891	2h 33m 14s	2h 33m 3s	115.5%	660.9 MB	8.3 GB	2.4 GB	1.1 GB
-462	37/8cc1c1	3693574.pbsha.ib.sockeye	runMatching (461)	CACHED	0	2022-04-20 22:42:07.611	25m 15s	25m 4s	105.7%	1.2 GB	8.9 GB	5.2 GB	3.3 GB
-463	e7/9132bc	3693593.pbsha.ib.sockeye	runMatching (462)	CACHED	0	2022-04-20 22:52:57.901	33m 15s	33m 2s	112.4%	1.9 GB	9.8 GB	6 GB	4.1 GB
-473	58/849e7c	3693584.pbsha.ib.sockeye	runMatching (472)	CACHED	0	2022-04-20 22:48:02.680	31m 55s	31m 47s	117.2%	1.8 GB	9.8 GB	6 GB	4.1 GB
-472	20/1c17d7	3693587.pbsha.ib.sockeye	runMatching (471)	CACHED	0	2022-04-20 22:49:27.634	24m 10s	23m 53s	112.1%	1.2 GB	9 GB	5.3 GB	3.3 GB
-476	77/242d83	3693595.pbsha.ib.sockeye	runMatching (475)	CACHED	0	2022-04-20 22:53:37.660	1h 23s	1h 10s	114.6%	1.8 GB	9.3 GB	3.9 GB	1.7 GB
-474	cc/e88d14	3693588.pbsha.ib.sockeye	runMatching (473)	CACHED	0	2022-04-20 22:49:57.653	10m 10s	9m 58s	108.9%	671.7 MB	8.3 GB	2.8 GB	1.4 GB
-480	8d/528986	3693592.pbsha.ib.sockeye	runMatching (479)	CACHED	0	2022-04-20 22:51:22.684	32m 35s	32m 20s	116.8%	1.9 GB	9.8 GB	6 GB	4.1 GB
-475	fd/43692a	3693594.pbsha.ib.sockeye	runMatching (474)	CACHED	0	2022-04-20 22:53:22.692	12m 45s	12m 33s	109.7%	666.3 MB	8.3 GB	2.8 GB	1.3 GB
-467	6d/7ad564	3693582.pbsha.ib.sockeye	runMatching (466)	CACHED	0	2022-04-20 22:46:52.629	54m 53s	54m 41s	102.1%	958.9 MB	8.6 GB	3.6 GB	2.2 GB
-482	df/47e451	3693605.pbsha.ib.sockeye	runMatching (481)	CACHED	0	2022-04-20 22:55:57.690	27m 45s	27m 35s	104.3%	1.2 GB	8.9 GB	5.2 GB	3.3 GB
-479	47/eb965f	3693596.pbsha.ib.sockeye	runMatching (478)	CACHED	0	2022-04-20 22:53:42.669	6m 10s	5m 56s	104.6%	673.5 MB	8.3 GB	2.2 GB	1.1 GB
-478	a1/320b27	3693597.pbsha.ib.sockeye	runMatching (477)	CACHED	0	2022-04-20 22:53:52.678	2h 37m 14s	2h 37m 4s	117.4%	668.4 MB	8.3 GB	2.4 GB	1.1 GB
-477	52/c3d5ef	3693591.pbsha.ib.sockeye	runMatching (476)	CACHED	0	2022-04-20 22:50:57.666	1h 43s	1h 29s	106.8%	955.9 MB	8.6 GB	3.6 GB	2.2 GB
-481	ea/847bec	3693598.pbsha.ib.sockeye	runMatching (480)	CACHED	0	2022-04-20 22:54:07.738	9m 30s	9m 18s	105.5%	665.9 MB	8.3 GB	2.8 GB	1.4 GB
-491	8c/60b4ce	3693610.pbsha.ib.sockeye	runMatching (490)	CACHED	0	2022-04-20 22:58:27.685	9m 15s	9m 3s	103.7%	671.1 MB	8.3 GB	2.8 GB	1.4 GB
-484	37/2b7fce	3693601.pbsha.ib.sockeye	runMatching (483)	CACHED	0	2022-04-20 22:54:47.898	12m	11m 47s	108.7%	666.7 MB	8.3 GB	2.8 GB	1.3 GB
-486	39/1f803c	3693607.pbsha.ib.sockeye	runMatching (485)	CACHED	0	2022-04-20 22:57:52.691	19m 15s	19m 4s	116.9%	961.6 MB	8.6 GB	4.4 GB	2.5 GB
-483	61/e85822	3693599.pbsha.ib.sockeye	runMatching (482)	CACHED	0	2022-04-20 22:54:22.655	22m 40s	22m 24s	118.8%	955.6 MB	8.6 GB	4.4 GB	2.5 GB
-487	ed/323f74	3693611.pbsha.ib.sockeye	runMatching (486)	CACHED	0	2022-04-20 22:58:27.762	58m 23s	58m 13s	110.6%	967.4 MB	8.6 GB	3.6 GB	2.2 GB
-489	23/1dde9a	3693609.pbsha.ib.sockeye	runMatching (488)	CACHED	0	2022-04-20 22:58:07.874	27m 50s	27m 34s	113.6%	1.2 GB	9 GB	5.2 GB	3.3 GB
-493	3d/ba545f	3693604.pbsha.ib.sockeye	runMatching (492)	CACHED	0	2022-04-20 22:55:07.671	11m 15s	10m 56s	111.8%	678.3 MB	8.3 GB	2.8 GB	1.3 GB
-498	9e/c35fba	3693618.pbsha.ib.sockeye	runMatching (497)	CACHED	0	2022-04-20 23:00:17.725	6m 5s	5m 53s	131.5%	659.5 MB	8.3 GB	2.2 GB	1.1 GB
-501	24/87e4e7	3693615.pbsha.ib.sockeye	runMatching (500)	CACHED	0	2022-04-20 22:59:52.721	10m 50s	10m 37s	109.0%	667.2 MB	8.3 GB	2.8 GB	1.4 GB
-485	94/767241	3693600.pbsha.ib.sockeye	runMatching (484)	CACHED	0	2022-04-20 22:54:42.695	56m 33s	56m 19s	102.9%	1.6 GB	9 GB	3.8 GB	1.7 GB
-503	02/5ff601	3693621.pbsha.ib.sockeye	runMatching (502)	CACHED	0	2022-04-20 23:01:52.935	1h 1m 8s	1h 59s	140.2%	965.8 MB	8.6 GB	3.6 GB	2.2 GB
-492	b4/ae745d	3693608.pbsha.ib.sockeye	runMatching (491)	CACHED	0	2022-04-20 22:57:57.693	5m 35s	5m 21s	118.2%	660.2 MB	8.3 GB	2.3 GB	1.1 GB
-496	8b/666ed9	3693625.pbsha.ib.sockeye	runMatching (495)	CACHED	0	2022-04-20 23:03:07.712	2h 28m 9s	2h 27m 57s	103.3%	662.3 MB	8.3 GB	2.4 GB	1.1 GB
-490	54/8c3587	3693606.pbsha.ib.sockeye	runMatching (489)	CACHED	0	2022-04-20 22:57:37.723	33m 17s	32m 52s	114.2%	1.8 GB	9.8 GB	6.1 GB	4.1 GB
-500	e6/c7b174	3693613.pbsha.ib.sockeye	runMatching (499)	CACHED	0	2022-04-20 22:59:17.691	1h 5m 8s	1h 4m 59s	111.4%	962.7 MB	8.6 GB	3.6 GB	2.2 GB
-502	85/7cc8a0	3693619.pbsha.ib.sockeye	runMatching (501)	CACHED	0	2022-04-20 23:00:57.733	14m 40s	13m 8s	102.5%	666 MB	8.3 GB	2.8 GB	1.3 GB
-497	2d/67fbf5	3693612.pbsha.ib.sockeye	runMatching (496)	CACHED	0	2022-04-20 22:58:52.794	34m 3s	33m 49s	116.7%	2 GB	9.9 GB	6.1 GB	4.1 GB
-504	13/74485d	3693614.pbsha.ib.sockeye	runMatching (503)	CACHED	0	2022-04-20 22:59:27.703	2h 37m 44s	2h 37m 32s	106.3%	658.7 MB	8.3 GB	2.4 GB	1.1 GB
-495	f6/946fba	3693623.pbsha.ib.sockeye	runMatching (494)	CACHED	0	2022-04-20 23:02:12.766	21m 50s	21m 35s	102.3%	965.1 MB	8.6 GB	4.4 GB	2.5 GB
-494	d8/d58695	3693617.pbsha.ib.sockeye	runMatching (493)	CACHED	0	2022-04-20 23:00:07.719	1h 8s	59m 50s	138.2%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-488	ae/7102d7	3693602.pbsha.ib.sockeye	runMatching (487)	CACHED	0	2022-04-20 22:54:52.650	2h 26m 24s	2h 26m 8s	120.0%	676.3 MB	8.3 GB	2.4 GB	1.1 GB
-505	10/dff981	3693620.pbsha.ib.sockeye	runMatching (504)	CACHED	0	2022-04-20 23:01:28.212	6m 20s	6m 3s	130.8%	666.5 MB	8.3 GB	2.2 GB	1.1 GB
-508	77/a8b1f4	3693622.pbsha.ib.sockeye	runMatching (507)	CACHED	0	2022-04-20 23:02:07.712	27m 58s	27m 2s	107.4%	1.8 GB	9.7 GB	6.1 GB	4.1 GB
-511	c5/dfa059	3693626.pbsha.ib.sockeye	runMatching (510)	CACHED	0	2022-04-20 23:03:12.909	1h 1m 3s	1h 51s	110.5%	965.9 MB	8.6 GB	3.6 GB	2.2 GB
-507	46/b0ba2f	3693627.pbsha.ib.sockeye	runMatching (506)	CACHED	0	2022-04-20 23:03:32.733	51m 58s	51m 52s	105.4%	1.6 GB	9.1 GB	3.8 GB	1.7 GB
-510	b0/1561f8	3693624.pbsha.ib.sockeye	runMatching (509)	CACHED	0	2022-04-20 23:02:37.721	10m 55s	10m 41s	105.4%	667.6 MB	8.3 GB	2.8 GB	1.4 GB
-513	a7/cc68e7	3693633.pbsha.ib.sockeye	runMatching (512)	CACHED	0	2022-04-20 23:06:22.743	24m 56s	24m 33s	109.9%	957.3 MB	8.6 GB	4.4 GB	2.5 GB
-506	19/ba8112	3693632.pbsha.ib.sockeye	runMatching (505)	CACHED	0	2022-04-20 23:06:07.751	19m 20s	19m 11s	102.4%	961.8 MB	8.6 GB	4.4 GB	2.5 GB
-518	a7/0a2dd3	3693637.pbsha.ib.sockeye	runMatching (517)	CACHED	0	2022-04-20 23:07:22.759	32m 28s	32m 8s	109.0%	2 GB	9.9 GB	6 GB	4.1 GB
-509	01/18b41f	3693629.pbsha.ib.sockeye	runMatching (508)	CACHED	0	2022-04-20 23:04:57.770	23m 49s	23m 16s	105.4%	1.2 GB	9 GB	5.3 GB	3.3 GB
-512	53/b81b32	3693628.pbsha.ib.sockeye	runMatching (511)	CACHED	0	2022-04-20 23:03:37.716	57m 23s	57m 12s	106.7%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-517	94/801047	3693631.pbsha.ib.sockeye	runMatching (516)	CACHED	0	2022-04-20 23:05:57.742	11m 10s	11m 1s	114.4%	659.9 MB	8.3 GB	2.8 GB	1.3 GB
-516	d0/3e3d83	3693639.pbsha.ib.sockeye	runMatching (515)	CACHED	0	2022-04-20 23:07:47.979	27m 3s	26m 45s	109.2%	1.2 GB	9 GB	5.2 GB	3.3 GB
-519	a9/7cc7d4	3693645.pbsha.ib.sockeye	runMatching (518)	CACHED	0	2022-04-20 23:13:32.816	9m 35s	9m 23s	102.6%	668.7 MB	8.3 GB	2.8 GB	1.4 GB
-515	43/a2e8fa	3693641.pbsha.ib.sockeye	runMatching (514)	CACHED	0	2022-04-20 23:09:42.977	2h 29m 19s	2h 28m 58s	104.9%	656.3 MB	8.3 GB	2.4 GB	1.1 GB
-499	89/9f9d77	3693634.pbsha.ib.sockeye	runMatching (498)	CACHED	0	2022-04-20 23:06:22.827	24m 12s	23m 28s	102.7%	1.2 GB	9 GB	5.3 GB	3.3 GB
-525	c5/c9e7ed	3693638.pbsha.ib.sockeye	runMatching (524)	CACHED	0	2022-04-20 23:07:42.770	24m 53s	24m 39s	102.8%	949.5 MB	14.9 GB	4.4 GB	2.5 GB
-523	36/7db627	3693647.pbsha.ib.sockeye	runMatching (522)	CACHED	0	2022-04-20 23:13:42.762	59m 48s	59m 28s	106.9%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-514	b9/b3c684	3693643.pbsha.ib.sockeye	runMatching (513)	CACHED	0	2022-04-20 23:10:43.104	6m 35s	6m 10s	112.7%	663.4 MB	8.3 GB	2.3 GB	1.1 GB
-520	98/6e1af2	3693649.pbsha.ib.sockeye	runMatching (519)	CACHED	0	2022-04-20 23:14:02.765	11m 20s	10m 59s	109.0%	664.9 MB	8.3 GB	2.8 GB	1.3 GB
-522	76/6998f8	3693636.pbsha.ib.sockeye	runMatching (521)	CACHED	0	2022-04-20 23:06:47.981	54m 43s	54m 30s	105.8%	972 MB	8.6 GB	3.6 GB	2.2 GB
-524	21/3d99e7	3693654.pbsha.ib.sockeye	runMatching (523)	CACHED	0	2022-04-20 23:17:07.802	5m 30s	5m 18s	101.8%	650.4 MB	8.3 GB	2.2 GB	1.1 GB
-528	d2/db3651	3693652.pbsha.ib.sockeye	runMatching (527)	CACHED	0	2022-04-20 23:16:02.777	30m 48s	30m 41s	101.7%	1.9 GB	9.8 GB	6 GB	4.1 GB
-526	46/69af59	3693640.pbsha.ib.sockeye	runMatching (525)	CACHED	0	2022-04-20 23:08:07.748	29m 3s	28m 48s	110.8%	1.2 GB	8.9 GB	5.2 GB	3.3 GB
-536	e0/bed543	3693661.pbsha.ib.sockeye	runMatching (535)	CACHED	0	2022-04-20 23:22:27.860	13m 18s	12m 57s	102.6%	662.2 MB	8.3 GB	2.7 GB	1.3 GB
-531	9e/47e5b8	3693646.pbsha.ib.sockeye	runMatching (530)	CACHED	0	2022-04-20 23:13:37.765	9m 35s	9m 22s	102.3%	664.1 MB	8.3 GB	2.8 GB	1.4 GB
-521	c1/20e250	3693635.pbsha.ib.sockeye	runMatching (520)	CACHED	0	2022-04-20 23:06:37.744	2h 36m 39s	2h 36m 28s	109.8%	653.6 MB	8.3 GB	2.4 GB	1.1 GB
-533	50/148ab2	3693664.pbsha.ib.sockeye	runMatching (532)	CACHED	0	2022-04-20 23:23:12.835	22m 43s	22m 26s	102.1%	963.1 MB	8.6 GB	4.4 GB	2.5 GB
-538	65/ee474a	3693663.pbsha.ib.sockeye	runMatching (537)	CACHED	0	2022-04-20 23:23:07.845	14m 33s	14m 11s	111.3%	659.8 MB	8.3 GB	2.8 GB	1.3 GB
-534	c2/83a0ec	3693648.pbsha.ib.sockeye	runMatching (533)	CACHED	0	2022-04-20 23:13:57.779	25m 48s	25m 28s	105.2%	1.2 GB	14.9 GB	5.3 GB	3.3 GB
-540	36/15b20f	3693662.pbsha.ib.sockeye	runMatching (539)	CACHED	0	2022-04-20 23:22:37.814	58m 53s	58m 37s	102.2%	965.5 MB	8.6 GB	3.6 GB	2.2 GB
-537	f5/5603ef	3693651.pbsha.ib.sockeye	runMatching (536)	CACHED	0	2022-04-20 23:15:37.817	10m 30s	10m 10s	110.4%	661.3 MB	8.3 GB	2.8 GB	1.4 GB
-532	cb/9bf265	3693656.pbsha.ib.sockeye	runMatching (531)	CACHED	0	2022-04-20 23:17:17.796	6m 25s	6m 7s	118.7%	654.2 MB	8.3 GB	2.3 GB	1.1 GB
-529	05/33b59d	3693655.pbsha.ib.sockeye	runMatching (528)	CACHED	0	2022-04-20 23:17:07.882	58m 18s	58m 5s	102.9%	975.1 MB	8.6 GB	3.5 GB	2.2 GB
-530	97/701d90	3693660.pbsha.ib.sockeye	runMatching (529)	CACHED	0	2022-04-20 23:20:48.251	2h 29m 29s	2h 29m 16s	107.9%	659.4 MB	8.3 GB	2.4 GB	1.1 GB
-539	1b/b5313b	3693657.pbsha.ib.sockeye	runMatching (538)	CACHED	0	2022-04-20 23:18:02.803	55m 53s	55m 37s	115.5%	1.8 GB	9.3 GB	3.8 GB	1.7 GB
-541	9d/d3f9bb	3693658.pbsha.ib.sockeye	runMatching (540)	CACHED	0	2022-04-20 23:19:57.843	22m 3s	21m 51s	115.8%	952.4 MB	8.6 GB	4.4 GB	2.5 GB
-527	a3/64cbe5	3693644.pbsha.ib.sockeye	runMatching (526)	CACHED	0	2022-04-20 23:12:22.812	55m 53s	55m 35s	103.1%	1.7 GB	9.2 GB	3.8 GB	1.7 GB
-535	0a/bb03e0	3693653.pbsha.ib.sockeye	runMatching (534)	CACHED	0	2022-04-20 23:17:02.785	31m 8s	30m 52s	102.7%	1.8 GB	9.7 GB	6 GB	4.1 GB
-215	aa/889619	3699968.pbsha.ib.sockeye	runMatching (214)	FAILED	3	2022-04-23 18:36:00.038	36.4s	9s	35.4%	102.5 MB	7.4 GB	12.9 MB	41.6 KB
-241	b9/7ba60a	3700038.pbsha.ib.sockeye	runMatching (240)	FAILED	3	2022-04-23 18:36:34.023	22.5s	5.9s	68.7%	47.9 MB	7.4 GB	8.4 MB	81 B
-226	04/cccbf5	3699997.pbsha.ib.sockeye	runMatching (225)	FAILED	3	2022-04-23 18:36:02.692	1m 9s	4.7s	137.8%	101.8 MB	7.4 GB	12.9 MB	41.6 KB
-251	27/1359de	3700003.pbsha.ib.sockeye	runMatching (250)	FAILED	3	2022-04-23 18:36:03.229	1m 8s	6.4s	122.0%	99 MB	7.4 GB	12.3 MB	41.3 KB
-236	c2/6e1d69	3700002.pbsha.ib.sockeye	runMatching (235)	FAILED	3	2022-04-23 18:36:03.135	1m 13s	7.9s	98.0%	149.9 MB	7.4 GB	13.2 MB	337.8 KB
-183	bd/03a310	3699942.pbsha.ib.sockeye	runMatching (182)	COMPLETED	0	2022-04-23 18:35:57.444	5m 54s	5m 29s	102.0%	657.2 MB	8.3 GB	2.3 GB	1.1 GB
-208	e4/f7e8e2	3699972.pbsha.ib.sockeye	runMatching (207)	COMPLETED	0	2022-04-23 18:36:00.454	6m 11s	5m 23s	102.0%	658.5 MB	8.3 GB	2.3 GB	1.1 GB
-217	ca/faa4ea	3699967.pbsha.ib.sockeye	runMatching (216)	COMPLETED	0	2022-04-23 18:35:59.907	6m 37s	6m 10s	120.8%	659.6 MB	8.3 GB	2.3 GB	1.1 GB
-192	8b/3c43e1	3699954.pbsha.ib.sockeye	runMatching (191)	COMPLETED	0	2022-04-23 18:35:58.429	6m 43s	6m 19s	115.0%	660.2 MB	8.3 GB	2.3 GB	1.1 GB
-199	30/a348f3	3699957.pbsha.ib.sockeye	runMatching (198)	COMPLETED	0	2022-04-23 18:35:59.099	6m 42s	6m 19s	102.2%	664.8 MB	8.3 GB	2.3 GB	1.1 GB
-233	20/721a76	3699989.pbsha.ib.sockeye	runMatching (232)	COMPLETED	0	2022-04-23 18:36:01.981	6m 45s	5m 54s	156.1%	660.1 MB	8.3 GB	2.3 GB	1.1 GB
-228	aa/223afc	3699987.pbsha.ib.sockeye	runMatching (227)	COMPLETED	0	2022-04-23 18:36:01.808	6m 50s	5m 54s	107.4%	652.5 MB	8.3 GB	2.3 GB	1.1 GB
-273	41/4c458e	3700024.pbsha.ib.sockeye	runMatching (272)	COMPLETED	0	2022-04-23 18:36:32.914	6m 39s	6m 16s	101.8%	658.5 MB	8.3 GB	2.3 GB	1.1 GB
-262	30/77117e	3700028.pbsha.ib.sockeye	runMatching (261)	COMPLETED	0	2022-04-23 18:36:33.263	6m 38s	6m 18s	102.5%	660.2 MB	8.3 GB	2.3 GB	1.1 GB
-282	ac/b2079f	3700032.pbsha.ib.sockeye	runMatching (281)	COMPLETED	0	2022-04-23 18:36:33.574	6m 38s	6m 16s	117.7%	652.4 MB	8.3 GB	2.3 GB	1.1 GB
-243	29/a549f1	3699994.pbsha.ib.sockeye	runMatching (242)	COMPLETED	0	2022-04-23 18:36:02.436	7m 34s	6m 28s	189.8%	659.7 MB	8.3 GB	2.3 GB	1.1 GB
-253	8f/d1913f	3700005.pbsha.ib.sockeye	runMatching (252)	COMPLETED	0	2022-04-23 18:36:03.399	7m 33s	6m 27s	103.4%	656.6 MB	8.3 GB	2.3 GB	1.1 GB
-186	bf/9db744	3699947.pbsha.ib.sockeye	runMatching (185)	COMPLETED	0	2022-04-23 18:35:57.879	10m 14s	9m 47s	104.5%	663.2 MB	8.3 GB	2.8 GB	1.4 GB
-213	03/6617f6	3699973.pbsha.ib.sockeye	runMatching (212)	COMPLETED	0	2022-04-23 18:36:00.541	10m 26s	9m 41s	107.0%	671.8 MB	8.3 GB	2.8 GB	1.4 GB
-201	43/671cc0	3699977.pbsha.ib.sockeye	runMatching (200)	COMPLETED	0	2022-04-23 18:36:00.880	11m 16s	10m 20s	142.8%	671.1 MB	8.3 GB	2.8 GB	1.4 GB
-203	9c/98b421	3699979.pbsha.ib.sockeye	runMatching (202)	COMPLETED	0	2022-04-23 18:36:01.063	11m 20s	10m 30s	150.6%	665.9 MB	8.3 GB	2.8 GB	1.4 GB
-222	6f/eeb8e0	3699981.pbsha.ib.sockeye	runMatching (221)	COMPLETED	0	2022-04-23 18:36:01.241	11m 25s	10m 32s	138.2%	667.6 MB	8.3 GB	2.8 GB	1.4 GB
-294	d7/44bc22	3700045.pbsha.ib.sockeye	runMatching (293)	COMPLETED	0	2022-04-23 18:37:11.664	10m 45s	10m 31s	112.9%	671.5 MB	8.3 GB	2.8 GB	1.4 GB
-276	1c/519ed3	3700026.pbsha.ib.sockeye	runMatching (275)	COMPLETED	0	2022-04-23 18:36:33.096	11m 28s	11m 9s	108.5%	667.2 MB	8.3 GB	2.8 GB	1.4 GB
-187	9c/7cfff0	3699948.pbsha.ib.sockeye	runMatching (186)	COMPLETED	0	2022-04-23 18:35:57.951	12m 34s	12m 3s	102.3%	669.2 MB	8.3 GB	2.8 GB	1.3 GB
-230	99/159f93	3699998.pbsha.ib.sockeye	runMatching (229)	COMPLETED	0	2022-04-23 18:36:02.794	12m 44s	11m 36s	138.8%	666.3 MB	8.3 GB	2.8 GB	1.4 GB
-263	43/00f231	3700014.pbsha.ib.sockeye	runMatching (262)	COMPLETED	0	2022-04-23 18:36:04.373	12m 42s	11m 37s	139.1%	669.4 MB	8.3 GB	2.8 GB	1.4 GB
-266	82/63d4c9	3700016.pbsha.ib.sockeye	runMatching (265)	COMPLETED	0	2022-04-23 18:36:04.581	12m 42s	11m 39s	139.8%	673.9 MB	8.3 GB	2.8 GB	1.4 GB
-245	69/5dc5d0	3699996.pbsha.ib.sockeye	runMatching (244)	COMPLETED	0	2022-04-23 18:36:02.610	12m 54s	11m 46s	99.8%	659.1 MB	8.3 GB	2.8 GB	1.4 GB
-256	91/52565a	3700010.pbsha.ib.sockeye	runMatching (255)	COMPLETED	0	2022-04-23 18:36:04.003	12m 53s	11m 49s	103.2%	667.8 MB	8.3 GB	2.8 GB	1.4 GB
-214	3e/f4456f	3699975.pbsha.ib.sockeye	runMatching (213)	COMPLETED	0	2022-04-23 18:36:00.712	13m 11s	12m 26s	106.3%	669.1 MB	8.3 GB	2.8 GB	1.3 GB
-223	9c/8b563d	3699980.pbsha.ib.sockeye	runMatching (222)	COMPLETED	0	2022-04-23 18:36:01.144	13m 40s	12m 47s	141.5%	666.7 MB	8.3 GB	2.8 GB	1.3 GB
-291	eb/fa72a5	3700059.pbsha.ib.sockeye	runMatching (290)	COMPLETED	0	2022-04-23 18:43:11.747	6m 30s	6m 13s	102.3%	659.6 MB	8.3 GB	2.3 GB	1.1 GB
-202	75/506765	3699966.pbsha.ib.sockeye	runMatching (201)	COMPLETED	0	2022-04-23 18:35:59.836	13m 52s	13m 23s	126.3%	667.8 MB	8.3 GB	2.8 GB	1.3 GB
-195	66/2409e3	3699961.pbsha.ib.sockeye	runMatching (194)	COMPLETED	0	2022-04-23 18:35:59.433	13m 57s	13m 28s	114.1%	666.5 MB	8.3 GB	2.8 GB	1.3 GB
-286	d7/f5678f	3700043.pbsha.ib.sockeye	runMatching (285)	COMPLETED	0	2022-04-23 18:36:56.578	13m 5s	12m 53s	113.0%	667.4 MB	8.3 GB	2.8 GB	1.3 GB
-316	d9/409c86	3700081.pbsha.ib.sockeye	runMatching (315)	FAILED	3	2022-04-23 18:50:01.640	19.9s	6.9s	104.8%	133.6 MB	7.4 GB	13.1 MB	61.8 KB
-237	d0/52d585	3700025.pbsha.ib.sockeye	runMatching (236)	COMPLETED	0	2022-04-23 18:36:33.008	14m 9s	13m 46s	103.0%	669.4 MB	8.3 GB	2.8 GB	1.3 GB
-248	3e/b46a52	3700000.pbsha.ib.sockeye	runMatching (247)	COMPLETED	0	2022-04-23 18:36:02.963	14m 59s	13m 48s	214.2%	664 MB	8.3 GB	2.8 GB	1.3 GB
-246	f6/d51f16	3699995.pbsha.ib.sockeye	runMatching (245)	COMPLETED	0	2022-04-23 18:36:02.516	15m 4s	13m 59s	100.9%	669.6 MB	8.3 GB	2.8 GB	1.3 GB
-321	98/c335f3	3700088.pbsha.ib.sockeye	runMatching (320)	FAILED	3	2022-04-23 18:51:06.884	19.7s	6.4s	96.6%	110.1 MB	7.4 GB	13.4 MB	40.3 KB
-257	fd/a65543	3700018.pbsha.ib.sockeye	runMatching (256)	COMPLETED	0	2022-04-23 18:36:04.786	15m 27s	14m 22s	108.6%	665.1 MB	8.3 GB	2.8 GB	1.3 GB
-267	ed/d01b2e	3700019.pbsha.ib.sockeye	runMatching (266)	COMPLETED	0	2022-04-23 18:36:04.918	15m 27s	14m 25s	104.1%	671.5 MB	8.3 GB	2.8 GB	1.3 GB
-295	71/bfc3ae	3700046.pbsha.ib.sockeye	runMatching (294)	COMPLETED	0	2022-04-23 18:37:16.567	14m 15s	14m 3s	110.8%	676.2 MB	8.3 GB	2.8 GB	1.3 GB
-309	03/50973f	3700068.pbsha.ib.sockeye	runMatching (308)	COMPLETED	0	2022-04-23 18:47:56.631	6m 10s	6m 1s	117.8%	671.8 MB	8.3 GB	2.3 GB	1.1 GB
-277	e6/ac55eb	3700052.pbsha.ib.sockeye	runMatching (276)	COMPLETED	0	2022-04-23 18:42:36.589	11m 40s	11m 28s	112.0%	667.6 MB	8.3 GB	2.8 GB	1.3 GB
-198	80/de7093	3699951.pbsha.ib.sockeye	runMatching (197)	COMPLETED	0	2022-04-23 18:35:58.193	19m 23s	18m 56s	111.7%	951.3 MB	8.6 GB	4.4 GB	2.5 GB
-303	ac/eeb280	3700061.pbsha.ib.sockeye	runMatching (302)	COMPLETED	0	2022-04-23 18:43:36.664	12m	11m 39s	104.7%	664.7 MB	8.3 GB	2.8 GB	1.4 GB
-190	18/ff9aec	3699952.pbsha.ib.sockeye	runMatching (189)	COMPLETED	0	2022-04-23 18:35:58.271	19m 48s	19m 21s	109.0%	957.2 MB	8.6 GB	4.5 GB	2.5 GB
-300	c2/21f74c	3700078.pbsha.ib.sockeye	runMatching (299)	COMPLETED	0	2022-04-23 18:49:41.814	6m 15s	5m 59s	119.9%	654.6 MB	8.3 GB	2.3 GB	1.1 GB
-285	3c/95d780	3700064.pbsha.ib.sockeye	runMatching (284)	COMPLETED	0	2022-04-23 18:46:26.639	10m	9m 44s	111.3%	671.7 MB	8.3 GB	2.8 GB	1.4 GB
-318	a3/83426f	3700077.pbsha.ib.sockeye	runMatching (317)	COMPLETED	0	2022-04-23 18:49:41.688	6m 50s	6m 33s	106.3%	663.1 MB	8.3 GB	2.3 GB	1.1 GB
-271	a2/25ebb9	3700036.pbsha.ib.sockeye	runMatching (270)	COMPLETED	0	2022-04-23 18:36:33.871	20m 33s	20m 15s	107.8%	959.4 MB	8.6 GB	4.5 GB	2.5 GB
-212	b6/acd151	3699982.pbsha.ib.sockeye	runMatching (211)	COMPLETED	0	2022-04-23 18:36:01.322	21m 25s	20m 34s	131.1%	948.1 MB	8.6 GB	4.4 GB	2.5 GB
-280	56/2fb9d6	3700030.pbsha.ib.sockeye	runMatching (279)	COMPLETED	0	2022-04-23 18:36:33.412	22m 28s	22m 4s	101.9%	964.8 MB	8.6 GB	4.5 GB	2.5 GB
-232	88/471bd3	3700017.pbsha.ib.sockeye	runMatching (231)	COMPLETED	0	2022-04-23 18:36:04.679	23m 57s	22m 53s	123.7%	951.6 MB	8.6 GB	4.4 GB	2.5 GB
-260	8a/fd5fbe	3700013.pbsha.ib.sockeye	runMatching (259)	COMPLETED	0	2022-04-23 18:36:04.277	24m 7s	23m 1s	112.7%	959.5 MB	8.6 GB	4.5 GB	2.5 GB
-304	70/8998e9	3700066.pbsha.ib.sockeye	runMatching (303)	COMPLETED	0	2022-04-23 18:47:21.615	13m	12m 46s	114.5%	674.7 MB	8.3 GB	2.8 GB	1.3 GB
-312	98/d79fbc	3700071.pbsha.ib.sockeye	runMatching (311)	COMPLETED	0	2022-04-23 18:48:46.620	11m 55s	11m 41s	101.0%	668.8 MB	8.3 GB	2.8 GB	1.4 GB
-184	63/ebba7b	3699944.pbsha.ib.sockeye	runMatching (183)	COMPLETED	0	2022-04-23 18:35:57.635	24m 54s	24m 24s	102.8%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-341	47/69c050	3700112.pbsha.ib.sockeye	runMatching (340)	FAILED	3	2022-04-23 19:00:51.700	30s	14s	115.4%	136.9 MB	7.4 GB	13.7 MB	191 KB
-234	f8/a94d18	3699990.pbsha.ib.sockeye	runMatching (233)	COMPLETED	0	2022-04-23 18:36:02.072	25m 40s	24m 49s	142.9%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-216	94/1926e8	3699976.pbsha.ib.sockeye	runMatching (215)	COMPLETED	0	2022-04-23 18:36:00.798	25m 46s	24m 57s	103.1%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-269	68/45fc98	3700039.pbsha.ib.sockeye	runMatching (268)	COMPLETED	0	2022-04-23 18:36:34.096	26m 28s	26m 7s	103.5%	1.2 GB	9 GB	5.3 GB	3.3 GB
-209	dc/ea8151	3699965.pbsha.ib.sockeye	runMatching (208)	COMPLETED	0	2022-04-23 18:35:59.755	27m 37s	27m 11s	126.4%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-320	ad/bab7db	3700090.pbsha.ib.sockeye	runMatching (319)	COMPLETED	0	2022-04-23 18:51:31.645	12m 5s	11m 51s	111.5%	673.7 MB	8.3 GB	2.8 GB	1.4 GB
-327	d4/58f98c	3700105.pbsha.ib.sockeye	runMatching (326)	COMPLETED	0	2022-04-23 18:57:26.681	6m 10s	5m 52s	107.8%	660.2 MB	8.3 GB	2.3 GB	1.1 GB
-298	ec/c7f880	3700056.pbsha.ib.sockeye	runMatching (297)	COMPLETED	0	2022-04-23 18:42:51.581	20m 50s	20m 40s	108.9%	958.4 MB	8.6 GB	4.5 GB	2.5 GB
-193	4f/3a7f96	3699953.pbsha.ib.sockeye	runMatching (192)	COMPLETED	0	2022-04-23 18:35:58.345	28m 23s	28m	111.2%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-289	b8/595ce1	3700055.pbsha.ib.sockeye	runMatching (288)	COMPLETED	0	2022-04-23 18:42:46.580	21m 45s	21m 32s	104.5%	946.5 MB	8.6 GB	4.4 GB	2.5 GB
-194	ff/df6793	3699950.pbsha.ib.sockeye	runMatching (193)	COMPLETED	0	2022-04-23 18:35:58.116	28m 39s	28m 13s	103.8%	2 GB	9.9 GB	6 GB	4.1 GB
-205	97/d3ae98	3699958.pbsha.ib.sockeye	runMatching (204)	COMPLETED	0	2022-04-23 18:35:59.179	28m 37s	28m 13s	103.7%	1.2 GB	9 GB	5.3 GB	3.3 GB
-185	fc/29574e	3699945.pbsha.ib.sockeye	runMatching (184)	COMPLETED	0	2022-04-23 18:35:57.735	28m 49s	28m 21s	104.1%	2 GB	9.9 GB	6.1 GB	4.1 GB
-274	9f/4981ef	3700022.pbsha.ib.sockeye	runMatching (273)	COMPLETED	0	2022-04-23 18:36:32.552	28m 14s	27m 45s	109.0%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-313	b9/cb7db4	3700089.pbsha.ib.sockeye	runMatching (312)	COMPLETED	0	2022-04-23 18:51:26.657	13m 20s	13m 10s	115.3%	664.4 MB	8.3 GB	2.8 GB	1.3 GB
-211	e8/4a05fb	3699974.pbsha.ib.sockeye	runMatching (210)	COMPLETED	0	2022-04-23 18:36:00.624	29m 11s	28m 28s	103.0%	2 GB	9.9 GB	6 GB	4.1 GB
-254	98/9687c0	3700004.pbsha.ib.sockeye	runMatching (253)	COMPLETED	0	2022-04-23 18:36:03.318	30m 4s	28m 57s	138.3%	1.2 GB	9 GB	5.3 GB	3.3 GB
-330	86/93391f	3700095.pbsha.ib.sockeye	runMatching (329)	COMPLETED	0	2022-04-23 18:54:16.670	12m 10s	11m 55s	111.3%	665.9 MB	8.3 GB	2.8 GB	1.3 GB
-264	8d/4248be	3700015.pbsha.ib.sockeye	runMatching (263)	COMPLETED	0	2022-04-23 18:36:04.484	30m 52s	29m 49s	101.0%	1.2 GB	8.9 GB	5.3 GB	3.2 GB
-336	69/f37ef4	3700109.pbsha.ib.sockeye	runMatching (335)	COMPLETED	0	2022-04-23 19:00:11.701	7m 5s	6m 48s	101.4%	651.6 MB	8.3 GB	2.3 GB	1.1 GB
-284	d2/bc7945	3700033.pbsha.ib.sockeye	runMatching (283)	COMPLETED	0	2022-04-23 18:36:33.648	32m 8s	31m 51s	103.1%	1.9 GB	9.9 GB	6.1 GB	4.1 GB
-265	47/46a551	3700041.pbsha.ib.sockeye	runMatching (264)	COMPLETED	0	2022-04-23 18:36:34.253	32m 7s	31m 45s	103.3%	1.9 GB	9.8 GB	6.1 GB	4.1 GB
-339	6b/5fc820	3700103.pbsha.ib.sockeye	runMatching (338)	COMPLETED	0	2022-04-23 18:56:31.695	12m 40s	12m 26s	112.5%	671.5 MB	8.3 GB	2.8 GB	1.3 GB
-219	ac/8c595d	3699971.pbsha.ib.sockeye	runMatching (218)	COMPLETED	0	2022-04-23 18:36:00.375	33m 16s	32m 31s	107.7%	1.9 GB	9.9 GB	6.1 GB	4 GB
-292	7a/cbb8d8	3700057.pbsha.ib.sockeye	runMatching (291)	COMPLETED	0	2022-04-23 18:43:11.597	26m 5s	25m 50s	108.9%	1.2 GB	9 GB	5.3 GB	3.3 GB
-275	1a/eca1e2	3700029.pbsha.ib.sockeye	runMatching (274)	COMPLETED	0	2022-04-23 18:36:33.336	33m 18s	32m 54s	101.9%	2 GB	9.9 GB	6.1 GB	4.1 GB
-328	94/6dc940	3700106.pbsha.ib.sockeye	runMatching (327)	COMPLETED	0	2022-04-23 18:59:01.728	10m 50s	10m 38s	103.1%	662.4 MB	8.3 GB	2.8 GB	1.4 GB
-206	ff/42ec67	3699959.pbsha.ib.sockeye	runMatching (205)	COMPLETED	0	2022-04-23 18:35:59.270	34m 8s	33m 42s	112.7%	2 GB	9.9 GB	6.1 GB	4.1 GB
-362	71/9bf732	3700125.pbsha.ib.sockeye	runMatching (361)	COMPLETED	0	2022-04-23 19:04:58.694	5m 38s	5m 24s	111.9%	657.7 MB	8.3 GB	2.3 GB	1.1 GB
-283	b7/3669f7	3700053.pbsha.ib.sockeye	runMatching (282)	COMPLETED	0	2022-04-23 18:42:41.576	28m 10s	27m 56s	121.0%	1.2 GB	8.9 GB	5.2 GB	3.3 GB
-351	49/c36e65	3700122.pbsha.ib.sockeye	runMatching (350)	COMPLETED	0	2022-04-23 19:04:58.209	6m 29s	6m 15s	110.7%	655.9 MB	8.3 GB	2.3 GB	1.1 GB
-255	f5/690b71	3700009.pbsha.ib.sockeye	runMatching (254)	COMPLETED	0	2022-04-23 18:36:03.879	35m 28s	34m 24s	135.8%	2 GB	9.9 GB	6.1 GB	4.1 GB
-307	e9/5aa9e2	3700080.pbsha.ib.sockeye	runMatching (306)	COMPLETED	0	2022-04-23 18:49:56.627	21m 50s	21m 34s	113.6%	946.1 MB	8.6 GB	4.5 GB	2.5 GB
-310	bd/21ac85	3700070.pbsha.ib.sockeye	runMatching (309)	COMPLETED	0	2022-04-23 18:48:31.624	23m 20s	23m 5s	115.3%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-244	8d/cf9808	3699993.pbsha.ib.sockeye	runMatching (243)	COMPLETED	0	2022-04-23 18:36:02.351	35m 59s	34m 56s	103.2%	2 GB	9.9 GB	6.1 GB	4.1 GB
-247	01/543c8d	3699999.pbsha.ib.sockeye	runMatching (246)	COMPLETED	0	2022-04-23 18:36:02.882	35m 59s	34m 54s	130.8%	1.9 GB	9.8 GB	6.1 GB	4.1 GB
-235	52/eba2f6	3699992.pbsha.ib.sockeye	runMatching (234)	COMPLETED	0	2022-04-23 18:36:02.266	36m 9s	35m 3s	136.4%	1.8 GB	9.8 GB	6.1 GB	4.1 GB
-302	da/d0acdc	3700067.pbsha.ib.sockeye	runMatching (301)	COMPLETED	0	2022-04-23 18:47:26.617	24m 55s	24m 43s	114.7%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-338	7c/83c90c	3700111.pbsha.ib.sockeye	runMatching (337)	COMPLETED	0	2022-04-23 19:00:41.714	12m 5s	11m 53s	104.4%	664.9 MB	8.3 GB	2.8 GB	1.4 GB
-345	93/b20b15	3700131.pbsha.ib.sockeye	runMatching (344)	COMPLETED	0	2022-04-23 19:06:26.747	6m 50s	6m 34s	111.7%	659.9 MB	8.3 GB	2.3 GB	1.1 GB
-348	26/830388	3700116.pbsha.ib.sockeye	runMatching (347)	COMPLETED	0	2022-04-23 19:03:01.765	10m 40s	10m 28s	110.3%	669.7 MB	8.3 GB	2.8 GB	1.4 GB
-359	2d/89e5fc	3700118.pbsha.ib.sockeye	runMatching (358)	COMPLETED	0	2022-04-23 19:03:36.829	10m 50s	10m 40s	113.6%	668.9 MB	8.3 GB	2.8 GB	1.4 GB
-325	a2/c64342	3700098.pbsha.ib.sockeye	runMatching (324)	COMPLETED	0	2022-04-23 18:55:21.687	19m 40s	19m 27s	104.3%	954.1 MB	8.6 GB	4.4 GB	2.5 GB
-371	5e/aea2b0	3700141.pbsha.ib.sockeye	runMatching (370)	COMPLETED	0	2022-04-23 19:10:06.984	6m 10s	5m 57s	116.9%	657.8 MB	8.3 GB	2.3 GB	1.1 GB
-334	60/9c64cf	3700094.pbsha.ib.sockeye	runMatching (333)	COMPLETED	0	2022-04-23 18:54:07.108	23m 20s	23m 9s	119.1%	956.2 MB	8.6 GB	4.4 GB	2.5 GB
-293	8e/437377	3700060.pbsha.ib.sockeye	runMatching (292)	COMPLETED	0	2022-04-23 18:43:36.587	34m 10s	33m 56s	110.5%	1.9 GB	9.9 GB	6.1 GB	4.1 GB
-322	d5/b94aa2	3700076.pbsha.ib.sockeye	runMatching (321)	COMPLETED	0	2022-04-23 18:49:11.625	29m 50s	29m 37s	111.0%	1.8 GB	9.8 GB	6 GB	4.1 GB
-353	f4/5c47d3	3700127.pbsha.ib.sockeye	runMatching (352)	COMPLETED	0	2022-04-23 19:04:58.834	14m 3s	13m 46s	101.6%	678.5 MB	8.3 GB	2.8 GB	1.3 GB
-381	2f/af5943	3700156.pbsha.ib.sockeye	runMatching (380)	COMPLETED	0	2022-04-23 19:14:26.805	6m	5m 46s	115.5%	658.8 MB	8.3 GB	2.3 GB	1.1 GB
-319	01/44b7a9	3700101.pbsha.ib.sockeye	runMatching (318)	COMPLETED	0	2022-04-23 18:55:56.663	24m 55s	24m 42s	108.5%	1.2 GB	9 GB	5.3 GB	3.3 GB
-344	39/64c4ec	3700114.pbsha.ib.sockeye	runMatching (343)	COMPLETED	0	2022-04-23 19:01:41.722	19m 25s	19m 14s	123.4%	949.3 MB	8.6 GB	4.4 GB	2.5 GB
-375	0e/4ea09d	3700139.pbsha.ib.sockeye	runMatching (374)	COMPLETED	0	2022-04-23 19:09:51.774	11m 30s	11m 18s	105.3%	669 MB	8.3 GB	2.8 GB	1.4 GB
-311	48/ce8843	3700069.pbsha.ib.sockeye	runMatching (310)	COMPLETED	0	2022-04-23 18:48:01.640	33m 30s	33m 17s	113.5%	1.9 GB	9.9 GB	6.1 GB	4.1 GB
-329	e2/7dea75	3700100.pbsha.ib.sockeye	runMatching (328)	COMPLETED	0	2022-04-23 18:55:46.654	27m 55s	27m 35s	108.7%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-301	2b/e95b3b	3700085.pbsha.ib.sockeye	runMatching (300)	COMPLETED	0	2022-04-23 18:50:41.647	33m 30s	33m 18s	116.0%	1.9 GB	9.9 GB	6.1 GB	4.1 GB
-365	40/fdb602	3700150.pbsha.ib.sockeye	runMatching (364)	COMPLETED	0	2022-04-23 19:12:01.885	12m 25s	12m 5s	101.9%	671.9 MB	8.3 GB	2.8 GB	1.4 GB
-350	b1/88da05	3700121.pbsha.ib.sockeye	runMatching (349)	COMPLETED	0	2022-04-23 19:04:21.725	20m 20s	20m 7s	117.6%	950.3 MB	8.6 GB	4.5 GB	2.5 GB
-376	62/d49b12	3700146.pbsha.ib.sockeye	runMatching (375)	COMPLETED	0	2022-04-23 19:11:31.791	13m 45s	13m 33s	118.2%	667.2 MB	8.3 GB	2.8 GB	1.3 GB
-358	b0/1f33d0	3700149.pbsha.ib.sockeye	runMatching (357)	COMPLETED	0	2022-04-23 19:12:01.800	13m 35s	13m 16s	107.8%	669.6 MB	8.3 GB	2.8 GB	1.3 GB
-396	d6/f28b6c	3700163.pbsha.ib.sockeye	runMatching (395)	COMPLETED	0	2022-04-23 19:19:01.942	6m 50s	6m 36s	110.9%	659.9 MB	8.3 GB	2.3 GB	1.1 GB
-366	9f/40e80d	3700147.pbsha.ib.sockeye	runMatching (365)	COMPLETED	0	2022-04-23 19:11:46.788	15m	14m 42s	101.6%	671.3 MB	8.3 GB	2.8 GB	1.3 GB
-332	e7/755041	3700099.pbsha.ib.sockeye	runMatching (331)	COMPLETED	0	2022-04-23 18:55:36.682	31m 35s	31m 21s	104.7%	1.9 GB	9.8 GB	6.1 GB	4.1 GB
-363	0b/255ce3	3700129.pbsha.ib.sockeye	runMatching (362)	COMPLETED	0	2022-04-23 19:05:11.730	22m 5s	21m 54s	103.2%	957 MB	8.6 GB	4.4 GB	2.5 GB
-382	03/cb52a9	3700157.pbsha.ib.sockeye	runMatching (381)	COMPLETED	0	2022-04-23 19:15:01.809	12m 15s	11m 52s	103.8%	668.5 MB	8.3 GB	2.8 GB	1.3 GB
-342	c3/8d7672	3700113.pbsha.ib.sockeye	runMatching (341)	COMPLETED	0	2022-04-23 19:01:21.742	27m 35s	27m 21s	102.6%	1.2 GB	9 GB	5.3 GB	3.3 GB
-379	df/046eb2	3700144.pbsha.ib.sockeye	runMatching (378)	COMPLETED	0	2022-04-23 19:10:51.783	18m 30s	18m 18s	108.6%	959.3 MB	8.6 GB	4.4 GB	2.5 GB
-383	ae/519909	3700161.pbsha.ib.sockeye	runMatching (382)	COMPLETED	0	2022-04-23 19:17:46.833	12m 30s	12m 19s	103.6%	665.4 MB	8.3 GB	2.8 GB	1.4 GB
-372	75/8f3b83	3700138.pbsha.ib.sockeye	runMatching (371)	COMPLETED	0	2022-04-23 19:09:16.829	21m 10s	20m 57s	102.0%	952.1 MB	8.6 GB	4.5 GB	2.5 GB
-188	3c/847a21	3699943.pbsha.ib.sockeye	runMatching (187)	COMPLETED	0	2022-04-23 18:35:57.550	55m 4s	54m 38s	104.6%	1.8 GB	9.2 GB	3.9 GB	1.7 GB
-402	2e/bed0ce	3700168.pbsha.ib.sockeye	runMatching (401)	COMPLETED	0	2022-04-23 19:21:22.046	9m 50s	9m 42s	115.5%	665.7 MB	8.3 GB	2.8 GB	1.4 GB
-424	64/8aefd3	3700187.pbsha.ib.sockeye	runMatching (423)	FAILED	3	2022-04-23 19:31:01.911	20s	3.9s	120.9%	137.5 MB	7.4 GB	13 MB	57.8 KB
-364	20/fabe33	3700126.pbsha.ib.sockeye	runMatching (363)	COMPLETED	0	2022-04-23 19:04:58.763	27m 3s	26m 44s	107.2%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-337	6d/620366	3700107.pbsha.ib.sockeye	runMatching (336)	COMPLETED	0	2022-04-23 19:00:02.017	32m 40s	32m 21s	102.3%	2 GB	9.9 GB	6.1 GB	4.1 GB
-355	95/392e84	3700123.pbsha.ib.sockeye	runMatching (354)	COMPLETED	0	2022-04-23 19:04:58.364	28m 9s	27m 55s	109.9%	1.2 GB	9 GB	5.3 GB	3.2 GB
-347	97/25a86f	3700117.pbsha.ib.sockeye	runMatching (346)	COMPLETED	0	2022-04-23 19:03:36.725	31m 20s	31m 12s	103.1%	2 GB	9.9 GB	6 GB	4.1 GB
-231	7c/3e240a	3699988.pbsha.ib.sockeye	runMatching (230)	COMPLETED	0	2022-04-23 18:36:01.886	59m 25s	58m 31s	138.6%	1.8 GB	9.3 GB	3.9 GB	1.7 GB
-416	22/19d333	3700182.pbsha.ib.sockeye	runMatching (415)	COMPLETED	0	2022-04-23 19:28:56.946	6m 30s	6m 17s	117.8%	655.8 MB	8.3 GB	2.3 GB	1.1 GB
-224	32/c4344b	3699985.pbsha.ib.sockeye	runMatching (223)	COMPLETED	0	2022-04-23 18:36:01.570	59m 30s	58m 35s	147.7%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-268	40/097678	3700040.pbsha.ib.sockeye	runMatching (267)	COMPLETED	0	2022-04-23 18:36:34.179	58m 58s	58m 43s	102.2%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-287	49/55d4ff	3700037.pbsha.ib.sockeye	runMatching (286)	COMPLETED	0	2022-04-23 18:36:33.945	59m 18s	58m 58s	104.2%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-346	6e/746852	3700133.pbsha.ib.sockeye	runMatching (345)	COMPLETED	0	2022-04-23 19:07:16.789	28m 40s	28m 23s	101.5%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-296	06/4305dc	3700044.pbsha.ib.sockeye	runMatching (295)	COMPLETED	0	2022-04-23 18:37:11.562	59m	58m 46s	111.5%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-373	aa/4efb52	3700135.pbsha.ib.sockeye	runMatching (372)	COMPLETED	0	2022-04-23 19:08:41.879	27m 55s	27m 43s	110.2%	1.2 GB	9 GB	5.3 GB	3.3 GB
-387	d4/e2a5ca	3700202.pbsha.ib.sockeye	runMatching (386)	FAILED	3	2022-04-23 19:36:36.973	19.9s	5.7s	104.0%	129.3 MB	7.4 GB	13.2 MB	92.4 KB
-218	29/d8d44a	3699970.pbsha.ib.sockeye	runMatching (217)	COMPLETED	0	2022-04-23 18:36:00.284	1h 1m 22s	1h 41s	109.0%	1.7 GB	9.1 GB	3.9 GB	1.7 GB
-404	9d/e45269	3700171.pbsha.ib.sockeye	runMatching (403)	COMPLETED	0	2022-04-23 19:24:11.886	13m 40s	13m 26s	102.4%	676.4 MB	8.3 GB	2.8 GB	1.3 GB
-220	4e/474c45	3699978.pbsha.ib.sockeye	runMatching (219)	COMPLETED	0	2022-04-23 18:36:00.973	1h 2m 11s	1h 1m 19s	142.9%	963.4 MB	8.6 GB	3.6 GB	2.2 GB
-278	b4/f1838f	3700027.pbsha.ib.sockeye	runMatching (277)	COMPLETED	0	2022-04-23 18:36:33.172	1h 1m 59s	1h 1m 34s	110.6%	1.6 GB	9.1 GB	3.9 GB	1.7 GB
-189	f9/cadf4b	3699969.pbsha.ib.sockeye	runMatching (188)	COMPLETED	0	2022-04-23 18:36:00.144	1h 2m 47s	1h 2m 18s	103.1%	964 MB	8.6 GB	3.6 GB	2.2 GB
-410	43/8de46f	3700179.pbsha.ib.sockeye	runMatching (409)	COMPLETED	0	2022-04-23 19:27:11.908	11m 55s	11m 43s	118.5%	666.2 MB	8.3 GB	2.8 GB	1.4 GB
-288	e8/22e2c1	3700050.pbsha.ib.sockeye	runMatching (287)	COMPLETED	0	2022-04-23 18:42:11.570	57m 10s	56m 57s	103.9%	968.9 MB	8.6 GB	3.6 GB	2.2 GB
-225	21/69f97e	3699986.pbsha.ib.sockeye	runMatching (224)	COMPLETED	0	2022-04-23 18:36:01.727	1h 3m 25s	1h 2m 34s	143.1%	962.4 MB	8.6 GB	3.6 GB	2.2 GB
-204	a4/88770d	3699960.pbsha.ib.sockeye	runMatching (203)	COMPLETED	0	2022-04-23 18:35:59.349	1h 3m 33s	1h 3m 5s	111.5%	1.6 GB	9.1 GB	3.9 GB	1.7 GB
-196	2f/ceaf27	3699955.pbsha.ib.sockeye	runMatching (195)	COMPLETED	0	2022-04-23 18:35:58.903	1h 3m 43s	1h 3m 17s	103.0%	1.8 GB	9.2 GB	3.9 GB	1.7 GB
-258	0d/b73bad	3700023.pbsha.ib.sockeye	runMatching (257)	COMPLETED	0	2022-04-23 18:36:32.686	1h 3m 19s	1h 2m 57s	110.2%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-240	52/2bbae8	3700034.pbsha.ib.sockeye	runMatching (239)	COMPLETED	0	2022-04-23 18:36:33.724	1h 3m 28s	1h 3m 9s	104.5%	957.2 MB	8.6 GB	3.6 GB	2.2 GB
-419	c7/66001e	3700185.pbsha.ib.sockeye	runMatching (418)	COMPLETED	0	2022-04-23 19:30:16.924	9m 55s	9m 39s	103.9%	669 MB	8.3 GB	2.8 GB	1.4 GB
-374	c5/12abac	3700136.pbsha.ib.sockeye	runMatching (373)	COMPLETED	0	2022-04-23 19:09:11.761	31m 30s	31m 18s	117.6%	1.8 GB	9.7 GB	6.1 GB	4.1 GB
-197	12/ad56e7	3699963.pbsha.ib.sockeye	runMatching (196)	COMPLETED	0	2022-04-23 18:35:59.596	1h 5m 2s	1h 4m 39s	104.1%	968.2 MB	8.6 GB	3.6 GB	2.2 GB
-426	04/9df303	3700197.pbsha.ib.sockeye	runMatching (425)	COMPLETED	0	2022-04-23 19:35:31.937	6m	5m 48s	113.3%	659.7 MB	8.3 GB	2.3 GB	1.1 GB
-390	e8/becffd	3700199.pbsha.ib.sockeye	runMatching (389)	COMPLETED	0	2022-04-23 19:35:51.939	6m 10s	5m 58s	101.2%	666.9 MB	8.3 GB	2.3 GB	1.1 GB
-384	3a/8f8fc1	3700152.pbsha.ib.sockeye	runMatching (383)	COMPLETED	0	2022-04-23 19:12:21.787	29m 45s	29m 30s	107.5%	1.2 GB	9 GB	5.3 GB	3.3 GB
-210	e7/1ae54d	3699964.pbsha.ib.sockeye	runMatching (209)	COMPLETED	0	2022-04-23 18:35:59.679	1h 6m 27s	1h 6m 3s	112.5%	967.2 MB	8.6 GB	3.6 GB	2.2 GB
-249	c6/dd8f49	3700001.pbsha.ib.sockeye	runMatching (248)	COMPLETED	0	2022-04-23 18:36:03.044	1h 6m 34s	1h 5m 31s	100.9%	1.8 GB	9.2 GB	3.9 GB	1.7 GB
-238	42/245f0b	3700011.pbsha.ib.sockeye	runMatching (237)	COMPLETED	0	2022-04-23 18:36:04.104	1h 6m 43s	1h 5m 37s	100.9%	1.6 GB	9.1 GB	3.9 GB	1.7 GB
-368	29/e728e4	3700134.pbsha.ib.sockeye	runMatching (367)	COMPLETED	0	2022-04-23 19:08:41.811	34m 25s	33m 52s	104.8%	1.9 GB	9.8 GB	6.1 GB	4.1 GB
-394	c4/448790	3700166.pbsha.ib.sockeye	runMatching (393)	COMPLETED	0	2022-04-23 19:20:51.863	22m 50s	22m 33s	102.6%	948.4 MB	8.6 GB	4.5 GB	2.5 GB
-406	17/51021d	3700205.pbsha.ib.sockeye	runMatching (405)	COMPLETED	0	2022-04-23 19:37:51.971	6m 25s	6m 12s	107.4%	658.8 MB	8.3 GB	2.3 GB	1.1 GB
-250	56/b3d5c3	3700006.pbsha.ib.sockeye	runMatching (249)	COMPLETED	0	2022-04-23 18:36:03.487	1h 8m 18s	1h 7m 14s	131.8%	968.9 MB	8.6 GB	3.6 GB	2.2 GB
-391	f5/d61d50	3700165.pbsha.ib.sockeye	runMatching (390)	COMPLETED	0	2022-04-23 19:20:26.925	24m 55s	24m 40s	103.8%	1.2 GB	9 GB	5.3 GB	3.3 GB
-398	86/e2d02f	3700167.pbsha.ib.sockeye	runMatching (397)	COMPLETED	0	2022-04-23 19:21:07.069	24m 50s	24m 38s	104.8%	1.2 GB	9 GB	5.3 GB	3.3 GB
-433	10/84bce9	3700210.pbsha.ib.sockeye	runMatching (432)	COMPLETED	0	2022-04-23 19:39:21.965	6m 40s	6m 26s	120.2%	655.5 MB	8.3 GB	2.3 GB	1.1 GB
-229	32/fa87a9	3699991.pbsha.ib.sockeye	runMatching (228)	COMPLETED	0	2022-04-23 18:36:02.166	1h 10m 30s	1h 9m 23s	103.6%	963.2 MB	8.6 GB	3.6 GB	2.2 GB
-407	d6/3fc3de	3700173.pbsha.ib.sockeye	runMatching (406)	COMPLETED	0	2022-04-23 19:24:41.905	21m 50s	21m 39s	108.1%	962.4 MB	8.6 GB	4.4 GB	2.5 GB
-393	06/8ef20b	3700191.pbsha.ib.sockeye	runMatching (392)	COMPLETED	0	2022-04-23 19:32:41.935	14m	13m 45s	102.7%	671.4 MB	8.3 GB	2.8 GB	1.3 GB
-270	ad/4af807	3700020.pbsha.ib.sockeye	runMatching (269)	COMPLETED	0	2022-04-23 18:36:05.064	1h 10m 47s	1h 9m 44s	131.1%	971.2 MB	8.6 GB	3.6 GB	2.2 GB
-414	23/d54c09	3700180.pbsha.ib.sockeye	runMatching (413)	COMPLETED	0	2022-04-23 19:27:16.905	19m 45s	19m 34s	103.5%	954.8 MB	8.6 GB	4.4 GB	2.5 GB
-259	b8/a1bbbf	3700012.pbsha.ib.sockeye	runMatching (258)	COMPLETED	0	2022-04-23 18:36:04.193	1h 11m 3s	1h 9m 55s	102.2%	968.6 MB	8.6 GB	3.6 GB	2.2 GB
-354	40/030f1d	3700154.pbsha.ib.sockeye	runMatching (353)	COMPLETED	0	2022-04-23 19:13:16.818	34m 10s	34m	119.3%	1.9 GB	9.9 GB	6 GB	4.1 GB
-397	cf/9980dd	3700200.pbsha.ib.sockeye	runMatching (396)	COMPLETED	0	2022-04-23 19:35:56.955	12m 5s	11m 48s	104.3%	674.2 MB	8.3 GB	2.8 GB	1.4 GB
-443	f7/92b372	3700220.pbsha.ib.sockeye	runMatching (442)	COMPLETED	0	2022-04-23 19:41:32.003	6m 30s	6m 16s	116.4%	662.5 MB	8.3 GB	2.3 GB	1.1 GB
-279	05/ad83ba	3700054.pbsha.ib.sockeye	runMatching (278)	COMPLETED	0	2022-04-23 18:42:41.677	1h 5m 45s	1h 5m 29s	145.3%	970.6 MB	8.6 GB	3.6 GB	2.2 GB
-392	e3/7153e4	3700160.pbsha.ib.sockeye	runMatching (391)	COMPLETED	0	2022-04-23 19:17:26.852	31m	30m 44s	107.6%	1.9 GB	9.9 GB	6 GB	4.1 GB
-386	00/7563b4	3700159.pbsha.ib.sockeye	runMatching (385)	COMPLETED	0	2022-04-23 19:16:17.078	32m 15s	32m 3s	103.0%	1.8 GB	9.8 GB	6 GB	4.1 GB
-411	01/775ba7	3700196.pbsha.ib.sockeye	runMatching (410)	COMPLETED	0	2022-04-23 19:35:27.021	13m 10s	12m 55s	106.4%	674.1 MB	8.3 GB	2.8 GB	1.3 GB
-429	fe/190a26	3700207.pbsha.ib.sockeye	runMatching (428)	COMPLETED	0	2022-04-23 19:38:31.965	10m 35s	10m 24s	105.2%	664.2 MB	8.3 GB	2.8 GB	1.4 GB
-297	23/c8ffbd	3700048.pbsha.ib.sockeye	runMatching (296)	COMPLETED	0	2022-04-23 18:41:51.773	1h 8m 25s	1h 8m 7s	102.3%	962.2 MB	8.6 GB	3.6 GB	2.2 GB
-437	02/307689	3700213.pbsha.ib.sockeye	runMatching (436)	COMPLETED	0	2022-04-23 19:39:41.961	10m 40s	10m 22s	106.4%	662.4 MB	8.3 GB	2.8 GB	1.4 GB
-420	72/56a468	3700203.pbsha.ib.sockeye	runMatching (419)	COMPLETED	0	2022-04-23 19:36:56.987	14m 10s	13m 55s	110.8%	666.2 MB	8.3 GB	2.8 GB	1.3 GB
-305	56/08e250	3700073.pbsha.ib.sockeye	runMatching (304)	COMPLETED	0	2022-04-23 18:48:46.778	1h 3m	1h 2m 43s	111.8%	1.8 GB	9.2 GB	3.9 GB	1.7 GB
-430	8c/ca4968	3700208.pbsha.ib.sockeye	runMatching (429)	COMPLETED	0	2022-04-23 19:38:46.965	13m 35s	13m 22s	115.8%	669.9 MB	8.3 GB	2.8 GB	1.3 GB
-408	99/cd916e	3700176.pbsha.ib.sockeye	runMatching (407)	COMPLETED	0	2022-04-23 19:25:36.898	27m 15s	27m	113.7%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
-314	db/ce0bf5	3700072.pbsha.ib.sockeye	runMatching (313)	COMPLETED	0	2022-04-23 18:48:46.701	1h 4m 15s	1h 3m 57s	105.3%	1.6 GB	9.1 GB	3.9 GB	1.7 GB
-306	4f/6715a7	3700084.pbsha.ib.sockeye	runMatching (305)	COMPLETED	0	2022-04-23 18:50:21.650	1h 4m 20s	1h 4m 9s	105.1%	964.7 MB	8.6 GB	3.6 GB	2.2 GB
-441	31/46d448	3700224.pbsha.ib.sockeye	runMatching (440)	COMPLETED	0	2022-04-23 19:42:39.322	12m 48s	12m 33s	116.5%	671 MB	8.3 GB	2.8 GB	1.3 GB
-323	2d/c8a515	3700091.pbsha.ib.sockeye	runMatching (322)	COMPLETED	0	2022-04-23 18:51:31.723	1h 4m 20s	1h 4m 1s	105.2%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-450	f5/cfe78e	3700223.pbsha.ib.sockeye	runMatching (449)	COMPLETED	0	2022-04-23 19:42:39.154	13m 23s	13m 9s	110.8%	664.1 MB	8.3 GB	2.8 GB	1.3 GB
-446	dc/a207dd	3700231.pbsha.ib.sockeye	runMatching (445)	COMPLETED	0	2022-04-23 19:45:22.022	11m 25s	11m 7s	107.8%	659.8 MB	8.3 GB	2.8 GB	1.4 GB
-315	11/546d3f	3700074.pbsha.ib.sockeye	runMatching (314)	COMPLETED	0	2022-04-23 18:48:56.633	1h 8m	1h 7m 48s	102.9%	974.9 MB	8.6 GB	3.6 GB	2.2 GB
-401	89/2bf969	3700170.pbsha.ib.sockeye	runMatching (400)	COMPLETED	0	2022-04-23 19:23:41.902	33m 20s	33m 5s	119.4%	2 GB	9.9 GB	6 GB	4.1 GB
-324	a6/81e5b0	3700079.pbsha.ib.sockeye	runMatching (323)	COMPLETED	0	2022-04-23 18:49:51.628	1h 7m 16s	1h 7m	102.6%	971.4 MB	8.6 GB	3.6 GB	2.2 GB
-349	cf/4c9db0	3700130.pbsha.ib.sockeye	runMatching (348)	COMPLETED	0	2022-04-23 19:06:06.963	52m 25s	52m 15s	114.1%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-409	75/668d5a	3700175.pbsha.ib.sockeye	runMatching (408)	COMPLETED	0	2022-04-23 19:25:16.894	33m 15s	33m	103.3%	2 GB	9.9 GB	6.1 GB	4.1 GB
-431	28/2d60b7	3700211.pbsha.ib.sockeye	runMatching (430)	COMPLETED	0	2022-04-23 19:39:26.957	19m 5s	18m 51s	107.5%	954.5 MB	8.6 GB	4.4 GB	2.5 GB
-331	cb/df314e	3700110.pbsha.ib.sockeye	runMatching (330)	COMPLETED	0	2022-04-23 19:00:21.706	58m 30s	58m 17s	113.1%	1.7 GB	9.1 GB	3.9 GB	1.7 GB
-333	43/0abd3f	3700092.pbsha.ib.sockeye	runMatching (332)	COMPLETED	0	2022-04-23 18:51:31.797	1h 8m 35s	1h 8m 23s	110.9%	966.6 MB	8.6 GB	3.6 GB	2.2 GB
-340	c9/2c14b9	3700104.pbsha.ib.sockeye	runMatching (339)	COMPLETED	0	2022-04-23 18:57:06.876	1h 3m 45s	1h 3m 31s	109.8%	1.7 GB	9.1 GB	3.9 GB	1.7 GB
-447	04/f63f2f	3700219.pbsha.ib.sockeye	runMatching (446)	COMPLETED	0	2022-04-23 19:41:01.975	19m 55s	19m 42s	112.3%	955.4 MB	8.6 GB	4.4 GB	2.5 GB
-418	9e/fad695	3700183.pbsha.ib.sockeye	runMatching (417)	COMPLETED	0	2022-04-23 19:29:21.920	32m 20s	32m 7s	103.1%	1.8 GB	9.7 GB	6.1 GB	4.1 GB
-427	be/a1009b	3700198.pbsha.ib.sockeye	runMatching (426)	COMPLETED	0	2022-04-23 19:35:32.021	26m 20s	26m 6s	107.0%	1.2 GB	9 GB	5.3 GB	3.3 GB
-417	0a/c8602a	3700206.pbsha.ib.sockeye	runMatching (416)	COMPLETED	0	2022-04-23 19:38:11.961	27m 30s	27m 21s	110.2%	1.2 GB	9 GB	5.2 GB	3.3 GB
-453	d7/796cec	3700229.pbsha.ib.sockeye	runMatching (452)	COMPLETED	0	2022-04-23 19:44:21.987	21m 30s	21m 14s	111.2%	950.5 MB	8.6 GB	4.5 GB	2.5 GB
-434	ce/eb7e2e	3700221.pbsha.ib.sockeye	runMatching (433)	COMPLETED	0	2022-04-23 19:42:02.008	24m 40s	24m 29s	112.6%	1.2 GB	9 GB	5.2 GB	3.3 GB
-360	9e/4164df	3700119.pbsha.ib.sockeye	runMatching (359)	COMPLETED	0	2022-04-23 19:03:36.906	1h 3m 20s	1h 3m 12s	103.7%	950.1 MB	8.6 GB	3.6 GB	2.2 GB
-357	bd/c7b4ae	3700137.pbsha.ib.sockeye	runMatching (356)	COMPLETED	0	2022-04-23 19:09:16.761	58m	57m 49s	121.6%	1.8 GB	9.2 GB	3.9 GB	1.7 GB
-428	e0/f7fb8a	3700193.pbsha.ib.sockeye	runMatching (427)	COMPLETED	0	2022-04-23 19:34:56.989	33m 15s	33m 4s	102.4%	2 GB	9.9 GB	6.1 GB	4.1 GB
-445	83/61684e	3700222.pbsha.ib.sockeye	runMatching (444)	COMPLETED	0	2022-04-23 19:42:38.970	26m 23s	26m 7s	107.5%	1.2 GB	9 GB	5.3 GB	3.2 GB
-435	a1/859aac	3700209.pbsha.ib.sockeye	runMatching (434)	COMPLETED	0	2022-04-23 19:39:07.191	31m 40s	31m 25s	109.1%	1.8 GB	9.7 GB	6.1 GB	4.1 GB
-367	d9/06ce56	3700140.pbsha.ib.sockeye	runMatching (366)	COMPLETED	0	2022-04-23 19:09:51.846	1h 1m 50s	1h 1m 37s	112.6%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-377	ce/d0206d	3700143.pbsha.ib.sockeye	runMatching (376)	COMPLETED	0	2022-04-23 19:10:36.797	1h 1m 15s	1h 1m 6s	108.7%	1.7 GB	9.1 GB	3.8 GB	1.7 GB
-444	a0/7cc62c	3700228.pbsha.ib.sockeye	runMatching (443)	COMPLETED	0	2022-04-23 19:44:17.003	29m 30s	29m 19s	105.4%	1.8 GB	9.8 GB	6 GB	4.1 GB
-378	d0/3cdbb0	3700153.pbsha.ib.sockeye	runMatching (377)	COMPLETED	0	2022-04-23 19:12:46.807	1h 2m 25s	1h 2m 9s	107.2%	964.4 MB	8.6 GB	3.6 GB	2.2 GB
-356	dd/9b241b	3700145.pbsha.ib.sockeye	runMatching (355)	COMPLETED	0	2022-04-23 19:11:26.795	1h 4m 35s	1h 4m 23s	107.4%	977.3 MB	8.6 GB	3.6 GB	2.2 GB
-369	0c/15baa5	3700151.pbsha.ib.sockeye	runMatching (368)	COMPLETED	0	2022-04-23 19:12:11.784	1h 4m 20s	1h 4m 9s	113.3%	960.5 MB	8.6 GB	3.6 GB	2.2 GB
-399	8a/881b76	3700169.pbsha.ib.sockeye	runMatching (398)	COMPLETED	0	2022-04-23 19:21:31.861	1h 10s	59m 56s	102.6%	1.7 GB	9.1 GB	3.9 GB	1.7 GB
-413	ef/8fa218	3700177.pbsha.ib.sockeye	runMatching (412)	COMPLETED	0	2022-04-23 19:25:51.895	58m 20s	58m 10s	103.7%	969.1 MB	8.6 GB	3.6 GB	2.2 GB
-422	3b/a4ed7d	3700188.pbsha.ib.sockeye	runMatching (421)	COMPLETED	0	2022-04-23 19:31:11.919	56m 15s	56m 3s	102.6%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-412	41/67d4a0	3700178.pbsha.ib.sockeye	runMatching (411)	COMPLETED	0	2022-04-23 19:26:47.109	1h 1m 20s	1h 1m 7s	110.6%	1.8 GB	9.3 GB	3.9 GB	1.7 GB
-385	a6/9060b1	3700190.pbsha.ib.sockeye	runMatching (384)	COMPLETED	0	2022-04-23 19:32:02.183	56m 5s	55m 49s	121.1%	979.7 MB	8.6 GB	3.6 GB	2.2 GB
-400	c9/dcdd6a	3700172.pbsha.ib.sockeye	runMatching (399)	COMPLETED	0	2022-04-23 19:24:26.901	1h 5m 15s	1h 5m 2s	113.8%	966.4 MB	8.6 GB	3.6 GB	2.2 GB
-423	0a/e68c19	3700189.pbsha.ib.sockeye	runMatching (422)	COMPLETED	0	2022-04-23 19:31:21.942	58m 20s	58m 9s	104.3%	963.5 MB	8.6 GB	3.6 GB	2.2 GB
-389	c6/9f97f9	3700195.pbsha.ib.sockeye	runMatching (388)	COMPLETED	0	2022-04-23 19:35:26.948	54m 45s	54m 32s	103.1%	1.7 GB	9.1 GB	3.9 GB	1.7 GB
-403	90/d0a2ba	3700192.pbsha.ib.sockeye	runMatching (402)	COMPLETED	0	2022-04-23 19:33:07.142	58m 35s	58m 23s	115.0%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-421	71/5d1b82	3700186.pbsha.ib.sockeye	runMatching (420)	COMPLETED	0	2022-04-23 19:30:26.920	1h 1m 40s	1h 1m 23s	111.0%	964 MB	8.6 GB	3.6 GB	2.2 GB
-439	77/aa5589	3700218.pbsha.ib.sockeye	runMatching (438)	COMPLETED	0	2022-04-23 19:40:41.990	55m 25s	55m 13s	105.4%	1.7 GB	9.2 GB	3.8 GB	1.7 GB
-436	99/d8271c	3700212.pbsha.ib.sockeye	runMatching (435)	COMPLETED	0	2022-04-23 19:39:31.990	57m 15s	57m	111.0%	1.8 GB	9.2 GB	3.9 GB	1.7 GB
-451	df/d7543f	3700227.pbsha.ib.sockeye	runMatching (450)	COMPLETED	0	2022-04-23 19:43:41.989	58m 45s	58m 31s	110.9%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
-432	c1/0d7f05	3700215.pbsha.ib.sockeye	runMatching (431)	COMPLETED	0	2022-04-23 19:40:01.985	1h 2m 55s	1h 2m 43s	108.7%	956.1 MB	8.6 GB	3.6 GB	2.2 GB
-442	ce/886355	3700225.pbsha.ib.sockeye	runMatching (441)	COMPLETED	0	2022-04-23 19:42:46.988	1h 45s	1h 33s	111.3%	968.1 MB	8.6 GB	3.6 GB	2.2 GB
-448	b0/28b3ab	3700226.pbsha.ib.sockeye	runMatching (447)	COMPLETED	0	2022-04-23 19:43:07.220	1h 55s	1h 40s	107.4%	971.2 MB	8.6 GB	3.6 GB	2.2 GB
-191	68/61a622	3699949.pbsha.ib.sockeye	runMatching (190)	COMPLETED	0	2022-04-23 18:35:58.042	2h 24m 39s	2h 24m 13s	102.6%	666.4 MB	8.3 GB	2.4 GB	1.1 GB
-182	de/b9705a	3699946.pbsha.ib.sockeye	runMatching (181)	COMPLETED	0	2022-04-23 18:35:57.810	2h 26m 40s	2h 26m 15s	102.5%	662.1 MB	8.3 GB	2.4 GB	1.1 GB
-227	e5/cd3706	3699983.pbsha.ib.sockeye	runMatching (226)	COMPLETED	0	2022-04-23 18:36:01.399	2h 28m 51s	2h 28m 3s	131.4%	667.8 MB	8.3 GB	2.4 GB	1.1 GB
-299	84/6cbb44	3700065.pbsha.ib.sockeye	runMatching (298)	COMPLETED	0	2022-04-23 18:47:16.825	2h 20m 46s	2h 20m 34s	116.3%	657.5 MB	8.3 GB	2.4 GB	1.1 GB
-221	fe/01692d	3699984.pbsha.ib.sockeye	runMatching (220)	COMPLETED	0	2022-04-23 18:36:01.483	2h 33m 1s	2h 32m 6s	116.2%	661.4 MB	8.3 GB	2.4 GB	1.1 GB
-200	c1/78ab7e	3699956.pbsha.ib.sockeye	runMatching (199)	COMPLETED	0	2022-04-23 18:35:59.007	2h 34m 43s	2h 34m 18s	115.1%	653.7 MB	8.3 GB	2.4 GB	1.1 GB
-272	23/78ddb6	3700042.pbsha.ib.sockeye	runMatching (271)	COMPLETED	0	2022-04-23 18:36:36.529	2h 34m 51s	2h 34m 41s	126.8%	658.2 MB	8.3 GB	2.4 GB	1.1 GB
-239	65/b8e164	3700035.pbsha.ib.sockeye	runMatching (238)	COMPLETED	0	2022-04-23 18:36:33.797	2h 35m 44s	2h 35m 23s	107.7%	660.1 MB	8.3 GB	2.4 GB	1.1 GB
-290	e9/3f580d	3700058.pbsha.ib.sockeye	runMatching (289)	COMPLETED	0	2022-04-23 18:43:11.669	2h 31m 26s	2h 31m 9s	168.3%	659 MB	8.3 GB	2.4 GB	1.1 GB
-261	45/2c8097	3700021.pbsha.ib.sockeye	runMatching (260)	COMPLETED	0	2022-04-23 18:36:05.202	2h 38m 52s	2h 38m 1s	110.2%	661.2 MB	8.3 GB	2.4 GB	1.1 GB
-281	74/906e49	3700031.pbsha.ib.sockeye	runMatching (280)	COMPLETED	0	2022-04-23 18:36:33.494	2h 39m 19s	2h 38m 58s	102.8%	656.3 MB	8.3 GB	2.4 GB	1.1 GB
-207	3e/f291a3	3699962.pbsha.ib.sockeye	runMatching (206)	COMPLETED	0	2022-04-23 18:35:59.521	2h 41m 38s	2h 41m 13s	127.9%	660.5 MB	8.3 GB	2.4 GB	1.1 GB
-252	44/91d1ec	3700007.pbsha.ib.sockeye	runMatching (251)	COMPLETED	0	2022-04-23 18:36:03.650	2h 42m 44s	2h 41m 40s	123.8%	655.8 MB	8.3 GB	2.4 GB	1.1 GB
-242	84/d9c153	3700008.pbsha.ib.sockeye	runMatching (241)	COMPLETED	0	2022-04-23 18:36:03.743	2h 43m 24s	2h 42m 20s	131.1%	666.2 MB	8.3 GB	2.4 GB	1.1 GB
-308	a3/714321	3700063.pbsha.ib.sockeye	runMatching (307)	COMPLETED	0	2022-04-23 18:46:11.641	2h 36m 21s	2h 36m 6s	105.2%	653.9 MB	8.3 GB	2.5 GB	1.1 GB
-343	6b/bf5e93	3700115.pbsha.ib.sockeye	runMatching (342)	COMPLETED	0	2022-04-23 19:01:46.718	2h 23m 26s	2h 23m 16s	103.0%	652.7 MB	8.3 GB	2.4 GB	1.1 GB
-335	7e/1ff020	3700102.pbsha.ib.sockeye	runMatching (334)	COMPLETED	0	2022-04-23 18:56:26.691	2h 28m 51s	2h 28m 34s	102.6%	672.4 MB	8.3 GB	2.5 GB	1.1 GB
-326	06/aa9c71	3700087.pbsha.ib.sockeye	runMatching (325)	COMPLETED	0	2022-04-23 18:51:01.644	2h 35m 46s	2h 35m 32s	113.1%	656.4 MB	8.3 GB	2.4 GB	1.1 GB
-361	75/8fcc6b	3700124.pbsha.ib.sockeye	runMatching (360)	COMPLETED	0	2022-04-23 19:04:58.588	2h 22m 49s	2h 22m 34s	107.0%	673.9 MB	8.3 GB	2.4 GB	1.1 GB
-317	0c/b3d3e1	3700075.pbsha.ib.sockeye	runMatching (316)	COMPLETED	0	2022-04-23 18:48:56.707	2h 41m 11s	2h 40m 59s	110.3%	660.4 MB	8.3 GB	2.4 GB	1.1 GB
-370	ea/4d9f1c	3700132.pbsha.ib.sockeye	runMatching (369)	COMPLETED	0	2022-04-23 19:06:56.770	2h 23m 51s	2h 23m 40s	120.9%	648.5 MB	8.3 GB	2.4 GB	1.1 GB
-380	87/6e6713	3700148.pbsha.ib.sockeye	runMatching (379)	COMPLETED	0	2022-04-23 19:11:51.796	2h 19m 6s	2h 18m 52s	120.4%	660.6 MB	8.3 GB	2.5 GB	1.1 GB
-352	09/8915d2	3700120.pbsha.ib.sockeye	runMatching (351)	COMPLETED	0	2022-04-23 19:03:41.724	2h 28m 31s	2h 28m 17s	105.2%	668.5 MB	8.3 GB	2.4 GB	1.1 GB
-388	e6/5770c0	3700155.pbsha.ib.sockeye	runMatching (387)	COMPLETED	0	2022-04-23 19:13:41.799	2h 24m 51s	2h 24m 37s	114.2%	662 MB	8.3 GB	2.4 GB	1.1 GB
-395	02/fdd6ce	3700162.pbsha.ib.sockeye	runMatching (394)	COMPLETED	0	2022-04-23 19:19:01.873	2h 27m 46s	2h 27m 34s	103.3%	653.2 MB	8.3 GB	2.4 GB	1.1 GB
-415	75/40e5d3	3700181.pbsha.ib.sockeye	runMatching (414)	COMPLETED	0	2022-04-23 19:27:17.001	2h 23m 51s	2h 23m 42s	113.1%	668.7 MB	8.3 GB	2.4 GB	1.1 GB
-440	e8/fbcacb	3700217.pbsha.ib.sockeye	runMatching (439)	COMPLETED	0	2022-04-23 19:40:11.979	2h 17m 6s	2h 16m 54s	111.3%	667.5 MB	8.3 GB	2.4 GB	1.1 GB
-405	ec/37de32	3700204.pbsha.ib.sockeye	runMatching (404)	COMPLETED	0	2022-04-23 19:37:22.171	2h 22m 6s	2h 21m 54s	114.9%	655.7 MB	8.3 GB	2.4 GB	1.1 GB
-438	09/520e33	3700214.pbsha.ib.sockeye	runMatching (437)	COMPLETED	0	2022-04-23 19:39:51.964	2h 19m 51s	2h 19m 38s	106.3%	660.2 MB	8.3 GB	2.4 GB	1.1 GB
-425	20/e53b12	3700201.pbsha.ib.sockeye	runMatching (424)	COMPLETED	0	2022-04-23 19:36:11.976	2h 28m 36s	2h 28m 22s	102.1%	651.7 MB	8.3 GB	2.4 GB	1.1 GB
-542	44/a4387a	3700308.pbsha.ib.sockeye	aggregate	COMPLETED	0	2022-04-23 22:04:48.682	3m 54s	3m 43s	75.5%	122 MB	4.4 GB	1.2 GB	589.8 MB
-543	de/a2d27b	3700312.pbsha.ib.sockeye	computeKS	COMPLETED	0	2022-04-23 22:08:42.932	44m 55s	44m 42s	99.0%	11.9 GB	12.1 GB	608.6 MB	28 MB
-544	c7/bbe608	3700371.pbsha.ib.sockeye	plot	COMPLETED	0	2022-04-23 22:53:37.829	29.8s	16.6s	98.7%	487.9 MB	884.4 MB	36.3 MB	2.4 MB
+12	f4/068266	3700472.pbsha.ib.sockeye	runMatching (11)	COMPLETED	0	2022-04-23 22:58:06.780	5m 36s	5m 22s	103.9%	665 MB	8.3 GB	2.2 GB	1.1 GB
+20	6a/7997de	3700490.pbsha.ib.sockeye	runMatching (19)	COMPLETED	0	2022-04-23 22:58:08.135	5m 59s	5m 17s	101.9%	656 MB	8.3 GB	2.3 GB	1.1 GB
+3	61/04f64d	3700483.pbsha.ib.sockeye	runMatching (2)	COMPLETED	0	2022-04-23 22:58:07.636	6m 10s	5m 28s	110.3%	654.5 MB	8.3 GB	2.2 GB	1.1 GB
+68	41/cfaee2	3700543.pbsha.ib.sockeye	runMatching (67)	COMPLETED	0	2022-04-23 22:58:38.830	7m 4s	6m 32s	122.5%	660.7 MB	8.3 GB	2.3 GB	1.1 GB
+82	d3/e10277	3700545.pbsha.ib.sockeye	runMatching (81)	COMPLETED	0	2022-04-23 22:58:38.965	7m 4s	6m 30s	101.4%	666.6 MB	8.3 GB	2.3 GB	1.1 GB
+83	dc/32e8ed	3700547.pbsha.ib.sockeye	runMatching (82)	COMPLETED	0	2022-04-23 22:58:39.104	7m 4s	6m 30s	102.4%	652.4 MB	8.3 GB	2.3 GB	1.1 GB
+26	40/54f012	3700496.pbsha.ib.sockeye	runMatching (25)	COMPLETED	0	2022-04-23 22:58:08.576	7m 39s	6m 32s	141.2%	652.6 MB	8.3 GB	2.3 GB	1.1 GB
+56	db/e72832	3700518.pbsha.ib.sockeye	runMatching (55)	COMPLETED	0	2022-04-23 22:58:10.301	7m 37s	6m 32s	138.9%	658.3 MB	8.3 GB	2.3 GB	1.1 GB
+38	bc/4d42fc	3700498.pbsha.ib.sockeye	runMatching (37)	COMPLETED	0	2022-04-23 22:58:08.730	7m 44s	6m 34s	117.2%	658.5 MB	8.3 GB	2.3 GB	1.1 GB
+47	4b/df9ccb	3700509.pbsha.ib.sockeye	runMatching (46)	COMPLETED	0	2022-04-23 22:58:09.641	8m 8s	7m	101.9%	663.5 MB	8.3 GB	2.3 GB	1.1 GB
+92	4a/40ab3c	3700566.pbsha.ib.sockeye	runMatching (91)	COMPLETED	0	2022-04-23 22:58:40.505	8m 57s	8m 41s	102.4%	978.1 MB	8.7 GB	3.5 GB	2.2 GB
+15	c2/4f78a9	3700471.pbsha.ib.sockeye	runMatching (14)	COMPLETED	0	2022-04-23 22:58:06.682	9m 41s	9m 33s	110.6%	681.2 MB	8.3 GB	2.8 GB	1.4 GB
+6	a3/5f481a	3700484.pbsha.ib.sockeye	runMatching (5)	COMPLETED	0	2022-04-23 22:58:07.713	10m 20s	9m 39s	112.3%	662.1 MB	8.3 GB	2.8 GB	1.4 GB
+58	0f/a788f8	3700534.pbsha.ib.sockeye	runMatching (57)	COMPLETED	0	2022-04-23 22:58:38.170	11m 9s	10m 48s	102.5%	665.1 MB	8.3 GB	2.8 GB	1.4 GB
+7	1b/48adea	3700489.pbsha.ib.sockeye	runMatching (6)	COMPLETED	0	2022-04-23 22:58:08.064	12m 10s	11m 24s	108.7%	667.5 MB	8.3 GB	2.8 GB	1.3 GB
+69	f4/2857a1	3700539.pbsha.ib.sockeye	runMatching (68)	COMPLETED	0	2022-04-23 22:58:38.512	11m 39s	11m 5s	113.2%	668.3 MB	8.3 GB	2.8 GB	1.4 GB
+87	59/16adb9	3700551.pbsha.ib.sockeye	runMatching (86)	COMPLETED	0	2022-04-23 22:58:39.412	11m 43s	11m 5s	104.3%	672.5 MB	8.3 GB	2.8 GB	1.4 GB
+16	85/6fc704	3700481.pbsha.ib.sockeye	runMatching (15)	COMPLETED	0	2022-04-23 22:58:07.486	12m 20s	11m 40s	103.4%	667.7 MB	8.3 GB	2.8 GB	1.3 GB
+77	b4/caa882	3700541.pbsha.ib.sockeye	runMatching (76)	COMPLETED	0	2022-04-23 22:58:38.644	11m 49s	11m 13s	102.7%	664.6 MB	8.3 GB	2.8 GB	1.4 GB
+41	73/e8b258	3700504.pbsha.ib.sockeye	runMatching (40)	COMPLETED	0	2022-04-23 22:58:09.186	12m 23s	11m 19s	104.0%	665.2 MB	8.3 GB	2.8 GB	1.4 GB
+51	0c/c76882	3700512.pbsha.ib.sockeye	runMatching (50)	COMPLETED	0	2022-04-23 22:58:09.851	12m 53s	11m 48s	101.9%	660.7 MB	8.3 GB	2.8 GB	1.4 GB
+28	ec/0be960	3700494.pbsha.ib.sockeye	runMatching (27)	COMPLETED	0	2022-04-23 22:58:08.428	12m 59s	11m 51s	103.0%	666.5 MB	8.3 GB	2.8 GB	1.4 GB
+31	25/61542c	3700499.pbsha.ib.sockeye	runMatching (30)	COMPLETED	0	2022-04-23 22:58:08.804	12m 59s	11m 50s	99.8%	676.2 MB	8.3 GB	2.8 GB	1.4 GB
+70	27/beaf1b	3700529.pbsha.ib.sockeye	runMatching (69)	COMPLETED	0	2022-04-23 22:58:37.816	13m 50s	13m 24s	110.0%	674.6 MB	8.3 GB	2.8 GB	1.3 GB
+78	06/72e1f4	3700542.pbsha.ib.sockeye	runMatching (77)	COMPLETED	0	2022-04-23 22:58:38.755	13m 59s	13m 23s	104.9%	673 MB	8.3 GB	2.8 GB	1.3 GB
+88	91/da2653	3700555.pbsha.ib.sockeye	runMatching (87)	COMPLETED	0	2022-04-23 22:58:39.748	13m 58s	13m 24s	102.4%	679 MB	8.3 GB	2.8 GB	1.3 GB
+52	8c/5235e0	3700521.pbsha.ib.sockeye	runMatching (51)	COMPLETED	0	2022-04-23 22:58:10.516	14m 37s	13m 29s	128.7%	677.2 MB	8.3 GB	2.8 GB	1.3 GB
+23	e1/ab4b3c	3700495.pbsha.ib.sockeye	runMatching (22)	COMPLETED	0	2022-04-23 22:58:08.509	14m 44s	13m 34s	138.6%	679.2 MB	8.3 GB	2.8 GB	1.3 GB
+65	12/fae574	3700535.pbsha.ib.sockeye	runMatching (64)	COMPLETED	0	2022-04-23 22:58:38.233	14m 44s	14m 6s	111.4%	668.3 MB	8.3 GB	2.8 GB	1.3 GB
+33	59/13fba9	3700510.pbsha.ib.sockeye	runMatching (32)	COMPLETED	0	2022-04-23 22:58:09.712	15m 48s	14m 47s	101.6%	669.8 MB	8.3 GB	2.8 GB	1.3 GB
+104	27/269b42	3700573.pbsha.ib.sockeye	runMatching (103)	COMPLETED	0	2022-04-23 23:04:17.711	9m 40s	9m 28s	102.7%	980.7 MB	8.7 GB	3.5 GB	2.2 GB
+110	e0/185563	3700577.pbsha.ib.sockeye	runMatching (109)	COMPLETED	0	2022-04-23 23:05:42.920	8m 15s	8m 3s	120.4%	978.8 MB	8.7 GB	3.4 GB	2.2 GB
+40	d3/b15b90	3700505.pbsha.ib.sockeye	runMatching (39)	COMPLETED	0	2022-04-23 22:58:09.261	15m 53s	14m 47s	103.9%	674 MB	8.3 GB	2.8 GB	1.3 GB
+96	b1/07b5fd	3700560.pbsha.ib.sockeye	runMatching (95)	COMPLETED	0	2022-04-23 22:58:40.097	16m 8s	15m 49s	108.4%	980.9 MB	8.7 GB	4.3 GB	2.7 GB
+90	9a/8b3148	3700557.pbsha.ib.sockeye	runMatching (89)	COMPLETED	0	2022-04-23 22:58:39.880	18m 58s	18m 37s	105.6%	951.2 MB	8.6 GB	4.4 GB	2.5 GB
+10	24/a72da1	3700476.pbsha.ib.sockeye	runMatching (9)	COMPLETED	0	2022-04-23 22:58:07.099	19m 36s	19m 18s	109.1%	959.2 MB	8.6 GB	4.4 GB	2.5 GB
+19	c5/d972d1	3700488.pbsha.ib.sockeye	runMatching (18)	COMPLETED	0	2022-04-23 22:58:07.994	19m 40s	18m 56s	110.3%	958.1 MB	8.6 GB	4.4 GB	2.5 GB
+122	04/e3fe82	3700583.pbsha.ib.sockeye	runMatching (121)	COMPLETED	0	2022-04-23 23:07:47.699	11m 5s	10m 49s	116.8%	986 MB	8.7 GB	3.5 GB	2.2 GB
+94	71/8275ad	3700559.pbsha.ib.sockeye	runMatching (93)	COMPLETED	0	2022-04-23 22:58:40.026	20m 58s	20m 39s	102.1%	989.5 MB	8.7 GB	4.2 GB	2.7 GB
+45	46/96c4fa	3700525.pbsha.ib.sockeye	runMatching (44)	COMPLETED	0	2022-04-23 22:58:37.522	23m	22m 31s	110.6%	962.5 MB	8.6 GB	4.4 GB	2.5 GB
+13	53/899076	3700469.pbsha.ib.sockeye	runMatching (12)	COMPLETED	0	2022-04-23 22:58:06.497	23m 41s	23m 26s	109.9%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
+29	33/83f9e4	3700492.pbsha.ib.sockeye	runMatching (28)	COMPLETED	0	2022-04-23 22:58:08.280	23m 39s	22m 52s	102.4%	1.2 GB	9 GB	5.3 GB	3.3 GB
+63	45/03912d	3700528.pbsha.ib.sockeye	runMatching (62)	COMPLETED	0	2022-04-23 22:58:37.746	23m 15s	22m 53s	111.0%	960.8 MB	8.6 GB	4.4 GB	2.5 GB
+73	57/cd29e3	3700532.pbsha.ib.sockeye	runMatching (72)	COMPLETED	0	2022-04-23 22:58:38.032	23m 20s	22m 54s	102.6%	961.9 MB	8.6 GB	4.4 GB	2.5 GB
+81	24/9d206f	3700546.pbsha.ib.sockeye	runMatching (80)	COMPLETED	0	2022-04-23 22:58:39.032	23m 54s	23m 22s	101.1%	960.2 MB	8.6 GB	4.4 GB	2.5 GB
+21	8a/aab6a2	3700485.pbsha.ib.sockeye	runMatching (20)	COMPLETED	0	2022-04-23 22:58:07.780	24m 45s	23m 59s	102.7%	1.2 GB	9 GB	5.2 GB	3.3 GB
+36	17/ce65da	3700500.pbsha.ib.sockeye	runMatching (35)	COMPLETED	0	2022-04-23 22:58:08.881	24m 44s	23m 40s	127.9%	951.5 MB	8.6 GB	4.4 GB	2.5 GB
+4	ec/c667a4	3700478.pbsha.ib.sockeye	runMatching (3)	COMPLETED	0	2022-04-23 22:58:07.255	25m 5s	24m 28s	105.3%	1.2 GB	9 GB	5.2 GB	3.3 GB
+128	8b/83e768	3700603.pbsha.ib.sockeye	runMatching (127)	COMPLETED	0	2022-04-23 23:13:57.767	9m 30s	9m 18s	116.2%	968.6 MB	8.7 GB	3.5 GB	2.2 GB
+43	4b/feb87b	3700507.pbsha.ib.sockeye	runMatching (42)	COMPLETED	0	2022-04-23 22:58:09.465	25m 23s	24m 15s	101.9%	949.2 MB	8.6 GB	4.4 GB	2.5 GB
+54	e8/575ddf	3700515.pbsha.ib.sockeye	runMatching (53)	COMPLETED	0	2022-04-23 22:58:10.073	25m 23s	24m 16s	136.2%	954.9 MB	8.6 GB	4.4 GB	2.5 GB
+66	9d/1e65da	3700533.pbsha.ib.sockeye	runMatching (65)	COMPLETED	0	2022-04-23 22:58:38.103	26m 35s	26m 13s	110.4%	1.2 GB	9 GB	5.2 GB	3.3 GB
+123	07/131816	3700584.pbsha.ib.sockeye	runMatching (122)	COMPLETED	0	2022-04-23 23:08:27.697	16m 55s	16m 46s	114.1%	988.1 MB	8.7 GB	4.3 GB	2.7 GB
+59	fd/8363b4	3700527.pbsha.ib.sockeye	runMatching (58)	COMPLETED	0	2022-04-23 22:58:37.668	27m 15s	26m 52s	104.9%	1.2 GB	8.9 GB	5.2 GB	3.3 GB
+113	d6/572929	3700579.pbsha.ib.sockeye	runMatching (112)	COMPLETED	0	2022-04-23 23:05:47.781	20m 10s	19m 59s	128.4%	990.5 MB	8.7 GB	4.3 GB	2.7 GB
+105	7d/8e84e8	3700575.pbsha.ib.sockeye	runMatching (104)	COMPLETED	0	2022-04-23 23:05:42.721	20m 40s	20m 29s	102.6%	989.9 MB	8.7 GB	4.3 GB	2.7 GB
+14	8d/c09a2e	3700475.pbsha.ib.sockeye	runMatching (13)	COMPLETED	0	2022-04-23 22:58:07.025	28m 41s	28m 23s	101.4%	2 GB	9.9 GB	6 GB	4.1 GB
+49	81/a22ac1	3700522.pbsha.ib.sockeye	runMatching (48)	COMPLETED	0	2022-04-23 22:58:37.032	28m 16s	27m 37s	112.4%	1.2 GB	8.9 GB	5.2 GB	3.3 GB
+115	0f/f22590	3700586.pbsha.ib.sockeye	runMatching (114)	COMPLETED	0	2022-04-23 23:09:47.744	17m 5s	16m 52s	111.6%	984.1 MB	8.7 GB	4.3 GB	2.7 GB
+48	d6/c02d01	3700517.pbsha.ib.sockeye	runMatching (47)	COMPLETED	0	2022-04-23 22:58:10.224	28m 53s	27m 47s	102.3%	1.2 GB	9 GB	5.3 GB	3.3 GB
+5	a1/1dadf1	3700477.pbsha.ib.sockeye	runMatching (4)	COMPLETED	0	2022-04-23 22:58:07.181	29m 41s	29m 1s	107.4%	2 GB	9.9 GB	6.1 GB	4 GB
+75	70/6ce5fb	3700552.pbsha.ib.sockeye	runMatching (74)	COMPLETED	0	2022-04-23 22:58:39.500	29m 23s	28m 52s	103.5%	1.2 GB	9 GB	5.3 GB	3.3 GB
+85	7c/c6f37c	3700554.pbsha.ib.sockeye	runMatching (84)	COMPLETED	0	2022-04-23 22:58:39.681	30m 18s	29m 47s	104.6%	1.2 GB	9 GB	5.2 GB	3.3 GB
+146	f3/f1b3bd	3700617.pbsha.ib.sockeye	runMatching (145)	COMPLETED	0	2022-04-23 23:21:47.882	9m 10s	8m 57s	118.1%	983.8 MB	8.7 GB	3.4 GB	2.2 GB
+124	60/11b60e	3700592.pbsha.ib.sockeye	runMatching (123)	COMPLETED	0	2022-04-23 23:10:27.850	21m 10s	20m 54s	108.8%	984.6 MB	8.7 GB	4.3 GB	2.7 GB
+67	03/35ff2c	3700530.pbsha.ib.sockeye	runMatching (66)	COMPLETED	0	2022-04-23 22:58:37.884	33m 10s	32m 46s	104.1%	2 GB	9.9 GB	6 GB	4.1 GB
+76	00/ea624e	3700537.pbsha.ib.sockeye	runMatching (75)	COMPLETED	0	2022-04-23 22:58:38.372	33m 44s	33m 8s	102.9%	2 GB	9.9 GB	6 GB	4.1 GB
+100	91/c70add	3700568.pbsha.ib.sockeye	runMatching (99)	COMPLETED	0	2022-04-23 22:58:40.644	33m 42s	33m 29s	105.9%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
+30	2f/1355d0	3700497.pbsha.ib.sockeye	runMatching (29)	COMPLETED	0	2022-04-23 22:58:08.647	34m 24s	33m 13s	128.3%	2 GB	9.9 GB	6.1 GB	4.1 GB
+138	29/9a1ba3	3700621.pbsha.ib.sockeye	runMatching (137)	COMPLETED	0	2022-04-23 23:22:52.800	9m 40s	9m	110.3%	977.2 MB	8.7 GB	3.4 GB	2.2 GB
+50	4f/47743a	3700520.pbsha.ib.sockeye	runMatching (49)	COMPLETED	0	2022-04-23 22:58:10.442	34m 47s	33m 45s	129.6%	1.9 GB	9.8 GB	6 GB	4.1 GB
+86	0d/22a91b	3700556.pbsha.ib.sockeye	runMatching (85)	COMPLETED	0	2022-04-23 22:58:39.815	34m 33s	34m 2s	103.2%	2 GB	9.9 GB	6 GB	4.1 GB
+39	e0/154efc	3700506.pbsha.ib.sockeye	runMatching (38)	COMPLETED	0	2022-04-23 22:58:09.373	35m 13s	34m 8s	102.2%	1.9 GB	9.8 GB	6 GB	4.1 GB
+22	6e/ff0184	3700502.pbsha.ib.sockeye	runMatching (21)	COMPLETED	0	2022-04-23 22:58:09.038	35m 29s	34m 26s	102.5%	2 GB	9.9 GB	6 GB	4.1 GB
+60	c1/b0a4ce	3700519.pbsha.ib.sockeye	runMatching (59)	COMPLETED	0	2022-04-23 22:58:10.368	35m 52s	34m 43s	116.9%	1.9 GB	9.8 GB	6 GB	4.1 GB
+132	b6/2dae62	3700610.pbsha.ib.sockeye	runMatching (131)	COMPLETED	0	2022-04-23 23:17:42.771	16m 30s	16m 20s	109.0%	1000.1 MB	8.7 GB	4.3 GB	2.7 GB
+140	f5/fa5161	3700605.pbsha.ib.sockeye	runMatching (139)	COMPLETED	0	2022-04-23 23:13:57.904	20m 20s	20m 3s	107.9%	993.8 MB	8.7 GB	4.3 GB	2.7 GB
+156	63/6f5e93	3700632.pbsha.ib.sockeye	runMatching (155)	COMPLETED	0	2022-04-23 23:26:22.835	9m 5s	8m 51s	106.0%	982.5 MB	8.7 GB	3.5 GB	2.2 GB
+108	93/6f885d	3700576.pbsha.ib.sockeye	runMatching (107)	COMPLETED	0	2022-04-23 23:05:42.820	32m 25s	32m 14s	119.6%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
+141	27/caa4be	3700606.pbsha.ib.sockeye	runMatching (140)	COMPLETED	0	2022-04-23 23:14:02.761	24m 5s	23m 52s	113.9%	996 MB	8.7 GB	4.3 GB	2.7 GB
+118	6c/5961a6	3700600.pbsha.ib.sockeye	runMatching (117)	COMPLETED	0	2022-04-23 23:12:47.740	25m 40s	25m 23s	110.8%	990.4 MB	8.7 GB	4.3 GB	2.7 GB
+165	c2/b9fdd5	3700639.pbsha.ib.sockeye	runMatching (164)	COMPLETED	0	2022-04-23 23:28:57.867	9m 35s	9m 23s	104.5%	982 MB	8.7 GB	3.5 GB	2.2 GB
+150	f6/1d2486	3700618.pbsha.ib.sockeye	runMatching (149)	COMPLETED	0	2022-04-23 23:21:52.806	19m	18m 44s	110.7%	986.3 MB	8.7 GB	4.3 GB	2.7 GB
+174	82/468247	3700645.pbsha.ib.sockeye	runMatching (173)	COMPLETED	0	2022-04-23 23:32:22.971	10m 5s	9m 49s	107.5%	980.1 MB	8.7 GB	3.5 GB	2.2 GB
+134	56/928600	3700612.pbsha.ib.sockeye	runMatching (133)	COMPLETED	0	2022-04-23 23:18:52.836	24m 15s	23m 59s	121.0%	994.2 MB	8.7 GB	4.3 GB	2.7 GB
+97	dc/2956fe	3700561.pbsha.ib.sockeye	runMatching (96)	COMPLETED	0	2022-04-23 22:58:40.169	44m 43s	44m 22s	106.4%	2 GB	10 GB	9 GB	6.6 GB
+186	aa/06b20e	3700664.pbsha.ib.sockeye	runMatching (185)	FAILED	1	2022-04-23 23:43:07.925	19.9s	3.5s	109.0%	137.2 MB	7.4 GB	13 MB	35.3 KB
+159	96/64319a	3700637.pbsha.ib.sockeye	runMatching (158)	COMPLETED	0	2022-04-23 23:27:47.825	17m 25s	17m 12s	111.6%	1006.2 MB	8.7 GB	4.3 GB	2.7 GB
+184	e0/54bf24	3700654.pbsha.ib.sockeye	runMatching (183)	COMPLETED	0	2022-04-23 23:34:17.875	11m 40s	11m 28s	110.6%	667.4 MB	8.3 GB	2.8 GB	1.3 GB
+102	84/211ee1	3700571.pbsha.ib.sockeye	runMatching (101)	COMPLETED	0	2022-04-23 23:03:42.929	43m 25s	43m 16s	103.4%	2 GB	10 GB	8.9 GB	6.6 GB
+151	41/4d87af	3700626.pbsha.ib.sockeye	runMatching (150)	COMPLETED	0	2022-04-23 23:23:32.922	25m 5s	24m 49s	107.8%	986.5 MB	8.7 GB	4.3 GB	2.7 GB
+182	3e/9d217a	3700663.pbsha.ib.sockeye	runMatching (181)	COMPLETED	0	2022-04-23 23:42:27.958	6m 10s	5m 57s	115.5%	661.5 MB	8.3 GB	2.3 GB	1.1 GB
+103	25/96c896	3700572.pbsha.ib.sockeye	runMatching (102)	COMPLETED	0	2022-04-23 23:04:07.737	46m 40s	46m 31s	104.3%	3.4 GB	11.6 GB	10.5 GB	8.1 GB
+168	e7/c1013c	3700649.pbsha.ib.sockeye	runMatching (167)	COMPLETED	0	2022-04-23 23:33:12.852	18m 25s	18m 10s	121.1%	987.4 MB	8.7 GB	4.3 GB	2.7 GB
+93	93/435d38	3700563.pbsha.ib.sockeye	runMatching (92)	COMPLETED	0	2022-04-23 22:58:40.302	53m 13s	52m 53s	103.8%	3.3 GB	11.5 GB	10.6 GB	8 GB
+197	69/2a1567	3700676.pbsha.ib.sockeye	runMatching (196)	FAILED	1	2022-04-23 23:51:52.982	19.9s	3.7s	106.5%	124.1 MB	7.4 GB	13.1 MB	39.5 KB
+130	15/6f874b	3700596.pbsha.ib.sockeye	runMatching (129)	COMPLETED	0	2022-04-23 23:11:07.801	41m 20s	41m 8s	104.7%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
+190	fa/2bfdb3	3700665.pbsha.ib.sockeye	runMatching (189)	COMPLETED	0	2022-04-23 23:43:23.118	9m 15s	9m 4s	111.6%	672.6 MB	8.3 GB	2.8 GB	1.4 GB
+144	9e/d27246	3700609.pbsha.ib.sockeye	runMatching (143)	COMPLETED	0	2022-04-23 23:17:38.047	35m 10s	34m 59s	106.4%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
+24	8e/948aed	3700487.pbsha.ib.sockeye	runMatching (23)	COMPLETED	0	2022-04-23 22:58:07.919	55m 45s	55m 4s	101.2%	1.7 GB	9.2 GB	3.8 GB	1.7 GB
+176	0b/2b064e	3700656.pbsha.ib.sockeye	runMatching (175)	COMPLETED	0	2022-04-23 23:35:27.935	18m 30s	18m 16s	113.2%	990.4 MB	8.7 GB	4.3 GB	2.7 GB
+111	05/1464da	3700588.pbsha.ib.sockeye	runMatching (110)	COMPLETED	0	2022-04-23 23:10:17.717	43m 55s	43m 42s	113.5%	2 GB	10 GB	9 GB	6.6 GB
+192	5b/6ee48b	3700671.pbsha.ib.sockeye	runMatching (191)	COMPLETED	0	2022-04-23 23:48:38.378	5m 45s	5m 31s	116.9%	674.3 MB	8.3 GB	2.3 GB	1.1 GB
+17	8d/23a643	3700474.pbsha.ib.sockeye	runMatching (16)	COMPLETED	0	2022-04-23 22:58:06.953	56m 36s	56m 19s	102.4%	1.8 GB	9.3 GB	3.9 GB	1.7 GB
+25	84/9c6d8e	3700482.pbsha.ib.sockeye	runMatching (24)	COMPLETED	0	2022-04-23 22:58:07.563	56m 50s	56m 7s	102.6%	966.3 MB	8.6 GB	3.6 GB	2.2 GB
+8	59/0d1b70	3700473.pbsha.ib.sockeye	runMatching (7)	COMPLETED	0	2022-04-23 22:58:06.870	56m 56s	56m 37s	102.8%	1.8 GB	9.2 GB	3.9 GB	1.7 GB
+169	ff/630fce	3700644.pbsha.ib.sockeye	runMatching (168)	COMPLETED	0	2022-04-23 23:32:22.855	22m 55s	22m 43s	110.2%	1001.8 MB	8.7 GB	4.3 GB	2.7 GB
+18	9a/512066	3700491.pbsha.ib.sockeye	runMatching (17)	COMPLETED	0	2022-04-23 22:58:08.209	57m 15s	56m 31s	104.2%	962.5 MB	8.6 GB	3.6 GB	2.2 GB
+9	1a/e7591b	3700470.pbsha.ib.sockeye	runMatching (8)	COMPLETED	0	2022-04-23 22:58:06.594	57m 41s	57m 30s	103.5%	968.1 MB	8.6 GB	3.6 GB	2.2 GB
+116	c5/23ebe7	3700607.pbsha.ib.sockeye	runMatching (115)	COMPLETED	0	2022-04-23 23:14:47.958	41m	40m 43s	115.8%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
+177	70/49950f	3700648.pbsha.ib.sockeye	runMatching (176)	COMPLETED	0	2022-04-23 23:32:57.848	22m 55s	22m 41s	125.3%	994.9 MB	8.7 GB	4.3 GB	2.7 GB
+135	9e/e7a169	3700604.pbsha.ib.sockeye	runMatching (134)	COMPLETED	0	2022-04-23 23:13:57.837	42m 10s	41m 55s	107.6%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
+160	99/b65841	3700652.pbsha.ib.sockeye	runMatching (159)	COMPLETED	0	2022-04-23 23:34:02.890	22m 25s	22m 9s	119.2%	995.5 MB	8.7 GB	4.3 GB	2.7 GB
+214	77/5980b3	3700697.pbsha.ib.sockeye	runMatching (213)	FAILED	3	2022-04-23 23:56:28.017	14.9s	5.6s	116.0%	123 MB	7.4 GB	13.4 MB	32.6 KB
+99	a7/36bd08	3700565.pbsha.ib.sockeye	runMatching (98)	COMPLETED	0	2022-04-23 22:58:40.441	58m 53s	58m 39s	102.1%	964.1 MB	8.6 GB	3.6 GB	2.2 GB
+201	85/85d863	3700679.pbsha.ib.sockeye	runMatching (200)	COMPLETED	0	2022-04-23 23:52:38.302	5m 45s	5m 34s	107.6%	658.7 MB	8.3 GB	2.2 GB	1.1 GB
+189	16/d587e7	3700657.pbsha.ib.sockeye	runMatching (188)	COMPLETED	0	2022-04-23 23:38:08.120	21m 50s	21m 37s	115.2%	961.6 MB	8.6 GB	4.4 GB	2.5 GB
+225	ee/031c25	3700701.pbsha.ib.sockeye	runMatching (224)	FAILED	3	2022-04-23 23:59:58.251	19.7s	5.2s	149.1%	98.7 MB	7.4 GB	13.3 MB	32.6 KB
+213	f1/0006b4	3700689.pbsha.ib.sockeye	runMatching (212)	COMPLETED	0	2022-04-23 23:55:02.986	5m 40s	5m 28s	109.1%	661.9 MB	8.3 GB	2.3 GB	1.1 GB
+117	91/59a524	3700582.pbsha.ib.sockeye	runMatching (116)	COMPLETED	0	2022-04-23 23:07:38.008	54m 15s	54m 3s	103.7%	2 GB	10 GB	9 GB	6.6 GB
+57	40/fb0668	3700523.pbsha.ib.sockeye	runMatching (56)	COMPLETED	0	2022-04-23 22:58:37.270	1h 3m 56s	1h 3m 33s	101.6%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
+195	86/dbe3f1	3700678.pbsha.ib.sockeye	runMatching (194)	COMPLETED	0	2022-04-23 23:52:27.981	10m 25s	10m 9s	102.6%	677.8 MB	8.3 GB	2.8 GB	1.4 GB
+231	b6/601b85	3700706.pbsha.ib.sockeye	runMatching (230)	FAILED	3	2022-04-24 00:02:33.041	20s	4.6s	114.5%	110.8 MB	7.4 GB	13.4 MB	40.3 KB
+232	6e/771ad0	3700707.pbsha.ib.sockeye	runMatching (231)	FAILED	1	2022-04-24 00:02:53.071	19.9s	4s	160.1%	113 MB	7.4 GB	13 MB	33.4 KB
+203	ee/201a74	3700681.pbsha.ib.sockeye	runMatching (202)	COMPLETED	0	2022-04-23 23:52:47.985	10m 35s	10m 22s	109.0%	675 MB	8.3 GB	2.8 GB	1.4 GB
+223	36/f69b3f	3700709.pbsha.ib.sockeye	runMatching (222)	FAILED	1	2022-04-24 00:03:13.063	19.9s	4.2s	91.7%	117.9 MB	7.4 GB	13 MB	33.7 KB
+42	12/70d6ac	3700511.pbsha.ib.sockeye	runMatching (41)	COMPLETED	0	2022-04-23 22:58:09.784	1h 5m 33s	1h 4m 27s	102.3%	1.7 GB	9.2 GB	3.8 GB	1.7 GB
+219	c6/09bb2f	3700699.pbsha.ib.sockeye	runMatching (218)	COMPLETED	0	2022-04-23 23:57:33.025	6m 10s	5m 57s	104.2%	659 MB	8.3 GB	2.3 GB	1.1 GB
+34	66/ed79b9	3700513.pbsha.ib.sockeye	runMatching (33)	COMPLETED	0	2022-04-23 22:58:09.919	1h 5m 38s	1h 4m 33s	102.5%	1.8 GB	9.3 GB	3.8 GB	1.7 GB
+80	66/084f21	3700544.pbsha.ib.sockeye	runMatching (79)	COMPLETED	0	2022-04-23 22:58:38.898	1h 5m 24s	1h 4m 52s	104.7%	965.3 MB	8.6 GB	3.6 GB	2.2 GB
+154	7e/4844a8	3700628.pbsha.ib.sockeye	runMatching (153)	COMPLETED	0	2022-04-23 23:25:13.030	38m 50s	38m 37s	124.6%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
+196	34/05df7d	3700674.pbsha.ib.sockeye	runMatching (195)	COMPLETED	0	2022-04-23 23:50:48.009	13m 15s	13m 4s	112.9%	662 MB	8.3 GB	2.8 GB	1.3 GB
+71	95/4910fe	3700536.pbsha.ib.sockeye	runMatching (70)	COMPLETED	0	2022-04-23 22:58:38.302	1h 5m 35s	1h 5m	110.6%	1.8 GB	9.3 GB	3.9 GB	1.7 GB
+62	76/97686d	3700538.pbsha.ib.sockeye	runMatching (61)	COMPLETED	0	2022-04-23 22:58:38.443	1h 5m 40s	1h 5m 3s	170.8%	1.6 GB	9.1 GB	3.8 GB	1.7 GB
+79	42/2359b9	3700540.pbsha.ib.sockeye	runMatching (78)	COMPLETED	0	2022-04-23 22:58:38.579	1h 5m 39s	1h 5m 4s	102.3%	1.7 GB	9.2 GB	3.8 GB	1.7 GB
+53	07/8ae975	3700514.pbsha.ib.sockeye	runMatching (52)	COMPLETED	0	2022-04-23 22:58:09.995	1h 6m 18s	1h 5m 13s	129.8%	963.9 MB	8.6 GB	3.6 GB	2.2 GB
+44	d3/ef8c32	3700516.pbsha.ib.sockeye	runMatching (43)	COMPLETED	0	2022-04-23 22:58:10.152	1h 6m 18s	1h 5m 10s	124.2%	966.5 MB	8.6 GB	3.6 GB	2.2 GB
+61	51/bb1c4c	3700526.pbsha.ib.sockeye	runMatching (60)	COMPLETED	0	2022-04-23 22:58:37.596	1h 5m 55s	1h 5m 32s	105.1%	958.1 MB	8.6 GB	3.6 GB	2.2 GB
+129	a1/897444	3700601.pbsha.ib.sockeye	runMatching (128)	COMPLETED	0	2022-04-23 23:12:52.740	51m 40s	51m 24s	109.0%	2 GB	10 GB	9 GB	6.6 GB
+35	70/0d7788	3700503.pbsha.ib.sockeye	runMatching (34)	COMPLETED	0	2022-04-23 22:58:09.106	1h 6m 45s	1h 5m 39s	103.5%	960.3 MB	8.6 GB	3.6 GB	2.2 GB
+183	86/e64f6d	3700662.pbsha.ib.sockeye	runMatching (182)	COMPLETED	0	2022-04-23 23:40:52.943	24m 11s	23m 59s	127.4%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
+89	5f/728bb5	3700553.pbsha.ib.sockeye	runMatching (88)	COMPLETED	0	2022-04-23 22:58:39.612	1h 6m 55s	1h 6m 22s	106.0%	1.7 GB	9.2 GB	3.8 GB	1.7 GB
+112	89/3d80cc	3700578.pbsha.ib.sockeye	runMatching (111)	COMPLETED	0	2022-04-23 23:05:47.706	1h 2s	59m 47s	104.7%	3.4 GB	11.6 GB	10.5 GB	8 GB
+241	e9/83e2d6	3700728.pbsha.ib.sockeye	runMatching (240)	FAILED	3	2022-04-24 00:05:34.325	19.9s	3.6s	123.3%	114.8 MB	7.4 GB	14 MB	40.6 KB
+148	d8/a88f60	3700619.pbsha.ib.sockeye	runMatching (147)	COMPLETED	0	2022-04-23 23:21:57.804	44m 26s	44m 16s	106.1%	2 GB	10 GB	8.9 GB	6.6 GB
+72	d4/928b24	3700550.pbsha.ib.sockeye	runMatching (71)	COMPLETED	0	2022-04-23 22:58:39.315	1h 8m 20s	1h 7m 46s	112.8%	965.1 MB	8.6 GB	3.6 GB	2.2 GB
+212	74/d18867	3700691.pbsha.ib.sockeye	runMatching (211)	COMPLETED	0	2022-04-23 23:55:18.010	13m 11s	12m 55s	111.6%	680 MB	8.3 GB	2.8 GB	1.3 GB
+121	cf/eb3a40	3700593.pbsha.ib.sockeye	runMatching (120)	COMPLETED	0	2022-04-23 23:10:32.723	59m 27s	59m 12s	131.0%	3.4 GB	11.5 GB	10.6 GB	8.1 GB
+237	78/d84d57	3700724.pbsha.ib.sockeye	runMatching (236)	COMPLETED	0	2022-04-24 00:04:54.162	5m 35s	5m 21s	106.9%	658.3 MB	8.3 GB	2.3 GB	1.1 GB
+229	13/c6172e	3700718.pbsha.ib.sockeye	runMatching (228)	COMPLETED	0	2022-04-24 00:04:13.048	6m 21s	6m 9s	109.0%	661.8 MB	8.3 GB	2.3 GB	1.1 GB
+204	a5/d91a52	3700698.pbsha.ib.sockeye	runMatching (203)	COMPLETED	0	2022-04-23 23:56:43.033	13m 56s	13m 46s	123.6%	671.1 MB	8.3 GB	2.8 GB	1.3 GB
+145	b1/da71d7	3700620.pbsha.ib.sockeye	runMatching (144)	COMPLETED	0	2022-04-23 23:22:32.823	48m 21s	48m 8s	112.7%	2 GB	10 GB	9 GB	6.6 GB
+243	e6/4951b3	3700737.pbsha.ib.sockeye	runMatching (242)	FAILED	1	2022-04-24 00:10:34.392	19.9s	4s	115.8%	133.1 MB	7.4 GB	13.1 MB	36.5 KB
+216	74/8f983b	3700705.pbsha.ib.sockeye	runMatching (215)	COMPLETED	0	2022-04-24 00:01:53.088	9m 56s	9m 41s	102.2%	663.6 MB	8.3 GB	2.8 GB	1.4 GB
+131	87/d43063	3700599.pbsha.ib.sockeye	runMatching (130)	COMPLETED	0	2022-04-23 23:12:38.050	1h 11s	1h	112.0%	3.3 GB	11.6 GB	10.5 GB	8 GB
+171	58/67b382	3700646.pbsha.ib.sockeye	runMatching (170)	COMPLETED	0	2022-04-23 23:32:32.856	40m 31s	40m 16s	111.5%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
+193	6e/57c19c	3700672.pbsha.ib.sockeye	runMatching (192)	COMPLETED	0	2022-04-23 23:48:38.484	25m 1s	24m 53s	119.9%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
+221	b2/88c8e9	3700708.pbsha.ib.sockeye	runMatching (220)	COMPLETED	0	2022-04-24 00:02:53.140	11m 11s	11m 3s	115.2%	663.8 MB	8.3 GB	2.8 GB	1.4 GB
+230	48/ae9185	3700719.pbsha.ib.sockeye	runMatching (229)	COMPLETED	0	2022-04-24 00:04:18.048	9m 46s	9m 32s	108.5%	673.1 MB	8.3 GB	2.8 GB	1.4 GB
+187	a2/a6b320	3700668.pbsha.ib.sockeye	runMatching (186)	COMPLETED	0	2022-04-23 23:45:12.982	29m 21s	29m 12s	109.7%	2 GB	9.9 GB	6.1 GB	4 GB
+163	c0/52d099	3700651.pbsha.ib.sockeye	runMatching (162)	COMPLETED	0	2022-04-23 23:33:38.097	41m 16s	41m 1s	116.0%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
+240	83/8e0e0b	3700714.pbsha.ib.sockeye	runMatching (239)	COMPLETED	0	2022-04-24 00:03:48.051	11m 21s	11m 9s	137.1%	674 MB	8.3 GB	2.8 GB	1.4 GB
+199	d6/d5eefb	3700688.pbsha.ib.sockeye	runMatching (198)	COMPLETED	0	2022-04-23 23:54:57.986	21m 31s	21m 19s	156.8%	969.3 MB	8.6 GB	4.5 GB	2.5 GB
+254	56/55f1da	3700740.pbsha.ib.sockeye	runMatching (253)	COMPLETED	0	2022-04-24 00:10:54.446	5m 50s	5m 35s	116.8%	669.6 MB	8.3 GB	2.3 GB	1.1 GB
+222	bc/ca114c	3700710.pbsha.ib.sockeye	runMatching (221)	COMPLETED	0	2022-04-24 00:03:23.069	13m 26s	13m 14s	112.3%	668.1 MB	8.3 GB	2.8 GB	1.3 GB
+269	02/50d47f	3700752.pbsha.ib.sockeye	runMatching (268)	FAILED	1	2022-04-24 00:16:29.446	19.9s	4.2s	116.3%	112.2 MB	7.4 GB	12.9 MB	31.9 KB
+249	f1/5f912f	3700755.pbsha.ib.sockeye	runMatching (248)	FAILED	3	2022-04-24 00:16:49.487	19.9s	4s	115.9%	115 MB	7.4 GB	13.7 MB	40.6 KB
+246	11/df98fd	3700739.pbsha.ib.sockeye	runMatching (245)	COMPLETED	0	2022-04-24 00:10:54.375	6m 20s	6m 8s	102.9%	663.5 MB	8.3 GB	2.3 GB	1.1 GB
+139	42/d17e5d	3700624.pbsha.ib.sockeye	runMatching (138)	COMPLETED	0	2022-04-23 23:23:27.827	53m 57s	53m 40s	106.1%	3.3 GB	11.5 GB	10.6 GB	8.1 GB
+157	7a/3d4a5c	3700634.pbsha.ib.sockeye	runMatching (156)	COMPLETED	0	2022-04-23 23:26:52.826	50m 42s	50m 34s	105.4%	2 GB	10 GB	8.9 GB	6.6 GB
+268	4e/aad0dc	3700757.pbsha.ib.sockeye	runMatching (267)	FAILED	3	2022-04-24 00:17:14.465	19.9s	4.3s	136.5%	105.5 MB	7.4 GB	13 MB	39.8 KB
+149	6a/c6459d	3700625.pbsha.ib.sockeye	runMatching (148)	COMPLETED	0	2022-04-23 23:23:32.814	55m 17s	55m 5s	102.4%	3.4 GB	11.5 GB	10.6 GB	8.1 GB
+217	a8/9e9a3c	3700694.pbsha.ib.sockeye	runMatching (216)	COMPLETED	0	2022-04-23 23:55:48.063	23m 36s	23m 21s	112.7%	963 MB	8.6 GB	4.2 GB	2.2 GB
+252	54/ea30d7	3700733.pbsha.ib.sockeye	runMatching (251)	COMPLETED	0	2022-04-24 00:08:29.394	11m 5s	10m 54s	111.8%	668 MB	8.3 GB	2.8 GB	1.4 GB
+180	35/eaa0a7	3700660.pbsha.ib.sockeye	runMatching (179)	COMPLETED	0	2022-04-23 23:38:32.910	41m 31s	41m 20s	108.6%	1.5 GB	9.3 GB	7.2 GB	4.9 GB
+158	b7/6cb36a	3700633.pbsha.ib.sockeye	runMatching (157)	COMPLETED	0	2022-04-23 23:26:47.833	53m 27s	53m 9s	109.3%	3.4 GB	11.6 GB	10.6 GB	8.1 GB
+202	0a/fd67c8	3700685.pbsha.ib.sockeye	runMatching (201)	COMPLETED	0	2022-04-23 23:54:12.995	26m 6s	25m 56s	117.3%	1.2 GB	9 GB	5.3 GB	3.3 GB
+280	83/8eeac7	3700767.pbsha.ib.sockeye	runMatching (279)	FAILED	1	2022-04-24 00:20:19.434	20.1s	4.5s	96.8%	132.4 MB	7.4 GB	13 MB	34.8 KB
+206	28/626a73	3700683.pbsha.ib.sockeye	runMatching (205)	COMPLETED	0	2022-04-23 23:53:53.189	26m 56s	26m 42s	106.8%	1.2 GB	9 GB	5.3 GB	3.3 GB
+265	62/ed7b2b	3700751.pbsha.ib.sockeye	runMatching (264)	COMPLETED	0	2022-04-24 00:15:09.625	6m 20s	6m 9s	110.6%	661.2 MB	8.3 GB	2.3 GB	1.1 GB
+210	8c/6c91d6	3700703.pbsha.ib.sockeye	runMatching (209)	COMPLETED	0	2022-04-24 00:00:18.035	21m 36s	21m 26s	109.8%	965.3 MB	8.6 GB	4.4 GB	2.5 GB
+205	3c/9d28b6	3700686.pbsha.ib.sockeye	runMatching (204)	COMPLETED	0	2022-04-23 23:54:23.009	28m 41s	28m 23s	102.3%	2 GB	9.9 GB	6.1 GB	4.1 GB
+178	72/89750b	3700658.pbsha.ib.sockeye	runMatching (177)	COMPLETED	0	2022-04-23 23:38:08.195	45m 1s	44m 46s	117.1%	2 GB	10 GB	9 GB	6.6 GB
+166	d9/87114f	3700642.pbsha.ib.sockeye	runMatching (165)	COMPLETED	0	2022-04-23 23:31:38.102	51m 46s	51m 33s	124.4%	2 GB	9.9 GB	9 GB	6.6 GB
+287	14/b54249	3700774.pbsha.ib.sockeye	runMatching (286)	FAILED	1	2022-04-24 00:23:24.445	19.9s	4.3s	115.2%	126.4 MB	7.4 GB	13 MB	35.1 KB
+208	3b/e24496	3700693.pbsha.ib.sockeye	runMatching (207)	COMPLETED	0	2022-04-23 23:55:47.993	28m 26s	28m 12s	107.5%	2 GB	9.9 GB	6 GB	4.1 GB
+259	c7/e06a16	3700744.pbsha.ib.sockeye	runMatching (258)	COMPLETED	0	2022-04-24 00:13:04.400	11m 10s	10m 52s	117.8%	679.6 MB	8.3 GB	2.8 GB	1.4 GB
+194	2b/9b87f0	3700677.pbsha.ib.sockeye	runMatching (193)	COMPLETED	0	2022-04-23 23:52:12.970	32m 6s	31m 57s	116.2%	1.9 GB	9.9 GB	6 GB	4.1 GB
+251	d5/8d58d2	3700730.pbsha.ib.sockeye	runMatching (250)	COMPLETED	0	2022-04-24 00:05:54.319	19m 40s	19m 28s	123.7%	968.3 MB	8.6 GB	4.5 GB	2.5 GB
+282	f0/b53553	3700763.pbsha.ib.sockeye	runMatching (281)	COMPLETED	0	2022-04-24 00:19:34.440	6m	5m 48s	110.7%	660.2 MB	8.3 GB	2.3 GB	1.1 GB
+235	a5/e8d1fd	3700711.pbsha.ib.sockeye	runMatching (234)	COMPLETED	0	2022-04-24 00:03:33.085	22m 7s	21m 54s	114.0%	961.7 MB	8.6 GB	4.4 GB	2.5 GB
+244	de/dc4380	3700729.pbsha.ib.sockeye	runMatching (243)	COMPLETED	0	2022-04-24 00:05:49.322	19m 50s	19m 38s	111.5%	970.2 MB	8.6 GB	4.5 GB	2.5 GB
+226	a2/1efddb	3700716.pbsha.ib.sockeye	runMatching (225)	COMPLETED	0	2022-04-24 00:04:03.155	22m 11s	21m 54s	111.5%	973.1 MB	8.6 GB	4.4 GB	2.5 GB
+258	5a/29058a	3700747.pbsha.ib.sockeye	runMatching (257)	COMPLETED	0	2022-04-24 00:14:04.553	12m 50s	12m 41s	119.6%	667.5 MB	8.3 GB	2.8 GB	1.3 GB
+275	f1/dfdcc2	3700758.pbsha.ib.sockeye	runMatching (274)	COMPLETED	0	2022-04-24 00:17:24.410	9m 55s	9m 44s	105.7%	662.1 MB	8.3 GB	2.8 GB	1.4 GB
+273	b5/3455bc	3700770.pbsha.ib.sockeye	runMatching (272)	COMPLETED	0	2022-04-24 00:21:29.454	6m 25s	6m 6s	117.0%	656.1 MB	8.3 GB	2.3 GB	1.1 GB
+266	8b/358a6c	3700753.pbsha.ib.sockeye	runMatching (265)	COMPLETED	0	2022-04-24 00:16:44.427	11m 25s	11m 7s	113.0%	668.9 MB	8.3 GB	2.8 GB	1.4 GB
+238	43/3e6f5c	3700721.pbsha.ib.sockeye	runMatching (237)	COMPLETED	0	2022-04-24 00:04:28.058	25m 41s	25m 4s	107.6%	1.2 GB	9 GB	5.3 GB	3.3 GB
+285	57/9f5fa0	3700766.pbsha.ib.sockeye	runMatching (284)	COMPLETED	0	2022-04-24 00:20:14.670	10m	9m 42s	102.7%	674.1 MB	8.3 GB	2.8 GB	1.4 GB
+290	28/a592e0	3700780.pbsha.ib.sockeye	runMatching (289)	COMPLETED	0	2022-04-24 00:24:14.533	6m 20s	6m 5s	109.4%	670.7 MB	8.3 GB	2.3 GB	1.1 GB
+228	d0/53488a	3700717.pbsha.ib.sockeye	runMatching (227)	COMPLETED	0	2022-04-24 00:04:03.254	26m 41s	26m 24s	119.9%	1.2 GB	9 GB	5.3 GB	3.3 GB
+224	3c/b6b564	3700712.pbsha.ib.sockeye	runMatching (223)	COMPLETED	0	2022-04-24 00:03:43.062	27m 21s	27m 6s	111.5%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
+167	4d/0fa572	3700641.pbsha.ib.sockeye	runMatching (166)	COMPLETED	0	2022-04-23 23:30:58.119	1h 2m 21s	1h 2m 9s	112.5%	3.5 GB	11.7 GB	10.6 GB	8.1 GB
+220	5d/ea770c	3700704.pbsha.ib.sockeye	runMatching (219)	COMPLETED	0	2022-04-24 00:00:43.048	32m 51s	32m 41s	105.3%	2 GB	9.9 GB	6.1 GB	4.1 GB
+300	fc/809966	3700790.pbsha.ib.sockeye	runMatching (299)	COMPLETED	0	2022-04-24 00:27:54.480	5m 40s	5m 26s	100.1%	660.2 MB	8.3 GB	2.3 GB	1.1 GB
+277	be/04c61f	3700764.pbsha.ib.sockeye	runMatching (276)	COMPLETED	0	2022-04-24 00:20:04.461	13m 40s	13m 26s	116.3%	678 MB	8.3 GB	2.8 GB	1.3 GB
+233	eb/e4154f	3700722.pbsha.ib.sockeye	runMatching (232)	COMPLETED	0	2022-04-24 00:04:53.833	28m 56s	28m 44s	106.1%	2 GB	9.9 GB	6.1 GB	4.1 GB
+286	ad/39882d	3700769.pbsha.ib.sockeye	runMatching (285)	COMPLETED	0	2022-04-24 00:20:49.448	13m	12m 51s	110.9%	672.6 MB	8.3 GB	2.8 GB	1.3 GB
+308	4d/e1e7f6	3700801.pbsha.ib.sockeye	runMatching (307)	FAILED	3	2022-04-24 00:33:34.587	19.9s	5.4s	125.0%	123.4 MB	7.4 GB	13.5 MB	34 KB
+248	07/114670	3700723.pbsha.ib.sockeye	runMatching (247)	COMPLETED	0	2022-04-24 00:04:53.915	29m 11s	28m 57s	120.0%	2 GB	9.9 GB	6 GB	4.1 GB
+313	ef/9ec0ea	3700806.pbsha.ib.sockeye	runMatching (312)	FAILED	3	2022-04-24 00:34:04.538	19.9s	6.2s	107.2%	125 MB	7.4 GB	13.5 MB	34.1 KB
+175	26/8ca4be	3700647.pbsha.ib.sockeye	runMatching (174)	COMPLETED	0	2022-04-23 23:32:32.929	1h 2m 27s	1h 2m 13s	117.0%	3.4 GB	11.6 GB	10.6 GB	8.1 GB
+239	e5/9fb7c7	3700725.pbsha.ib.sockeye	runMatching (238)	COMPLETED	0	2022-04-24 00:04:54.290	30m 20s	30m 6s	111.7%	1.9 GB	9.8 GB	6.1 GB	4.1 GB
+255	ae/82cf6a	3700736.pbsha.ib.sockeye	runMatching (254)	COMPLETED	0	2022-04-24 00:10:29.403	25m 40s	25m 27s	105.4%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
+247	9f/5cd719	3700738.pbsha.ib.sockeye	runMatching (246)	COMPLETED	0	2022-04-24 00:10:39.598	26m	25m 47s	121.6%	1.2 GB	9 GB	5.2 GB	3.3 GB
+295	eb/6b6421	3700786.pbsha.ib.sockeye	runMatching (294)	COMPLETED	0	2022-04-24 00:25:39.775	12m 30s	12m 16s	110.8%	665.5 MB	8.3 GB	2.8 GB	1.3 GB
+267	cb/8eae6d	3700754.pbsha.ib.sockeye	runMatching (266)	COMPLETED	0	2022-04-24 00:16:49.414	21m 55s	21m 41s	116.8%	962.5 MB	8.6 GB	4.5 GB	2.5 GB
+256	aa/ede1a1	3700734.pbsha.ib.sockeye	runMatching (255)	COMPLETED	0	2022-04-24 00:09:59.399	29m 40s	29m 31s	110.7%	2 GB	9.9 GB	6 GB	4.1 GB
+311	f8/797ed5	3700805.pbsha.ib.sockeye	runMatching (310)	COMPLETED	0	2022-04-24 00:33:54.519	6m 15s	6m 2s	116.5%	677 MB	8.3 GB	2.3 GB	1.1 GB
+271	c7/658ee8	3700761.pbsha.ib.sockeye	runMatching (270)	COMPLETED	0	2022-04-24 00:18:49.458	21m 30s	21m 16s	111.7%	963.4 MB	8.6 GB	4.4 GB	2.5 GB
+323	22/4631be	3700819.pbsha.ib.sockeye	runMatching (322)	FAILED	1	2022-04-24 00:40:19.558	20.1s	3.9s	113.9%	114.9 MB	7.4 GB	13 MB	35 KB
+289	bb/8c3401	3700772.pbsha.ib.sockeye	runMatching (288)	COMPLETED	0	2022-04-24 00:23:04.470	18m 25s	18m 13s	114.1%	959.2 MB	8.6 GB	4.4 GB	2.5 GB
+294	db/3d5cd9	3700796.pbsha.ib.sockeye	runMatching (293)	COMPLETED	0	2022-04-24 00:30:34.495	11m 10s	10m 55s	109.2%	673.6 MB	8.3 GB	2.8 GB	1.4 GB
+322	25/2dc8c1	3700821.pbsha.ib.sockeye	runMatching (321)	FAILED	3	2022-04-24 00:41:29.764	19.7s	4.8s	113.0%	111.2 MB	7.4 GB	13.9 MB	40.6 KB
+95	09/9ea0f0	3700564.pbsha.ib.sockeye	runMatching (94)	COMPLETED	0	2022-04-23 22:58:40.373	1h 44m 4s	1h 43m 51s	112.2%	3.8 GB	11.1 GB	6 GB	3.5 GB
+263	79/7f6869	3700749.pbsha.ib.sockeye	runMatching (262)	COMPLETED	0	2022-04-24 00:14:54.395	28m 20s	28m 7s	112.0%	1.2 GB	8.9 GB	5.3 GB	3.2 GB
+98	ce/3a6439	3700562.pbsha.ib.sockeye	runMatching (97)	COMPLETED	0	2022-04-23 22:58:40.235	1h 44m 59s	1h 44m 40s	111.4%	1.5 GB	9.4 GB	6 GB	4.4 GB
+318	22/5cc3e7	3700814.pbsha.ib.sockeye	runMatching (317)	COMPLETED	0	2022-04-24 00:38:09.577	5m 50s	5m 38s	113.5%	662.8 MB	8.3 GB	2.3 GB	1.1 GB
+306	6b/19e249	3700807.pbsha.ib.sockeye	runMatching (305)	COMPLETED	0	2022-04-24 00:34:24.512	10m 25s	10m 14s	111.8%	665.3 MB	8.3 GB	2.8 GB	1.4 GB
+312	10/69a269	3700829.pbsha.ib.sockeye	runMatching (311)	FAILED	1	2022-04-24 00:44:49.594	19.9s	4.4s	112.2%	110.8 MB	7.4 GB	13 MB	35.1 KB
+281	a9/42fe00	3700784.pbsha.ib.sockeye	runMatching (280)	COMPLETED	0	2022-04-24 00:25:34.775	20m 10s	19m 55s	109.4%	960.6 MB	8.6 GB	4.4 GB	2.5 GB
+309	df/81f9ab	3700809.pbsha.ib.sockeye	runMatching (308)	COMPLETED	0	2022-04-24 00:34:59.522	11m	10m 47s	117.8%	667.4 MB	8.3 GB	2.8 GB	1.4 GB
+330	d3/ce68d2	3700833.pbsha.ib.sockeye	runMatching (329)	FAILED	3	2022-04-24 00:45:59.617	19.9s	4.7s	94.5%	104.5 MB	7.4 GB	13 MB	39.8 KB
+302	54/9ee586	3700802.pbsha.ib.sockeye	runMatching (301)	COMPLETED	0	2022-04-24 00:33:44.511	13m 5s	12m 48s	108.7%	671.9 MB	8.3 GB	2.8 GB	1.3 GB
+274	90/063d7b	3700768.pbsha.ib.sockeye	runMatching (273)	COMPLETED	0	2022-04-24 00:20:39.663	26m 55s	26m 43s	110.7%	1.2 GB	8.9 GB	5.2 GB	3.3 GB
+188	20/89282c	3700666.pbsha.ib.sockeye	runMatching (187)	COMPLETED	0	2022-04-23 23:43:27.931	1h 4m 12s	1h 4m	117.5%	975.2 MB	8.6 GB	3.6 GB	2.2 GB
+298	bb/f06561	3700789.pbsha.ib.sockeye	runMatching (297)	COMPLETED	0	2022-04-24 00:27:19.478	20m 25s	20m 14s	172.8%	957.8 MB	8.6 GB	4.4 GB	2.5 GB
+340	00/1ed11e	3700836.pbsha.ib.sockeye	runMatching (339)	FAILED	3	2022-04-24 00:47:34.617	14.9s	5.2s	91.3%	47.2 MB	7.4 GB	8.3 MB	81 B
+310	68/846fb4	3700811.pbsha.ib.sockeye	runMatching (309)	COMPLETED	0	2022-04-24 00:35:14.513	13m	12m 52s	114.0%	672 MB	8.3 GB	2.8 GB	1.3 GB
+331	17/e2849c	3700840.pbsha.ib.sockeye	runMatching (330)	FAILED	1	2022-04-24 00:48:14.617	25.1s	4s	113.3%	118.3 MB	7.4 GB	13 MB	33.8 KB
+264	cf/fcbf3f	3700756.pbsha.ib.sockeye	runMatching (263)	COMPLETED	0	2022-04-24 00:17:09.429	31m 55s	31m 41s	110.8%	1.9 GB	9.8 GB	6 GB	4.1 GB
+279	75/bc806a	3700771.pbsha.ib.sockeye	runMatching (278)	COMPLETED	0	2022-04-24 00:21:54.427	27m 25s	27m 12s	108.0%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
+327	2d/13c49c	3700828.pbsha.ib.sockeye	runMatching (326)	COMPLETED	0	2022-04-24 00:43:59.591	6m 5s	5m 52s	104.5%	657.6 MB	8.3 GB	2.3 GB	1.1 GB
+284	2f/f65608	3700762.pbsha.ib.sockeye	runMatching (283)	COMPLETED	0	2022-04-24 00:19:24.431	31m 55s	31m 44s	116.6%	2 GB	9.9 GB	6 GB	4.1 GB
+307	91/ff7d7a	3700797.pbsha.ib.sockeye	runMatching (306)	COMPLETED	0	2022-04-24 00:30:44.687	21m 15s	20m 56s	106.4%	953.5 MB	8.6 GB	4.4 GB	2.5 GB
+276	20/41223d	3700779.pbsha.ib.sockeye	runMatching (275)	COMPLETED	0	2022-04-24 00:24:14.452	28m	27m 46s	111.5%	2 GB	9.9 GB	6.1 GB	4.1 GB
+344	84/fdc3dd	3700835.pbsha.ib.sockeye	runMatching (343)	COMPLETED	0	2022-04-24 00:46:49.823	6m 15s	6m	112.7%	661.2 MB	8.3 GB	2.3 GB	1.1 GB
+321	32/c5e9a5	3700823.pbsha.ib.sockeye	runMatching (320)	COMPLETED	0	2022-04-24 00:42:13.576	11m 16s	10m 59s	114.0%	671.6 MB	8.3 GB	2.8 GB	1.4 GB
+292	6b/d4e078	3700787.pbsha.ib.sockeye	runMatching (291)	COMPLETED	0	2022-04-24 00:26:14.461	27m 30s	27m 15s	105.7%	1.2 GB	9 GB	5.3 GB	3.3 GB
+329	ee/8e47a4	3700826.pbsha.ib.sockeye	runMatching (328)	COMPLETED	0	2022-04-24 00:43:14.572	10m 45s	10m 36s	112.3%	673.6 MB	8.3 GB	2.8 GB	1.4 GB
+357	27/62df78	3700851.pbsha.ib.sockeye	runMatching (356)	FAILED	3	2022-04-24 00:53:44.661	19.9s	4.5s	114.4%	111.1 MB	7.4 GB	13.5 MB	40.6 KB
+293	84/11ce9b	3700773.pbsha.ib.sockeye	runMatching (292)	COMPLETED	0	2022-04-24 00:23:09.446	32m 55s	32m 43s	108.1%	1.9 GB	9.9 GB	6 GB	4.1 GB
+198	f9/060234	3700675.pbsha.ib.sockeye	runMatching (197)	COMPLETED	0	2022-04-23 23:51:38.202	1h 4m 31s	1h 4m 20s	101.8%	978 MB	8.6 GB	3.6 GB	2.2 GB
+336	09/87883d	3700844.pbsha.ib.sockeye	runMatching (335)	COMPLETED	0	2022-04-24 00:50:04.674	6m 20s	6m 8s	110.6%	666 MB	8.3 GB	2.3 GB	1.1 GB
+359	b9/b1fbef	3700855.pbsha.ib.sockeye	runMatching (358)	FAILED	1	2022-04-24 00:56:04.750	19.9s	5.6s	119.4%	112.4 MB	7.4 GB	13.1 MB	36.1 KB
+316	bf/f4eda2	3700812.pbsha.ib.sockeye	runMatching (315)	COMPLETED	0	2022-04-24 00:36:09.729	20m 50s	20m 37s	113.8%	959.7 MB	8.6 GB	4.5 GB	2.5 GB
+215	8e/0380d4	3700696.pbsha.ib.sockeye	runMatching (214)	COMPLETED	0	2022-04-23 23:56:08.004	1h 1m 17s	1h 1m	118.4%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
+207	45/4a66a7	3700695.pbsha.ib.sockeye	runMatching (206)	COMPLETED	0	2022-04-23 23:55:53.017	1h 1m 42s	1h 1m 31s	115.2%	1.8 GB	9.2 GB	3.9 GB	1.7 GB
+347	06/af50b7	3700839.pbsha.ib.sockeye	runMatching (346)	COMPLETED	0	2022-04-24 00:47:49.629	10m 45s	10m 35s	111.6%	672.4 MB	8.3 GB	2.8 GB	1.4 GB
+209	21/41a1a8	3700684.pbsha.ib.sockeye	runMatching (208)	COMPLETED	0	2022-04-23 23:53:58.007	1h 4m 57s	1h 4m 47s	118.1%	965.1 MB	8.6 GB	3.6 GB	2.2 GB
+325	3d/d9793f	3700815.pbsha.ib.sockeye	runMatching (324)	COMPLETED	0	2022-04-24 00:38:44.545	20m 30s	20m 22s	110.7%	965.6 MB	8.6 GB	4.4 GB	2.5 GB
+143	c1/a12547	3700611.pbsha.ib.sockeye	runMatching (142)	COMPLETED	0	2022-04-23 23:17:47.766	1h 42m 7s	1h 41m 53s	113.7%	1.5 GB	9.4 GB	6 GB	4.4 GB
+137	ca/9cc046	3700613.pbsha.ib.sockeye	runMatching (136)	COMPLETED	0	2022-04-23 23:19:38.019	1h 40m 22s	1h 40m 9s	123.5%	1.5 GB	9.4 GB	6 GB	4.4 GB
+315	12/eb30bf	3700799.pbsha.ib.sockeye	runMatching (314)	COMPLETED	0	2022-04-24 00:33:19.525	27m 30s	27m 15s	102.5%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
+314	2f/498e92	3700798.pbsha.ib.sockeye	runMatching (313)	COMPLETED	0	2022-04-24 00:31:04.499	30m 15s	30m 5s	115.5%	2 GB	9.9 GB	6 GB	4.1 GB
+301	35/861858	3700813.pbsha.ib.sockeye	runMatching (300)	COMPLETED	0	2022-04-24 00:36:39.803	26m 25s	26m 10s	107.1%	1.2 GB	9 GB	5.3 GB	3.3 GB
+339	d2/81bec9	3700849.pbsha.ib.sockeye	runMatching (338)	COMPLETED	0	2022-04-24 00:53:04.668	10m	9m 44s	110.7%	657.8 MB	8.3 GB	2.8 GB	1.4 GB
+358	fd/36b835	3700848.pbsha.ib.sockeye	runMatching (357)	COMPLETED	0	2022-04-24 00:52:14.682	11m 15s	11m 3s	107.5%	669.3 MB	8.3 GB	2.8 GB	1.4 GB
+354	0b/b164cb	3700861.pbsha.ib.sockeye	runMatching (353)	COMPLETED	0	2022-04-24 00:57:34.681	6m 15s	5m 59s	111.6%	663.9 MB	8.3 GB	2.3 GB	1.1 GB
+114	cc/5748bf	3700580.pbsha.ib.sockeye	runMatching (113)	COMPLETED	0	2022-04-23 23:05:52.740	1h 58m 27s	1h 58m 10s	160.9%	1.5 GB	9.4 GB	6 GB	4.4 GB
+320	ae/380cc3	3700804.pbsha.ib.sockeye	runMatching (319)	COMPLETED	0	2022-04-24 00:33:49.599	30m 35s	30m 20s	103.8%	2 GB	9.9 GB	6.1 GB	4.1 GB
+366	c6/c0b054	3700876.pbsha.ib.sockeye	runMatching (365)	FAILED	3	2022-04-24 01:04:19.734	20.2s	4.4s	116.5%	111.6 MB	7.4 GB	13.7 MB	40.6 KB
+368	2e/6bffdd	3700877.pbsha.ib.sockeye	runMatching (367)	FAILED	1	2022-04-24 01:04:24.723	20s	4.2s	105.9%	125.7 MB	7.4 GB	13 MB	34.5 KB
+367	b4/a561f4	3700878.pbsha.ib.sockeye	runMatching (366)	FAILED	3	2022-04-24 01:04:39.962	19.7s	4.9s	119.6%	116.5 MB	7.4 GB	13.4 MB	32.7 KB
+363	8d/404ea2	3700865.pbsha.ib.sockeye	runMatching (362)	COMPLETED	0	2022-04-24 00:59:54.711	6m 15s	6m 3s	114.5%	670.7 MB	8.3 GB	2.3 GB	1.1 GB
+234	9b/b05b51	3700720.pbsha.ib.sockeye	runMatching (233)	COMPLETED	0	2022-04-24 00:04:18.117	1h 2m 27s	1h 2m 11s	102.9%	980.3 MB	8.6 GB	3.6 GB	2.2 GB
+303	b9/316a00	3700803.pbsha.ib.sockeye	runMatching (302)	COMPLETED	0	2022-04-24 00:33:49.524	33m	32m 42s	111.7%	2 GB	9.9 GB	6 GB	4.1 GB
+250	7c/c2c46c	3700726.pbsha.ib.sockeye	runMatching (249)	COMPLETED	0	2022-04-24 00:05:04.524	1h 2m 15s	1h 2m 1s	104.4%	1.8 GB	9.3 GB	3.9 GB	1.7 GB
+242	2d/9aadd4	3700732.pbsha.ib.sockeye	runMatching (241)	COMPLETED	0	2022-04-24 00:06:59.355	1h 1m 5s	1h 50s	115.5%	977.5 MB	8.6 GB	3.6 GB	2.2 GB
+319	c6/ed3dd3	3700820.pbsha.ib.sockeye	runMatching (318)	COMPLETED	0	2022-04-24 00:40:39.771	27m 30s	27m 13s	105.7%	1.2 GB	9 GB	5.2 GB	3.3 GB
+374	f4/6c8054	3700896.pbsha.ib.sockeye	runMatching (373)	FAILED	1	2022-04-24 01:08:09.761	19.9s	3.8s	113.1%	122.1 MB	7.4 GB	13.1 MB	38.8 KB
+106	3f/28c0a1	3700589.pbsha.ib.sockeye	runMatching (105)	COMPLETED	0	2022-04-23 23:10:17.791	1h 59m 2s	1h 58m 49s	107.8%	3.8 GB	11 GB	6.1 GB	3.5 GB
+257	55/0b0266	3700743.pbsha.ib.sockeye	runMatching (256)	COMPLETED	0	2022-04-24 00:12:49.394	56m 55s	56m 43s	103.1%	965.9 MB	8.6 GB	3.6 GB	2.2 GB
+260	ca/28e7dd	3700741.pbsha.ib.sockeye	runMatching (259)	COMPLETED	0	2022-04-24 00:11:49.387	58m 20s	58m 12s	119.4%	1.8 GB	9.3 GB	3.9 GB	1.7 GB
+392	0a/70e339	3700901.pbsha.ib.sockeye	runMatching (391)	FAILED	3	2022-04-24 01:10:09.776	19.9s	4.9s	108.5%	110.2 MB	7.4 GB	13.4 MB	40.3 KB
+352	b6/ebe779	3700842.pbsha.ib.sockeye	runMatching (351)	COMPLETED	0	2022-04-24 00:49:04.616	21m 45s	21m 32s	108.7%	964.8 MB	8.6 GB	4.4 GB	2.5 GB
+381	a7/a9d179	3700879.pbsha.ib.sockeye	runMatching (380)	COMPLETED	0	2022-04-24 01:04:44.753	6m 10s	5m 56s	110.8%	665.4 MB	8.3 GB	2.3 GB	1.1 GB
+334	d7/ffeabe	3700843.pbsha.ib.sockeye	runMatching (333)	COMPLETED	0	2022-04-24 00:49:19.628	22m 15s	22m	108.0%	959.8 MB	8.6 GB	4.5 GB	2.5 GB
+142	1f/39aaa8	3700616.pbsha.ib.sockeye	runMatching (141)	COMPLETED	0	2022-04-23 23:21:47.806	1h 50m 27s	1h 50m 9s	112.1%	3.8 GB	11 GB	6.1 GB	3.5 GB
+332	e3/da3ce7	3700832.pbsha.ib.sockeye	runMatching (331)	COMPLETED	0	2022-04-24 00:45:44.603	26m 30s	26m 17s	114.7%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
+372	24/6026ea	3700892.pbsha.ib.sockeye	runMatching (371)	COMPLETED	0	2022-04-24 01:06:44.745	5m 35s	5m 21s	106.8%	655.5 MB	8.3 GB	2.3 GB	1.1 GB
+349	49/42844e	3700863.pbsha.ib.sockeye	runMatching (348)	COMPLETED	0	2022-04-24 00:58:54.701	13m 30s	13m 18s	122.3%	668.6 MB	8.3 GB	2.8 GB	1.3 GB
+125	f4/085d1b	3700590.pbsha.ib.sockeye	runMatching (124)	COMPLETED	0	2022-04-23 23:10:22.735	2h 3m 7s	2h 2m 52s	113.9%	3.8 GB	11 GB	6.1 GB	3.5 GB
+119	6d/ceaaad	3700594.pbsha.ib.sockeye	runMatching (118)	COMPLETED	0	2022-04-23 23:11:02.791	2h 2m 37s	2h 2m 25s	110.6%	3.8 GB	11 GB	6 GB	3.5 GB
+403	08/5191e5	3700912.pbsha.ib.sockeye	runMatching (402)	FAILED	3	2022-04-24 01:13:29.991	19.7s	4.1s	143.5%	105.7 MB	7.4 GB	13 MB	39.8 KB
+388	55/53ad34	3700913.pbsha.ib.sockeye	runMatching (387)	FAILED	3	2022-04-24 01:13:39.986	19.8s	5.2s	115.3%	134.8 MB	7.4 GB	13.5 MB	35.3 KB
+375	8b/ed3b96	3700873.pbsha.ib.sockeye	runMatching (374)	COMPLETED	0	2022-04-24 01:03:04.837	11m	10m 47s	113.2%	666.1 MB	8.3 GB	2.8 GB	1.4 GB
+328	8d/86c7fb	3700825.pbsha.ib.sockeye	runMatching (327)	COMPLETED	0	2022-04-24 00:42:44.560	31m 50s	31m 39s	110.0%	2 GB	9.9 GB	6.1 GB	4.1 GB
+345	c6/1770e1	3700837.pbsha.ib.sockeye	runMatching (344)	COMPLETED	0	2022-04-24 00:47:39.837	26m 55s	26m 39s	108.0%	1.2 GB	9 GB	5.3 GB	3.3 GB
+107	8a/9fb010	3700598.pbsha.ib.sockeye	runMatching (106)	COMPLETED	0	2022-04-23 23:12:37.978	2h 2m 17s	2h 2m 4s	109.6%	1.5 GB	9.4 GB	6 GB	4.4 GB
+346	0d/9c161b	3700850.pbsha.ib.sockeye	runMatching (345)	COMPLETED	0	2022-04-24 00:53:29.663	21m 35s	21m 19s	113.9%	951.9 MB	8.6 GB	4.5 GB	2.5 GB
+371	22/38ad45	3700875.pbsha.ib.sockeye	runMatching (370)	COMPLETED	0	2022-04-24 01:03:49.751	11m 15s	11m	114.5%	670.4 MB	8.3 GB	2.8 GB	1.4 GB
+390	43/b847f0	3700899.pbsha.ib.sockeye	runMatching (389)	COMPLETED	0	2022-04-24 01:09:44.769	5m 55s	5m 39s	102.1%	674.1 MB	8.3 GB	2.3 GB	1.1 GB
+338	7c/46d370	3700827.pbsha.ib.sockeye	runMatching (337)	COMPLETED	0	2022-04-24 00:43:39.789	32m 25s	32m 9s	117.3%	2 GB	9.9 GB	6.1 GB	4.1 GB
+373	b3/2f7585	3700872.pbsha.ib.sockeye	runMatching (372)	COMPLETED	0	2022-04-24 01:03:04.759	13m 5s	12m 50s	109.4%	681.7 MB	8.3 GB	2.8 GB	1.3 GB
+152	bd/dd92fc	3700630.pbsha.ib.sockeye	runMatching (151)	COMPLETED	0	2022-04-23 23:25:52.821	1h 50m 37s	1h 50m 23s	111.4%	3.8 GB	11.1 GB	6.1 GB	3.5 GB
+133	f1/585f0f	3700602.pbsha.ib.sockeye	runMatching (132)	COMPLETED	0	2022-04-23 23:13:22.742	2h 3m 52s	2h 3m 35s	105.0%	3.8 GB	11 GB	6.1 GB	3.5 GB
+261	1b/13104f	3700748.pbsha.ib.sockeye	runMatching (260)	COMPLETED	0	2022-04-24 00:14:34.400	1h 2m 55s	1h 2m 39s	111.7%	975.4 MB	8.6 GB	3.6 GB	2.2 GB
+361	7c/5f43c8	3700858.pbsha.ib.sockeye	runMatching (360)	COMPLETED	0	2022-04-24 00:56:24.801	21m 10s	20m 59s	107.0%	950.6 MB	8.6 GB	4.4 GB	2.5 GB
+270	69/cbad5a	3700760.pbsha.ib.sockeye	runMatching (269)	COMPLETED	0	2022-04-24 00:17:34.483	1h 20s	1h 7s	112.7%	965.3 MB	8.6 GB	3.6 GB	2.2 GB
+126	fd/78275c	3700591.pbsha.ib.sockeye	runMatching (125)	COMPLETED	0	2022-04-23 23:10:27.737	2h 8m 32s	2h 8m 22s	107.6%	1.5 GB	9.4 GB	6 GB	4.4 GB
+153	51/0ebc8e	3700623.pbsha.ib.sockeye	runMatching (152)	COMPLETED	0	2022-04-23 23:23:20.554	1h 55m 59s	1h 55m 46s	115.0%	1.5 GB	9.4 GB	6 GB	4.4 GB
+337	da/9a09c6	3700847.pbsha.ib.sockeye	runMatching (336)	COMPLETED	0	2022-04-24 00:51:59.849	27m 25s	27m 10s	111.1%	1.2 GB	9 GB	5.3 GB	3.3 GB
+393	38/8be3d5	3700902.pbsha.ib.sockeye	runMatching (392)	COMPLETED	0	2022-04-24 01:10:29.766	10m 20s	10m 4s	104.2%	659.6 MB	8.3 GB	2.8 GB	1.4 GB
+408	aa/86ffc8	3700917.pbsha.ib.sockeye	runMatching (407)	COMPLETED	0	2022-04-24 01:14:34.811	6m 20s	6m 6s	121.9%	657.5 MB	8.3 GB	2.3 GB	1.1 GB
+420	71/d36a4c	3700935.pbsha.ib.sockeye	runMatching (419)	FAILED	3	2022-04-24 01:20:49.859	19.9s	5.2s	98.2%	48 MB	7.4 GB	8.4 MB	81 B
+278	fd/7b7dbb	3700759.pbsha.ib.sockeye	runMatching (277)	COMPLETED	0	2022-04-24 00:17:34.411	1h 3m 55s	1h 3m 41s	121.9%	969.1 MB	8.6 GB	3.6 GB	2.2 GB
+397	ef/89d44a	3700925.pbsha.ib.sockeye	runMatching (396)	COMPLETED	0	2022-04-24 01:16:09.824	6m 15s	6m 3s	106.1%	661.4 MB	8.3 GB	2.3 GB	1.1 GB
+172	24/5de39e	3700638.pbsha.ib.sockeye	runMatching (171)	COMPLETED	0	2022-04-23 23:28:02.863	1h 54m 37s	1h 54m 23s	107.1%	1.5 GB	9.4 GB	6 GB	4.4 GB
+402	19/bacd46	3700911.pbsha.ib.sockeye	runMatching (401)	COMPLETED	0	2022-04-24 01:12:24.807	10m 20s	10m 7s	114.0%	665.1 MB	8.3 GB	2.8 GB	1.4 GB
+356	05/fbf5f2	3700846.pbsha.ib.sockeye	runMatching (355)	COMPLETED	0	2022-04-24 00:51:19.718	31m 30s	31m 16s	115.7%	1.9 GB	9.8 GB	6.1 GB	4.1 GB
+422	b7/434a6a	3700942.pbsha.ib.sockeye	runMatching (421)	FAILED	1	2022-04-24 01:22:49.862	19.9s	3.9s	115.2%	137.5 MB	7.4 GB	13.1 MB	36.4 KB
+364	9e/4a7c9e	3700860.pbsha.ib.sockeye	runMatching (363)	COMPLETED	0	2022-04-24 00:57:24.855	26m 5s	25m 52s	118.0%	1.2 GB	9 GB	5.3 GB	3.3 GB
+384	61/96648b	3700915.pbsha.ib.sockeye	runMatching (383)	COMPLETED	0	2022-04-24 01:13:59.810	10m 35s	10m 23s	112.9%	661.3 MB	8.3 GB	2.8 GB	1.4 GB
+380	3c/17b372	3700880.pbsha.ib.sockeye	runMatching (379)	COMPLETED	0	2022-04-24 01:04:59.755	19m 40s	19m 29s	113.1%	949 MB	8.6 GB	4.4 GB	2.4 GB
+296	84/b801c8	3700781.pbsha.ib.sockeye	runMatching (295)	COMPLETED	0	2022-04-24 00:24:19.455	1h 1m 30s	1h 1m 18s	111.0%	1.8 GB	9.3 GB	3.9 GB	1.7 GB
+378	a7/526208	3700882.pbsha.ib.sockeye	runMatching (377)	COMPLETED	0	2022-04-24 01:06:09.792	19m 45s	19m 27s	111.5%	959.7 MB	8.6 GB	4.5 GB	2.5 GB
+355	2c/077bb2	3700864.pbsha.ib.sockeye	runMatching (354)	COMPLETED	0	2022-04-24 00:59:14.724	26m 45s	26m 35s	102.4%	1.2 GB	9 GB	5.2 GB	3.2 GB
+27	c4/5b2d3c	3700486.pbsha.ib.sockeye	runMatching (26)	COMPLETED	0	2022-04-23 22:58:07.848	2h 28m 52s	2h 28m 7s	106.3%	664.9 MB	8.3 GB	2.4 GB	1.1 GB
+385	5e/a3a6cc	3700916.pbsha.ib.sockeye	runMatching (384)	COMPLETED	0	2022-04-24 01:14:04.797	13m 15s	13m 1s	101.9%	673.9 MB	8.3 GB	2.8 GB	1.3 GB
+430	a0/9580ce	3700951.pbsha.ib.sockeye	runMatching (429)	FAILED	3	2022-04-24 01:26:59.873	20s	4.6s	114.1%	112.5 MB	7.4 GB	13.6 MB	40.6 KB
+432	b8/87bcfb	3700952.pbsha.ib.sockeye	runMatching (431)	FAILED	3	2022-04-24 01:27:19.894	20.1s	6.4s	100.9%	48 MB	7.4 GB	8.4 MB	81 B
+304	fe/8d6cc3	3700800.pbsha.ib.sockeye	runMatching (303)	COMPLETED	0	2022-04-24 00:33:34.515	54m 45s	54m 30s	102.4%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
+376	ce/b7bed1	3700874.pbsha.ib.sockeye	runMatching (375)	COMPLETED	0	2022-04-24 01:03:29.736	24m 55s	24m 42s	116.0%	1.2 GB	9 GB	5.3 GB	3.3 GB
+2	7a/32e362	3700480.pbsha.ib.sockeye	runMatching (1)	COMPLETED	0	2022-04-23 22:58:07.406	2h 31m 33s	2h 30m 50s	109.7%	655.1 MB	8.3 GB	2.4 GB	1.1 GB
+170	a1/041adb	3700635.pbsha.ib.sockeye	runMatching (169)	COMPLETED	0	2022-04-23 23:26:52.915	2h 3m 12s	2h 2m 58s	113.8%	3.8 GB	11 GB	6.1 GB	3.5 GB
+11	06/6f0680	3700479.pbsha.ib.sockeye	runMatching (10)	COMPLETED	0	2022-04-23 22:58:07.328	2h 32m 7s	2h 31m 25s	104.4%	661.2 MB	8.3 GB	2.4 GB	1.1 GB
+348	33/cea90e	3700862.pbsha.ib.sockeye	runMatching (347)	COMPLETED	0	2022-04-24 00:58:34.681	31m 45s	31m 36s	106.6%	2 GB	9.9 GB	6 GB	4.1 GB
+411	34/dcb92e	3700933.pbsha.ib.sockeye	runMatching (410)	COMPLETED	0	2022-04-24 01:19:24.837	11m	10m 43s	105.2%	672.9 MB	8.3 GB	2.8 GB	1.4 GB
+426	c8/52b5b8	3700945.pbsha.ib.sockeye	runMatching (425)	COMPLETED	0	2022-04-24 01:24:35.084	6m 25s	6m 5s	107.1%	660.1 MB	8.3 GB	2.3 GB	1.1 GB
+431	2a/77d0ce	3700963.pbsha.ib.sockeye	runMatching (430)	FAILED	1	2022-04-24 01:30:59.917	24.9s	4.1s	107.7%	127.2 MB	7.4 GB	13.1 MB	35.2 KB
+297	08/0182d1	3700788.pbsha.ib.sockeye	runMatching (296)	COMPLETED	0	2022-04-24 00:26:54.476	1h 4m 40s	1h 4m 24s	109.0%	959.9 MB	8.6 GB	3.6 GB	2.2 GB
+382	56/595f82	3700894.pbsha.ib.sockeye	runMatching (381)	COMPLETED	0	2022-04-24 01:07:20.012	24m 40s	24m 22s	103.3%	1.2 GB	9 GB	5.3 GB	3.3 GB
+288	f6/f47587	3700791.pbsha.ib.sockeye	runMatching (287)	COMPLETED	0	2022-04-24 00:28:09.460	1h 3m 55s	1h 3m 40s	111.4%	967.6 MB	8.6 GB	3.6 GB	2.2 GB
+425	b0/4d2309	3700950.pbsha.ib.sockeye	runMatching (424)	COMPLETED	0	2022-04-24 01:25:59.878	6m 20s	6m 7s	116.2%	657.8 MB	8.3 GB	2.3 GB	1.1 GB
+365	d7/a8d682	3700869.pbsha.ib.sockeye	runMatching (364)	COMPLETED	0	2022-04-24 01:00:49.730	32m 40s	32m 26s	108.6%	1.9 GB	9.9 GB	6.1 GB	4.1 GB
+436	5f/f19dfa	3700969.pbsha.ib.sockeye	runMatching (435)	FAILED	3	2022-04-24 01:33:29.960	14.9s	4.3s	107.1%	104 MB	7.4 GB	13 MB	39.8 KB
+417	a7/40f83d	3700943.pbsha.ib.sockeye	runMatching (416)	COMPLETED	0	2022-04-24 01:23:09.879	11m 25s	11m 6s	114.6%	667.9 MB	8.3 GB	2.8 GB	1.4 GB
+399	03/cc82e5	3700923.pbsha.ib.sockeye	runMatching (398)	COMPLETED	0	2022-04-24 01:15:40.040	19m 20s	19m 5s	115.3%	958.8 MB	8.6 GB	4.4 GB	2.5 GB
+406	75/9655c3	3700918.pbsha.ib.sockeye	runMatching (405)	COMPLETED	0	2022-04-24 01:14:34.910	21m 5s	20m 53s	109.1%	958.8 MB	8.6 GB	4.4 GB	2.5 GB
+162	ca/906bfb	3700636.pbsha.ib.sockeye	runMatching (161)	COMPLETED	0	2022-04-23 23:27:02.839	2h 8m 42s	2h 8m 31s	117.6%	1.5 GB	9.4 GB	6 GB	4.4 GB
+443	a7/cba9de	3700957.pbsha.ib.sockeye	runMatching (442)	COMPLETED	0	2022-04-24 01:29:40.323	6m 10s	5m 58s	114.8%	672.9 MB	8.3 GB	2.3 GB	1.1 GB
+441	f3/4f486f	3700980.pbsha.ib.sockeye	runMatching (440)	FAILED	3	2022-04-24 01:35:40.184	14.7s	5.7s	97.2%	45.9 MB	7.4 GB	8.3 MB	81 B
+448	82/9a1453	3700982.pbsha.ib.sockeye	runMatching (447)	FAILED	3	2022-04-24 01:35:49.967	19.9s	5.2s	105.1%	111.1 MB	7.4 GB	13.5 MB	40.6 KB
+434	0a/b41e2a	3700958.pbsha.ib.sockeye	runMatching (433)	COMPLETED	0	2022-04-24 01:30:04.913	6m 15s	6m 1s	118.6%	671.8 MB	8.3 GB	2.3 GB	1.1 GB
+387	d1/3d12c2	3700919.pbsha.ib.sockeye	runMatching (386)	COMPLETED	0	2022-04-24 01:14:54.803	21m 35s	21m 21s	104.1%	973 MB	8.6 GB	4.5 GB	2.5 GB
+398	3c/992f32	3700905.pbsha.ib.sockeye	runMatching (397)	COMPLETED	0	2022-04-24 01:10:54.798	25m 50s	25m 38s	120.7%	1.2 GB	9 GB	5.2 GB	3.3 GB
+412	64/a6bc8a	3700944.pbsha.ib.sockeye	runMatching (411)	COMPLETED	0	2022-04-24 01:23:29.874	13m 15s	13m	106.0%	669.1 MB	8.3 GB	2.8 GB	1.3 GB
+429	20/484cff	3700948.pbsha.ib.sockeye	runMatching (428)	COMPLETED	0	2022-04-24 01:25:49.896	11m 15s	11m 1s	116.9%	674.9 MB	8.3 GB	2.8 GB	1.4 GB
+161	f9/8379ec	3700650.pbsha.ib.sockeye	runMatching (160)	COMPLETED	0	2022-04-23 23:33:22.850	2h 4m 37s	2h 4m 25s	114.9%	3.8 GB	11 GB	6.1 GB	3.5 GB
+370	23/d18427	3700893.pbsha.ib.sockeye	runMatching (369)	COMPLETED	0	2022-04-24 01:06:49.747	31m 10s	30m 58s	110.0%	1.9 GB	9.9 GB	6 GB	4.1 GB
+324	40/1ba320	3700822.pbsha.ib.sockeye	runMatching (323)	COMPLETED	0	2022-04-24 00:42:13.457	57m 11s	57m	103.9%	972.9 MB	8.6 GB	3.6 GB	2.2 GB
+415	56/452428	3700929.pbsha.ib.sockeye	runMatching (414)	COMPLETED	0	2022-04-24 01:17:34.819	21m 55s	21m 43s	118.3%	959.6 MB	8.6 GB	4.4 GB	2.5 GB
+391	20/02265f	3700898.pbsha.ib.sockeye	runMatching (390)	COMPLETED	0	2022-04-24 01:09:19.756	30m 35s	30m 27s	168.1%	2 GB	9.9 GB	6 GB	4.1 GB
+400	e3/b73e22	3700927.pbsha.ib.sockeye	runMatching (399)	COMPLETED	0	2022-04-24 01:17:14.821	24m 5s	23m 52s	114.8%	1.2 GB	9 GB	5.2 GB	3.3 GB
+453	af/50c226	3700984.pbsha.ib.sockeye	runMatching (452)	COMPLETED	0	2022-04-24 01:36:09.949	5m 45s	5m 34s	114.2%	663.4 MB	8.3 GB	2.3 GB	1.1 GB
+437	52/29f024	3700964.pbsha.ib.sockeye	runMatching (436)	COMPLETED	0	2022-04-24 01:31:24.931	10m 55s	10m 46s	116.9%	664.1 MB	8.3 GB	2.8 GB	1.4 GB
+401	2c/bda333	3700904.pbsha.ib.sockeye	runMatching (400)	COMPLETED	0	2022-04-24 01:10:49.782	31m 35s	31m 21s	111.5%	1.9 GB	9.9 GB	6 GB	4.1 GB
+383	ba/6ee7b7	3700906.pbsha.ib.sockeye	runMatching (382)	COMPLETED	0	2022-04-24 01:11:34.783	30m 55s	30m 42s	134.7%	2 GB	9.9 GB	6 GB	4.1 GB
+179	c0/9f752f	3700659.pbsha.ib.sockeye	runMatching (178)	COMPLETED	0	2022-04-23 23:38:27.900	2h 4m 17s	2h 4m 4s	111.3%	1.5 GB	9.4 GB	6 GB	4.4 GB
+460	cf/7ded4e	3700986.pbsha.ib.sockeye	runMatching (459)	COMPLETED	0	2022-04-24 01:36:29.963	6m 15s	6m	107.8%	659.4 MB	8.3 GB	2.3 GB	1.1 GB
+46	62/546bd8	3700508.pbsha.ib.sockeye	runMatching (45)	COMPLETED	0	2022-04-23 22:58:09.566	2h 45m 15s	2h 44m 10s	119.3%	681.5 MB	8.3 GB	2.4 GB	1.1 GB
+421	3b/1d1bee	3700941.pbsha.ib.sockeye	runMatching (420)	COMPLETED	0	2022-04-24 01:22:44.865	20m 55s	20m 45s	115.0%	960.1 MB	8.6 GB	4.4 GB	2.4 GB
+455	b8/e161de	3700978.pbsha.ib.sockeye	runMatching (454)	COMPLETED	0	2022-04-24 01:34:59.946	9m 30s	9m 16s	101.7%	666.8 MB	8.3 GB	2.8 GB	1.4 GB
+445	f0/1acbdd	3700970.pbsha.ib.sockeye	runMatching (444)	COMPLETED	0	2022-04-24 01:33:44.937	11m	10m 52s	112.7%	667.8 MB	8.3 GB	2.8 GB	1.4 GB
+409	a5/5b5a6b	3700930.pbsha.ib.sockeye	runMatching (408)	COMPLETED	0	2022-04-24 01:17:54.829	26m 55s	26m 41s	115.2%	1.2 GB	8.9 GB	5.2 GB	3.3 GB
+333	fd/f19378	3700834.pbsha.ib.sockeye	runMatching (332)	COMPLETED	0	2022-04-24 00:46:19.629	59m 55s	59m 41s	106.5%	963.5 MB	8.6 GB	3.6 GB	2.2 GB
+84	5d/3d4919	3700548.pbsha.ib.sockeye	runMatching (83)	COMPLETED	0	2022-04-23 22:58:39.175	2h 48m 31s	2h 47m 57s	107.0%	658.1 MB	8.3 GB	2.4 GB	1.1 GB
+416	67/179689	3700938.pbsha.ib.sockeye	runMatching (415)	COMPLETED	0	2022-04-24 01:21:29.856	26m 5s	25m 54s	114.2%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
+465	0d/5048c8	3700989.pbsha.ib.sockeye	runMatching (464)	COMPLETED	0	2022-04-24 01:37:04.956	10m 40s	10m 29s	111.4%	673.7 MB	8.3 GB	2.8 GB	1.4 GB
+410	df/fb3e96	3700928.pbsha.ib.sockeye	runMatching (409)	COMPLETED	0	2022-04-24 01:17:29.818	31m 15s	30m 56s	114.6%	2 GB	9.9 GB	6.1 GB	4.1 GB
+471	2e/a3e76c	3701002.pbsha.ib.sockeye	runMatching (470)	COMPLETED	0	2022-04-24 01:42:45.056	6m 20s	6m 2s	110.4%	669.4 MB	8.3 GB	2.2 GB	1.1 GB
+185	e7/64e248	3700669.pbsha.ib.sockeye	runMatching (184)	COMPLETED	0	2022-04-23 23:45:57.951	2h 4m 12s	2h 3m 58s	114.4%	3.8 GB	11 GB	6.1 GB	3.5 GB
+341	14/9f80bb	3700841.pbsha.ib.sockeye	runMatching (340)	COMPLETED	0	2022-04-24 00:48:39.828	1h 1m 45s	1h 1m 32s	113.9%	1.8 GB	9.3 GB	3.9 GB	1.7 GB
+427	4e/ee5de1	3700946.pbsha.ib.sockeye	runMatching (426)	COMPLETED	0	2022-04-24 01:24:40.106	25m 50s	25m 33s	121.3%	1.2 GB	9 GB	5.3 GB	3.3 GB
+466	7c/17bfeb	3700991.pbsha.ib.sockeye	runMatching (465)	COMPLETED	0	2022-04-24 01:38:00.067	13m	12m 45s	113.9%	670.7 MB	8.3 GB	2.8 GB	1.3 GB
+342	41/3cefbe	3700838.pbsha.ib.sockeye	runMatching (341)	COMPLETED	0	2022-04-24 00:47:44.613	1h 3m 50s	1h 3m 35s	110.6%	968.4 MB	8.6 GB	3.6 GB	2.2 GB
+435	ec/747a45	3700953.pbsha.ib.sockeye	runMatching (434)	COMPLETED	0	2022-04-24 01:27:19.992	25m 35s	25m 21s	108.5%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
+433	20/a78452	3700965.pbsha.ib.sockeye	runMatching (432)	COMPLETED	0	2022-04-24 01:31:34.906	21m 35s	21m 19s	113.2%	965 MB	8.6 GB	4.5 GB	2.5 GB
+451	dc/542df9	3700966.pbsha.ib.sockeye	runMatching (450)	COMPLETED	0	2022-04-24 01:31:59.920	21m 35s	21m 21s	111.0%	965.6 MB	8.6 GB	4.4 GB	2.5 GB
+444	34/d52594	3700960.pbsha.ib.sockeye	runMatching (443)	COMPLETED	0	2022-04-24 01:30:14.896	23m 30s	23m 19s	119.3%	1.2 GB	9 GB	5.3 GB	3.2 GB
+32	9e/153618	3700493.pbsha.ib.sockeye	runMatching (31)	COMPLETED	0	2022-04-23 22:58:08.349	2h 55m 52s	2h 54m 44s	113.0%	666.8 MB	8.3 GB	2.4 GB	1.1 GB
+37	7e/0a732f	3700501.pbsha.ib.sockeye	runMatching (36)	COMPLETED	0	2022-04-23 22:58:08.957	2h 56m 1s	2h 54m 51s	111.9%	664.3 MB	8.3 GB	2.4 GB	1.1 GB
+442	3f/4c6a36	3700968.pbsha.ib.sockeye	runMatching (441)	COMPLETED	0	2022-04-24 01:32:19.962	21m 55s	21m 40s	113.5%	963.1 MB	8.6 GB	4.5 GB	2.5 GB
+423	e2/63fb8b	3700937.pbsha.ib.sockeye	runMatching (422)	COMPLETED	0	2022-04-24 01:21:09.873	33m 10s	32m 57s	105.8%	1.8 GB	9.7 GB	6 GB	4.1 GB
+462	99/6f4bdb	3700997.pbsha.ib.sockeye	runMatching (461)	COMPLETED	0	2022-04-24 01:41:54.998	13m 10s	12m 55s	114.9%	676.6 MB	8.3 GB	2.8 GB	1.3 GB
+487	5f/c7d32e	3701013.pbsha.ib.sockeye	runMatching (486)	COMPLETED	0	2022-04-24 01:48:45.021	6m 20s	6m 3s	102.4%	665.7 MB	8.3 GB	2.3 GB	1.1 GB
+474	18/b65845	3701007.pbsha.ib.sockeye	runMatching (473)	COMPLETED	0	2022-04-24 01:44:50.025	10m 30s	10m 13s	109.6%	671.9 MB	8.3 GB	2.8 GB	1.4 GB
+351	de/07ed3c	3700856.pbsha.ib.sockeye	runMatching (350)	COMPLETED	0	2022-04-24 00:56:09.701	59m 50s	59m 42s	106.3%	962.3 MB	8.6 GB	3.6 GB	2.2 GB
+477	e0/90e1eb	3701004.pbsha.ib.sockeye	runMatching (476)	COMPLETED	0	2022-04-24 01:43:40.204	12m 20s	12m 4s	110.2%	664.8 MB	8.3 GB	2.7 GB	1.3 GB
+55	02/5614bc	3700524.pbsha.ib.sockeye	runMatching (54)	COMPLETED	0	2022-04-23 22:58:37.432	2h 58m 58s	2h 58m 36s	105.1%	660.4 MB	8.3 GB	2.4 GB	1.1 GB
+350	8f/62e6b4	3700857.pbsha.ib.sockeye	runMatching (349)	COMPLETED	0	2022-04-24 00:56:24.688	1h 1m 10s	1h 57s	108.5%	1.8 GB	9.3 GB	3.9 GB	1.7 GB
+64	37/cd3c9d	3700531.pbsha.ib.sockeye	runMatching (63)	COMPLETED	0	2022-04-23 22:58:37.960	2h 59m 27s	2h 59m 2s	107.1%	660.1 MB	8.3 GB	2.4 GB	1.1 GB
+428	70/463dab	3700949.pbsha.ib.sockeye	runMatching (427)	COMPLETED	0	2022-04-24 01:25:54.878	32m 20s	32m 4s	107.7%	2 GB	9.9 GB	6.1 GB	4.1 GB
+360	c7/88ff61	3700853.pbsha.ib.sockeye	runMatching (359)	COMPLETED	0	2022-04-24 00:54:04.717	1h 4m 50s	1h 4m 33s	111.6%	957.6 MB	8.6 GB	3.6 GB	2.2 GB
+491	81/253cc5	3701012.pbsha.ib.sockeye	runMatching (490)	COMPLETED	0	2022-04-24 01:47:45.017	11m 40s	11m 27s	105.3%	651.5 MB	8.3 GB	2.8 GB	1.3 GB
+438	6e/581192	3700954.pbsha.ib.sockeye	runMatching (437)	COMPLETED	0	2022-04-24 01:27:40.115	32m 30s	32m 16s	111.9%	1.8 GB	9.7 GB	6.1 GB	4.1 GB
+74	4a/f45b2d	3700549.pbsha.ib.sockeye	runMatching (73)	COMPLETED	0	2022-04-23 22:58:39.245	3h 1m 36s	3h 1m 4s	103.0%	657.9 MB	8.3 GB	2.4 GB	1.1 GB
+498	13/db9d99	3701027.pbsha.ib.sockeye	runMatching (497)	COMPLETED	0	2022-04-24 01:54:15.094	6m 15s	6m 2s	123.2%	657.4 MB	8.3 GB	2.2 GB	1.1 GB
+480	9c/9b4081	3701032.pbsha.ib.sockeye	runMatching (479)	COMPLETED	0	2022-04-24 01:55:20.056	6m	5m 48s	106.3%	654.9 MB	8.3 GB	2.3 GB	1.1 GB
+469	08/06cd24	3700993.pbsha.ib.sockeye	runMatching (468)	COMPLETED	0	2022-04-24 01:39:29.971	21m 55s	21m 44s	106.4%	967 MB	8.6 GB	4.4 GB	2.5 GB
+454	ee/258d78	3700981.pbsha.ib.sockeye	runMatching (453)	COMPLETED	0	2022-04-24 01:35:44.948	26m 10s	25m 56s	103.2%	1.2 GB	9 GB	5.3 GB	3.3 GB
+449	ee/a213ad	3700961.pbsha.ib.sockeye	runMatching (448)	COMPLETED	0	2022-04-24 01:30:19.905	32m 5s	31m 55s	114.7%	1.8 GB	9.7 GB	6 GB	4.1 GB
+506	8e/b9b99e	3701037.pbsha.ib.sockeye	runMatching (505)	COMPLETED	0	2022-04-24 01:58:05.109	5m 40s	5m 27s	102.4%	657.6 MB	8.3 GB	2.2 GB	1.1 GB
+490	6e/e0c432	3701026.pbsha.ib.sockeye	runMatching (489)	COMPLETED	0	2022-04-24 01:54:10.051	9m 45s	9m 30s	102.5%	663.9 MB	8.3 GB	2.8 GB	1.4 GB
+483	f0/9cbb99	3701018.pbsha.ib.sockeye	runMatching (482)	COMPLETED	0	2022-04-24 01:50:30.031	13m 50s	13m 34s	113.8%	666.7 MB	8.3 GB	2.8 GB	1.3 GB
+488	46/cae471	3701028.pbsha.ib.sockeye	runMatching (487)	COMPLETED	0	2022-04-24 01:54:20.056	10m 45s	10m 32s	111.2%	671.5 MB	8.3 GB	2.8 GB	1.4 GB
+501	9b/a00a13	3701029.pbsha.ib.sockeye	runMatching (500)	COMPLETED	0	2022-04-24 01:55:05.070	10m 50s	10m 34s	114.4%	674.4 MB	8.3 GB	2.8 GB	1.4 GB
+456	db/42acf4	3700983.pbsha.ib.sockeye	runMatching (455)	COMPLETED	0	2022-04-24 01:35:54.969	30m 45s	30m 33s	104.3%	2 GB	9.9 GB	6 GB	4.1 GB
+458	9a/a4d74b	3701006.pbsha.ib.sockeye	runMatching (457)	COMPLETED	0	2022-04-24 01:44:45.012	22m 5s	21m 51s	104.2%	969.7 MB	8.6 GB	4.4 GB	2.5 GB
+191	7a/c0259d	3700670.pbsha.ib.sockeye	runMatching (190)	COMPLETED	0	2022-04-23 23:47:07.975	2h 20m 12s	2h 20m	106.8%	660.4 MB	8.3 GB	2.4 GB	1.1 GB
+463	cf/c1b2b1	3700985.pbsha.ib.sockeye	runMatching (462)	COMPLETED	0	2022-04-24 01:36:19.990	31m 55s	31m 45s	109.6%	1.9 GB	9.8 GB	6 GB	4.1 GB
+502	b3/3f08dc	3701033.pbsha.ib.sockeye	runMatching (501)	COMPLETED	0	2022-04-24 01:56:00.071	12m 15s	11m 56s	104.2%	669.9 MB	8.3 GB	2.8 GB	1.3 GB
+386	29/4b76de	3700895.pbsha.ib.sockeye	runMatching (385)	COMPLETED	0	2022-04-24 01:08:04.974	1h 20s	1h 7s	112.0%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
+485	41/f1ec4b	3701009.pbsha.ib.sockeye	runMatching (484)	COMPLETED	0	2022-04-24 01:46:15.372	22m 15s	21m 58s	107.3%	959.7 MB	8.6 GB	4.4 GB	2.5 GB
+515	55/38bbf2	3701048.pbsha.ib.sockeye	runMatching (514)	COMPLETED	0	2022-04-24 02:02:25.130	6m 5s	5m 55s	120.1%	662.3 MB	8.3 GB	2.3 GB	1.1 GB
+464	92/afbec4	3701000.pbsha.ib.sockeye	runMatching (463)	COMPLETED	0	2022-04-24 01:42:29.996	27m	26m 47s	108.4%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
+509	2b/f99f7e	3701039.pbsha.ib.sockeye	runMatching (508)	COMPLETED	0	2022-04-24 01:58:55.092	10m 55s	10m 39s	111.3%	673.9 MB	8.3 GB	2.8 GB	1.4 GB
+472	f1/0ff539	3700999.pbsha.ib.sockeye	runMatching (471)	COMPLETED	0	2022-04-24 01:42:24.996	28m	27m 45s	112.4%	1.2 GB	9 GB	5.2 GB	3.3 GB
+520	61/0369a5	3701043.pbsha.ib.sockeye	runMatching (519)	COMPLETED	0	2022-04-24 02:00:15.085	11m 40s	11m 30s	111.3%	668.7 MB	8.3 GB	2.7 GB	1.3 GB
+473	c4/1d6774	3700998.pbsha.ib.sockeye	runMatching (472)	COMPLETED	0	2022-04-24 01:42:19.979	30m	29m 48s	102.4%	1.8 GB	9.8 GB	6 GB	4.1 GB
+377	4e/c176e1	3700897.pbsha.ib.sockeye	runMatching (376)	COMPLETED	0	2022-04-24 01:08:29.771	1h 4m	1h 3m 46s	118.1%	970.4 MB	8.6 GB	3.6 GB	2.2 GB
+519	c6/be81c7	3701050.pbsha.ib.sockeye	runMatching (518)	COMPLETED	0	2022-04-24 02:03:55.140	9m 50s	9m 34s	116.6%	653 MB	8.3 GB	2.8 GB	1.4 GB
+413	bc/f7de3e	3700932.pbsha.ib.sockeye	runMatching (412)	COMPLETED	0	2022-04-24 01:19:19.821	54m 55s	54m 42s	103.9%	1.6 GB	9.1 GB	3.9 GB	1.7 GB
+525	2b/8de7a2	3701058.pbsha.ib.sockeye	runMatching (524)	COMPLETED	0	2022-04-24 02:08:15.153	6m 10s	5m 55s	102.1%	666.3 MB	8.3 GB	2.2 GB	1.1 GB
+404	5c/8a6764	3700914.pbsha.ib.sockeye	runMatching (403)	COMPLETED	0	2022-04-24 01:13:49.816	1h 1m 30s	1h 1m 18s	110.8%	1.6 GB	9.1 GB	3.9 GB	1.7 GB
+505	56/c681f0	3701034.pbsha.ib.sockeye	runMatching (504)	COMPLETED	0	2022-04-24 01:56:00.152	19m 35s	19m 20s	111.8%	960.7 MB	8.6 GB	4.4 GB	2.5 GB
+395	2a/c87b78	3700908.pbsha.ib.sockeye	runMatching (394)	COMPLETED	0	2022-04-24 01:12:14.855	1h 3m 25s	1h 3m 10s	119.3%	961.8 MB	8.6 GB	3.6 GB	2.2 GB
+211	83/00359b	3700687.pbsha.ib.sockeye	runMatching (210)	COMPLETED	0	2022-04-23 23:54:42.984	2h 21m 27s	2h 21m 9s	121.0%	667.5 MB	8.3 GB	2.5 GB	1.1 GB
+394	ca/647138	3700921.pbsha.ib.sockeye	runMatching (393)	COMPLETED	0	2022-04-24 01:15:04.881	1h 1m 15s	1h 33s	101.8%	1.7 GB	9.1 GB	3.9 GB	1.7 GB
+496	36/e8d518	3701025.pbsha.ib.sockeye	runMatching (495)	COMPLETED	0	2022-04-24 01:54:00.064	22m 25s	22m 9s	102.4%	959.2 MB	8.6 GB	4.4 GB	2.5 GB
+528	dc/189870	3701057.pbsha.ib.sockeye	runMatching (527)	COMPLETED	0	2022-04-24 02:07:20.133	9m 35s	9m 18s	111.1%	677.5 MB	8.3 GB	2.8 GB	1.4 GB
+478	ba/cd601f	3701036.pbsha.ib.sockeye	runMatching (477)	COMPLETED	0	2022-04-24 01:57:35.395	21m 20s	21m 4s	102.2%	964 MB	8.6 GB	4.4 GB	2.5 GB
+493	e6/017067	3701020.pbsha.ib.sockeye	runMatching (492)	COMPLETED	0	2022-04-24 01:51:35.235	27m 25s	27m 10s	102.6%	1.2 GB	9 GB	5.2 GB	3.3 GB
+414	a7/5ba42e	3700940.pbsha.ib.sockeye	runMatching (413)	COMPLETED	0	2022-04-24 01:22:40.034	57m	56m 48s	103.5%	958.1 MB	8.6 GB	3.6 GB	2.2 GB
+405	f4/a8231e	3700920.pbsha.ib.sockeye	runMatching (404)	COMPLETED	0	2022-04-24 01:15:04.803	1h 5m 15s	1h 4m 32s	110.5%	968.7 MB	8.6 GB	3.6 GB	2.2 GB
+523	c7/34f76e	3701045.pbsha.ib.sockeye	runMatching (522)	COMPLETED	0	2022-04-24 02:01:20.113	19m 55s	19m 46s	117.6%	961.3 MB	8.6 GB	4.4 GB	2.5 GB
+492	37/f8c6a6	3701024.pbsha.ib.sockeye	runMatching (491)	COMPLETED	0	2022-04-24 01:53:45.058	28m	27m 51s	105.9%	1.8 GB	9.8 GB	6 GB	4.1 GB
+541	cc/06cd02	3701075.pbsha.ib.sockeye	runMatching (540)	COMPLETED	0	2022-04-24 02:15:35.194	6m 20s	6m 3s	102.2%	668.2 MB	8.3 GB	2.3 GB	1.1 GB
+481	23/d90b7e	3701038.pbsha.ib.sockeye	runMatching (480)	COMPLETED	0	2022-04-24 01:58:15.071	24m 5s	23m 49s	105.6%	1.2 GB	8.9 GB	5.3 GB	3.3 GB
+181	8a/e837ad	3700653.pbsha.ib.sockeye	runMatching (180)	COMPLETED	0	2022-04-23 23:34:12.883	2h 48m 22s	2h 48m 8s	118.5%	670.7 MB	8.3 GB	2.5 GB	1.1 GB
+439	62/412a0b	3700955.pbsha.ib.sockeye	runMatching (438)	COMPLETED	0	2022-04-24 01:28:19.892	54m 50s	54m 37s	104.3%	1.6 GB	9.1 GB	3.9 GB	1.7 GB
+499	c3/094e37	3701035.pbsha.ib.sockeye	runMatching (498)	COMPLETED	0	2022-04-24 01:57:35.313	26m 15s	25m 56s	113.0%	1.2 GB	9 GB	5.3 GB	3.3 GB
+482	e7/8cb1bd	3701019.pbsha.ib.sockeye	runMatching (481)	COMPLETED	0	2022-04-24 01:51:00.024	33m 35s	33m 21s	112.8%	1.9 GB	9.8 GB	6 GB	4.1 GB
+536	41/177030	3701068.pbsha.ib.sockeye	runMatching (535)	COMPLETED	0	2022-04-24 02:12:20.174	12m 15s	11m 58s	114.3%	668.4 MB	8.3 GB	2.8 GB	1.3 GB
+418	b6/f42c85	3700936.pbsha.ib.sockeye	runMatching (417)	COMPLETED	0	2022-04-24 01:20:54.866	1h 4m	1h 3m 51s	116.7%	962.1 MB	8.6 GB	3.6 GB	2.2 GB
+500	85/d582f1	3701022.pbsha.ib.sockeye	runMatching (499)	COMPLETED	0	2022-04-24 01:53:37.298	31m 53s	31m 36s	103.8%	2 GB	9.9 GB	6.1 GB	4.1 GB
+540	8e/67bc81	3701076.pbsha.ib.sockeye	runMatching (539)	COMPLETED	0	2022-04-24 02:15:40.383	10m 45s	10m 31s	111.7%	658.4 MB	8.3 GB	2.8 GB	1.4 GB
+516	49/8a7ba4	3701051.pbsha.ib.sockeye	runMatching (515)	COMPLETED	0	2022-04-24 02:04:20.134	22m 25s	22m 9s	109.9%	957.5 MB	8.6 GB	4.4 GB	2.5 GB
+529	59/f6f3df	3701072.pbsha.ib.sockeye	runMatching (528)	COMPLETED	0	2022-04-24 02:14:25.170	12m 35s	12m 21s	112.5%	664.5 MB	8.3 GB	2.7 GB	1.3 GB
+512	95/634bc8	3701077.pbsha.ib.sockeye	runMatching (511)	COMPLETED	0	2022-04-24 02:16:10.188	11m 50s	11m 39s	114.1%	669.7 MB	8.3 GB	2.7 GB	1.3 GB
+447	61/52d065	3700962.pbsha.ib.sockeye	runMatching (446)	COMPLETED	0	2022-04-24 01:30:24.914	1h 1m 35s	1h 1m 20s	109.6%	1.8 GB	9.3 GB	3.9 GB	1.7 GB
+508	f2/0dc385	3701042.pbsha.ib.sockeye	runMatching (507)	COMPLETED	0	2022-04-24 02:00:10.090	32m 25s	32m 15s	117.7%	1.9 GB	9.7 GB	6 GB	4.1 GB
+511	96/a5c52f	3701060.pbsha.ib.sockeye	runMatching (510)	COMPLETED	0	2022-04-24 02:08:25.147	24m 10s	23m 56s	102.3%	1.2 GB	9 GB	5.2 GB	3.3 GB
+526	ef/e78062	3701052.pbsha.ib.sockeye	runMatching (525)	COMPLETED	0	2022-04-24 02:05:05.148	27m 40s	27m 23s	107.3%	1.2 GB	8.9 GB	5.2 GB	3.3 GB
+468	6d/42c4b5	3700992.pbsha.ib.sockeye	runMatching (467)	COMPLETED	0	2022-04-24 01:39:25.027	53m 50s	53m 36s	166.8%	969.2 MB	8.6 GB	3.6 GB	2.2 GB
+531	ff/be6b91	3701070.pbsha.ib.sockeye	runMatching (530)	COMPLETED	0	2022-04-24 02:13:45.213	19m 40s	19m 28s	105.7%	944.5 MB	8.6 GB	4.4 GB	2.5 GB
+539	83/fbc813	3701074.pbsha.ib.sockeye	runMatching (538)	COMPLETED	0	2022-04-24 02:15:20.187	19m 50s	19m 38s	108.5%	955.2 MB	8.6 GB	4.4 GB	2.5 GB
+200	93/ee17b9	3700692.pbsha.ib.sockeye	runMatching (199)	COMPLETED	0	2022-04-23 23:55:22.986	2h 39m 57s	2h 39m 46s	123.3%	661.2 MB	8.3 GB	2.4 GB	1.1 GB
+245	d4/e01e8f	3700731.pbsha.ib.sockeye	runMatching (244)	COMPLETED	0	2022-04-24 00:06:24.328	2h 29m 31s	2h 29m 22s	111.6%	662.3 MB	8.3 GB	2.4 GB	1.1 GB
+517	7d/381a86	3701061.pbsha.ib.sockeye	runMatching (516)	COMPLETED	0	2022-04-24 02:08:30.161	27m 30s	27m 19s	102.3%	1.2 GB	9 GB	5.2 GB	3.3 GB
+534	4a/bcfbd6	3701066.pbsha.ib.sockeye	runMatching (533)	COMPLETED	0	2022-04-24 02:10:25.164	26m 5s	25m 50s	101.7%	1.2 GB	9 GB	5.2 GB	3.3 GB
+457	c9/78ab1e	3700996.pbsha.ib.sockeye	runMatching (456)	COMPLETED	0	2022-04-24 01:41:20.025	56m 40s	56m 29s	117.7%	960.5 MB	8.6 GB	3.6 GB	2.2 GB
+527	85/6c7d8f	3701059.pbsha.ib.sockeye	runMatching (526)	COMPLETED	0	2022-04-24 02:08:15.221	29m 50s	29m 34s	102.4%	1.9 GB	9.8 GB	6 GB	4.1 GB
+518	c6/581845	3701056.pbsha.ib.sockeye	runMatching (517)	COMPLETED	0	2022-04-24 02:06:50.144	31m 25s	31m 9s	115.4%	2 GB	9.9 GB	6 GB	4.1 GB
+218	34/b848a3	3700700.pbsha.ib.sockeye	runMatching (217)	COMPLETED	0	2022-04-23 23:58:23.030	2h 41m 37s	2h 41m 29s	115.3%	661.7 MB	8.3 GB	2.4 GB	1.1 GB
+459	3d/3c8ef1	3700987.pbsha.ib.sockeye	runMatching (458)	COMPLETED	0	2022-04-24 01:36:44.956	1h 4m 5s	1h 3m 53s	115.5%	1.8 GB	9.3 GB	3.8 GB	1.7 GB
+236	f9/23ec08	3700715.pbsha.ib.sockeye	runMatching (235)	COMPLETED	0	2022-04-24 00:04:03.078	2h 36m 52s	2h 36m 38s	113.0%	653.2 MB	8.3 GB	2.4 GB	1.1 GB
+467	71/26eb40	3700988.pbsha.ib.sockeye	runMatching (466)	COMPLETED	0	2022-04-24 01:36:45.034	1h 4m 10s	1h 3m 55s	108.8%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
+476	30/69b5ab	3701005.pbsha.ib.sockeye	runMatching (475)	COMPLETED	0	2022-04-24 01:44:30.007	57m 11s	56m 57s	119.9%	974.5 MB	8.6 GB	3.6 GB	2.2 GB
+535	9c/498d00	3701064.pbsha.ib.sockeye	runMatching (534)	COMPLETED	0	2022-04-24 02:09:50.172	33m 20s	33m 7s	114.1%	1.8 GB	9.7 GB	6 GB	4.1 GB
+450	be/238f19	3700990.pbsha.ib.sockeye	runMatching (449)	COMPLETED	0	2022-04-24 01:37:59.956	1h 5m 20s	1h 5m 8s	102.2%	960.3 MB	8.6 GB	3.6 GB	2.2 GB
+227	65/83bd9d	3700713.pbsha.ib.sockeye	runMatching (226)	COMPLETED	0	2022-04-24 00:03:43.159	2h 40m 42s	2h 40m 26s	116.7%	666.4 MB	8.3 GB	2.5 GB	1.1 GB
+475	a5/ca58cc	3701001.pbsha.ib.sockeye	runMatching (474)	COMPLETED	0	2022-04-24 01:42:44.980	1h 2m 25s	1h 2m 9s	105.8%	1.7 GB	9.2 GB	3.9 GB	1.7 GB
+253	2c/fa989e	3700745.pbsha.ib.sockeye	runMatching (252)	COMPLETED	0	2022-04-24 00:13:39.581	2h 36m 21s	2h 36m 10s	114.1%	661.4 MB	8.3 GB	2.4 GB	1.1 GB
+489	86/c00a04	3701011.pbsha.ib.sockeye	runMatching (488)	COMPLETED	0	2022-04-24 01:47:35.018	1h 2m 40s	1h 2m 24s	113.1%	1.8 GB	9.2 GB	3.9 GB	1.7 GB
+494	3c/c58594	3701016.pbsha.ib.sockeye	runMatching (493)	COMPLETED	0	2022-04-24 01:50:10.045	1h 1m	1h 46s	107.8%	1.8 GB	9.2 GB	3.8 GB	1.7 GB
+495	d7/b1451e	3701017.pbsha.ib.sockeye	runMatching (494)	COMPLETED	0	2022-04-24 01:50:25.034	1h 50s	1h 36s	111.1%	959.7 MB	8.6 GB	3.6 GB	2.2 GB
+291	b2/2e1a88	3700785.pbsha.ib.sockeye	runMatching (290)	COMPLETED	0	2022-04-24 00:25:39.707	2h 27m 21s	2h 27m 4s	113.5%	670 MB	8.3 GB	2.5 GB	1.1 GB
+484	36/f2d5ae	3701014.pbsha.ib.sockeye	runMatching (483)	COMPLETED	0	2022-04-24 01:49:05.055	1h 4m 15s	1h 4m 3s	109.7%	969.1 MB	8.6 GB	3.6 GB	2.2 GB
+503	7e/3c8371	3701023.pbsha.ib.sockeye	runMatching (502)	COMPLETED	0	2022-04-24 01:53:37.377	1h 1m 33s	1h 1m 24s	116.3%	1.7 GB	9.2 GB	3.8 GB	1.7 GB
+305	a1/bea907	3700795.pbsha.ib.sockeye	runMatching (304)	COMPLETED	0	2022-04-24 00:30:14.473	2h 26m 46s	2h 26m 36s	103.9%	664.6 MB	8.3 GB	2.4 GB	1.1 GB
+522	f6/8f88ea	3701044.pbsha.ib.sockeye	runMatching (521)	COMPLETED	0	2022-04-24 02:00:30.107	59m 40s	59m 25s	112.7%	975.8 MB	8.6 GB	3.6 GB	2.2 GB
+262	66/4c8e97	3700746.pbsha.ib.sockeye	runMatching (261)	COMPLETED	0	2022-04-24 00:14:04.418	2h 48m 16s	2h 48m 1s	111.5%	670.6 MB	8.3 GB	2.4 GB	1.1 GB
+504	a0/b3a6d5	3701040.pbsha.ib.sockeye	runMatching (503)	COMPLETED	0	2022-04-24 01:59:25.103	1h 2m 55s	1h 2m 41s	118.4%	961 MB	8.6 GB	3.6 GB	2.2 GB
+513	76/99da46	3701046.pbsha.ib.sockeye	runMatching (512)	COMPLETED	0	2022-04-24 02:01:25.130	1h 1m 40s	1h 1m 23s	113.6%	1.6 GB	9.1 GB	3.8 GB	1.7 GB
+521	15/c61af3	3701055.pbsha.ib.sockeye	runMatching (520)	COMPLETED	0	2022-04-24 02:06:40.354	59m 45s	59m 30s	120.8%	1.6 GB	9.1 GB	3.9 GB	1.7 GB
+530	b8/6b1a71	3701063.pbsha.ib.sockeye	runMatching (529)	COMPLETED	0	2022-04-24 02:09:30.356	57m 5s	56m 49s	103.2%	961.7 MB	8.6 GB	3.6 GB	2.2 GB
+299	b1/245d00	3700783.pbsha.ib.sockeye	runMatching (298)	COMPLETED	0	2022-04-24 00:25:34.695	2h 41m 26s	2h 41m 15s	102.3%	663.7 MB	8.3 GB	2.4 GB	1.1 GB
+283	03/53d8e3	3700775.pbsha.ib.sockeye	runMatching (282)	COMPLETED	0	2022-04-24 00:23:44.463	2h 46m 11s	2h 46m	103.4%	656.6 MB	8.3 GB	2.4 GB	1.1 GB
+532	ed/c4f308	3701062.pbsha.ib.sockeye	runMatching (531)	COMPLETED	0	2022-04-24 02:08:30.232	1h 1m 25s	1h 1m 14s	112.6%	1.7 GB	9.2 GB	3.8 GB	1.7 GB
+538	58/062723	3701069.pbsha.ib.sockeye	runMatching (537)	COMPLETED	0	2022-04-24 02:12:30.168	58m 25s	58m 8s	116.1%	964.2 MB	8.6 GB	3.6 GB	2.2 GB
+510	50/2968c4	3701067.pbsha.ib.sockeye	runMatching (509)	COMPLETED	0	2022-04-24 02:11:55.257	1h 4m	1h 3m 35s	113.2%	971 MB	8.6 GB	3.6 GB	2.2 GB
+537	e4/cf1a52	3701078.pbsha.ib.sockeye	runMatching (536)	COMPLETED	0	2022-04-24 02:16:20.192	1h 35s	1h 20s	103.3%	1.8 GB	9.2 GB	3.8 GB	1.7 GB
+317	ef/6b97f8	3700816.pbsha.ib.sockeye	runMatching (316)	COMPLETED	0	2022-04-24 00:39:39.800	2h 37m 56s	2h 37m 42s	108.8%	662.5 MB	8.3 GB	2.4 GB	1.1 GB
+272	68/1eebd4	3700794.pbsha.ib.sockeye	runMatching (271)	COMPLETED	0	2022-04-24 00:30:09.522	2h 47m 51s	2h 47m 41s	117.3%	673.5 MB	8.3 GB	2.4 GB	1.1 GB
+335	cc/850aa6	3700831.pbsha.ib.sockeye	runMatching (334)	COMPLETED	0	2022-04-24 00:45:09.599	2h 34m 31s	2h 34m 18s	117.5%	671.4 MB	8.3 GB	2.5 GB	1.1 GB
+326	10/74d063	3700818.pbsha.ib.sockeye	runMatching (325)	COMPLETED	0	2022-04-24 00:40:09.560	2h 40m 26s	2h 40m 9s	115.9%	665.7 MB	8.3 GB	2.5 GB	1.1 GB
+362	5e/2967fc	3700866.pbsha.ib.sockeye	runMatching (361)	COMPLETED	0	2022-04-24 00:59:59.704	2h 26m 16s	2h 26m 1s	115.5%	662.7 MB	8.3 GB	2.4 GB	1.1 GB
+353	9c/a1a070	3700859.pbsha.ib.sockeye	runMatching (352)	COMPLETED	0	2022-04-24 00:56:59.689	2h 34m 56s	2h 34m 40s	105.2%	661.6 MB	8.3 GB	2.4 GB	1.1 GB
+369	02/204bd2	3700870.pbsha.ib.sockeye	runMatching (368)	COMPLETED	0	2022-04-24 01:01:19.726	2h 31m 21s	2h 31m 8s	105.3%	657.9 MB	8.3 GB	2.4 GB	1.1 GB
+389	63/762ed4	3700907.pbsha.ib.sockeye	runMatching (388)	COMPLETED	0	2022-04-24 01:12:14.786	2h 22m 6s	2h 21m 52s	162.0%	666.7 MB	8.3 GB	2.4 GB	1.1 GB
+101	4c/97e9ea	3700567.pbsha.ib.sockeye	runMatching (100)	COMPLETED	0	2022-04-23 22:58:40.572	4h 37m 35s	4h 37m 20s	103.9%	985.6 MB	8.7 GB	3.6 GB	2.2 GB
+343	de/2a0fd4	3700852.pbsha.ib.sockeye	runMatching (342)	COMPLETED	0	2022-04-24 00:53:59.676	2h 44m 11s	2h 44m	110.9%	666.6 MB	8.3 GB	2.4 GB	1.1 GB
+379	d9/12c2aa	3700910.pbsha.ib.sockeye	runMatching (378)	COMPLETED	0	2022-04-24 01:12:19.791	2h 29m 1s	2h 28m 48s	112.7%	662.8 MB	8.3 GB	2.4 GB	1.1 GB
+91	2f/694ac3	3700558.pbsha.ib.sockeye	runMatching (90)	COMPLETED	0	2022-04-23 22:58:39.955	4h 45m 16s	4h 45m	101.9%	986.1 MB	8.7 GB	3.6 GB	2.2 GB
+396	56/80c517	3700926.pbsha.ib.sockeye	runMatching (395)	COMPLETED	0	2022-04-24 01:16:29.813	2h 28m 26s	2h 28m 12s	112.9%	655.3 MB	8.3 GB	2.4 GB	1.1 GB
+424	d9/200c58	3700939.pbsha.ib.sockeye	runMatching (423)	COMPLETED	0	2022-04-24 01:22:24.851	2h 30m 6s	2h 29m 54s	117.3%	662.1 MB	8.3 GB	2.4 GB	1.1 GB
+407	58/0e85b2	3700924.pbsha.ib.sockeye	runMatching (406)	COMPLETED	0	2022-04-24 01:16:04.839	2h 38m 6s	2h 37m 53s	109.3%	664.2 MB	8.3 GB	2.4 GB	1.1 GB
+419	c5/8c3ea9	3700931.pbsha.ib.sockeye	runMatching (418)	COMPLETED	0	2022-04-24 01:19:00.095	2h 40m 36s	2h 40m 24s	116.4%	668.1 MB	8.3 GB	2.4 GB	1.1 GB
+440	17/c3c2bd	3700956.pbsha.ib.sockeye	runMatching (439)	COMPLETED	0	2022-04-24 01:28:24.895	2h 31m 11s	2h 30m 56s	105.8%	660.4 MB	8.3 GB	2.4 GB	1.1 GB
+446	c4/67f55b	3700971.pbsha.ib.sockeye	runMatching (445)	COMPLETED	0	2022-04-24 01:34:34.942	2h 29m 41s	2h 29m 31s	112.0%	664.9 MB	8.3 GB	2.4 GB	1.1 GB
+479	e2/cba022	3701010.pbsha.ib.sockeye	runMatching (478)	COMPLETED	0	2022-04-24 01:47:10.013	2h 35m 36s	2h 35m 27s	101.9%	673.9 MB	8.3 GB	2.4 GB	1.1 GB
+461	50/2342aa	3700994.pbsha.ib.sockeye	runMatching (460)	COMPLETED	0	2022-04-24 01:39:54.986	2h 48m 16s	2h 48m 6s	109.8%	665.3 MB	8.3 GB	2.4 GB	1.1 GB
+452	09/9f8700	3700967.pbsha.ib.sockeye	runMatching (451)	COMPLETED	0	2022-04-24 01:32:04.952	2h 57m 6s	2h 56m 53s	102.7%	667.3 MB	8.3 GB	2.4 GB	1.1 GB
+109	f2/5b891d	3700581.pbsha.ib.sockeye	runMatching (108)	COMPLETED	0	2022-04-23 23:06:17.699	5h 26m 3s	5h 25m 47s	112.8%	988.4 MB	8.7 GB	3.6 GB	2.2 GB
+470	b2/f03053	3701003.pbsha.ib.sockeye	runMatching (469)	COMPLETED	0	2022-04-24 01:43:24.983	2h 53m 56s	2h 53m 41s	114.3%	664.4 MB	8.3 GB	2.4 GB	1.1 GB
+120	f9/232b07	3700595.pbsha.ib.sockeye	runMatching (119)	COMPLETED	0	2022-04-23 23:11:07.724	5h 27m 13s	5h 26m 56s	111.6%	985.7 MB	8.7 GB	3.6 GB	2.2 GB
+147	c7/39b214	3700622.pbsha.ib.sockeye	runMatching (146)	COMPLETED	0	2022-04-23 23:23:20.419	5h 15m 41s	5h 15m 25s	138.0%	993 MB	8.7 GB	3.6 GB	2.2 GB
+486	a8/af26a3	3701021.pbsha.ib.sockeye	runMatching (485)	COMPLETED	0	2022-04-24 01:52:55.081	2h 46m 21s	2h 46m 9s	107.3%	668.4 MB	8.3 GB	2.4 GB	1.1 GB
+127	73/24f45d	3700597.pbsha.ib.sockeye	runMatching (126)	COMPLETED	0	2022-04-23 23:12:27.758	5h 27m 23s	5h 27m 9s	110.6%	990.5 MB	8.7 GB	3.6 GB	2.2 GB
+497	44/aa5dd4	3701030.pbsha.ib.sockeye	runMatching (496)	COMPLETED	0	2022-04-24 01:55:05.146	2h 47m 36s	2h 47m 20s	108.9%	661.6 MB	8.3 GB	2.4 GB	1.1 GB
+514	a2/96fa19	3701047.pbsha.ib.sockeye	runMatching (513)	COMPLETED	0	2022-04-24 02:01:55.096	2h 44m 26s	2h 44m 12s	106.9%	662 MB	8.3 GB	2.4 GB	1.1 GB
+524	59/4f8a95	3701054.pbsha.ib.sockeye	runMatching (523)	COMPLETED	0	2022-04-24 02:05:55.140	2h 41m 11s	2h 41m	105.8%	668.3 MB	8.3 GB	2.4 GB	1.1 GB
+533	36/3b22c0	3701071.pbsha.ib.sockeye	runMatching (532)	COMPLETED	0	2022-04-24 02:14:15.185	2h 41m 26s	2h 41m 11s	113.9%	659.3 MB	8.3 GB	2.4 GB	1.1 GB
+507	2a/36c79b	3701049.pbsha.ib.sockeye	runMatching (506)	COMPLETED	0	2022-04-24 02:03:45.339	2h 52m 26s	2h 52m 9s	110.7%	667.8 MB	8.3 GB	2.4 GB	1.1 GB
+155	30/9f942e	3700631.pbsha.ib.sockeye	runMatching (154)	COMPLETED	0	2022-04-23 23:25:57.831	5h 41m 23s	5h 41m 12s	121.0%	986.8 MB	8.7 GB	3.6 GB	2.2 GB
+136	50/359fd8	3700615.pbsha.ib.sockeye	runMatching (135)	COMPLETED	0	2022-04-23 23:21:38.069	5h 49m 13s	5h 48m 57s	113.7%	979.7 MB	8.7 GB	3.6 GB	2.2 GB
+173	83/63e0ab	3700643.pbsha.ib.sockeye	runMatching (172)	COMPLETED	0	2022-04-23 23:31:47.863	5h 39m 3s	5h 38m 50s	114.9%	977.6 MB	8.7 GB	3.6 GB	2.2 GB
+164	53/5303ab	3700629.pbsha.ib.sockeye	runMatching (163)	COMPLETED	0	2022-04-23 23:25:22.812	5h 52m 3s	5h 51m 54s	112.0%	993.1 MB	8.7 GB	3.6 GB	2.2 GB
+542	8e/5fc766	3701165.pbsha.ib.sockeye	aggregate	COMPLETED	0	2022-04-24 05:17:26.757	3m 39s	3m 26s	77.0%	114.9 MB	4.4 GB	1.2 GB	561.6 MB
+543	a8/239873	3701167.pbsha.ib.sockeye	computeKS	COMPLETED	0	2022-04-24 05:21:06.551	37m 15s	37m 5s	101.3%	12.1 GB	12.6 GB	556.9 MB	22.6 MB
+544	9a/805cb5	3701175.pbsha.ib.sockeye	plot	COMPLETED	0	2022-04-24 05:58:21.552	44.8s	17.3s	98.5%	497.2 MB	894.2 MB	33.5 MB	1.3 MB
