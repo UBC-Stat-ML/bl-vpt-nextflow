@@ -10,6 +10,7 @@ global <- global %>% inner_join(timing, by = c("round", "model", "isVariational"
 global %>% 
   filter(isAdapt == "false") %>%
   filter(model != "coll-rockets" | size < 369) %>%
+  filter(model != "titanic" | size < 887) %>%
   group_by(size, isVariational, model, round) %>%
   summarize(
     mean_gcb = mean(value),
