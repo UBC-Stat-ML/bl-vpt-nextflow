@@ -26,4 +26,4 @@ global %>%
     facet_grid(. ~ model) +
     theme_bw()
 
-ggsave("scaling.pdf", height = 3, width = 15)
+ggsave("scaling.pdf", height = 2.5, width = 8)
