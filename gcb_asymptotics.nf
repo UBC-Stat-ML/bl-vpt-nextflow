@@ -8,7 +8,7 @@ process buildCode {
   input:
     val gitRepoName from 'ptanalysis'
     val gitUser from 'UBC-Stat-ML'
-    val codeRevision from 'ed74dca2bf28d35b9e514ab2d02012c6bec7750c' 
+    val codeRevision from '396de867f71276acb4c7f77bc43908dab0940b58' 
     val snapshotPath from "${System.getProperty('user.home')}/w/ptanalysis"
   output:
     file 'code' into code
@@ -36,9 +36,12 @@ def addModel(String n, String s, String a) {
 }
 
 
-addModel('coll-rockets',    ' --model.rocketTypes.maxSize ', ' --model ptbm.models.CollapsedHierarchicalRockets --model.data data/failure_counts.csv --engine.nChains 10 ')
+
+addModel('titanic',         ' --model.instances.maxSize ',   ' --model ptbm.models.LogisticRegression --model.data data/titanic/titanic-covariates-original.csv --model.instances.name Name --model.labels.dataSource data/titanic/titanic.csv --model.labels.name Survived --model.useTPrior false --engine.nChains 10 ')
+addModel('coll-rockets',    ' --model.rocketTypes.maxSize ', ' --model ptbm.models.CollapsedHierarchicalRockets --model.data data/failure_counts_perm.csv --engine.nChains 10 ')
 addModel('unidentiable',    ' --model.nTrials ',             ' --model ptbm.models.UnidentifiableProduct ')
 addModel('Cauchy-Cauchy',   ' --model.obs.maxSize ',         ' --model ptbm.models.CauchyCauchy --model.data data/cc-100k/ys.csv ')
+
 
 postprocessor = ' --postProcessor ptgrad.VariationalPostprocessor '
 
@@ -61,7 +64,7 @@ process runMatching {
     file code
     file data
     
-  time '1h'
+  time '2h'
   errorStrategy 'ignore'
     
   output:
@@ -149,6 +152,7 @@ process plot {
   global %>% 
     filter(isAdapt == "false") %>%
     filter(model != "coll-rockets" | size < 369) %>%
+    filter(model != "titanic" | size < 887) %>%
     group_by(size, isVariational, model, round) %>%
     summarize(
       mean_gcb = mean(value),
