@@ -161,11 +161,14 @@ process plot {
       geom_line() + 
       geom_errorbar(aes(ymin=mean_gcb-se_gcb, ymax=mean_gcb+se_gcb), width=.1) +
       scale_x_log10() +
+      xlab("Dataset size") +
+      ylab("Global communication barrier") + 
+      labs(colour='Variational reference?') + 
       scale_y_log10() + 
       facet_grid(. ~ model) +
       theme_bw()
       
-  ggsave("scaling.pdf")
+  ggsave("scaling.pdf", height = 3, width = 15)
   """  
 }
 
