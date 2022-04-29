@@ -33,11 +33,11 @@ def addModel(String n, String s, String a) {
   models.add(m)
 }
 
-nScans = 40000
+nScans = 2000
 nScans_ref = 80000
 ks_threshold = 0.1
 
-addModel('spring',   'theta',    ' --model ptbm.models.SpringFailure ')
+addModel('spring',   'theta',    ' --model ptbm.models.SpringFailure --engine.nChains 4 ')
 
 
 algos = [:]  
