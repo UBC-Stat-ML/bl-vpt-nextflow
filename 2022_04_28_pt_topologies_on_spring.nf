@@ -44,9 +44,9 @@ algos = [:]
 reference = 'Reference'
 algos['F--T  F--T']  = ' --engine.fullyIndepFixedRef true  --engine.minSamplesForVariational INF '
 algos[reference]     = algos['F--T  F--T'] 
-algos['V--T* F--T']  = ' --engine.fullyIndepFixedRef true  --engine.minSamplesForVariational 100 '
-algos['V--T* F--T*'] = ' --engine.fullyIndepFixedRef false --engine.minSamplesForVariational 100 --engine.doSwapFixedRefAndVariational false '
-algos['V--T*--F']    = ' --engine.fullyIndepFixedRef false --engine.minSamplesForVariational 100 --engine.doSwapFixedRefAndVariational true '
+algos['V--T* F--T']  = ' --engine.fullyIndepFixedRef true  --engine.minSamplesForVariational 2 '
+algos['V--T* F--T*'] = ' --engine.fullyIndepFixedRef false --engine.minSamplesForVariational 2 --engine.doSwapFixedRefAndVariational false '
+algos['V--T*--F']    = ' --engine.fullyIndepFixedRef false --engine.minSamplesForVariational 2 --engine.doSwapFixedRefAndVariational true '
 algos['F--T--F']     = ' --engine.fullyIndepFixedRef false --engine.minSamplesForVariational INF --engine.doSwapFixedRefAndVariational true '
 
 postprocessor = ' --postProcessor ptgrad.VariationalPostprocessor '
