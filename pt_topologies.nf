@@ -55,7 +55,6 @@ algos[reference]     = algos['F--T  F--T']
 algos['V--T* F--T']  = ' --engine.fullyIndepFixedRef true  --engine.minSamplesForVariational 100 '
 algos['V--T* F--T*'] = ' --engine.fullyIndepFixedRef false --engine.minSamplesForVariational 100 --engine.doSwapFixedRefAndVariational false '
 algos['V--T*--F']    = ' --engine.fullyIndepFixedRef false --engine.minSamplesForVariational 100 --engine.doSwapFixedRefAndVariational true '
-algos['F--T--F']     = ' --engine.fullyIndepFixedRef false --engine.minSamplesForVariational INF --engine.doSwapFixedRefAndVariational true '
 
 postprocessor = ' --postProcessor ptgrad.VariationalPostprocessor '
 
@@ -168,7 +167,7 @@ custom_colours = "scale_fill_manual($colours) + scale_colour_manual($colours)"
 
 process computeKS {
   time '5h'
-  memory '40 GB'
+  memory {if (params.dryRun) '1GB' else '40 GB'}
   input:
     file statistic
   output:
@@ -273,14 +272,15 @@ process plot {
     group_by(quality, model, algorithm, seed) %>%
     summarize(total_count = sum(count) ) %>%
     ggplot(aes(x = algorithm, y = total_count, color = quality)) +
-      facet_grid(model ~ ., scales="free_y") +
+      facet_grid(. ~ model, scales="free_x") +
       geom_boxplot() +
+      coord_flip() +
       ylab("total tempered restarts") + 
       scale_y_continuous(expand = expansion(mult = 0.05), limits = c(0, NA)) +
       $custom_colours +
       theme_bw() +
       theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-  ggsave("actualTemperedRestarts-box.pdf", width = 5, height = ${big_h})
+  ggsave("actualTemperedRestarts-box.pdf", width = 8, height = 3)
   
   ess <- read.csv("${aggregated}/allEss.csv.gz")
   ess <- ess %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
@@ -290,14 +290,15 @@ process plot {
     group_by(quality, model, algorithm, variable) %>%
     summarize(total_ess = sum(value) ) %>%
     ggplot(aes(x = algorithm, y = total_ess, color = quality)) +
-      facet_grid(model ~ ., scales="free_y") +
+      facet_grid(. ~ model, scales="free_x") +
+      coord_flip() +
       geom_boxplot() +
       ylab("ESS") + 
       scale_y_continuous(expand = expansion(mult = 0.05), limits = c(0, NA)) +
       $custom_colours +
       theme_bw() +
       theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-  ggsave("ess-box.pdf", width = 5, height = ${big_h})
+  ggsave("ess-box.pdf", width = 8, height = 3)
   
   global <- read.csv("${aggregated}/globalLambda.csv.gz")
   global <- global %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
