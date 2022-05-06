@@ -2,3 +2,12 @@
 .nextflow
 links
 work
+beta.csv.gz
+deliverables/pt_topologies_bu
+deliverables/pt_topologies_bu2
+deliverables/pt_topologies_ess-expl
+deliverables/pt_topologies_manual
+actualTemperedRestarts.csv
+deliverables/singles-bu
+deliverables/singles-bu2
+allEss.csv
