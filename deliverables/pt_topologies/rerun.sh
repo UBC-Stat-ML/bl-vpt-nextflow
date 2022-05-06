@@ -21,7 +21,7 @@ restarts %>%
     scale_fill_manual(values = c(  "good" = "blue", "poor" = "red")) + scale_colour_manual(values = c(  "good" = "blue", "poor" = "red")) +
     theme_bw() +
     theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-ggsave("actualTemperedRestarts-box.pdf", width = 8, height = 3)
+ggsave("actualTemperedRestarts-box.pdf", width = 10, height = 2)
 
 ess <- read.csv("aggregated/allEss.csv.gz")
 ess <- ess %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
@@ -39,7 +39,7 @@ ess %>%
     scale_fill_manual(values = c(  "good" = "blue", "poor" = "red")) + scale_colour_manual(values = c(  "good" = "blue", "poor" = "red")) +
     theme_bw() +
     theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-ggsave("ess-box.pdf", width = 8, height = 3)
+ggsave("ess-box.pdf", width = 10, height = 2)
 
 global <- read.csv("aggregated/globalLambda.csv.gz")
 global <- global %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
