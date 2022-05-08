@@ -47,7 +47,7 @@ process run {
   input:
     each seed from seeds
     each obj from 'FKL', 'SKL', 'Rejection'
-    each opt from 'Adam', 'SGD --engine.optimizer.schedule.exponent -0.5 '
+    each opt from 'Adam', 'SGD --engine.optimizer.schedule.exponent -0.6 '
     each stepScale from 0.01, 0.1, 1.0, 10.0
     file code
     file data
