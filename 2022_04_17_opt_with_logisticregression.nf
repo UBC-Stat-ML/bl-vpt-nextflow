@@ -52,7 +52,7 @@ process run {
   input:
     each seed from seeds
     each obj from 'FKL' 
-    each opt from 'Adam' 
+    each opt from 'Adam', 'SGD' 
     each stepScale from 1.0
     file code
     file data
