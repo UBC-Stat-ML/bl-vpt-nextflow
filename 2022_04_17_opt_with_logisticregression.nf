@@ -8,7 +8,7 @@ process buildCode {
   input:
     val gitRepoName from 'ptanalysis'
     val gitUser from 'UBC-Stat-ML'
-    val codeRevision from '9d65ecb2a874003900bf51220ff1a614fac1c065' 
+    val codeRevision from '51907cf40c409ffa352f404bf538ee0a6b3da4ac' 
     val snapshotPath from "${System.getProperty('user.home')}/w/ptanalysis"
   output:
     file 'code' into code
@@ -51,9 +51,9 @@ process run {
   
   input:
     each seed from seeds
-    each obj from 'SKL' //, 'FKL', 'Rejection'
-    each opt from 'Adam' //, 'SGD --engine.optimizer.schedule.exponent -0.5 '
-    each stepScale from 0.1 // 0.01, XX, 1.0, 10.0
+    each obj from 'FKL' 
+    each opt from 'Adam' 
+    each stepScale from 1.0
     file code
     file data
     
