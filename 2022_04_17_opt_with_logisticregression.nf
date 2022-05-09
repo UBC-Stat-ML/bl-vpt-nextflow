@@ -96,7 +96,7 @@ process runMatching {
 
   time '2h'
   cpus nCPUs
-  //errorStrategy 'ignore'
+  errorStrategy 'ignore'
   
   input:
     each seed from seeds
