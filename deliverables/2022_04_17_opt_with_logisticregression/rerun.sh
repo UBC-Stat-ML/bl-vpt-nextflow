@@ -3,7 +3,7 @@ require("ggplot2")
 require("dplyr") 
 
 paths <- read.csv("aggregated/optimizationPath.csv.gz")
-paths <- filter(paths, budget <= 400000)
+paths <- filter(paths, budget <= 40000)
 ggplot(paths, aes(x = budget, y = value, color = factor(random))) +
   facet_grid(objective + optimizer + name ~ factor(stepScale), labeller = label_both) +
   scale_x_log10() +
@@ -16,7 +16,7 @@ ggsave(paste0("optimizationPaths.pdf"), width = 17, height = 30)
 
 optmonitor <- read.csv("aggregated/optimizationMonitoring.csv.gz")
 optmonitor <- filter(optmonitor, name == "Rejection")
-optmonitor <- filter(optmonitor, budget <= 400000) # when hitting NaN, budget can be 2x larger
+optmonitor <- filter(optmonitor, budget <= 40000) # when hitting NaN, budget can be 2x larger
 ggplot(optmonitor, aes(x = budget, y = value, color = factor(random))) +
   facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
   scale_x_log10() +
@@ -38,18 +38,6 @@ optmonitor %>%
     geom_line(alpha = 1) + 
     theme_bw()
 ggsave(paste0("optimizationMonitoring-mean.pdf"), width = 17, height = 7)
-
-optmonitor %>% 
-  filter(is.finite(value)) %>% 
-  group_by(budget, objective, optimizer, stepScale) %>%
-  summarise(mean_GCB = mean(value)) %>%
-  ggplot(aes(x = budget, y = mean_GCB, colour = optimizer)) +
-    scale_x_log10() +
-    xlab("Budget (number of exploration steps)") + 
-    ylab("GCB (averaged over 10 restarts, ignoring failures)") + 
-    geom_line(alpha = 1) + 
-    theme_bw()
-ggsave(paste0("optimizationMonitoring-mean-simplified.pdf"), width = 6, height = 4)
 
 optmonitor$isFinite <- is.finite(optmonitor$value)
 optmonitor %>% 

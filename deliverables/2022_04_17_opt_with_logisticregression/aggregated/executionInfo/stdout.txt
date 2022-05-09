@@ -5,7 +5,6 @@ Processing optimizationMonitoring.csv from exec_9
 Processing optimizationMonitoring.csv from exec_4
 Processing optimizationMonitoring.csv from exec_10
 Processing optimizationMonitoring.csv from exec_8
-Processing optimizationMonitoring.csv from exec_20
 Processing optimizationMonitoring.csv from exec_6
 Processing optimizationMonitoring.csv from exec_13
 Processing optimizationMonitoring.csv from exec_12
@@ -25,7 +24,6 @@ Processing optimizationPath.csv from exec_9
 Processing optimizationPath.csv from exec_4
 Processing optimizationPath.csv from exec_10
 Processing optimizationPath.csv from exec_8
-Processing optimizationPath.csv from exec_20
 Processing optimizationPath.csv from exec_6
 Processing optimizationPath.csv from exec_13
 Processing optimizationPath.csv from exec_12
