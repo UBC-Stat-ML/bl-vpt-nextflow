@@ -1,7 +1,6 @@
 #!/usr/bin/env nextflow
 
 deliverableDir = 'deliverables/' + workflow.scriptName.replace('.nf','')
-data = file("data")
 
 process buildCode {
   executor 'local'
@@ -9,16 +8,17 @@ process buildCode {
   input:
     val gitRepoName from 'ptanalysis'
     val gitUser from 'UBC-Stat-ML'
-    val codeRevision from '51907cf40c409ffa352f404bf538ee0a6b3da4ac'
+    val codeRevision from 'bafcc6d521911a0c2e4502e4c246e99a7a7ead40'
     val snapshotPath from "${System.getProperty('user.home')}/w/ptanalysis"
   output:
     file 'code' into code
+    file 'ptanalysis/data' into data
   script:
     template 'buildRepo.sh'
 }
 
 seeds = (1..10)
-nChains = 4
+nChains = 8
 nOptIters = 1000
 nScansPerGradient = 20
 
@@ -32,12 +32,18 @@ if (params.dryRun) {
 nScans = nOptIters * nScansPerGradient
 maxBudget = nScans * nChains
 
-model_match =  ' --model ptbm.models.CollapsedHierarchicalRockets\\\$Builder '
+model_name = 'ptbm.models.CollapsedHierarchicalRockets'
+
+model_match =  ' --model ' + model_name + '\\\$Builder '
 model_match += ' --model.data data/failure_counts.csv '
-//model_match += ' --model.filter Ariane '
 
 model_opt = model_match.replace('--model', '--model.interpolation.target')
 
+fixed_scedule_match  = ' --engine.adaptFraction 0.0 '
+fixed_scedule_match += ' --engine.ladder FromAnotherExec '
+fixed_scedule_match += ' --engine.ladder.annealingParameters data/schedules/' + model_name + '/annealingParameters.csv '
+
+fixed_scedule_opt = fixed_scedule_match.replace('--engine.', '--engine.pt.')
 
 process run {
 
@@ -63,6 +69,7 @@ process run {
     --engine ptgrad.VariationalPT \
     --engine.detailedGradientInfo false \
     --engine.pt.nScans 10 \
+    $fixed_scedule_opt \
     --engine.nScansPerGradient $nScansPerGradient \
     --engine.optimizer.progressCheckLag 0.0 \
     --engine.pt.scmInit.nParticles 10 \
@@ -106,6 +113,7 @@ process runMatching {
     --engine.scmInit.nParticles 10 \
     --engine.scmInit.temperatureSchedule.threshold 0.9 \
     --engine.nPassesPerScan 1 \
+    $fixed_scedule_match \
     --engine.useFixedRefPT false \
     $model_match \
     --engine.nChains $nChains \
