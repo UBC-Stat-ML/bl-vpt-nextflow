@@ -22,7 +22,7 @@ nChains = 20
 nOptIters = 100
 nScansPerGradient = 20
 
-nCPUs = 20
+nCPUs = 5
 
 params.dryRun = false
 
@@ -57,7 +57,7 @@ fixed_scedule_opt = fixed_scedule_match.replace('--engine.', '--engine.pt.')
 
 process run {
 
-  time '20m'
+  time '40m'
   cpus nCPUs
   errorStrategy 'ignore'
   
@@ -107,7 +107,7 @@ process run {
 
 process runMatching {
 
-  time '20m'
+  time '40m'
   cpus nCPUs
   errorStrategy 'ignore'
   
