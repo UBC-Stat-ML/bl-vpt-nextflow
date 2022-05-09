@@ -113,7 +113,6 @@ process runMatching {
     --engine.scmInit.nParticles 10 \
     --engine.scmInit.temperatureSchedule.threshold 0.9 \
     --engine.nPassesPerScan 1 \
-    $fixed_scedule_match \
     --engine.useFixedRefPT false \
     $model_match \
     --engine.nChains $nChains \
