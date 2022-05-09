@@ -62,6 +62,7 @@ process run {
     
   """
   java -Xmx5g -cp code/lib/\\*  ptgrad.Variational \
+    --treatNaNAsNegativeInfinity true \
     --experimentConfigs.resultsHTMLPage false \
     --engine.maxOptimizationRestarts 1 \
     --model.interpolation Automatic \
@@ -107,6 +108,7 @@ process runMatching {
     
   """
   java -Xmx5g -cp code/lib/\\*  blang.runtime.Runner \
+    --treatNaNAsNegativeInfinity true \
     --experimentConfigs.resultsHTMLPage false \
     --engine ptbm.OptPT \
     --engine.nScans $nScans \
