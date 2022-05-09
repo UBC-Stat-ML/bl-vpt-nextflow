@@ -19,7 +19,7 @@ process buildCode {
 
 seeds = (1..10)
 nChains = 20
-nOptIters = 1000
+nOptIters = 100
 nScansPerGradient = 20
 
 params.dryRun = false
