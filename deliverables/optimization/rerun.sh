@@ -3,7 +3,7 @@ require("ggplot2")
 require("dplyr") 
 
 paths <- read.csv("aggregated/optimizationPath.csv.gz")
-paths <- filter(paths, budget <= 80000)
+paths <- filter(paths, budget <= 160000)
 ggplot(paths, aes(x = budget, y = value, color = factor(random))) +
   facet_grid(objective + optimizer + name ~ factor(stepScale), labeller = label_both) +
   scale_x_log10() +
@@ -16,7 +16,7 @@ ggsave(paste0("optimizationPaths.pdf"), width = 17, height = 30)
 
 optmonitor <- read.csv("aggregated/optimizationMonitoring.csv.gz")
 optmonitor <- filter(optmonitor, name == "Rejection")
-optmonitor <- filter(optmonitor, budget <= 80000) # when hitting NaN, budget can be 2x larger
+optmonitor <- filter(optmonitor, budget <= 160000) # when hitting NaN, budget can be 2x larger
 ggplot(optmonitor, aes(x = budget, y = value, color = factor(random))) +
   facet_grid(objective + optimizer ~ factor(stepScale), labeller = label_both) +
   scale_x_log10() +
