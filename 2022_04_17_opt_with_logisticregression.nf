@@ -8,7 +8,7 @@ process buildCode {
   input:
     val gitRepoName from 'ptanalysis'
     val gitUser from 'UBC-Stat-ML'
-    val codeRevision from '51907cf40c409ffa352f404bf538ee0a6b3da4ac' 
+    val codeRevision from 'a22c23ecbef97c0b50355c79ada35d2fdf85104b' 
     val snapshotPath from "${System.getProperty('user.home')}/w/ptanalysis"
   output:
     file 'code' into code
@@ -22,38 +22,50 @@ nChains = 20
 nOptIters = 100
 nScansPerGradient = 20
 
+nCPUs = 20
+
 params.dryRun = false
 
 if (params.dryRun) {
   nOptIters = 5
   seeds = seeds.subList(0, 1)
+  nCPUs = 2
 }
 
 nScans = nOptIters * nScansPerGradient
 maxBudget = nScans * nChains
 
-model_match =  ' --model ptbm.models.LogisticRegression\\\$Builder '
+model_name = 'ptbm.models.LogisticRegression'
+
+model_match =  ' --model ' + model_name + '\\\$Builder '
 model_match += ' --model.data data/titanic/titanic-covariates-original.csv  '
 model_match += ' --model.instances.name Name  '
 model_match += ' --model.labels.dataSource data/titanic/titanic.csv   '
 model_match += ' --model.labels.name Survived   '
+model_match += ' --model.useTPrior false   '
 
-nCPUs = 10
+
 
 model_opt = model_match.replace('--model', '--model.interpolation.target')
+
+fixed_scedule_match  = ' --engine.adaptFraction 0.0 '
+fixed_scedule_match += ' --engine.ladder FromAnotherExec '
+fixed_scedule_match += ' --engine.ladder.annealingParameters data/schedules/' + model_name + '/annealingParameters.csv '
+
+fixed_scedule_opt = fixed_scedule_match.replace('--engine.', '--engine.pt.')
 
 
 process run {
 
-  time '2h'
+  time '20m'
   cpus nCPUs
   errorStrategy 'ignore'
   
   input:
     each seed from seeds
-    each obj from 'FKL' 
-    each opt from 'Adam', 'SGD' 
-    each stepScale from 1.0
+    each obj from 'SKL', 'FKL'
+    each opt from 'Adam'
+    each stepScale from 0.1
     file code
     file data
     
@@ -69,6 +81,7 @@ process run {
     --engine ptgrad.VariationalPT \
     --engine.detailedGradientInfo false \
     --engine.pt.nScans 10 \
+    $fixed_scedule_opt \
     --engine.nScansPerGradient $nScansPerGradient \
     --engine.optimizer.progressCheckLag 0.0 \
     --engine.pt.scmInit.nParticles 10 \
@@ -94,7 +107,7 @@ process run {
 
 process runMatching {
 
-  time '2h'
+  time '20m'
   cpus nCPUs
   errorStrategy 'ignore'
   
