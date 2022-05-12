@@ -16,59 +16,51 @@ p4 [label="buildCode"];
 p3 -> p4 [label="snapshotPath"];
 
 p4 [label="buildCode"];
-p9 [label="run"];
-p4 -> p9 [label="code"];
+p8 [label="runMatching"];
+p4 -> p8 [label="code"];
 
 p4 [label="buildCode"];
-p9 [label="run"];
-p4 -> p9 [label="data"];
+p8 [label="runMatching"];
+p4 -> p8 [label="data"];
 
 p5 [shape=point,label="",fixedsize=true,width=0.1];
-p9 [label="run"];
-p5 -> p9;
+p8 [label="runMatching"];
+p5 -> p8;
 
 p6 [shape=point,label="",fixedsize=true,width=0.1];
-p9 [label="run"];
-p6 -> p9;
+p8 [label="runMatching"];
+p6 -> p8;
 
 p7 [shape=point,label="",fixedsize=true,width=0.1];
-p9 [label="run"];
-p7 -> p9;
+p8 [label="runMatching"];
+p7 -> p8;
 
-p8 [shape=point,label="",fixedsize=true,width=0.1];
-p9 [label="run"];
-p8 -> p9;
+p8 [label="runMatching"];
+p9 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="concat"];
+p8 -> p9 [label="results"];
 
-p9 [label="run"];
-p12 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="concat"];
-p9 -> p12 [label="results"];
+p8 [label="runMatching"];
+p9 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="concat"];
+p8 -> p9 [label="fixedRefResults"];
 
-p10 [shape=point,label="",fixedsize=true,width=0.1];
-p11 [label="runMatching"];
+p9 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="concat"];
+p10 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="toList"];
+p9 -> p10 [label="results_all"];
+
+p10 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="toList"];
+p11 [label="aggregate"];
 p10 -> p11;
 
-p4 [label="buildCode"];
-p11 [label="runMatching"];
-p4 -> p11 [label="code"];
+p11 [label="aggregate"];
+p13 [label="plot"];
+p11 -> p13 [label="aggregated"];
 
-p4 [label="buildCode"];
-p11 [label="runMatching"];
-p4 -> p11 [label="data"];
+p11 [label="aggregate"];
+p12 [label="computeKS"];
+p11 -> p12 [label="statistic"];
 
-p11 [label="runMatching"];
-p12 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="concat"];
-p11 -> p12 [label="results_matching"];
-
-p12 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="concat"];
-p13 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="toList"];
-p12 -> p13 [label="results_all"];
-
-p13 [shape=circle,label="",fixedsize=true,width=0.1,xlabel="toList"];
-p14 [label="aggregate"];
-p13 -> p14;
-
-p14 [label="aggregate"];
-p15 [label="plot"];
-p14 -> p15 [label="aggregated"];
+p12 [label="computeKS"];
+p13 [label="plot"];
+p12 -> p13 [label="ks_distances"];
 
 }
