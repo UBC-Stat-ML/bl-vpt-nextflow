@@ -235,7 +235,7 @@ process computeKS {
       ylab("density") + 
       coord_flip() +
       $custom_colours +
-      theme_minimal()
+      theme_classic()
   ggsave("statistic.pdf", $big_dims) 
   
   stat %>%
@@ -244,7 +244,7 @@ process computeKS {
     filter(sample < 1000) %>%
     ggplot(aes(x = sample, y = value, colour = quality)) +
       geom_point(size = 0.1) + geom_line(alpha = 0.5) + 
-      theme_minimal() + 
+      theme_classic() + 
       ylim(-0.4, 1.2) + 
       facet_grid(algorithm ~ .) +
       $custom_colours +
@@ -300,7 +300,7 @@ process costlyPlots {
     filter(sample > ${nScans/2}) %>% 
     ggplot(aes(x = value, colour = chain, group = chain)) + 
       geom_density() +
-      theme_minimal() + 
+      theme_classic() + 
       xlab("parameter") + 
       ylab("density") + 
       theme(legend.position="none") +
@@ -313,13 +313,13 @@ process costlyPlots {
     filter(sample > ${nScans_ref/2}) %>% 
     ggplot(aes(x = value, colour = chain, group = chain)) + 
       geom_density() +
-      theme_minimal() +
+      theme_classic() +
       xlab("parameter") + 
       ylab("density") + 
       theme(legend.position="none") +
       xlim(-0.4, 1.2) +  
       scale_colour_gradient(low = "grey30", high = "orange") 
-  ggsave("fixed-ref-paths.pdf", width = 2, height = 2)
+  ggsave("fixed-ref-paths.pdf", width = 2, height = 13, limitsize = FALSE)
     
   """  
 }
@@ -365,14 +365,13 @@ process cheapPlots {
     summarize(total_count = sum(count) ) %>%
     ggplot(aes(x = reorder(algorithm,order), y = total_count, color = quality)) +
       facet_grid(model ~ ., scales="free_y") +
-      geom_boxplot() +
+      geom_boxplot(outlier.alpha = 0.0) +
       ylab("total tempered restarts") + 
       scale_y_continuous(expand = expansion(mult = 0.05), limits = c(0, NA)) +
       $custom_colours +
       theme_minimal() +
-      coord_flip() +
       theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-  ggsave("actualTemperedRestarts-box.pdf", width = 4, height = 6)
+  ggsave("actualTemperedRestarts-box.pdf", width = 4, height = 3)
     
   ess <- read.csv("${aggregated}/allEss.csv.gz")
   ess <- ess %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
@@ -399,8 +398,7 @@ process cheapPlots {
       ylab("ESS") + 
       scale_y_continuous(expand = expansion(mult = 0.05), limits = c(0, NA)) +
       $custom_colours +
-      theme_minimal() +
-      coord_flip() +
+      theme_classic() +
       theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
   ggsave("ess-box.pdf", width = 4, height = 6)
   
@@ -413,7 +411,7 @@ process cheapPlots {
       $custom_colours +
       ylab("Lambda") + 
       geom_line() +
-      theme_minimal()
+      theme_classic()
   ggsave("globalLambda.pdf", $big_dims)  
   
   lambda <- read.csv("${aggregated}/lambdaInstantaneous.csv.gz")
