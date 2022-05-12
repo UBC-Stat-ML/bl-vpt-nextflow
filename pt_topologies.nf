@@ -37,7 +37,7 @@ nScans = 40000
 nScans_ref = 80000
 ks_threshold = 0.1
 
-addModel('titanic',        'unidParameter', ' --model ptbm.models.LogisticRegressionUnid --model.data data/titanic/titanic-covariates-original.csv --model.instances.name Name --model.instances.maxSize INF --model.labels.dataSource data/titanic/titanic.csv --model.labels.name Survived --model.useTPrior false --engine.nChains 20 ')
+addModel('titanic',        'sigma', ' --model ptbm.models.LogisticRegression --model.data data/titanic/titanic-covariates-original.csv --model.instances.name Name --model.instances.maxSize INF --model.labels.dataSource data/titanic/titanic.csv --model.labels.name Survived --model.useTPrior false --engine.nChains 10 ')
 addModel('coll-rockets',   'p0',    ' --model ptbm.models.CollapsedHierarchicalRockets --model.data data/failure_counts.csv --engine.nChains 10 ')
 addModel('toy-mix',        'x',     ' --model ptbm.models.ToyMix --engine.nChains 20 --model.radius 10.0 ')
 addModel('mrna-no-transf', 'beta',  ' --model ptbm.models.MRNATransfectionNoTransform --model.data data/m_rna_transfection/processed.csv --engine.nChains 30 ')
