@@ -77,7 +77,7 @@ process runMatching {
     file code
     file data
     
-  time '8h'
+  time '10h'
   errorStrategy 'ignore'
     
   output:
