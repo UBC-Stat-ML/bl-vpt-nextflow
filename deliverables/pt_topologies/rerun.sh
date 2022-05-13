@@ -25,11 +25,14 @@ ggsave("actualTemperedRestarts-box.pdf", width = 10, height = 2)
 
 ess <- read.csv("aggregated/allEss.csv.gz")
 ess <- ess %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
-ess %>%
+statEss <- ess %>%
   filter(algorithm != "Reference") %>%
   filter(variable %in% c("sigma","p0","x","beta","alpha","tau","s","rate","eff_m")) %>%
   group_by(quality, model, algorithm, variable) %>%
-  summarize(total_ess = sum(value) ) %>%
+  summarize(total_ess = sum(value))
+write.csv(statEss, "statEss.csv")
+
+statEss %>%
   ggplot(aes(x = algorithm, y = total_ess, color = quality)) +
     facet_grid(. ~ model, scales="free_x") +
     coord_flip() +

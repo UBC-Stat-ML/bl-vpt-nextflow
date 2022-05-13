@@ -1,0 +1,50 @@
+"","quality","model","algorithm","variable","total_ess"
+"1","good","8-schools","F--T F--T","tau",152008.786255433
+"2","good","8-schools","V--T* F--T","tau",112415.872249609
+"3","good","8-schools","V--T* F--T*","tau",112437.802051163
+"4","good","8-schools","V--T*--F","tau",206314.257306687
+"5","good","coll-rockets","F--T F--T","p0",121315.083579985
+"6","good","coll-rockets","V--T* F--T","p0",134954.641486409
+"7","good","coll-rockets","V--T* F--T*","p0",127730.528570299
+"8","good","coll-rockets","V--T*--F","p0",257165.152996974
+"9","good","mining","F--T F--T","s",234165.430055438
+"10","good","mining","V--T* F--T","s",225639.213976699
+"11","good","mining","V--T* F--T*","s",223315.448353449
+"12","good","mining","V--T*--F","s",329637.732458091
+"13","good","mrna-no-transf","F--T F--T","beta",22056.1161380424
+"14","good","mrna-no-transf","F--T F--T","sigma",260196.705372216
+"15","good","mrna-no-transf","V--T* F--T","beta",20145.7771051443
+"16","good","mrna-no-transf","V--T* F--T","sigma",197984.134218258
+"17","good","mrna-no-transf","V--T* F--T*","beta",28795.6460721053
+"18","good","mrna-no-transf","V--T* F--T*","sigma",292649.78540553
+"19","good","mrna-no-transf","V--T*--F","beta",51523.0901415851
+"20","good","mrna-no-transf","V--T*--F","sigma",369981.124650119
+"21","good","phylo","F--T F--T","rate",145675.325096539
+"22","good","phylo","V--T* F--T","rate",150759.584185568
+"23","good","phylo","V--T* F--T*","rate",145820.202617392
+"24","good","phylo","V--T*--F","rate",232107.961696184
+"25","good","sparse-car","F--T F--T","alpha",73078.7729249652
+"26","good","sparse-car","F--T F--T","tau",76487.8766722052
+"27","good","sparse-car","V--T* F--T","alpha",69879.2813702512
+"28","good","sparse-car","V--T* F--T","tau",105737.569693117
+"29","good","sparse-car","V--T* F--T*","alpha",67671.0511670784
+"30","good","sparse-car","V--T* F--T*","tau",106259.708425228
+"31","good","sparse-car","V--T*--F","alpha",141497.512919678
+"32","good","sparse-car","V--T*--F","tau",207300.821466458
+"33","good","titanic","F--T F--T","sigma",175400.408580669
+"34","good","titanic","V--T* F--T","sigma",184467.463428796
+"35","good","titanic","V--T* F--T*","sigma",204709.322100253
+"36","good","titanic","V--T*--F","sigma",321880.23290889
+"37","good","toy-mix","F--T F--T","x",18485.2873401918
+"38","good","toy-mix","V--T* F--T","x",29857.9128429391
+"39","good","toy-mix","V--T* F--T*","x",32414.0378367133
+"40","good","toy-mix","V--T*--F","x",62741.2113519954
+"41","good","vaccines","F--T F--T","eff_m",305061.773744548
+"42","good","vaccines","V--T* F--T","eff_m",298595.792009205
+"43","good","vaccines","V--T* F--T*","eff_m",315391.71231743
+"44","good","vaccines","V--T*--F","eff_m",363807.158788111
+"45","poor","mrna-no-transf","F--T F--T","beta",2170.1607297684
+"46","poor","mrna-no-transf","F--T F--T","sigma",29432.8196094094
+"47","poor","mrna-no-transf","V--T* F--T","beta",14540.5071855879
+"48","poor","mrna-no-transf","V--T* F--T","sigma",77080.5725168071
+"49","poor","toy-mix","V--T* F--T","x",5162.00404797504
