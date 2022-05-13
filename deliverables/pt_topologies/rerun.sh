@@ -27,8 +27,10 @@ ess <- read.csv("aggregated/allEss.csv.gz")
 ess <- ess %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
 statEss <- ess %>%
   filter(algorithm != "Reference") %>%
+  filter(variable != "sigma" | model != "mrna-no-transf") %>% # hack.. in future avoid duplicate!
+  filter(variable != "tau" | model != "sparse-car") %>% 
   filter(variable %in% c("sigma","p0","x","beta","alpha","tau","s","rate","eff_m")) %>%
-  group_by(quality, model, algorithm, variable) %>%
+  group_by(quality, model, algorithm, variable, seed) %>%
   summarize(total_ess = sum(value))
 write.csv(statEss, "statEss.csv")
 
