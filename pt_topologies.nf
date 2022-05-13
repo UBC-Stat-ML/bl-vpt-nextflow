@@ -284,11 +284,14 @@ process plot {
   
   ess <- read.csv("${aggregated}/allEss.csv.gz")
   ess <- ess %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
-  ess %>%
+  statEss <- ess %>%
     filter(algorithm != "Reference") %>%
     filter(variable %in% c(${models.stream().map{m -> "\"" + m.stat + "\""}.toList().join(",")})) %>%
     group_by(quality, model, algorithm, variable) %>%
-    summarize(total_ess = sum(value) ) %>%
+    summarize(total_ess = sum(value))
+  write.csv(statEss, "statEss.csv")
+    
+  statEss %>%
     ggplot(aes(x = algorithm, y = total_ess, color = quality)) +
       facet_grid(. ~ model, scales="free_x") +
       coord_flip() +
