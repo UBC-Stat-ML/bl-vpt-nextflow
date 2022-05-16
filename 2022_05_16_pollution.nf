@@ -33,8 +33,8 @@ def addModel(String n, String s, String a) {
   models.add(m)
 }
 
-nScans = 10000
-nScans_ref = 10000
+nScans = 50000
+nScans_ref = 50000
 ks_threshold = 0.1
 
 addModel('sparse-car',     'alpha', ' --model ptbm.models.SparseCAR --model.data data/pollution_health/data.csv --model.spatialData.adjacency data/pollution_health/adj.csv --engine.nChains 150 ')
@@ -51,7 +51,7 @@ algos['V--T*--F']    = ' --engine.fullyIndepFixedRef false --engine.minSamplesFo
 postprocessor = ' --postProcessor ptgrad.VariationalPostprocessor '
 
 params.dryRun = false
-nCPUS = 40
+nCPUS = 50
 
 if (params.dryRun) {
   nScans = 250
@@ -72,7 +72,7 @@ process runMatching {
     file data
    
   cpus nCPUS  
-  time '20m'
+  time '2h'
   errorStrategy 'ignore'
     
   output:
