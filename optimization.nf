@@ -1,20 +1,19 @@
 #!/usr/bin/env nextflow
 
 deliverableDir = 'deliverables/' + workflow.scriptName.replace('.nf','')
+snap = file("../ptanalysis")
 
 process buildCode {
   executor 'local'
   cache true 
   input:
     val gitRepoName from 'ptanalysis'
-    val gitUser from 'UBC-Stat-ML'
-    val codeRevision from 'bafcc6d521911a0c2e4502e4c246e99a7a7ead40'
-    val snapshotPath from "${System.getProperty('user.home')}/w/ptanalysis"
+    val snapshotPath from snap
   output:
     file 'code' into code
-    file 'ptanalysis/data' into data
+    file 'data' into data
   script:
-    template 'buildRepo.sh'
+    template 'buildSnapshot.sh'
 }
 
 seeds = (1..10)
