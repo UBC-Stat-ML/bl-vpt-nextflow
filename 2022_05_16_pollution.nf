@@ -33,8 +33,8 @@ def addModel(String n, String s, String a) {
   models.add(m)
 }
 
-nScans = 50000
-nScans_ref = 50000
+nScans = 1_000_000
+nScans_ref = 1_000_000
 ks_threshold = 0.1
 
 addModel('sparse-car',     'alpha', ' --model ptbm.models.SparseCAR --model.data data/pollution_health/data.csv --model.spatialData.adjacency data/pollution_health/adj.csv --engine.nChains 150 ')
@@ -42,10 +42,7 @@ addModel('sparse-car',     'alpha', ' --model ptbm.models.SparseCAR --model.data
 
 algos = [:]  
 reference = 'Reference'
-algos['F--T  F--T']  = ' --engine.fullyIndepFixedRef true  --engine.minSamplesForVariational INF '
-algos[reference]     = algos['F--T  F--T'] 
-//algos['V--T* F--T']  = ' --engine.fullyIndepFixedRef true  --engine.minSamplesForVariational 100 '
-//algos['V--T* F--T*'] = ' --engine.fullyIndepFixedRef false --engine.minSamplesForVariational 100 --engine.doSwapFixedRefAndVariational false '
+algos[reference]     = ' --engine.fullyIndepFixedRef true  --engine.minSamplesForVariational INF '
 algos['V--T*--F']    = ' --engine.fullyIndepFixedRef false --engine.minSamplesForVariational 100 --engine.doSwapFixedRefAndVariational true '
 
 postprocessor = ' --postProcessor ptgrad.VariationalPostprocessor '
