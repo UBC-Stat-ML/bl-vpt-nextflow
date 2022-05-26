@@ -48,7 +48,7 @@ algos['V--T*--F']    = ' --engine.fullyIndepFixedRef false --engine.minSamplesFo
 postprocessor = ' --postProcessor ptgrad.VariationalPostprocessor '
 
 params.dryRun = false
-nCPUS = 50
+nCPUS = 20
 
 if (params.dryRun) {
   nScans = 250
