@@ -33,8 +33,8 @@ def addModel(String n, String s, String a) {
   models.add(m)
 }
 
-nScans = 250_000
-nScans_ref = 250_000
+nScans = 1_000_000
+nScans_ref = 1_000_000
 ks_threshold = 0.1
 
 addModel('sparse-car',     'alpha', ' --model ptbm.models.SparseCAR --model.data data/pollution_health/data.csv --model.spatialData.adjacency data/pollution_health/adj.csv --engine.nChains 150 ')
@@ -69,7 +69,7 @@ process runMatching {
     file data
    
   cpus nCPUS  
-  time '20h'
+  time '40h'
   errorStrategy 'ignore'
     
   output:
