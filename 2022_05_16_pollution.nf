@@ -33,8 +33,8 @@ def addModel(String n, String s, String a) {
   models.add(m)
 }
 
-nScans = 1_000_000
-nScans_ref = 1_000_000
+nScans = 4_000_000
+nScans_ref = 4_000_000
 ks_threshold = 0.1
 
 addModel('sparse-car',     'alpha', ' --model ptbm.models.SparseCAR --model.data data/pollution_health/data.csv --model.spatialData.adjacency data/pollution_health/adj.csv --engine.nChains 150 ')
@@ -45,7 +45,7 @@ reference = 'Reference'
 algos[reference]     = ' --engine.fullyIndepFixedRef true  --engine.minSamplesForVariational INF '
 algos['V--T*--F']    = ' --engine.fullyIndepFixedRef false --engine.minSamplesForVariational 100 --engine.doSwapFixedRefAndVariational true '
 
-postprocessor = ' --postProcessor ptgrad.VariationalPostprocessor '
+postprocessor = '' // ' --postProcessor ptgrad.VariationalPostprocessor '
 
 params.dryRun = false
 nCPUS = 30
@@ -68,15 +68,16 @@ process runMatching {
     file code
     file data
    
-  cpus nCPUS  
-  time '40h'
+  cpus nCPUS 
+  memory '10 GB' 
+  time '100h'
   errorStrategy 'ignore'
     
   output:
     file 'output' into results
     file 'fixedRefOutput' into fixedRefResults
   """
-  java -Xmx5g -cp code/lib/\\*  blang.runtime.Runner \
+  java -Xmx10g -cp code/lib/\\*  blang.runtime.Runner \
     --experimentConfigs.resultsHTMLPage false \
     $postprocessor \
     --engine ptbm.OptPT \
