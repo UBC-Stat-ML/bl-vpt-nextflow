@@ -70,7 +70,8 @@ process runMatching {
    
   cpus nCPUS 
   memory '10 GB' 
-  time '100h'
+  scratch false
+  time '150h'
   errorStrategy 'ignore'
     
   output:
