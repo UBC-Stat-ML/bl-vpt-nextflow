@@ -33,8 +33,8 @@ def addModel(String n, String s, String a) {
   models.add(m)
 }
 
-nScans = 4_000_000
-nScans_ref = 4_000_000
+nScans = 1_000_000
+nScans_ref = 1_000_000
 ks_threshold = 0.1
 
 addModel('sparse-car',     'alpha', ' --model ptbm.models.SparseCAR --model.data data/pollution_health/data.csv --model.spatialData.adjacency data/pollution_health/adj.csv --engine.nChains 150 ')
@@ -69,9 +69,9 @@ process runMatching {
     file data
    
   cpus nCPUS 
-  memory '10 GB' 
+  memory '80 GB' 
   scratch false
-  time '150h'
+  time '40h'
   errorStrategy 'ignore'
     
   output:
@@ -84,7 +84,7 @@ process runMatching {
     --engine ptbm.OptPT \
     --engine.random $seed \
     --engine.nScans ${if (algo.key == reference) nScans_ref else nScans} \
-    --engine.scmInit.nParticles 10 \
+    --engine.scmInit.nParticles 50 \
     --engine.scmInit.temperatureSchedule.threshold 0.9 \
     --engine.nPassesPerScan 1 \
     --engine.useFixedRefPT true \
@@ -104,7 +104,6 @@ process runMatching {
   mv results/latest/monitoring/*.csv output
   mv results/latest/fixedReferencePT/monitoring/*.csv fixedRefOutput
   mv results/latest/fixedReferencePT/samples/${model.stat}.csv fixedRefOutput/statistic.csv
-  mv results/latest/ess/allEss.csv output
   mv results/latest/fixedReferencePT/ess/allEss.csv fixedRefOutput
   
   echo "\nmodelDescription\t${model.name}" >> results/latest/arguments.tsv
@@ -140,7 +139,6 @@ process aggregate {
         globalLambda.csv \
         logNormalizationConstantProgress.csv \
         statistic.csv \
-        allEss.csv \
     --experimentConfigs.tabularWriter.compressed true \
     --keys \
       modelDescription as model \
