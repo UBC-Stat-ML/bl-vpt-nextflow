@@ -1,7 +1,5 @@
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
 1	15/509c60	148865	buildCode	CACHED	-	2022-05-16 14:14:53.469	-	-	-	-	-	-	-
-2	91/24f109	3756084.pbsha.ib.sockeye	runMatching (1)	COMPLETED	0	2022-05-25 21:23:39.524	6h 53m 52s	6h 53m 24s	2087.4%	8 GB	27.7 GB	39.2 GB	16.1 GB
-3	0c/92b7b1	3756085.pbsha.ib.sockeye	runMatching (2)	COMPLETED	0	2022-05-25 21:23:39.616	7h 42m 52s	7h 42m 23s	2101.9%	8 GB	28.7 GB	41.2 GB	19 GB
-4	0b/2981c9	3756294.pbsha.ib.sockeye	aggregate	COMPLETED	0	2022-05-26 05:06:32.048	29.6s	6.6s	65.7%	101.7 MB	4.4 GB	30.9 MB	9.4 MB
-5	59/b4f399	3756295.pbsha.ib.sockeye	computeKS	COMPLETED	0	2022-05-26 05:07:01.798	24.9s	10s	71.2%	241.3 MB	497.3 MB	22.8 MB	716 B
-6	e1/a704f2	3756296.pbsha.ib.sockeye	plot	COMPLETED	0	2022-05-26 05:07:26.843	14.8s	3.5s	50.5%	49.8 MB	238.8 MB	6.3 MB	439 B
+2	80/72e428	3761003.pbsha.ib.sockeye	runMatching (1)	FAILED	1	2022-05-31 16:29:30.035	4d 8h 32m 35s	4d 7h 25m 3s	2256.8%	5.5 GB	19.2 GB	28.3 GB	154.5 GB
+3	ba/cf50f8	3761002.pbsha.ib.sockeye	runMatching (2)	FAILED	1	2022-05-31 16:29:29.947	4d 18h 11m 44s	4d 17h 25m 47s	2163.8%	5.1 GB	19.5 GB	28.3 GB	154.3 GB
+4	e9/af537e	3765226.pbsha.ib.sockeye	aggregate	FAILED	1	2022-06-05 10:41:14.534	49.7s	3.6s	26.4%	26.3 MB	4.4 GB	3.2 MB	1.1 KB
