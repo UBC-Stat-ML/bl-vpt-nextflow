@@ -104,7 +104,6 @@ process runMatching {
   mv results/latest/monitoring/*.csv output
   mv results/latest/fixedReferencePT/monitoring/*.csv fixedRefOutput
   mv results/latest/fixedReferencePT/samples/${model.stat}.csv fixedRefOutput/statistic.csv
-  mv results/latest/fixedReferencePT/ess/allEss.csv fixedRefOutput
   
   echo "\nmodelDescription\t${model.name}" >> results/latest/arguments.tsv
   echo "algorithm\t${algo.key}" >> results/latest/arguments.tsv
