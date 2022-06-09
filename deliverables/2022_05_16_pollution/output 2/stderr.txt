@@ -1,0 +1,1 @@
+    WARNING: Only printing energy statistics for the first 100 chains, see statisticRecordedMaxChainIndex option in PT
