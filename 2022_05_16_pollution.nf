@@ -274,28 +274,7 @@ process plot {
       theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
   ggsave("actualTemperedRestarts-box.pdf", width = 10, height = 2)
   
-  ess <- read.csv("${aggregated}/allEss.csv.gz")
-  ess <- ess %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
-  statEss <- ess %>%
-    filter(algorithm != "Reference") %>%
-    filter(variable != "sigma" | model != "mrna-no-transf") %>% # hack.. in future avoid duplicate!
-    filter(variable != "tau" | model != "sparse-car") %>% 
-    filter(variable %in% c(${models.stream().map{m -> "\"" + m.stat + "\""}.toList().join(",")})) %>%
-    group_by(quality, model, algorithm, variable, seed) %>%
-    summarize(total_ess = sum(value))
-  write.csv(statEss, "statEss.csv")
-    
-  statEss %>%
-    ggplot(aes(x = algorithm, y = total_ess, color = quality)) +
-      facet_grid(. ~ model, scales="free_x") +
-      coord_flip() +
-      geom_boxplot() +
-      ylab("ESS") + 
-      scale_y_continuous(expand = expansion(mult = 0.05), limits = c(0, NA)) +
-      $custom_colours +
-      theme_bw() +
-      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-  ggsave("ess-box.pdf", width = 10, height = 2)
+
   
   global <- read.csv("${aggregated}/globalLambda.csv.gz")
   global <- global %>% inner_join(ks_distances, by = c("algorithm", "model", "seed"))
