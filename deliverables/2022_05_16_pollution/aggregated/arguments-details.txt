@@ -1,4 +1,4 @@
-  --dataPathInEachExecFolder lambdaInstantaneous.csv actualTemperedRestarts.csv globalLambda.csv logNormalizationConstantProgress.csv statistic.csv allEss.csv    # <List>
+  --dataPathInEachExecFolder lambdaInstantaneous.csv actualTemperedRestarts.csv globalLambda.csv logNormalizationConstantProgress.csv statistic.csv    # <List>
 #   description: Comma separated value (cvs or csv.gz) file(s) in each exec containing the data to be aggregated.
 
 # --execFoldersPrefix <String> (default value: exec_)

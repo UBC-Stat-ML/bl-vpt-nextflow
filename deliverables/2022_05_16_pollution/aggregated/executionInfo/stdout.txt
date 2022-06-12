@@ -18,7 +18,3 @@ Processing statistic.csv from exec_2
 Processing statistic.csv from exec_4
 Processing statistic.csv from exec_3
 Processing statistic.csv from exec_1
-Processing allEss.csv from exec_2
-Processing allEss.csv from exec_4
-Processing allEss.csv from exec_3
-Processing allEss.csv from exec_1
