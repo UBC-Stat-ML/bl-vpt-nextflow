@@ -2,6 +2,8 @@ This repository contains the nextflow scripts accompanying the paper
 "Parallel Tempering With a Variational Reference" by Surjanovic, Syed, Bouchard-Côté, and Campbell. NeurIPS (2022).
 [https://arxiv.org/abs/2206.00080](https://arxiv.org/abs/2206.00080)
 
+See [https://github.com/UBC-Stat-ML/bl-vpt](https://github.com/UBC-Stat-ML/bl-vpt) for the source code of the software benchmarked by the scripts in the present repository.
+
 ### Required software
 
 - bash
